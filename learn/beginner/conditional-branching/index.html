@@ -1,0 +1,991 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+<script 
+  src="/js/color-mode.f14b3e296de1d0b69e75af684b62a4a912a2cadab04e36123407cd8388204f1d.js"
+  integrity="sha256-8Us&#43;KW3h0Laeda9oS2KkqRKiytqwTjYSNAfNg4ggTx0=">
+</script>
+
+
+<link rel="stylesheet" href="/main.36ca4900ac79c8b8df541138c0226a38e9bd2fbbd3cde3f0c397a7de57e6e3205e7bd138bf1f9da340a9cb91990a0593d180b720a58bcc44ef978ed4a4791dbe.css" integrity="sha512-NspJAKx5yLjfVBE4wCJqOOm9L7vTzePww5en3lfm4yBee9E4vx&#43;do0Cpy5GZCgWT0YC3IKWLzETvl47UpHkdvg==" crossorigin="anonymous">
+
+<noscript><style>img.lazyload { display: none; }</style></noscript><base href="http://localhost:1313/learn/beginner/conditional-branching/">
+
+  <link rel="canonical" href="http://localhost:1313/learn/beginner/conditional-branching/">
+
+
+<title>Conditional Branching  |  OBMAN.BOT Help Center</title>
+<meta name="description" content="Learn how to make decisions in your custom commands using control flow.">
+
+    
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    
+    
+      <link
+        rel="apple-touch-icon"
+        href="/apple-touch-icon.png"
+        sizes="180x180"
+        type="image/png"
+      >
+      <link
+        rel="icon"
+        href="/favicon-192x192.png"
+        sizes="192x192"
+        type="image/png"
+      >
+      <link
+        rel="icon"
+        href="/favicon-512x512.png"
+        sizes="512x512"
+        type="image/png"
+      >
+<link rel="manifest" href="/manifest.webmanifest">
+
+<meta property="og:url" content="http://localhost:1313/learn/beginner/conditional-branching/">
+  <meta property="og:site_name" content="OBMAN.BOT Help Center">
+  <meta property="og:title" content="Conditional Branching">
+  <meta property="og:description" content="Learn how to make decisions in your custom commands using control flow.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="learn">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Conditional Branching">
+  <meta name="twitter:description" content="Learn how to make decisions in your custom commands using control flow.">
+
+    
+    
+    <script type="application/ld+json">
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/",
+       "name": "Obman. Bot Help Center",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/learn/",
+       "name": "Learning Resources",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/learn/beginner/",
+       "name": "Beginner",
+       "position": 3
+     },
+     {
+       "@type": "ListItem",
+       "name": "Conditional Branching",
+       "position": 4
+     }
+   ]
+ }
+</script>
+
+
+
+
+
+
+<link rel="preconnect" href="https://ER865HD7LN-dsn.algolia.net" crossorigin />
+
+</head>
+
+  
+  <body class="single section learn" data-bs-spy="scroll" data-bs-target="#toc" data-bs-root-margin="0px 0px -60%" data-bs-smooth-scroll="true" tabindex="0">
+    <div class="sticky-top">
+<header class="navbar navbar-expand-lg">
+  <div class="container-lg">
+  
+    <a class="navbar-brand me-auto me-lg-3" href="/">OBMAN.BOT Help Center</a>
+
+    
+    
+    
+    <div id="docsearch" class="d-none" tabindex="-1" aria-disabled="true"></div>
+    <button type="button" id="searchToggleMobile" class="btn btn-link nav-link mx-2 d-lg-none" aria-label="Search website">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <circle cx="10" cy="10" r="7"></circle>
+        <line x1="21" y1="21" x2="15" y2="15"></line>
+      </svg>
+    </button>
+    
+    <button class="btn btn-link d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavSection" aria-controls="offcanvasNavSection" aria-label="Open section navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+        <path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+        <path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+      </svg>
+    </button>
+    <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasNavSection" aria-labelledby="offcanvasNavSectionLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavSectionLabel">Learn</h5>
+        <button type="button" class="btn btn-link nav-link p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <aside class="doks-sidebar mt-n3">
+          <nav id="doks-docs-nav" aria-label="Tertiary navigation">
+            
+  
+    
+<nav class="section-nav docs-links">
+  <ul class="list-unstyled">
+
+  <li>
+    <details open>
+      <summary>Welcome</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/learn/welcome/introduction/">Introduction</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open open>
+      <summary>Beginner</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/learn/beginner/simple-responses/">Simple Responses</a>
+  </li>
+
+  <li>
+      <a href="/learn/beginner/variables-and-data-types/">Variables and Data Types</a>
+  </li>
+
+  <li class="active" >
+      <a aria-current="page" href="/learn/beginner/conditional-branching/">Conditional Branching</a>
+  </li>
+
+  <li>
+      <a href="/learn/beginner/command-arguments/">Command Arguments</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Intermediate</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/learn/intermediate/embeds-and-messages/">Embeds and Messages</a>
+  </li>
+
+  <li>
+      <a href="/learn/intermediate/maps-and-slices/">Maps and Slices</a>
+  </li>
+
+  <li>
+      <a href="/learn/intermediate/loops/">Loops</a>
+  </li>
+
+  <li>
+      <a href="/learn/intermediate/database/">Database</a>
+  </li>
+
+  <li>
+      <a href="/learn/intermediate/exercises/">Exercises</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Advanced</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+    <details open>
+      <summary>Custom Interactions</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/learn/advanced/custom-interactions/introduction/">Introduction</a>
+  </li>
+
+  <li>
+      <a href="/learn/advanced/custom-interactions/creating-interactive-elements/">Creating Interactive Elements</a>
+  </li>
+
+  <li>
+      <a href="/learn/advanced/custom-interactions/parsing-an-interaction/">Parsing an Interaction</a>
+  </li>
+
+  <li>
+      <a href="/learn/advanced/custom-interactions/responding-to-an-interaction/">Responding to an Interaction</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+      </ul>
+    </details>
+  </li>
+  </ul>
+</nav>
+
+  
+
+          </nav>
+        </aside>
+      </div>
+    </div>
+    
+    <button class="btn btn-link nav-link mx-2 order-3 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavMain" aria-controls="offcanvasNavMain" aria-label="Open main navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <line x1="4" y1="8" x2="20" y2="8"></line>
+        <line x1="4" y1="16" x2="20" y2="16"></line>
+      </svg>
+    </button>
+
+    
+    <div class="offcanvas offcanvas-end h-auto" tabindex="-1" id="offcanvasNavMain" aria-labelledby="offcanvasNavMainLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavMainLabel">OBMAN.BOT Help Center</h5>
+        <button type="button" class="btn btn-link nav-link p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+         </svg>
+        </button>
+      </div>
+      
+      <div class="offcanvas-body d-flex flex-column flex-lg-row justify-content-between">
+        <ul class="navbar-nav flex-grow-1"><li class="nav-item">
+                <a class="nav-link" href="http://localhost:1313/docs/welcome/introduction/">Documentation</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost:1313/learn/welcome/introduction/">Learning Resources</a>
+              </li>
+            </ul>
+
+        
+        
+        
+        <button type="button" id="searchToggleDesktop" class="btn btn-link nav-link mx-2 d-none d-lg-block" aria-label="Search website">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <circle cx="10" cy="10" r="7"></circle>
+            <line x1="21" y1="21" x2="15" y2="15"></line>
+          </svg>
+        </button>
+        
+        
+        
+        <button id="buttonColorMode" class="btn btn-link mx-auto nav-link p-0 ms-lg-2 me-lg-1" type="button" aria-label="Toggle theme">
+          <svg data-bs-theme-value="dark" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
+          </svg>
+          <svg data-bs-theme-value="light" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0m-5 0h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
+          </svg>
+        </button>
+        
+        <ul id="socialMenu" class="nav mx-auto flex-row order-lg-4">
+          <li class="nav-item">
+              <a class="nav-link social-link" href="https://discord.gg/4udtcA5"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-discord" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M8 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path><path d="M14 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path><path d="M8.5 17c0 1 -1.356 3 -1.832 3c-1.429 0 -2.698 -1.667 -3.333 -3c-.635 -1.667 -.476 -5.833 1.428 -11.5c1.388 -1.015 2.782 -1.34 4.237 -1.5l.975 1.923a11.913 11.913 0 0 1 4.053 0l.972 -1.923c1.5 .16 3.043 .485 4.5 1.5c2 5.667 2.167 9.833 1.5 11.5c-.667 1.333 -2 3 -3.5 3c-.5 0 -2 -2 -2 -3"></path><path d="M7 16.5c3.5 1 6.5 1 10 0"></path></svg><small class="ms-2 visually-hidden">Discord</small></a>
+            </li>
+          <li class="nav-item">
+              <a class="nav-link social-link" href="https://github.com/ArtObman/ArtObman"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg><small class="ms-2 visually-hidden">GitHub</small></a>
+            </li>
+          </ul>
+        
+        <button id="selfHosting" class="btn btn-link mx-auto nav-link p-0 ms-lg-2 me-lg-1" type="button" aria-label="Toggle self-hosting view">
+          <svg data-selfhost-value="yes" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-server-off" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 12h-6a3 3 0 0 1 -3 -3v-2c0 -1.083 .574 -2.033 1.435 -2.56m3.565 -.44h10a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-2" />
+            <path d="M16 12h2a3 3 0 0 1 3 3v2m-1.448 2.568a2.986 2.986 0 0 1 -1.552 .432h-12a3 3 0 0 1 -3 -3v-2a3 3 0 0 1 3 -3h6" />
+            <path d="M7 8v.01" />
+            <path d="M7 16v.01" />
+            <path d="M3 3l18 18" />
+          </svg>
+          <svg data-selfhost-value="no" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-server" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 4m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+            <path d="M3 12m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+            <path d="M7 8l0 .01" />
+            <path d="M7 16l0 .01" />
+          </svg>
+        </button>
+
+        
+        <div class="gtranslate-container order-lg-5 d-flex align-items-center ms-lg-2 mt-2 mt-lg-0">
+          <div class="gtranslate_wrapper"></div>
+        </div>
+      </div>
+    </div>
+
+        
+        </div>
+</header>
+</div>
+
+<script>
+  window.gtranslateSettings = {
+    "default_language": "en",
+    "native_language_names": true,
+    "detect_browser_language": true,
+    "wrapper_selector": ".gtranslate_wrapper",
+    "flag_size": 24
+  };
+</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/popup.js" defer></script>
+
+    <div class="wrap container-lg" role="document">
+      <div class="content">
+      
+        
+	<div class="row flex-xl-nowrap">
+		<div class="col-lg-5 col-xl-4 docs-sidebar d-none d-lg-block">
+			
+  
+    
+<nav class="section-nav docs-links">
+  <ul class="list-unstyled">
+
+  <li>
+    <details open>
+      <summary>Welcome</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/learn/welcome/introduction/">Introduction</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open open>
+      <summary>Beginner</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/learn/beginner/simple-responses/">Simple Responses</a>
+  </li>
+
+  <li>
+      <a href="/learn/beginner/variables-and-data-types/">Variables and Data Types</a>
+  </li>
+
+  <li class="active" >
+      <a aria-current="page" href="/learn/beginner/conditional-branching/">Conditional Branching</a>
+  </li>
+
+  <li>
+      <a href="/learn/beginner/command-arguments/">Command Arguments</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Intermediate</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/learn/intermediate/embeds-and-messages/">Embeds and Messages</a>
+  </li>
+
+  <li>
+      <a href="/learn/intermediate/maps-and-slices/">Maps and Slices</a>
+  </li>
+
+  <li>
+      <a href="/learn/intermediate/loops/">Loops</a>
+  </li>
+
+  <li>
+      <a href="/learn/intermediate/database/">Database</a>
+  </li>
+
+  <li>
+      <a href="/learn/intermediate/exercises/">Exercises</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Advanced</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+    <details open>
+      <summary>Custom Interactions</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/learn/advanced/custom-interactions/introduction/">Introduction</a>
+  </li>
+
+  <li>
+      <a href="/learn/advanced/custom-interactions/creating-interactive-elements/">Creating Interactive Elements</a>
+  </li>
+
+  <li>
+      <a href="/learn/advanced/custom-interactions/parsing-an-interaction/">Parsing an Interaction</a>
+  </li>
+
+  <li>
+      <a href="/learn/advanced/custom-interactions/responding-to-an-interaction/">Responding to an Interaction</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+      </ul>
+    </details>
+  </li>
+  </ul>
+</nav>
+
+  
+
+		</div>
+		
+		<nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation">
+			<div class="page-links">
+  <h3>On this page</h3>
+    <nav id="toc">
+  <ul>
+    <li><a href="#if-statements">If Statements</a>
+      <ul>
+        <li><a href="#guard-clauses">Guard Clauses</a></li>
+      </ul>
+    </li>
+    <li><a href="#comparison-actions">Comparison Actions</a></li>
+    <li><a href="#blocks-and-scope">Blocks And Scope</a></li>
+    <li><a href="#with-blocks">With Blocks</a></li>
+    <li><a href="#exercises">Exercises</a></li>
+  </ul>
+</nav>
+</div>
+
+		</nav>
+		<main class="docs-content col-lg-11 col-xl-9 mx-xl-auto">
+		
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="/">Home</a></li>
+<li class="breadcrumb-item"><a href="/learn/">Learn</a></li>
+<li class="breadcrumb-item"><a href="/learn/beginner/">Beginner</a></li>
+<li class="breadcrumb-item active" aria-current="page">Conditional Branching</li>
+					</ol>
+				</nav>
+			
+			<h1>Conditional Branching</h1>
+			
+			<nav class="toc-mobile d-xl-none" aria-label="Quaternary navigation">
+				<details>
+    <summary>On this page</summary>
+    <div class="page-links">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#if-statements">If Statements</a>
+      <ul>
+        <li><a href="#guard-clauses">Guard Clauses</a></li>
+      </ul>
+    </li>
+    <li><a href="#comparison-actions">Comparison Actions</a></li>
+    <li><a href="#blocks-and-scope">Blocks And Scope</a></li>
+    <li><a href="#with-blocks">With Blocks</a></li>
+    <li><a href="#exercises">Exercises</a></li>
+  </ul>
+</nav>
+    </div>
+  </details>
+
+			</nav>
+			<p>Until now, we have just written some linear code that executes from top to bottom. However, in real-world applications,
+we often need to execute different code depending on certain states of our program. This is where <em>control flow</em> comes
+into play.</p>
+<p>You already have an intuitive understanding of control flow. For instance, when you cross the street, you look left and
+right to see if any cars are coming. If there are no cars, you cross the street. Otherwise (&ldquo;else&rdquo;), you wait until the
+incoming cars have passed, then check again. This is a simple example of a decision-making process.</p>
+<h2 id="if-statements">If Statements<a href="#if-statements" class="anchor" aria-hidden="true">#</a> </h2>
+<p>The most basic form of control flow is the <code>if</code> statement. An <code>if</code> statement checks a condition and executes a block of
+code if the condition is true. If the condition is false, the block of code is skipped.</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ if eq 5 5 }}
+</span></span><span class="line"><span class="cl">  {{/* It is conventional, though not required, to consistently indent inner blocks of code with spaces or tabs. */}}
+</span></span><span class="line"><span class="cl">  Five is equal to five!
+</span></span><span class="line"><span class="cl">{{ end }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>We use the <code>eq</code> comparison function to check whether its given arguments are equal; we will enumerate all comparison
+functions in a <a href="/learn/beginner/conditional-branching/#comparison-actions">later section</a> on this page.</p>
+<p>We can expand this to execute a different block of code if the condition is false by using an <code>else</code> block:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ if eq 5 3 }}
+</span></span><span class="line"><span class="cl">  Five is equal to three!
+</span></span><span class="line"><span class="cl">{{ else }}
+</span></span><span class="line"><span class="cl">  Five is not equal to three!
+</span></span><span class="line"><span class="cl">{{ end }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>This can be further expanded to check multiple conditions using <code>else if</code>, which are checked sequentially until one of
+them is true:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ if eq 5 3 }}
+</span></span><span class="line"><span class="cl">  Five is equal to three!
+</span></span><span class="line"><span class="cl">{{ else if eq 5 5 }}
+</span></span><span class="line"><span class="cl">  Five is equal to five!
+</span></span><span class="line"><span class="cl">{{ else }}
+</span></span><span class="line"><span class="cl">  Five is not equal to three or five!
+</span></span><span class="line"><span class="cl">{{ end }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="callout callout-note d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/info-circle svg-inline callout-icon me-2 mb-3" id="svg-info-circle" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+  <path d="M12 9h.01" />
+  <path d="M11 12h1v4h1" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Note: Truthiness</p>
+
+      </div>
+    <div class="callout-body">
+      <p>The condition of an <code>if</code> statement need not be a boolean: in general, an <code>if</code> statement will trigger if the condition is
+<em>truthy</em>: that is, not empty or zero. (Conversely, empty and zero values are <em>falsy</em>.)</p>
+<p>For example, consider how you would check whether a string <code>$s</code> is empty. One way is to explicitly compare the length of
+the string to zero using <code>if gt (len $s) 0</code>, but since empty strings are falsy, the more idiomatic solution is to simply
+write <code>if $s</code>, like so:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ $s := &#34;&#34; }}
+</span></span><span class="line"><span class="cl">{{ if $s }}
+</span></span><span class="line"><span class="cl">  not empty
+</span></span><span class="line"><span class="cl">{{ else }}
+</span></span><span class="line"><span class="cl">  empty
+</span></span><span class="line"><span class="cl">{{ end }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div>
+    </div>
+  </div>
+</div>
+
+<h3 id="guard-clauses">Guard Clauses<a href="#guard-clauses" class="anchor" aria-hidden="true">#</a> </h3>
+<p>As your code grows, you may find yourself nesting <code>if</code> statements inside each other. This can lead to code that is hard
+to read and understand. One way to avoid this is to use <em>guard clauses</em>. A guard clause is an <code>if</code> statement that checks
+for a condition and returns early via the <code>{{ return }}</code> action. Therefore, the condition we checked in the earlier
+<code>if</code>/<code>else</code> construct must be negated.</p>
+<p>Rewriting the second example to use these guard clauses yields the following code:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ if ne 5 3 }}
+</span></span><span class="line"><span class="cl">  Five is not equal to three!
+</span></span><span class="line"><span class="cl">  {{ return }}
+</span></span><span class="line"><span class="cl">{{ end }}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Five is equal to three!</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>Although this example may be a bit contrived, guard clauses can help you avoid deeply nested code and make your code
+easier to read, especially when you come back to it at a later date.</p>
+<h2 id="comparison-actions">Comparison Actions<a href="#comparison-actions" class="anchor" aria-hidden="true">#</a> </h2>
+<p>In programming, we can make decisions by comparing values to each other. We can compare numbers, strings, and other data
+types. The result of a comparison is a <em>boolean</em> value, which is either <code>true</code> or <code>false</code>. Normally, comparisons are
+binary operators; however, in custom commands, we use functions to compare values.</p>
+<div class="callout callout-caution d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/alert-triangle svg-inline callout-icon me-2 mb-3" id="svg-alert-triangle" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M12 9v4" />
+  <path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0z" />
+  <path d="M12 16h.01" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Warning: Comparing Across Types</p>
+
+      </div>
+    <div class="callout-body">
+      <p>Just like you cannot quite compare apples and oranges, you cannot compare values of different types. For instance, you
+cannot compare a number to a string. The bot will throw an error if you try to do so, you will have to convert either of
+them to the other type first.</p>
+
+    </div>
+  </div>
+</div>
+
+<p>We provide the following comparison functions in custom commands:</p>
+<ul>
+<li><code>eq</code> (equals <code>==</code>)</li>
+<li><code>ne</code> (not equals <code>!=</code>)</li>
+<li><code>lt</code> (less than <code>&lt;</code>)</li>
+<li><code>le</code> (less than or equal to <code>&lt;=</code>)</li>
+<li><code>gt</code> (greater than <code>&gt;</code>)</li>
+<li><code>ge</code> (greater than or equal to <code>&gt;=</code>)</li>
+</ul>
+<p>These functions can only compare basic data types as introduced in <a href="/learn/beginner/variables-and-data-types/">Variables and Data Types</a>. Strings
+are compared on a byte-by-byte basis. Please refer to the <a href="/docs/reference/templates/functions/">functions documentation</a>
+for the syntax of these functions.</p>
+<h2 id="blocks-and-scope">Blocks And Scope<a href="#blocks-and-scope" class="anchor" aria-hidden="true">#</a> </h2>
+<p>In the previous chapter, we introduced the concept of variables. Variables are used to store values and give them a name.
+In programming, variables have a <em>scope</em>, which defines where in the code the variable can be accessed. Think of each
+scope as a &ldquo;container&rdquo; for things inside it.</p>
+<p>Often, you will want to have a variable available across multiple scopes. In custom commands, the variable is accessible
+in the scope in which it was defined, as well as all nested scopes within. Let us assume that we want to assign a
+coolness value, which should be true if the user&rsquo;s name is &ldquo;alice&rdquo;. We can achieve this by defining a variable in
+the outer scope and re-assigning, using the <code>=</code> operator, its value in the inner scope:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ $isCool := false }}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">{{ if eq .User.Username &#34;alice&#34; }}
+</span></span><span class="line"><span class="cl">  {{ $isCool = true }}
+</span></span><span class="line"><span class="cl">{{ end }}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Are you cool? {{ $isCool }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>It is considered good practice to define variables in the smallest scope possible. This makes your code easier to read
+and understand, as you do not have to search through the entire codebase to find where a variable was defined.</p>
+<div class="callout callout-caution d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/alert-triangle svg-inline callout-icon me-2 mb-3" id="svg-alert-triangle" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M12 9v4" />
+  <path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0z" />
+  <path d="M12 16h.01" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Warning: Definition and Reassignment</p>
+
+      </div>
+    <div class="callout-body">
+      <p>In custom commands, you use <code>:=</code> to define a variable, and <code>=</code> to reassign a variable. The bot will not throw an error
+if you try to re-define a variable using <code>:=</code>. Rather, it will define a new variable, effectively overwriting the
+existing variable, but only within that scope&mdash;the existing variable is untouched in the outer scope.</p>
+
+    </div>
+  </div>
+</div>
+
+<div class="callout callout-danger d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/alert-octagon svg-inline callout-icon me-2 mb-3" id="svg-alert-octagon" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+  <path d="M12 8v4" />
+  <path d="M12 16h.01" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Danger: Unexpected EOF</p>
+
+      </div>
+    <div class="callout-body">
+      <p>The following error appears when you are missing an <code>{{ end }}</code> action.</p>
+<p><a href="#h-rh-i-e6546feb1b8c805b5c8625d621e902ea-lightbox">
+<img alt="Responses: template: :XX: unexpected EOF" height="84" id="h-rh-i-e6546feb1b8c805b5c8625d621e902ea" src="/learn/beginner/unexpected-eof.png" width="442"></a>
+<a href="javascript:history.back();" class="lightbox" id="h-rh-i-e6546feb1b8c805b5c8625d621e902ea-lightbox">
+  <img loading="lazy" alt="Responses: template: :XX: unexpected EOF" height="84" id="h-rh-i-e6546feb1b8c805b5c8625d621e902ea" src="/learn/beginner/unexpected-eof.png" width="442">
+</a>
+</p>
+<p>Each control structure must have a corresponding <code>{{ end }}</code> action. If you forget to do so, OBMAN.BOT will not know where
+your control structure terminates and hence issues the above error.</p>
+<p>To fix this error, examine each <code>{{ if ... }}</code> in your program and verify that each has a matching <code>{{ end }}</code>. (The
+same applies to other control structures introduced in future chapters, such as <code>{{ range ... }}</code>.)</p>
+<p>If you are familiar with C-family programming languages, this error is analogous to forgetting the closing <code>}</code> of a
+block of code.</p>
+
+    </div>
+  </div>
+</div>
+
+<h2 id="with-blocks">With Blocks<a href="#with-blocks" class="anchor" aria-hidden="true">#</a> </h2>
+<p>Just like the <code>if</code> action, <code>with</code> runs a block of code if the given expression is truthy. The only difference is that
+<code>with</code> overwrites the dot <code>.</code> with the expression if it is truthy.</p>
+<p>For instance, the following program</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ $msg := &#34;I &lt;3 the OBMAN.BOT documentation!&#34; }}
+</span></span><span class="line"><span class="cl">{{ with reFind `\d+` $msg }}
+</span></span><span class="line"><span class="cl">    pattern found in text; the dot {{ printf &#34;%q&#34; . }} contains the match
+</span></span><span class="line"><span class="cl">{{ else }}
+</span></span><span class="line"><span class="cl">    pattern did not match
+</span></span><span class="line"><span class="cl">{{ end }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>outputs</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">pattern found in text; the dot &#34;3&#34; contains the match</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>Note that the dot <code>.</code> has been set to <code>&quot;3&quot;</code>вЂ”the result of <code>reFind</code>. See if you can change the text stored in <code>$msg</code> so
+that the program hits the <code>else</code> branch instead.</p>
+<div class="callout callout-caution d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/alert-triangle svg-inline callout-icon me-2 mb-3" id="svg-alert-triangle" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M12 9v4" />
+  <path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0z" />
+  <path d="M12 16h.01" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Warning: Readability of <code>with</code> Blocks</p>
+
+      </div>
+    <div class="callout-body">
+      <p>Be careful not to overuse <code>with</code> blocks, as they can make your code difficult to follow. In general, prefer using
+a normal <code>if</code> conditional and only use <code>with</code> if it improves readability; do not use it just to shorten code.</p>
+
+    </div>
+  </div>
+</div>
+
+<h2 id="exercises">Exercises<a href="#exercises" class="anchor" aria-hidden="true">#</a> </h2>
+<ol>
+<li>
+<p>Write a Custom Command to determine if the number stored in a variable <code>$a</code> is even or odd and print <code>Number is Even</code>
+or <code>Number is Odd</code> depending on the case. Verify the output for the following values of <code>$a</code>: 1, 9, 0, 10021, -5.</p>
+</li>
+<li>
+<p>Predict the output of the following code snippets. If there is an error in the snippet, what is the cause of the
+error, and how can it be fixed? Also note down potential improvements to the code that make it easier to follow.</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ $num1 := 10 }}
+</span></span><span class="line"><span class="cl">{{ if $num1 }}
+</span></span><span class="line"><span class="cl">  {{ num1 := 6 }}
+</span></span><span class="line"><span class="cl">  {{ $num1 }}
+</span></span><span class="line"><span class="cl">{{ end }}
+</span></span><span class="line"><span class="cl">{{ if not (mod $num1 3) }}
+</span></span><span class="line"><span class="cl">  {{ $num1 }}
+</span></span><span class="line"><span class="cl">{{ end }}
+</span></span><span class="line"><span class="cl">{{ $num1 }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ $name := &#34;John&#34; }}
+</span></span><span class="line"><span class="cl">{{ if eq $name &#34;John&#34; }}
+</span></span><span class="line"><span class="cl">  {{ $familyName := &#34;Walters&#34; }}
+</span></span><span class="line"><span class="cl">{{ end }}
+</span></span><span class="line"><span class="cl">My name is: {{ $name }} {{ $familyName }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ $mood := &#34;happy&#34; }}
+</span></span><span class="line"><span class="cl">{{ if gt $mood &#34;Sad&#34; }}
+</span></span><span class="line"><span class="cl">  Be {{ $mood }}!
+</span></span><span class="line"><span class="cl">{{ else }}
+</span></span><span class="line"><span class="cl">  Do not be {{ $mood }}!
+</span></span><span class="line"><span class="cl">{{ end }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div></li>
+</ol>
+
+			<div class="page-footer-meta d-flex flex-column flex-md-row justify-content-between">
+				
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="edit-page">
+  <a href="https://github.com/ArtObman/ArtObman/blob/master/content//learn/beginner/conditional-branching.md">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2">
+      <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+    </svg>
+    Edit this page on GitHub
+  </a>
+</div>
+
+				</div>
+			<div class="page-nav d-flex flex-column flex-sm-row">
+	
+	<div class="card w-100">
+			<div class="card-body d-flex">
+				<div class="d-flex flex-column justify-content-center">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M5 12l14 0"></path>
+						<path d="M5 12l6 6"></path>
+						<path d="M5 12l6 -6"></path>
+				 	</svg>
+				</div>
+				<div class="d-flex flex-column">
+					<div class="text-body-secondary">Prev</div>
+					<a href="/learn/beginner/variables-and-data-types/" class="stretched-link text-reset text-decoration-none">Variables and Data Types</a>
+				</div>
+			</div>
+		</div>
+	<div class="m-2"></div>
+	<div class="card text-end w-100">
+			<div class="card-body d-flex justify-content-end">
+				<div class="d-flex flex-column">
+					<div class="text-body-secondary">Next</div>
+					<a href="/learn/beginner/command-arguments/" class="stretched-link text-reset text-decoration-none">Command Arguments</a>
+				</div>
+				<div class="d-flex flex-column justify-content-center">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M5 12l14 0"></path>
+						<path d="M13 18l6 -6"></path>
+						<path d="M13 6l6 6"></path>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+
+			
+		</main>
+		
+	</div>
+
+      
+      </div>
+    </div>
+    
+    
+    <footer class="footer text-muted">
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-lg-8 text-center text-lg-start">
+        <ul class="list-inline">
+          <li class="list-inline-item"><a class="text-muted" href="https://botlabs.gg/privacy-policy">Privacy Policy</a></li><li class="list-inline-item"><a class="text-muted" href="https://obman.com/terms-of-use">Terms of Use</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-8 text-center text-lg-end">
+        <ul class="list-inline">
+          <li class="list-inline-item">Built using <a class="text-muted" href="https://getdoks.org/">Doks</a> and <a class="text-muted" href="https://gohugo.io/">Hugo</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script async
+  src="/js/bootstrap.8674636a1059caed3a46af4b3dbc8d68a0aac4e0c51ab393c810f3ad10553638.js"
+  integrity="sha256-hnRjahBZyu06Rq9LPbyNaKCqxODFGrOTyBDzrRBVNjg=">
+</script>
+
+
+<script async
+  src="/js/app.ed63b5301e6ba65958f352a0840b7bbba0fcd82e492693df4e191290daaa4850.js"
+  integrity="sha256-7WO1MB5rpllY81KghAt7u6D82C5JJpPfThkSkNqqSFA=">
+</script>
+
+
+
+
+
+
+
+
+
+
+<script async
+  src="/js/docsearch.b4e4d5218e0dcf1c9f23699da64223159203b928fe4e1da0c2657079845ad1c2.js"
+  integrity="sha256-tOTVIY4NzxyfI2mdpkIjFZIDuSj&#43;Th2gwmVweYRa0cI=">
+</script>
+
+    
+  </body>
+</html>

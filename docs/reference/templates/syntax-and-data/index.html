@@ -1,0 +1,2875 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+<script 
+  src="/js/color-mode.f14b3e296de1d0b69e75af684b62a4a912a2cadab04e36123407cd8388204f1d.js"
+  integrity="sha256-8Us&#43;KW3h0Laeda9oS2KkqRKiytqwTjYSNAfNg4ggTx0=">
+</script>
+
+
+<link rel="stylesheet" href="/main.36ca4900ac79c8b8df541138c0226a38e9bd2fbbd3cde3f0c397a7de57e6e3205e7bd138bf1f9da340a9cb91990a0593d180b720a58bcc44ef978ed4a4791dbe.css" integrity="sha512-NspJAKx5yLjfVBE4wCJqOOm9L7vTzePww5en3lfm4yBee9E4vx&#43;do0Cpy5GZCgWT0YC3IKWLzETvl47UpHkdvg==" crossorigin="anonymous">
+
+<noscript><style>img.lazyload { display: none; }</style></noscript><base href="http://localhost:1313/docs/reference/templates/syntax-and-data/">
+
+  <link rel="canonical" href="http://localhost:1313/docs/reference/templates/syntax-and-data/">
+
+
+<title>Syntax and Data  |  OBMAN.BOT Help Center</title>
+<meta name="description" content="Available data in custom commands and a quick syntax refresher.">
+
+    
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    
+    
+      <link
+        rel="apple-touch-icon"
+        href="/apple-touch-icon.png"
+        sizes="180x180"
+        type="image/png"
+      >
+      <link
+        rel="icon"
+        href="/favicon-192x192.png"
+        sizes="192x192"
+        type="image/png"
+      >
+      <link
+        rel="icon"
+        href="/favicon-512x512.png"
+        sizes="512x512"
+        type="image/png"
+      >
+<link rel="manifest" href="/manifest.webmanifest">
+
+<meta property="og:url" content="http://localhost:1313/docs/reference/templates/syntax-and-data/">
+  <meta property="og:site_name" content="OBMAN.BOT Help Center">
+  <meta property="og:title" content="Syntax and Data">
+  <meta property="og:description" content="Available data in custom commands and a quick syntax refresher.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Syntax and Data">
+  <meta name="twitter:description" content="Available data in custom commands and a quick syntax refresher.">
+
+    
+    
+    
+    <script type="application/ld+json">
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/",
+       "name": "Obman. Bot Help Center",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/docs/",
+       "name": "Documentation",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/docs/reference/",
+       "name": "Reference",
+       "position": 3
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/docs/reference/templates/",
+       "name": "Templates",
+       "position": 4
+     },
+     {
+       "@type": "ListItem",
+       "name": "Syntax and Data",
+       "position": 5
+     }
+   ]
+ }
+</script>
+
+
+
+
+
+
+<link rel="preconnect" href="https://ER865HD7LN-dsn.algolia.net" crossorigin />
+
+</head>
+
+  
+  <body class="single section docs" data-bs-spy="scroll" data-bs-target="#toc" data-bs-root-margin="0px 0px -60%" data-bs-smooth-scroll="true" tabindex="0">
+    <div class="sticky-top">
+<header class="navbar navbar-expand-lg">
+  <div class="container-lg">
+  
+    <a class="navbar-brand me-auto me-lg-3" href="/">OBMAN.BOT Help Center</a>
+
+    
+    
+    
+    <div id="docsearch" class="d-none" tabindex="-1" aria-disabled="true"></div>
+    <button type="button" id="searchToggleMobile" class="btn btn-link nav-link mx-2 d-lg-none" aria-label="Search website">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <circle cx="10" cy="10" r="7"></circle>
+        <line x1="21" y1="21" x2="15" y2="15"></line>
+      </svg>
+    </button>
+    
+    <button class="btn btn-link d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavSection" aria-controls="offcanvasNavSection" aria-label="Open section navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+        <path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+        <path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+      </svg>
+    </button>
+    <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasNavSection" aria-labelledby="offcanvasNavSectionLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavSectionLabel">Docs</h5>
+        <button type="button" class="btn btn-link nav-link p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <aside class="doks-sidebar mt-n3">
+          <nav id="doks-docs-nav" aria-label="Tertiary navigation">
+            
+  
+    
+<nav class="section-nav docs-links">
+  <ul class="list-unstyled">
+
+  <li>
+    <details open>
+      <summary>Welcome</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/welcome/introduction/">Introduction</a>
+  </li>
+
+  <li>
+      <a href="/docs/welcome/getting-started/">Getting Started</a>
+  </li>
+
+  <li>
+      <a href="/docs/welcome/premium/">Premium</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Core</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/core/control-panel-access/">Control Panel Access</a>
+  </li>
+
+  <li>
+      <a href="/docs/core/control-panel-logs/">Control Panel Logs</a>
+  </li>
+
+  <li>
+      <a href="/docs/core/command-settings/">Command Settings</a>
+  </li>
+
+  <li>
+      <a href="/docs/core/all-commands/">All Commands</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Custom Commands</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/custom-commands/commands/">Commands</a>
+  </li>
+
+  <li>
+      <a href="/docs/custom-commands/database/">Database</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Moderation</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/moderation/moderation-tools/">Moderation Tools</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/basic-automoderator/">Basic Automoderator</a>
+  </li>
+
+  <li>
+    <details>
+      <summary>Advanced Automoderator</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/overview/">Overview</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/triggers/">Triggers</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/conditions/">Conditions</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/effects/">Effects</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/logging/">Logging</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/verification/">Verification</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Notifications and Feeds</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/notifications/general/">General</a>
+  </li>
+
+  <li>
+      <a href="/docs/notifications/reddit/">Reddit</a>
+  </li>
+
+  <li>
+      <a href="/docs/notifications/youtube/">YouTube</a>
+  </li>
+
+  <li>
+      <a href="/docs/notifications/streaming/">Streaming</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Roles</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/roles/autorole/">Autorole</a>
+  </li>
+
+  <li>
+      <a href="/docs/roles/self-assignable-roles/">Self Assignable Roles</a>
+  </li>
+
+  <li>
+      <a href="/docs/roles/bulk-role/">Bulk Role</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Tools and Utilities</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/tools-and-utilities/tickets/">Tickets</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Fun</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/fun/reputation/">Reputation</a>
+  </li>
+
+  <li>
+      <a href="/docs/fun/soundboard/">Soundboard</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open open>
+      <summary>Reference</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+    <details open>
+      <summary>Templates</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li class="active" >
+      <a aria-current="page" href="/docs/reference/templates/syntax-and-data/">Syntax and Data</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/templates/functions/">Functions</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+      <a href="/docs/reference/components-v2/">Components V2</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-commands-examples/">Custom Commands Examples</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-commands-limits/">Custom Commands Limits</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-embeds/">Custom Embeds</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-interactions/">Custom Interactions</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/how-to-get-ids/">How to Get IDs</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/using-regex/">Using RegEx</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+  </ul>
+</nav>
+
+  
+
+          </nav>
+        </aside>
+      </div>
+    </div>
+    
+    <button class="btn btn-link nav-link mx-2 order-3 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavMain" aria-controls="offcanvasNavMain" aria-label="Open main navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <line x1="4" y1="8" x2="20" y2="8"></line>
+        <line x1="4" y1="16" x2="20" y2="16"></line>
+      </svg>
+    </button>
+
+    
+    <div class="offcanvas offcanvas-end h-auto" tabindex="-1" id="offcanvasNavMain" aria-labelledby="offcanvasNavMainLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavMainLabel">OBMAN.BOT Help Center</h5>
+        <button type="button" class="btn btn-link nav-link p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+         </svg>
+        </button>
+      </div>
+      
+      <div class="offcanvas-body d-flex flex-column flex-lg-row justify-content-between">
+        <ul class="navbar-nav flex-grow-1"><li class="nav-item">
+                <a class="nav-link" href="http://localhost:1313/docs/welcome/introduction/">Documentation</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost:1313/learn/welcome/introduction/">Learning Resources</a>
+              </li>
+            </ul>
+
+        
+        
+        
+        <button type="button" id="searchToggleDesktop" class="btn btn-link nav-link mx-2 d-none d-lg-block" aria-label="Search website">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <circle cx="10" cy="10" r="7"></circle>
+            <line x1="21" y1="21" x2="15" y2="15"></line>
+          </svg>
+        </button>
+        
+        
+        
+        <button id="buttonColorMode" class="btn btn-link mx-auto nav-link p-0 ms-lg-2 me-lg-1" type="button" aria-label="Toggle theme">
+          <svg data-bs-theme-value="dark" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
+          </svg>
+          <svg data-bs-theme-value="light" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0m-5 0h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
+          </svg>
+        </button>
+        
+        <ul id="socialMenu" class="nav mx-auto flex-row order-lg-4">
+          <li class="nav-item">
+              <a class="nav-link social-link" href="https://discord.gg/4udtcA5"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-discord" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M8 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path><path d="M14 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path><path d="M8.5 17c0 1 -1.356 3 -1.832 3c-1.429 0 -2.698 -1.667 -3.333 -3c-.635 -1.667 -.476 -5.833 1.428 -11.5c1.388 -1.015 2.782 -1.34 4.237 -1.5l.975 1.923a11.913 11.913 0 0 1 4.053 0l.972 -1.923c1.5 .16 3.043 .485 4.5 1.5c2 5.667 2.167 9.833 1.5 11.5c-.667 1.333 -2 3 -3.5 3c-.5 0 -2 -2 -2 -3"></path><path d="M7 16.5c3.5 1 6.5 1 10 0"></path></svg><small class="ms-2 visually-hidden">Discord</small></a>
+            </li>
+          <li class="nav-item">
+              <a class="nav-link social-link" href="https://github.com/ArtObman/ArtObman"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg><small class="ms-2 visually-hidden">GitHub</small></a>
+            </li>
+          </ul>
+        
+        <button id="selfHosting" class="btn btn-link mx-auto nav-link p-0 ms-lg-2 me-lg-1" type="button" aria-label="Toggle self-hosting view">
+          <svg data-selfhost-value="yes" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-server-off" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 12h-6a3 3 0 0 1 -3 -3v-2c0 -1.083 .574 -2.033 1.435 -2.56m3.565 -.44h10a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-2" />
+            <path d="M16 12h2a3 3 0 0 1 3 3v2m-1.448 2.568a2.986 2.986 0 0 1 -1.552 .432h-12a3 3 0 0 1 -3 -3v-2a3 3 0 0 1 3 -3h6" />
+            <path d="M7 8v.01" />
+            <path d="M7 16v.01" />
+            <path d="M3 3l18 18" />
+          </svg>
+          <svg data-selfhost-value="no" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-server" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 4m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+            <path d="M3 12m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+            <path d="M7 8l0 .01" />
+            <path d="M7 16l0 .01" />
+          </svg>
+        </button>
+
+        
+        <div class="gtranslate-container order-lg-5 d-flex align-items-center ms-lg-2 mt-2 mt-lg-0">
+          <div class="gtranslate_wrapper"></div>
+        </div>
+      </div>
+    </div>
+
+        
+        </div>
+</header>
+</div>
+
+<script>
+  window.gtranslateSettings = {
+    "default_language": "en",
+    "native_language_names": true,
+    "detect_browser_language": true,
+    "wrapper_selector": ".gtranslate_wrapper",
+    "flag_size": 24
+  };
+</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/popup.js" defer></script>
+
+    <div class="wrap container-lg" role="document">
+      <div class="content">
+      
+        
+	<div class="row flex-xl-nowrap">
+		<div class="col-lg-5 col-xl-4 docs-sidebar d-none d-lg-block">
+			
+  
+    
+<nav class="section-nav docs-links">
+  <ul class="list-unstyled">
+
+  <li>
+    <details open>
+      <summary>Welcome</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/welcome/introduction/">Introduction</a>
+  </li>
+
+  <li>
+      <a href="/docs/welcome/getting-started/">Getting Started</a>
+  </li>
+
+  <li>
+      <a href="/docs/welcome/premium/">Premium</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Core</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/core/control-panel-access/">Control Panel Access</a>
+  </li>
+
+  <li>
+      <a href="/docs/core/control-panel-logs/">Control Panel Logs</a>
+  </li>
+
+  <li>
+      <a href="/docs/core/command-settings/">Command Settings</a>
+  </li>
+
+  <li>
+      <a href="/docs/core/all-commands/">All Commands</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Custom Commands</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/custom-commands/commands/">Commands</a>
+  </li>
+
+  <li>
+      <a href="/docs/custom-commands/database/">Database</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Moderation</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/moderation/moderation-tools/">Moderation Tools</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/basic-automoderator/">Basic Automoderator</a>
+  </li>
+
+  <li>
+    <details>
+      <summary>Advanced Automoderator</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/overview/">Overview</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/triggers/">Triggers</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/conditions/">Conditions</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/effects/">Effects</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/logging/">Logging</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/verification/">Verification</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Notifications and Feeds</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/notifications/general/">General</a>
+  </li>
+
+  <li>
+      <a href="/docs/notifications/reddit/">Reddit</a>
+  </li>
+
+  <li>
+      <a href="/docs/notifications/youtube/">YouTube</a>
+  </li>
+
+  <li>
+      <a href="/docs/notifications/streaming/">Streaming</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Roles</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/roles/autorole/">Autorole</a>
+  </li>
+
+  <li>
+      <a href="/docs/roles/self-assignable-roles/">Self Assignable Roles</a>
+  </li>
+
+  <li>
+      <a href="/docs/roles/bulk-role/">Bulk Role</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Tools and Utilities</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/tools-and-utilities/tickets/">Tickets</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Fun</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/fun/reputation/">Reputation</a>
+  </li>
+
+  <li>
+      <a href="/docs/fun/soundboard/">Soundboard</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open open>
+      <summary>Reference</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+    <details open>
+      <summary>Templates</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li class="active" >
+      <a aria-current="page" href="/docs/reference/templates/syntax-and-data/">Syntax and Data</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/templates/functions/">Functions</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+      <a href="/docs/reference/components-v2/">Components V2</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-commands-examples/">Custom Commands Examples</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-commands-limits/">Custom Commands Limits</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-embeds/">Custom Embeds</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-interactions/">Custom Interactions</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/how-to-get-ids/">How to Get IDs</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/using-regex/">Using RegEx</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+  </ul>
+</nav>
+
+  
+
+		</div>
+		
+		<nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation">
+			<div class="page-links">
+  <h3>On this page</h3>
+    <nav id="toc">
+  <ul>
+    <li><a href="#preface">Preface</a></li>
+    <li><a href="#the-dot-and-variables">The Dot and Variables</a></li>
+    <li><a href="#pipes">Pipes</a></li>
+    <li><a href="#context-data">Context Data</a>
+      <ul>
+        <li><a href="#channel">Channel</a></li>
+        <li><a href="#guild-server">Guild / Server</a></li>
+        <li><a href="#interaction">Interaction</a></li>
+        <li><a href="#member">Member</a></li>
+        <li><a href="#message">Message</a></li>
+        <li><a href="#reaction">Reaction</a></li>
+        <li><a href="#user">User</a></li>
+      </ul>
+    </li>
+    <li><a href="#actions">Actions</a>
+      <ul>
+        <li><a href="#if-conditional-branching">If (conditional branching)</a></li>
+        <li><a href="#boolean-logic">Boolean Logic</a></li>
+        <li><a href="#comparison-operators">Comparison Operators</a></li>
+        <li><a href="#range">Range</a></li>
+        <li><a href="#try-catch">Try-catch</a></li>
+        <li><a href="#while">While</a></li>
+        <li><a href="#with">With</a></li>
+      </ul>
+    </li>
+    <li><a href="#associated-templates">Associated Templates</a>
+      <ul>
+        <li><a href="#definition">Definition</a></li>
+        <li><a href="#execution">Execution</a></li>
+      </ul>
+    </li>
+    <li><a href="#custom-types">Custom Types</a>
+      <ul>
+        <li><a href="#templatesslice">templates.Slice</a></li>
+        <li><a href="#templates-sdict">templates.SDict</a></li>
+      </ul>
+    </li>
+    <li><a href="#database">Database</a>
+      <ul>
+        <li><a href="#dbentry">DBEntry</a></li>
+      </ul>
+    </li>
+    <li><a href="#tickets">Tickets</a>
+      <ul>
+        <li><a href="#template-ticket">Template Ticket</a></li>
+      </ul>
+    </li>
+    <li><a href="#time">Time</a></li>
+  </ul>
+</nav>
+</div>
+
+		</nav>
+		<main class="docs-content col-lg-11 col-xl-9 mx-xl-auto">
+		
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="/">Home</a></li>
+<li class="breadcrumb-item"><a href="/docs/">Docs</a></li>
+<li class="breadcrumb-item"><a href="/docs/reference/">Reference</a></li>
+<li class="breadcrumb-item"><a href="/docs/reference/templates/">Templates</a></li>
+<li class="breadcrumb-item active" aria-current="page">Syntax and Data</li>
+					</ol>
+				</nav>
+			
+			<h1>Syntax and Data</h1>
+			
+			<nav class="toc-mobile d-xl-none" aria-label="Quaternary navigation">
+				<details>
+    <summary>On this page</summary>
+    <div class="page-links">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#preface">Preface</a></li>
+    <li><a href="#the-dot-and-variables">The Dot and Variables</a></li>
+    <li><a href="#pipes">Pipes</a></li>
+    <li><a href="#context-data">Context Data</a>
+      <ul>
+        <li><a href="#channel">Channel</a></li>
+        <li><a href="#guild-server">Guild / Server</a></li>
+        <li><a href="#interaction">Interaction</a></li>
+        <li><a href="#member">Member</a></li>
+        <li><a href="#message">Message</a></li>
+        <li><a href="#reaction">Reaction</a></li>
+        <li><a href="#user">User</a></li>
+      </ul>
+    </li>
+    <li><a href="#actions">Actions</a>
+      <ul>
+        <li><a href="#if-conditional-branching">If (conditional branching)</a></li>
+        <li><a href="#boolean-logic">Boolean Logic</a></li>
+        <li><a href="#comparison-operators">Comparison Operators</a></li>
+        <li><a href="#range">Range</a></li>
+        <li><a href="#try-catch">Try-catch</a></li>
+        <li><a href="#while">While</a></li>
+        <li><a href="#with">With</a></li>
+      </ul>
+    </li>
+    <li><a href="#associated-templates">Associated Templates</a>
+      <ul>
+        <li><a href="#definition">Definition</a></li>
+        <li><a href="#execution">Execution</a></li>
+      </ul>
+    </li>
+    <li><a href="#custom-types">Custom Types</a>
+      <ul>
+        <li><a href="#templatesslice">templates.Slice</a></li>
+        <li><a href="#templates-sdict">templates.SDict</a></li>
+      </ul>
+    </li>
+    <li><a href="#database">Database</a>
+      <ul>
+        <li><a href="#dbentry">DBEntry</a></li>
+      </ul>
+    </li>
+    <li><a href="#tickets">Tickets</a>
+      <ul>
+        <li><a href="#template-ticket">Template Ticket</a></li>
+      </ul>
+    </li>
+    <li><a href="#time">Time</a></li>
+  </ul>
+</nav>
+    </div>
+  </details>
+
+			</nav>
+			<p>Library of base data accessible within custom scripting.</p>
+<blockquote>
+<p>&ldquo;Go is all about type&hellip; Type is life.&rdquo; // William Kennedy</p></blockquote>
+<h2 id="preface">Preface<a href="#preface" class="anchor" aria-hidden="true">#</a> </h2>
+<p>All available data that can be used in OBMAN.BOT&rsquo;s templating &ldquo;engine&rdquo; which is slightly modified version of Go&rsquo;s
+stdlib text/template package; more in depth and info about actions, pipelines and global functions like <code>printf, index, len,</code>etc &gt; <a href="https://golang.org/pkg/text/template/" rel="external">https://golang.org/pkg/text/template/</a> . This section is meant to be
+a concise and to the point reference document for all available templates/functions. <strong>Functions</strong> are covered
+in <a href="/docs/reference/templates/functions/">Function documentation</a>. For detailed explanations and a syntax guide, please
+refer to the <a href="/learn/welcome/introduction/">learning resource</a>.</p>
+<div class="callout callout-note d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/info-circle svg-inline callout-icon me-2 mb-3" id="svg-info-circle" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+  <path d="M12 9h.01" />
+  <path d="M11 12h1v4h1" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Note: Disable &ldquo;Smart&rdquo; Quotes</p>
+
+      </div>
+    <div class="callout-body">
+      <p>Templating system uses standard ASCII quotation marks:
+<code>&quot;</code> for straight double quotes,  <code>'</code> for apostrophes or single quotes and<code>`</code> for backticks/back quotes; so make
+sure no &ldquo;smart-quotes&rdquo; are being used.</p>
+<p>The difference between back quotes and double quotes in string literals is covered in
+the <a href="https://go.dev/ref/spec#String_literals" rel="external">Go Language Specification</a>.</p>
+
+    </div>
+  </div>
+</div>
+
+<h2 id="the-dot-and-variables">The Dot and Variables<a href="#the-dot-and-variables" class="anchor" aria-hidden="true">#</a> </h2>
+<p>The dot (also known as cursor) <code>{{ . }}</code> encompasses all active data available for use in the templating system, in
+other words it always refers to current context.</p>
+<p>For example .User is a Discord User object/structure of current context, meaning the triggering user. To get user object
+for other users, functions <code>getMember</code>, <code>userArg</code> would help. Same meaning of object/struct applies to other <strong>Fields</strong>
+with dot prefix. If it is mentioned as a <strong>Method</strong> (for example, .Append for type <em>cslice</em>) or as a field on a struct
+(for example, .User.Bot) then it can not be used alone in template context and always belongs on a parent value. That
+is, <code>{{.Bot}}</code> would return <code>&lt;no value&gt;</code> whereas <code>{{.User.Bot}}</code> returns <em>bool</em> true/false. Another good example is
+.Reaction.Emoji.MessageFormat, here you can use .MessageFormat every time you get emoji structure of type
+<em>discordgo.Emoji</em>, either using reaction triggers or for example .Guild.Emojis.</p>
+<p>From official docs &gt; &ldquo;Execution of the template walks the structure and sets the cursor, represented by a period <code>.</code> and
+called &ldquo;dot&rdquo;, to the value at the current location in the structure as execution proceeds.&rdquo; All following
+fields/methods/objects like User/Guild/Member/Channel etc are all part of that dot-structure and there are some more in
+tables below.</p>
+<p>For commenting something inside a template, use this syntax: <code>{{/* this is a comment */}}</code>. May contain newlines.
+Comments do not nest, and they start and end at the delimiters.</p>
+<p><code>$</code> has a special significance in templates, it is set to the <a href="https://golang.org/pkg/text/template/#hdr-Variables" rel="external">starting value of a
+dot</a>. This means you have access to the global context from
+anywhere - e.g., inside <code>range</code>/<code>with</code> actions. <code>$</code> for global context would cease to work if you redefine it inside
+template, to recover it <code>{{ $ := .  }}</code>.</p>
+<p><code>$</code> also denotes the beginning of a variable, which maybe be initialized inside a template action. So data passed around
+template pipeline can be initialized using syntax &gt; <code>$variable := value</code>. Previously declared variable can also be
+assigned with new data &gt; <code>$variable = value</code>, it has to have a white-space before it or control panel will error out.
+Variable scope extends to the <code>end</code> action of the control structure (<code>if</code>, <code>with</code>, <code>range</code>, <code>etc.</code>) in which it is
+declared, or to the end of custom command if there are no control structures - call it global scope.</p>
+<h2 id="pipes">Pipes<a href="#pipes" class="anchor" aria-hidden="true">#</a> </h2>
+<p>A powerful component of templates is the ability to stack actions - like function calls, together - chaining one after
+another. This is done by using pipes <code>|</code>. Borrowed from Unix pipes, the concept is simple: each pipelineвЂ™s output
+becomes the input of the following pipe. One limitation of the pipes is that they can only work with a single value and
+that value becomes the last parameter of the next pipeline. <br>
+<br>
+<strong>Example</strong>: <code>{{randInt 41| add 2}}</code> would pipeline<code>randInt</code> function&rsquo;s return to addition <code>add</code> as second parameter
+and it would be added to 2; this more simplified would be like <code>{{40| add 2}}</code> with return 42. If written normally, it
+would be <code>{{ add 2 (randInt 41) }}</code>. Same pipeline but using a variable is also useful one -<code>{{$x:=40| add 2}}</code> would
+not return anything as printout, 40 still goes through pipeline to addition and 42 is stored to variable <code>$x</code> whereas
+<code>{{($x:=40)| add 2}}</code> would return 42 and store 40 to <code>$x</code>.</p>
+<div class="callout callout-danger d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/alert-octagon svg-inline callout-icon me-2 mb-3" id="svg-alert-octagon" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+  <path d="M12 8v4" />
+  <path d="M12 16h.01" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Danger: Use Sparingly</p>
+
+      </div>
+    <div class="callout-body">
+      <p>Pipes are useful in select cases to shorten code and in some cases improve readability, but they <strong>should not be
+overused</strong>. In most cases, pipes are unnecessary and cause a dip in readability that helps nobody.</p>
+
+    </div>
+  </div>
+</div>
+
+<h2 id="context-data">Context Data<a href="#context-data" class="anchor" aria-hidden="true">#</a> </h2>
+<p>Context data refers to information accessible via the dot, <code>{{ . }}</code>. The accessible data ranges from useful constants
+to information regarding the environment in which the custom command was executed, such as the user that ran it, the
+channel it was ran in, and so on.</p>
+<p>Fields documented as accessible on specific structures, like the context user <code>.User</code>, are usable on all values that
+share the same type. That is, given a user <code>$user</code>, <code>$user.ID</code> is a valid construction that yields the ID of the user.
+Similarly, provided a channel <code>$channel</code>, <code>$channel.Name</code> gives the name of the channel.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=.BotUser>
+          <td>.BotUser</td>
+          <td>Returns bot&rsquo;s user object.</td>
+      </tr>
+    <tr id=.CCID>
+          <td>.CCID</td>
+          <td>The ID of currently executing custom command in type of <em>int64</em>.</td>
+      </tr>
+    <tr id=.CCRunCount>
+          <td>.CCRunCount</td>
+          <td>Shows run count of triggered custom command, although this is not going to be 100% accurate as it&rsquo;s cached up to 30 minutes.</td>
+      </tr>
+    <tr id=.CCTrigger>
+          <td>.CCTrigger</td>
+          <td>If trigger type has a printable trigger, prints out its name. For example, if trigger type is <code>regex</code> and trigger is set to <code>\A</code>, it would print <code>\A</code>.</td>
+      </tr>
+    <tr id=.CustomID>
+          <td>.CustomID</td>
+          <td>If triggered by a component or a modal, prints its full Custom ID.</td>
+      </tr>
+    <tr id=.DomainRegex>
+          <td>.DomainRegex</td>
+          <td>Returns string value of in-built domain-matching regular expression.</td>
+      </tr>
+    <tr id=.IsMessageEdit>
+          <td>.IsMessageEdit</td>
+          <td>Returns boolean true/false if message is edited and edit trigger for custom commands is enabled. Defaults to false.</td>
+      </tr>
+    <tr id=.IsPremium>
+          <td>.IsPremium</td>
+          <td>Returns boolean true/false whether guild is premium of OBMAN.BOT or not.</td>
+      </tr>
+    <tr id=.LinkRegex>
+          <td>.LinkRegex</td>
+          <td>Returns string value of in-built link-matching regular expression.</td>
+      </tr>
+    <tr id=.Permissions>
+          <td>.Permissions</td>
+          <td>Returns all mapped-out permission bits available for Discord in their bitshifted decimal values; <br>e.g. <code>{{.Permissions.AddReactions}}</code> would return <code>64</code>, same as <code>{{bitwiseLeftShift 1 6}}</code>. More in <a href="https://discord.com/developers/docs/topics/permissions#permissions" rel="external">Discord&rsquo;s Permissions documentation</a>.</td>
+      </tr>
+    <tr id=.ServerPrefix>
+          <td>.ServerPrefix</td>
+          <td>Returns server&rsquo;s command-prefix.</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="channel">Channel<a href="#channel" class="anchor" aria-hidden="true">#</a> </h3>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=.Channel.AppliedTags>
+          <td>.Channel.AppliedTags</td>
+          <td>All tags applied to a forum channel post as <em>[]int64</em> slice of tag IDs.</td>
+      </tr>
+    <tr id=.Channel.AvailableTags>
+          <td>.Channel.AvailableTags</td>
+          <td>All tags available for forum channel posts as a slice of <em>[]discordgo.ForumTag</em>.</td>
+      </tr>
+    <tr id=.Channel.Bitrate>
+          <td>.Channel.Bitrate</td>
+          <td>Bitrate used; only set on voice channels.</td>
+      </tr>
+    <tr id=.Channel.GuildID>
+          <td>.Channel.GuildID</td>
+          <td>Guild ID of the channel.</td>
+      </tr>
+    <tr id=.Channel.ID>
+          <td>.Channel.ID</td>
+          <td>The ID of the channel.</td>
+      </tr>
+    <tr id=.Channel.IsForum>
+          <td>.Channel.IsForum</td>
+          <td>Whether the channel is a forum channel.</td>
+      </tr>
+    <tr id=.Channel.IsPrivate>
+          <td>.Channel.IsPrivate</td>
+          <td>Whether the channel is created for DM.</td>
+      </tr>
+    <tr id=.Channel.IsThread>
+          <td>.Channel.IsThread</td>
+          <td>Whether the channel is a thread.</td>
+      </tr>
+    <tr id=.Channel.Mention>
+          <td>.Channel.Mention</td>
+          <td>Mentions the channel object.</td>
+      </tr>
+    <tr id=.Channel.Name>
+          <td>.Channel.Name</td>
+          <td>The name of the channel.</td>
+      </tr>
+    <tr id=.Channel.NSFW>
+          <td>.Channel.NSFW</td>
+          <td>Outputs whether this channel is NSFW or not.</td>
+      </tr>
+    <tr id=.Channel.OwnerID>
+          <td>.Channel.OwnerID</td>
+          <td>The ID of the creator of threads as <em>int64</em>. Returns <code>0</code> for normal channels.</td>
+      </tr>
+    <tr id=.Channel.ParentID>
+          <td>.Channel.ParentID</td>
+          <td>The ID of the channel&rsquo;s parent (category), returns 0 if none.</td>
+      </tr>
+    <tr id=.Channel.PermissionOverwrites>
+          <td>.Channel.PermissionOverwrites</td>
+          <td>A slice of <a href="https://discord.com/developers/docs/resources/channel#overwrite-object" rel="external">Discord permission overwrite</a> structures applicable to the channel.</td>
+      </tr>
+    <tr id=.Channel.Position>
+          <td>.Channel.Position</td>
+          <td>Channel position from top-down.</td>
+      </tr>
+    <tr id=.Channel.ThreadMetadata>
+          <td>.Channel.ThreadMetadata</td>
+          <td><a href="/docs/reference/templates/syntax-and-data/#thread-metadata">Metadata for threads</a>. Only present on threads.</td>
+      </tr>
+    <tr id=.Channel.Topic>
+          <td>.Channel.Topic</td>
+          <td>The topic of the channel.</td>
+      </tr>
+    <tr id=.Channel.Type>
+          <td>.Channel.Type</td>
+          <td>The type of the channel. Explained further in <a href="https://discord.com/developers/docs/resources/channel#channel-object-channel-types" rel="external">Discord&rsquo;s channel documentation</a></td>
+      </tr>
+  </tbody>
+</table>
+<p><a href="https://discordapp.com/developers/docs/resources/channel#channel-object" rel="external">Channel object in Discord documentation</a>.</p>
+<p><a href="/docs/reference/templates/functions/#channel">Channel functions documentation</a>.</p>
+<h4 id="thread-metadata">Thread Metadata<a href="#thread-metadata" class="anchor" aria-hidden="true">#</a> </h4>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=.Archived>
+          <td>.Archived</td>
+          <td>Whether the thread is archived.</td>
+      </tr>
+    <tr id=.AutoArchiveDuration>
+          <td>.AutoArchiveDuration</td>
+          <td>Duration in minutes to automatically archive the thread after recent activity.</td>
+      </tr>
+    <tr id=.ArchiveTimestamp>
+          <td>.ArchiveTimestamp</td>
+          <td>When the thread was archived.</td>
+      </tr>
+    <tr id=.Locked>
+          <td>.Locked</td>
+          <td>Whether the thread is locked.</td>
+      </tr>
+    <tr id=.Invitable>
+          <td>.Invitable</td>
+          <td>Whether non-moderators can add other members to the thread.</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="guild-server">Guild / Server<a href="#guild-server" class="anchor" aria-hidden="true">#</a> </h3>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=.Guild.AfkChannelID>
+          <td>.Guild.AfkChannelID</td>
+          <td>Outputs the AFK channel ID.</td>
+      </tr>
+    <tr id=.Guild.AfkTimeout>
+          <td>.Guild.AfkTimeout</td>
+          <td>Outputs the time when a user gets moved into the AFK channel while not being active.</td>
+      </tr>
+    <tr id=.Guild.Banner>
+          <td>.Guild.Banner</td>
+          <td>Returns guild banner hash if available.</td>
+      </tr>
+    <tr id=.Guild.Channels>
+          <td>.Guild.Channels</td>
+          <td>Outputs a <em>slice</em> of channels in the guild with type <em>[]dstate.ChannelState.</em></td>
+      </tr>
+    <tr id=.Guild.DefaultMessageNotifications>
+          <td>.Guild.DefaultMessageNotifications</td>
+          <td>Outputs the default message <a href="https://discordapp.com/developers/docs/resources/guild#guild-object-default-message-notification-level" rel="external">notification setting</a> for the guild.</td>
+      </tr>
+    <tr id=.Guild.Emojis>
+          <td>.Guild.Emojis</td>
+          <td>Outputs a list of emojis in the guild with type <em>discordgo.Emoji.</em></td>
+      </tr>
+    <tr id=.Guild.ExplicitContentFilter>
+          <td>.Guild.ExplicitContentFilter</td>
+          <td>Outputs the explicit content <a href="https://discordapp.com/developers/docs/resources/guild#guild-object-explicit-content-filter-level" rel="external">filter level</a> for the guild.</td>
+      </tr>
+    <tr id=.Guild.Features>
+          <td>.Guild.Features</td>
+          <td>The list of enabled guild features of type <em>[]string</em>.</td>
+      </tr>
+    <tr id=.Guild.Icon>
+          <td>.Guild.Icon</td>
+          <td>Outputs the <a href="https://discordapp.com/developers/docs/reference#image-formatting" rel="external">icon hash</a> ID of the guild&rsquo;s icon. Setting full icon URL is explained in <a href="https://discord.com/developers/docs/reference#image-formatting" rel="external">Discord reference documentation</a>.</td>
+      </tr>
+    <tr id=.Guild.ID>
+          <td>.Guild.ID</td>
+          <td>Outputs the ID of the guild.</td>
+      </tr>
+    <tr id=.Guild.MemberCount>
+          <td>.Guild.MemberCount</td>
+          <td>Outputs the number of users on a guild.</td>
+      </tr>
+    <tr id=.Guild.MfaLevel>
+          <td>.Guild.MfaLevel</td>
+          <td>The required <a href="https://discordapp.com/developers/docs/resources/guild#guild-object-mfa-level" rel="external">MFA level</a> for the guild. If enabled, members with moderation powers will be required to have 2-factor authentication enabled in order to exercise moderation powers.</td>
+      </tr>
+    <tr id=.Guild.Name>
+          <td>.Guild.Name</td>
+          <td>Outputs the name of the guild.</td>
+      </tr>
+    <tr id=.Guild.OwnerID>
+          <td>.Guild.OwnerID</td>
+          <td>Outputs the ID of the owner.</td>
+      </tr>
+    <tr id=.Guild.PreferredLocale>
+          <td>.Guild.PreferredLocale</td>
+          <td>The preferred locale of a guild with the &ldquo;PUBLIC&rdquo; feature; used in server discovery and notices from Discord; defaults to &ldquo;en-US&rdquo;</td>
+      </tr>
+    <tr id=.Guild.Roles>
+          <td>.Guild.Roles</td>
+          <td>Outputs all roles and indexing them gives more information about the role. For example <code>{{len .Guild.Roles}}</code> gives you how many roles are there in that guild. Role struct has <a href="https://discordapp.com/developers/docs/topics/permissions#role-object" rel="external">following fields</a>.</td>
+      </tr>
+    <tr id=.Guild.Stickers>
+          <td>.Guild.Stickers</td>
+          <td>A slice of all <a href="https://discord.com/developers/docs/resources/sticker#sticker-object" rel="external">sticker objects</a> in the guild.</td>
+      </tr>
+    <tr id=.Guild.Splash>
+          <td>.Guild.Splash</td>
+          <td>Outputs the <a href="https://discordapp.com/developers/docs/reference#image-formatting" rel="external">splash hash</a> ID of the guild&rsquo;s splash.</td>
+      </tr>
+    <tr id=.Guild.SystemChannelID>
+          <td>.Guild.SystemChannelID</td>
+          <td>The ID of the channel where guild notices such as welcome messages and boost events are posted.</td>
+      </tr>
+    <tr id=.Guild.Threads>
+          <td>.Guild.Threads</td>
+          <td>Returns all active threads in the guild as a slice of type <em>[]dstate.ChannelState</em>.</td>
+      </tr>
+    <tr id=.Guild.VerificationLevel>
+          <td>.Guild.VerificationLevel</td>
+          <td>Outputs the required verification level for the guild.</td>
+      </tr>
+    <tr id=.Guild.VoiceStates>
+          <td>.Guild.VoiceStates</td>
+          <td>Outputs a slice of <a href="https://discord.com/developers/docs/resources/voice#voice-state-object" rel="external">voice states</a> (users connected to VCs) with type <em>[]discordgo.VoiceState.</em></td>
+      </tr>
+    <tr id=.Guild.WidgetChannelID>
+          <td>.Guild.WidgetChannelID</td>
+          <td>Outputs the channel ID for the server widget.</td>
+      </tr>
+    <tr id=.Guild.WidgetEnabled>
+          <td>.Guild.WidgetEnabled</td>
+          <td>Outputs whether or not the server widget is enabled.</td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th>Method</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=&lt;code&gt;.Guild.BannerURL&lt;/code&gt;&#32;&amp;ldquo;256&amp;rdquo;>
+          <td><code>.Guild.BannerURL</code> &ldquo;256&rdquo;</td>
+          <td>Gives the URL for guild&rsquo;s banner, argument вЂњ256вЂќ is the size of the picture and increases/decreases twofold (e.g. 512, 1024 or 128, 64 etc.).</td>
+      </tr>
+    <tr id=&lt;code&gt;.Guild.GetChannel&lt;/code&gt;&#32;id>
+          <td><code>.Guild.GetChannel</code> id</td>
+          <td>Gets the channel with the ID provided, returning a <em>*dstate.ChannelState</em>.</td>
+      </tr>
+    <tr id=&lt;code&gt;.Guild.GetEmoji&lt;/code&gt;&#32;id>
+          <td><code>.Guild.GetEmoji</code> id</td>
+          <td>Gets the guild emoji with the ID provided, returning a <em>*discordgo.Emoji.</em></td>
+      </tr>
+    <tr id=&lt;code&gt;.Guild.GetMemberPermissions&lt;/code&gt;&#32;channelID&#32;memberID&#32;memberRoles>
+          <td><code>.Guild.GetMemberPermissions</code> channelID memberID memberRoles</td>
+          <td>Calculates full <a href="https://discord.com/developers/docs/topics/permissions" rel="external">permissions</a> that the member has in the channel provided, taking into account the roles of the member. Example: <code>{{.Guild.GetMemberPermissions .Channel.ID .Member.User.ID .Member.Roles}}</code> would retrieve the permissions integer the triggering member has in the context/triggering channel.</td>
+      </tr>
+    <tr id=&lt;code&gt;.Guild.GetRole&lt;/code&gt;&#32;id>
+          <td><code>.Guild.GetRole</code> id</td>
+          <td>Gets the <a href="https://discord.com/developers/docs/topics/permissions#role-object" rel="external">role object</a> with the integer ID provided, returning a struct of type <em>*discordgo.Role.</em></td>
+      </tr>
+    <tr id=&lt;code&gt;.Guild.GetVoiceState&lt;/code&gt;&#32;userID>
+          <td><code>.Guild.GetVoiceState</code> userID</td>
+          <td>Gets the voice state of the user ID provided, returning a <em>*discordgo.VoiceState</em>. Example code to show if user is in VC or not: <code>{{if .Guild.GetVoiceState .User.ID}} user is in voice channel {{else}} user is not in voice channel {{end}}</code></td>
+      </tr>
+    <tr id=&lt;code&gt;.Guild.IconURL&lt;/code&gt;&#32;&amp;ldquo;size&amp;rdquo;>
+          <td><code>.Guild.IconURL</code> &ldquo;size&rdquo;</td>
+          <td>Outputs the URL of guildвЂ™s avatar/icon. Size argument is the size of the picture and can increase/decrease twofold (e.g. 512, 1024 or 128, 64 etc.).</td>
+      </tr>
+  </tbody>
+</table>
+<p><a href="https://discordapp.com/developers/docs/resources/guild#guild-object" rel="external">Guild object in Discord documentation</a>.</p>
+<h3 id="interaction">Interaction<a href="#interaction" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Use of interactions within OBMAN.BOT is an advanced topic; the documentation should be used only as reference. To learn
+about using interactions, please view our <a href="/docs/reference/custom-interactions/">interactions cookbook</a>.</p>
+<p>This is available and part of the dot when a component or modal trigger is used.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=.Interaction.ChannelID>
+          <td>.Interaction.ChannelID</td>
+          <td>The ID of the channel the interaction was made in.</td>
+      </tr>
+    <tr id=.InteractionData>
+          <td>.InteractionData</td>
+          <td>Is either a <a href="https://discord.com/developers/docs/interactions/receiving-and-responding#interaction-object-message-component-data-structure" rel="external">discordgo.MessageComponentInteractionData</a> (if triggered by a button/select menu) or a <a href="https://discord.com/developers/docs/interactions/receiving-and-responding#interaction-object-modal-submit-data-structure" rel="external">discordgo.ModalSubmitInteractionData</a> (if triggered by a modal submission) object.</td>
+      </tr>
+    <tr id=.Interaction.ID>
+          <td>.Interaction.ID</td>
+          <td>The interaction&rsquo;s ID. Is unique to each interaction, each button push/modal submission is a uniquely generated ID.</td>
+      </tr>
+    <tr id=.Interaction.Locale>
+          <td>.Interaction.Locale</td>
+          <td>The locale of the user&rsquo;s Discord client.</td>
+      </tr>
+    <tr id=.Interaction.Member>
+          <td>.Interaction.Member</td>
+          <td>The member who interacted.</td>
+      </tr>
+    <tr id=.Interaction.Message>
+          <td>.Interaction.Message</td>
+          <td>The <a href="/docs/reference/templates/syntax-and-data/#message">message object</a> the interaction was taken on.</td>
+      </tr>
+    <tr id=.Interaction.RespondedTo>
+          <td>.Interaction.RespondedTo</td>
+          <td>Boolean, true if this interaction has been responded to already.</td>
+      </tr>
+    <tr id=.Interaction.Token>
+          <td>.Interaction.Token</td>
+          <td>The interaction&rsquo;s token. Is unique to each interaction. Required for sending <a href="/docs/reference/templates/functions/#interaction-followups">followup interactions</a>.</td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=.Args>
+          <td>.Args</td>
+          <td>List of everything that is passed to .CustomID. .Args is a <em>slice</em> of type <em>string</em>.</td>
+      </tr>
+    <tr id=.Cmd>
+          <td>.Cmd</td>
+          <td>.Cmd is of type <em>string</em> and shows all arguments that trigger custom command, part of .Args. Starting from <code>{{index .Args 0}}</code>.</td>
+      </tr>
+    <tr id=.CmdArgs>
+          <td>.CmdArgs</td>
+          <td>List of all the arguments passed after <code>.Cmd</code> (<code>.Cmd</code> is the actual trigger) <code>.CmdArgs</code> is a <em>slice</em> of type <em>string</em>. For example <code>{{$allArgs := (joinStr &quot; &quot; .CmdArgs)}}</code> saves all the arguments after trigger to a variable <code>$allArgs</code>.</td>
+      </tr>
+    <tr id=.CustomID>
+          <td>.CustomID</td>
+          <td>The triggering component/modal&rsquo;s Custom ID. Note: This custom ID excludes the <code>templates-</code> prefix which is added to all components and modals under the hood.</td>
+      </tr>
+    <tr id=.IsButton>
+          <td>.IsButton</td>
+          <td>Boolean, is <code>true</code> if the command was triggered by a button.</td>
+      </tr>
+    <tr id=.IsMenu>
+          <td>.IsMenu</td>
+          <td>Boolean, is <code>true</code> if the command was triggered by a select menu.</td>
+      </tr>
+    <tr id=.MenuType>
+          <td>.MenuType</td>
+          <td>Type of select menu which triggered the command. Can be <code>&quot;string&quot;</code>, <code>&quot;user&quot;</code>, <code>&quot;role&quot;</code>, <code>&quot;mentionable&quot;</code>, or <code>&quot;channel&quot;</code>.</td>
+      </tr>
+    <tr id=.StrippedID>
+          <td>.StrippedID</td>
+          <td>&ldquo;Strips&rdquo; or cuts off the triggering part of the custom ID and prints out everything else after that. Bear in mind, when using regex as trigger, for example <code>&quot;day&quot;</code> and input custom ID is <code>&quot;have-a-nice-day-my-dear-YAG&quot;</code> output will be <code>&quot;-my-dear-YAG&quot;</code> - rest is cut off.</td>
+      </tr>
+    <tr id=.Values>
+          <td>.Values</td>
+          <td>List of all options selected with a select menu, OR all values input into a modal in order.</td>
+      </tr>
+  </tbody>
+</table>
+<p><a href="https://discord.com/developers/docs/interactions/receiving-and-responding#interaction-object" rel="external">Interaction object in Discord documentation</a>.</p>
+<p>Interaction functions are covered in their respective section on the <a href="/docs/reference/templates/functions/#interactions">functions page</a>.</p>
+<h3 id="member">Member<a href="#member" class="anchor" aria-hidden="true">#</a> </h3>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=.Member.Avatar>
+          <td>.Member.Avatar</td>
+          <td>MemberвЂ™s avatar hash, if it is custom per server, then custom avatar hash.</td>
+      </tr>
+    <tr id=.Member.CommunicationDisabledUntil>
+          <td>.Member.CommunicationDisabledUntil</td>
+          <td>Returns <em>time.Time</em> when memberвЂ™s time out expires. Time is in the past or <code>nil</code> if the user is not timed out.<br>NB. was previously called TimeoutExpiresAt.</td>
+      </tr>
+    <tr id=.Member.Flags>
+          <td>.Member.Flags</td>
+          <td><a href="https://discord.com/developers/docs/resources/guild#guild-member-object-guild-member-flags" rel="external">Guild member flags</a> represented as a bit set, defaulting to 0.</td>
+      </tr>
+    <tr id=.Member.GuildID>
+          <td>.Member.GuildID</td>
+          <td>The guild ID on which the member exists.</td>
+      </tr>
+    <tr id=.Member.JoinedAt>
+          <td>.Member.JoinedAt</td>
+          <td>When member joined the guild/server of type <em>discordgo.Timestamp</em>. Method <code>.Parse</code> will convert this to of type <em>time.Time</em>.</td>
+      </tr>
+    <tr id=.Member.Nick>
+          <td>.Member.Nick</td>
+          <td>The nickname for this member.</td>
+      </tr>
+    <tr id=.Member.Pending>
+          <td>.Member.Pending</td>
+          <td>Returns <em>bool</em> true/false, whether member is pending behind Discord&rsquo;s screening process.</td>
+      </tr>
+    <tr id=.Member.PremiumSince>
+          <td>.Member.PremiumSince</td>
+          <td>When the user started boosting the guild.</td>
+      </tr>
+    <tr id=.Member.Roles>
+          <td>.Member.Roles</td>
+          <td>A <em>slice</em> of role IDs that the member has.</td>
+      </tr>
+    <tr id=.Member.User>
+          <td>.Member.User</td>
+          <td>Underlying user object on which the member is based on.</td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th>Method</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=&lt;code&gt;.Member.AvatarURL&lt;/code&gt;&#32;&amp;ldquo;256&amp;rdquo;>
+          <td><code>.Member.AvatarURL</code> &ldquo;256&rdquo;</td>
+          <td>Gives the URL for memberвЂ™s avatar, argument вЂњ256вЂќ is the size of the picture and increases/decreases twofold (e.g. 512, 1024 or 128, 64 etc.).</td>
+      </tr>
+  </tbody>
+</table>
+<p><a href="https://discordapp.com/developers/docs/resources/guild#guild-member-object" rel="external">Member object in Discord documentation</a>.</p>
+<p><a href="/docs/reference/templates/functions/#member">Member functions documentation</a>.</p>
+<h3 id="message">Message<a href="#message" class="anchor" aria-hidden="true">#</a> </h3>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=.Message.Activity>
+          <td>.Message.Activity</td>
+          <td>Represents the activity sent with a message, such as a game invite, of type <em>*discordgo.MessageActivity</em>. Sent with Rich Presence-related chat embeds.</td>
+      </tr>
+    <tr id=.Message.ApplicationID>
+          <td>.Message.ApplicationID</td>
+          <td>If the message is an interaction- or application-owned webhook, this is the ID of that application.</td>
+      </tr>
+    <tr id=.Message.Attachments>
+          <td>.Message.Attachments</td>
+          <td>Attachments of this message (<em>slice</em> of <a href="https://discord.com/developers/docs/resources/message#attachment-object" rel="external">attachment</a> objects).</td>
+      </tr>
+    <tr id=.Message.Author>
+          <td>.Message.Author</td>
+          <td>Author of the message (<a href="/docs/reference/templates/syntax-and-data/#user">User</a> object).</td>
+      </tr>
+    <tr id=.Message.ChannelID>
+          <td>.Message.ChannelID</td>
+          <td>Channel ID this message is in.</td>
+      </tr>
+    <tr id=.Message.Components>
+          <td>.Message.Components</td>
+          <td>Slice of <a href="https://discord.com/developers/docs/interactions/message-components#action-rows" rel="external">discordgo.ActionsRow</a>s, which each contain components. Example on indexing the first button or menu under a message: <code>( index ( index .Message.Components 0 ).Components 0 )</code></td>
+      </tr>
+    <tr id=.Message.Content>
+          <td>.Message.Content</td>
+          <td>Text content of this message.</td>
+      </tr>
+    <tr id=.Message.ContentWithMentionsReplaced>
+          <td>.Message.ContentWithMentionsReplaced</td>
+          <td>Replaces all &lt;@ID&gt; mentions with the username of the mention.</td>
+      </tr>
+    <tr id=.Message.EditedTimestamp>
+          <td>.Message.EditedTimestamp</td>
+          <td>The time at which the last edit of the message occurred, if it has been edited. As with .Message.Timestamp, it is of type <em>discordgo.Timestamp.</em></td>
+      </tr>
+    <tr id=.Message.Embeds>
+          <td>.Message.Embeds</td>
+          <td>Embeds of this message (<em>slice</em> of embed objects).</td>
+      </tr>
+    <tr id=.Message.Flags>
+          <td>.Message.Flags</td>
+          <td>Message flags, represented as a bit set.</td>
+      </tr>
+    <tr id=.Message.GuildID>
+          <td>.Message.GuildID</td>
+          <td>Guild ID in which the message is.</td>
+      </tr>
+    <tr id=.Message.ID>
+          <td>.Message.ID</td>
+          <td>ID of the message.</td>
+      </tr>
+    <tr id=.Message.Link>
+          <td>.Message.Link</td>
+          <td>Discord link to the message. *</td>
+      </tr>
+    <tr id=.Message.Member>
+          <td>.Message.Member</td>
+          <td><a href="/docs/reference/templates/syntax-and-data/#member">Member object</a>. *</td>
+      </tr>
+    <tr id=.Message.MentionEveryone>
+          <td>.Message.MentionEveryone</td>
+          <td>Whether the message mentions everyone, returns <em>bool</em> true/false.</td>
+      </tr>
+    <tr id=.Message.MentionRoles>
+          <td>.Message.MentionRoles</td>
+          <td>The roles mentioned in the message, returned as a slice of type <em>discordgo.IDSlice.</em></td>
+      </tr>
+    <tr id=.Message.Mentions>
+          <td>.Message.Mentions</td>
+          <td>Users this message mentions, returned as a slice of type <em>[]*discordgo.User.</em></td>
+      </tr>
+    <tr id=.Message.MessageReference>
+          <td>.Message.MessageReference</td>
+          <td>MessageReference contains reference data sent with crossposted or reply messages. Has fields MessageID, ChannelID and GuildID.</td>
+      </tr>
+    <tr id=.Message.Pinned>
+          <td>.Message.Pinned</td>
+          <td>Whether this message is pinned, returns <em>bool</em> true/false.</td>
+      </tr>
+    <tr id=.Message.Reactions>
+          <td>.Message.Reactions</td>
+          <td>Reactions on this message, returned as a slice of type <em>[]*discordgo.MessageReactions</em>. Reaction Object in <a href="https://discord.com/developers/docs/resources/message#reaction-object" rel="external">Discord documentation</a>.</td>
+      </tr>
+    <tr id=.Message.Reference>
+          <td>.Message.Reference</td>
+          <td>Reference returns MessageReference of given message.</td>
+      </tr>
+    <tr id=.Message.ReferencedMessage>
+          <td>.Message.ReferencedMessage</td>
+          <td>Message object associated by message_reference, like a message that was replied to.</td>
+      </tr>
+    <tr id=.Message.MessageSnapshots>
+          <td>.Message.MessageSnapshots</td>
+          <td>A slice of message snapshot objects, which are slimmed down message objects, currently limited to <code>Type</code>, <code>Content</code>, <code>Embeds</code>, <code>Attachments</code>, <code>Timestamp</code>, <code>EditedTimestamp</code>, <code>Flags</code>, <code>Mentions</code>, <code>MentionRoles</code>, <code>StickerItems</code>, and <code>Components</code>.</td>
+      </tr>
+    <tr id=.Message.StickerItems>
+          <td>.Message.StickerItems</td>
+          <td>A slice of <a href="https://discord.com/developers/docs/resources/sticker#sticker-item-object-sticker-item-structure" rel="external">sticker items</a> attached to the message.</td>
+      </tr>
+    <tr id=.Message.Timestamp>
+          <td>.Message.Timestamp</td>
+          <td>Timestamp of the message in type <em>discordgo.Timestamp</em> (use .Message.Timestamp.Parse to get type <em>time.Time</em> and .Parse.String method returns type <em>string</em>).</td>
+      </tr>
+    <tr id=.Message.TTS>
+          <td>.Message.TTS</td>
+          <td>Whether the message is text-to-speech. *</td>
+      </tr>
+    <tr id=.Message.Type>
+          <td>.Message.Type</td>
+          <td>The <a href="https://discord.com/developers/docs/resources/message#message-object-message-types" rel="external">type</a> of the message.</td>
+      </tr>
+    <tr id=.Message.WebhookID>
+          <td>.Message.WebhookID</td>
+          <td>If the message is generated by a webhook, this is the webhook&rsquo;s id</td>
+      </tr>
+    <tr id=.Message.RoleSubscriptionData>
+          <td>.Message.RoleSubscriptionData</td>
+          <td>Data of the role subscription purchase or renewal that prompted this message. Only set on messages of type 25 (<code>ROLE_SUBSCRIPTION_PURCHASE</code>).</td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=.Args>
+          <td>.Args</td>
+          <td>List of everything that is passed to .Message.Content. .Args is a <em>slice</em> of type <em>string</em>.</td>
+      </tr>
+    <tr id=.Cmd>
+          <td>.Cmd</td>
+          <td>.Cmd is of type <em>string</em> and shows all arguments that trigger custom command, part of .Args. Starting from <code>{{index .Args 0}}</code>.</td>
+      </tr>
+    <tr id=.CmdArgs>
+          <td>.CmdArgs</td>
+          <td>List of all the arguments passed after <code>.Cmd</code> (<code>.Cmd</code> is the actual trigger) <code>.CmdArgs</code> is a <em>slice</em> of type <em>string</em>. For example <code>{{$allArgs := (joinStr &quot; &quot; .CmdArgs)}}</code> saves all the arguments after trigger to a variable <code>$allArgs</code>.</td>
+      </tr>
+    <tr id=.StrippedMsg>
+          <td>.StrippedMsg</td>
+          <td>&ldquo;Strips&rdquo; or cuts off the triggering part of the message and prints out everything else after that. Bear in mind, when using regex as trigger, for example <code>&quot;day&quot;</code> and input message is <code>&quot;Have a nice day my dear YAG!&quot;</code> output will be <code>&quot;my dear YAG!&quot;</code> - rest is cut off.</td>
+      </tr>
+  </tbody>
+</table>
+<p>* denotes field that will not have proper return when using <code>getMessage</code> function.</p>
+<p><a href="https://discordapp.com/developers/docs/resources/message#message-object" rel="external">Message object in Discord documentation</a>.</p>
+<p><a href="/docs/reference/templates/functions/#message">Message functions documentation</a>.</p>
+<h4 id="rolesubscriptiondata">RoleSubscriptionData<a href="#rolesubscriptiondata" class="anchor" aria-hidden="true">#</a> </h4>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=.RoleSubscriptionListingID>
+          <td>.RoleSubscriptionListingID</td>
+          <td>The ID of the SKU and listing that the user is subscribed to.</td>
+      </tr>
+    <tr id=.TierName>
+          <td>.TierName</td>
+          <td>The name of the tier that the user is subscribed to.</td>
+      </tr>
+    <tr id=.TotalMonthsSubscribed>
+          <td>.TotalMonthsSubscribed</td>
+          <td>The cumulative number of months that the user has been subscribed for.</td>
+      </tr>
+    <tr id=.IsRenewal>
+          <td>.IsRenewal</td>
+          <td>Whether this notification is for a renewal rather than a new purchase.</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="reaction">Reaction<a href="#reaction" class="anchor" aria-hidden="true">#</a> </h3>
+<p>This is available and part of the dot when reaction trigger type is used.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=.Reaction>
+          <td>.Reaction</td>
+          <td>Returns reaction object which has following fields <code>UserID</code>, <code>MessageID</code>, <br><code>Emoji.(ID/Name/...)</code>, <code>ChannelID</code>, <code>GuildID</code>. The Emoji.ID is the ID of the emoji for custom emojis, and Emoji.Name will hold the Unicode emoji if its a default one. (otherwise the name of the custom emoji).</td>
+      </tr>
+    <tr id=.Reaction.Emoji.APIName>
+          <td>.Reaction.Emoji.APIName</td>
+          <td>Returns type <em>string</em>, a correctly formatted API name for use in the MessageReactions endpoints. For custom emojis it is <code>emojiname:ID</code>.</td>
+      </tr>
+    <tr id=.Reaction.Emoji.MessageFormat>
+          <td>.Reaction.Emoji.MessageFormat</td>
+          <td>Returns a correctly formatted emoji for use in Message content and embeds. It&rsquo;s equal to <code>&lt;:.Reaction.Emoji.APIName&gt;</code> and <code>&lt;a:.Reaction.Emoji.APIName&gt;</code> for animated emojis.</td>
+      </tr>
+    <tr id=.ReactionAdded>
+          <td>.ReactionAdded</td>
+          <td>Returns a boolean type <em>bool</em> true/false indicating whether reaction was added or removed.</td>
+      </tr>
+    <tr id=.ReactionMessage>
+          <td>.ReactionMessage</td>
+          <td>Returns the message object reaction was added to. Not all regular .Message fields are filled though e.g. .Member. <code>{{range .ReactionMessage.Reactions}}</code><br><code>{{.Count}} - {{.Emoji.Name}}</code> <br><code>{{end}}</code>Returns emoji count and their name.Has an alias <code>.Message</code> and it works the same way.</td>
+      </tr>
+  </tbody>
+</table>
+<p><a href="https://discordapp.com/developers/docs/resources/message#reaction-object" rel="external">Reaction object in Discord documentation</a>.<br>
+<a href="https://discord.com/developers/docs/resources/emoji" rel="external">Emoji object in Discord documentation.</a></p>
+<h3 id="user">User<a href="#user" class="anchor" aria-hidden="true">#</a> </h3>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=.User>
+          <td>.User</td>
+          <td>The user&rsquo;s username together with discriminator.</td>
+      </tr>
+    <tr id=.User.Avatar>
+          <td>.User.Avatar</td>
+          <td>The user&rsquo;s avatar <a href="https://discord.com/developers/docs/reference#image-formatting" rel="external">hash</a>.</td>
+      </tr>
+    <tr id=.User.Bot>
+          <td>.User.Bot</td>
+          <td>Determines whether the target user is a bot - if yes, it will return <code>true</code>.</td>
+      </tr>
+    <tr id=.User.Discriminator>
+          <td>.User.Discriminator</td>
+          <td>The user&rsquo;s discriminator/tag (The four digits after a person&rsquo;s username).</td>
+      </tr>
+    <tr id=.User.Globalname>
+          <td>.User.Globalname</td>
+          <td>User&rsquo;s global username from the new naming system.</td>
+      </tr>
+    <tr id=.User.ID>
+          <td>.User.ID</td>
+          <td>The user&rsquo;s ID.</td>
+      </tr>
+    <tr id=.User.Mention>
+          <td>.User.Mention</td>
+          <td>Mentions user.</td>
+      </tr>
+    <tr id=.User.PrimaryGuild>
+          <td>.User.PrimaryGuild</td>
+          <td>The user&rsquo;s <a href="/docs/reference/templates/syntax-and-data/#primary-guild">primary guild</a>, which holds information about the guild tag, if it exists.</td>
+      </tr>
+    <tr id=.User.String>
+          <td>.User.String</td>
+          <td>The user&rsquo;s username, with legacy discriminator if available, as <em>string</em> type.</td>
+      </tr>
+    <tr id=.User.Username>
+          <td>.User.Username</td>
+          <td>The user&rsquo;s username.</td>
+      </tr>
+    <tr id=.UsernameHasInvite>
+          <td>.UsernameHasInvite</td>
+          <td>Only works with join and leave messages (not join dms). It will determine does the username contain an invite link.</td>
+      </tr>
+    <tr id=.RealUsername>
+          <td>.RealUsername</td>
+          <td>Only works with join and leave messages (not join DMs). This can be used to send the real username to a staff channel when invites are censored.</td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th>Method</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=&lt;code&gt;.User.AvatarURL&lt;/code&gt;&#32;&amp;ldquo;256&amp;rdquo;>
+          <td><code>.User.AvatarURL</code> &ldquo;256&rdquo;</td>
+          <td>Gives the URL for user&rsquo;s avatar, argument &ldquo;256&rdquo; is the size of the picture <br>and can increase/decrease twofold (e.g. 512, 1024 or 128, 64 etc.).</td>
+      </tr>
+  </tbody>
+</table>
+<p><a href="https://discordapp.com/developers/docs/resources/user#user-object" rel="external">User object in Discord documentation</a>.</p>
+<p><a href="/docs/reference/templates/functions/#user">User functions documentation</a>.</p>
+<h4 id="primary-guild">Primary Guild<a href="#primary-guild" class="anchor" aria-hidden="true">#</a> </h4>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=.IdentityGuildID>
+          <td>.IdentityGuildID</td>
+          <td>The ID of the user&rsquo;s primary guild.</td>
+      </tr>
+    <tr id=.IdentityEnabled>
+          <td>.IdentityEnabled</td>
+          <td>Whether the user is displaying the primary guild&rsquo;s tag.</td>
+      </tr>
+    <tr id=.Tag>
+          <td>.Tag</td>
+          <td>The text of the user&rsquo;s server tag.</td>
+      </tr>
+    <tr id=.Badge>
+          <td>.Badge</td>
+          <td>The server tag badge hash.</td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th>Method</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=.BadgeURL>
+          <td>.BadgeURL</td>
+          <td>Gives the URL for user&rsquo;s server tag badge.</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="actions">Actions<a href="#actions" class="anchor" aria-hidden="true">#</a> </h2>
+<p>Actions, or elements enclosed in double braces <code>{{ }}</code>, are what makes templates dynamic. Without them, templates would
+be no more than static text. In this section, we introduce several special kinds of actions which affect the control
+flow of the program. For example, iteration actions like <code>range</code> and <code>while</code> permit statements to be executed multiple
+times, while conditional actions like <code>if</code> and <code>with</code> allow for alteration of what statements are ran or are not ran.</p>
+<h3 id="if-conditional-branching">If (conditional branching)<a href="#if-conditional-branching" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Branching using <code>if</code> action&rsquo;s pipeline and comparison operators - these operators don&rsquo;t need to be inside <code>if</code> branch.
+<code>if</code> statements always need to have an enclosing <code>end</code>.</p>
+<p>See also the <a href="/learn/beginner/conditional-branching/">conditional branching chapter</a> in the learning resources.</p>
+<div class="callout callout-tip d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/rocket svg-inline callout-icon me-2 mb-3" id="svg-rocket" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3" />
+  <path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3" />
+  <path d="M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Tip: Test Many Arguments at Once</p>
+
+      </div>
+    <div class="callout-body">
+      <p><code>eq</code>, though often used with 2 arguments (<code>eq x y</code>) can actually be used with more than 2. If there are more than 2
+arguments, it checks whether the first argument is equal to any one of the following arguments. This behavior is unique
+to <code>eq</code>.</p>
+
+    </div>
+  </div>
+</div>
+
+<div class="callout callout-note d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/info-circle svg-inline callout-icon me-2 mb-3" id="svg-info-circle" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+  <path d="M12 9h.01" />
+  <path d="M11 12h1v4h1" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Note: Only Compare the Same Data Type</p>
+
+      </div>
+    <div class="callout-body">
+      <p>Comparison operators always require the same type: i.e comparing <code>1.23</code> and <code>1</code> would throw <strong><code>incompatible types for comparison</code></strong> error as they are not the same type (one is float, the other int). To fix this, you should convert both to
+the same type -&gt; for example, <code>toFloat 1</code>.</p>
+
+    </div>
+  </div>
+</div>
+
+<table>
+  <thead>
+      <tr>
+          <th>Case</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=if>
+          <td>if</td>
+          <td><code>{{if (condition)}} output {{end}}</code><br>Initialization statement can also be inside <code>if</code> statement with conditional statement, limiting the initialized scope to that <code>if</code> statement.<br><code>{{$x := 24}}</code><br><code>{{if eq ($x := 42) 42}} Inside: {{$x}} {{end}}</code><br><code>Outside: {{$x}}</code></td>
+      </tr>
+    <tr id=else if>
+          <td>else if</td>
+          <td><code>{{if (condition)}} output1 {{else if (condition)}} output2 {{end}}</code><br>You can have as many <code>else if</code> statements as many different conditionals you have.</td>
+      </tr>
+    <tr id=else>
+          <td>else</td>
+          <td><code>{{if (condition)}} output1 {{else}} output2 {{end}}</code></td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="boolean-logic">Boolean Logic<a href="#boolean-logic" class="anchor" aria-hidden="true">#</a> </h3>
+<table>
+  <thead>
+      <tr>
+          <th>Case</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=and>
+          <td>and</td>
+          <td><code>{{if and (cond1) (cond2) (cond3)}} output {{end}}</code></td>
+      </tr>
+    <tr id=not>
+          <td>not</td>
+          <td><code>{{if not (condition)}} output {{end}}</code></td>
+      </tr>
+    <tr id=or>
+          <td>or</td>
+          <td><code>{{if or (cond1) (cond2) (cond3)}} output {{end}}</code></td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="comparison-operators">Comparison Operators<a href="#comparison-operators" class="anchor" aria-hidden="true">#</a> </h3>
+<table>
+  <thead>
+      <tr>
+          <th>Case</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=Equal:&#32;&lt;code&gt;eq&lt;/code&gt;>
+          <td>Equal: <code>eq</code></td>
+          <td><code>{{if eq .Channel.ID ########}} output {{end}}</code></td>
+      </tr>
+    <tr id=Not&#32;equal:&#32;&lt;code&gt;ne&lt;/code&gt;>
+          <td>Not equal: <code>ne</code></td>
+          <td><code>{{$x := 7}} {{$y := 8}} {{ne $x $y}}</code> returns <code>true</code></td>
+      </tr>
+    <tr id=Less&#32;than:&#32;&lt;code&gt;lt&lt;/code&gt;>
+          <td>Less than: <code>lt</code></td>
+          <td><code>{{if lt (len .Args) 5}} output {{end}}</code></td>
+      </tr>
+    <tr id=Less&#32;than&#32;or&#32;equal:&#32;&lt;code&gt;le&lt;/code&gt;>
+          <td>Less than or equal: <code>le</code></td>
+          <td><code>{{$x := 7}} {{$y := 8}} {{le $x $y}}</code> returns <code>true</code></td>
+      </tr>
+    <tr id=Greater&#32;than:&#32;&lt;code&gt;gt&lt;/code&gt;>
+          <td>Greater than: <code>gt</code></td>
+          <td><code>{{if gt (len .Args) 1}} output {{end}}</code></td>
+      </tr>
+    <tr id=Greater&#32;than&#32;or&#32;equal:&#32;&lt;code&gt;ge&lt;/code&gt;>
+          <td>Greater than or equal: <code>ge</code></td>
+          <td><code>{{$x := 7}} {{$y := 8}} {{ge $x $y}}</code> returns <code>false</code></td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="range">Range<a href="#range" class="anchor" aria-hidden="true">#</a> </h3>
+<p><code>range</code> iterates over element values in variety of data structures in pipeline - integers, slices/arrays, maps or
+channels. The dot <code>.</code> is set to successive elements of those data structures and output will follow execution. If the
+value of pipeline has zero length, nothing is output or if an <code>{{else}}</code> action is used, that section will be executed.</p>
+<div class="callout callout-note d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/info-circle svg-inline callout-icon me-2 mb-3" id="svg-info-circle" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+  <path d="M12 9h.01" />
+  <path d="M11 12h1v4h1" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Note: Continue and Break a Loop</p>
+
+      </div>
+    <div class="callout-body">
+      <p>To skip execution of a single iteration and jump to the next iteration, the <code>{{continue}}</code> action may be used. Likewise,
+if one wishes to skip all remaining iterations, the <code>{{break}}</code> action may be used. These both are usable also inside
+<code>while</code> action.</p>
+
+    </div>
+  </div>
+</div>
+
+<p>Affected dot inside <code>range</code> is important because methods mentioned above in this documentation:<code>.Server.ID</code>,
+<code>.Message.Content</code> etc are all already using the dot on the pipeline and if they are not carried over to the <code>range</code>
+control structure directly, these fields do not exists and template will error out. Getting those values inside <code>range</code>
+and also <code>with</code> action would need <code>$.User.ID</code> for example.<br>
+<br>
+<code>range</code> on slices/arrays provides both the index and element for each entry; <code>range</code> on map iterates over key/element
+pairs. If a <code>range</code> action initializes a variable, that variable is set to the successive elements of the iteration.
+<code>range</code> can also declare two variables, separated by a comma and set by index and element or key and element pair. In
+case of only one variable, it is assigned the element.<br>
+<br>
+Like <code>if</code>, <code>range</code>is concluded with<code>{{end}}</code>action and declared variable scope inside <code>range</code> extends to that point.\</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="p">{{</span><span class="o">/*</span> <span class="nb">range</span> <span class="n">over</span> <span class="n">an</span> <span class="n">integer</span> <span class="o">*/</span><span class="p">}}</span>
+</span></span><span class="line"><span class="cl"><span class="p">{{</span><span class="nb">range</span> <span class="mi">2</span><span class="p">}}{{</span><span class="o">.</span><span class="p">}}{{</span><span class="n">end</span><span class="p">}}</span>
+</span></span><span class="line"><span class="cl"><span class="p">{{</span><span class="nb">range</span> <span class="o">$</span><span class="n">k</span><span class="p">,</span> <span class="o">$</span><span class="n">v</span> <span class="p">:</span><span class="o">=</span> <span class="n">toInt64</span> <span class="mi">2</span><span class="p">}}{{</span><span class="o">$</span><span class="n">k</span><span class="p">}}{{</span><span class="o">$</span><span class="n">v</span><span class="p">}}{{</span><span class="n">end</span><span class="p">}}</span>
+</span></span><span class="line"><span class="cl"><span class="o">**</span><span class="p">{{</span><span class="o">/*</span> <span class="nb">range</span> <span class="n">over</span> <span class="n">a</span> <span class="n">slice</span> <span class="o">*/</span><span class="p">}}</span>
+</span></span><span class="line"><span class="cl"><span class="o">**</span><span class="p">{{</span> <span class="nb">range</span> <span class="o">$</span><span class="n">index</span><span class="p">,</span> <span class="o">$</span><span class="n">element</span> <span class="p">:</span><span class="o">=</span> <span class="n">cslice</span> <span class="s2">&#34;OBMAN.BOT&#34;</span> <span class="s2">&#34;IS COOL!&#34;</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl"><span class="p">{{</span> <span class="o">$</span><span class="n">index</span> <span class="p">}}</span> <span class="p">:</span> <span class="p">{{</span> <span class="o">$</span><span class="n">element</span> <span class="p">}}</span> <span class="p">{{</span> <span class="n">end</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl"><span class="p">{{</span><span class="o">/*</span> <span class="nb">range</span> <span class="n">on</span> <span class="n">a</span> <span class="n">map</span> <span class="o">*/</span><span class="p">}}</span>
+</span></span><span class="line"><span class="cl"><span class="p">{{</span> <span class="nb">range</span> <span class="o">$</span><span class="n">key</span><span class="p">,</span> <span class="o">$</span><span class="n">value</span> <span class="p">:</span><span class="o">=</span> <span class="n">dict</span> <span class="s2">&#34;SO&#34;</span> <span class="s2">&#34;SAY&#34;</span> <span class="s2">&#34;WE&#34;</span> <span class="s2">&#34;ALL!&#34;</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl"><span class="p">{{</span> <span class="o">$</span><span class="n">key</span> <span class="p">}}</span> <span class="p">:</span> <span class="p">{{</span> <span class="o">$</span><span class="n">value</span> <span class="p">}}</span> <span class="p">{{</span> <span class="n">end</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl"><span class="p">{{</span><span class="o">/*</span> <span class="nb">range</span> <span class="n">with</span> <span class="k">else</span> <span class="ow">and</span> <span class="n">variable</span> <span class="n">scope</span> <span class="o">*/</span><span class="p">}}</span>
+</span></span><span class="line"><span class="cl"><span class="p">{{</span> <span class="nb">range</span> <span class="n">seq</span> <span class="mi">1</span> <span class="mi">1</span> <span class="p">}}</span> <span class="n">no</span> <span class="n">output</span> <span class="p">{{</span> <span class="k">else</span> <span class="p">}}</span> <span class="n">output</span> <span class="n">here</span> <span class="p">{{</span> <span class="n">end</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl"><span class="p">{{</span> <span class="o">$</span><span class="n">x</span> <span class="p">:</span><span class="o">=</span> <span class="mi">42</span> <span class="p">}}</span> <span class="p">{{</span> <span class="nb">range</span> <span class="o">$</span><span class="n">x</span> <span class="p">:</span><span class="o">=</span> <span class="n">seq</span> <span class="mi">2</span> <span class="mi">4</span> <span class="p">}}</span> <span class="p">{{</span> <span class="o">$</span><span class="n">x</span> <span class="p">}}</span> <span class="p">{{</span> <span class="n">end</span> <span class="p">}}</span> <span class="p">{{</span> <span class="o">$</span><span class="n">x</span> <span class="p">}}</span></span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="callout callout-danger d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/alert-octagon svg-inline callout-icon me-2 mb-3" id="svg-alert-octagon" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+  <path d="M12 8v4" />
+  <path d="M12 16h.01" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Danger: Stripping Whitespace Characters</p>
+
+      </div>
+    <div class="callout-body">
+      <p>If you&rsquo;re getting an error along the lines of <code>Custom command response was longer than 2k</code> or <code>response grew too big (&gt;25k)</code>, that means you&rsquo;re rendering a lot of whitespace characters.</p>
+<p>Consider the following code:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ range 10000 }}
+</span></span><span class="line"><span class="cl">  {{ $x := . }}
+</span></span><span class="line"><span class="cl">{{ end }}
+</span></span><span class="line"><span class="cl">Hello!</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>This program iterates ten <em>thousand</em> times, adding a newline and a tab character on every iteration to the output&mdash;we
+can fix this error by telling the bot to throw away (or &ldquo;strip&rdquo;) whitespace characters by using the trim indicator <code>-</code>:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ range 10000 }}
+</span></span><span class="line"><span class="cl">  {{- $x := . -}}
+</span></span><span class="line"><span class="cl">{{ end }}
+</span></span><span class="line"><span class="cl">Hello!</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>This code will work as expected: iterating 10000 times essentially doing nothing, then sending <code>Hello!</code> to the chat.</p>
+
+    </div>
+  </div>
+</div>
+
+<h3 id="try-catch">Try-catch<a href="#try-catch" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Multiple template functions have the possibility of returning an error upon failure. For example, <code>dbSet</code> can return a
+short write error if the size of the database entry exceeds some threshold.</p>
+<p>While it is possible to write code that simply ignores the possibility of such issues occurring (letting the error stop
+the code completely), there are times at which one may wish to write more robust code that handles such errors
+gracefully. The <code>try</code>-<code>catch</code> construct enables this possibility.</p>
+<p>Similar to an <code>if</code> action with an associated <code>else</code> branch, the <code>try</code>-<code>catch</code> construct is composed of two blocks: the
+<code>try</code> branch and the <code>catch</code> branch. First, the code in the <code>try</code> branch is ran, and if an error is raised by a function
+during execution, the <code>catch</code> branch is executed instead with the context (<code>.</code>) set to the offending error.</p>
+<p>To check for a specific error, one can compare the result of the <code>Error</code> method with a predetermined message. (For
+context, all errors have a method <code>Error</code> which is specified to return a message describing the reason that the error
+was thrown.) For example, the following example has different behavior depending on whether &ldquo;Reaction blocked&rdquo; is in the
+message of the error caught.</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ try }}
+</span></span><span class="line"><span class="cl">    {{ addReactions &#34;рџ‘‹&#34; }}
+</span></span><span class="line"><span class="cl">    added reactions successfully
+</span></span><span class="line"><span class="cl">{{ catch }}
+</span></span><span class="line"><span class="cl">    {{ if in .Error &#34;Reaction blocked&#34; }}
+</span></span><span class="line"><span class="cl">        user blocked YAG :(
+</span></span><span class="line"><span class="cl">    {{ else }}
+</span></span><span class="line"><span class="cl">        different issue occurred: {{ .Error }}
+</span></span><span class="line"><span class="cl">    {{ end }}
+</span></span><span class="line"><span class="cl">{{ end }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="while">While<a href="#while" class="anchor" aria-hidden="true">#</a> </h3>
+<p><code>while</code> iterates as long as the specified condition is true, or more generally evaluates to a non-empty value. The dot
+(<code>.</code>) is not affected, unlike with the <code>range</code> action. Analogous to <code>range</code>, <code>while</code> introduces a new scope which is
+concluded by the <code>end</code> action. Within the body of a <code>while</code> action, the <code>break</code> and <code>continue</code> actions can be used to
+appropriate effect, like in a <code>range</code> action.</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{/* efficiently search for an element in a sorted slice using binary search */}}
+</span></span><span class="line"><span class="cl">{{ $xs := cslice 1 3 5 6 6 8 10 12 }}
+</span></span><span class="line"><span class="cl">{{ $needle := 8 }}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">{{ $lo := 0 }}
+</span></span><span class="line"><span class="cl">{{ $hi := sub (len $xs) 1 }}
+</span></span><span class="line"><span class="cl">{{ $found := false }}
+</span></span><span class="line"><span class="cl">{{/* it&#39;s possible to combine multiple conditions using logical operators */}}
+</span></span><span class="line"><span class="cl">{{ while and (le $lo $hi) (not $found) }}
+</span></span><span class="line"><span class="cl">  {{- $mid := div (add $lo $hi) 2 }}
+</span></span><span class="line"><span class="cl">  {{- $elem := index $xs $mid }}
+</span></span><span class="line"><span class="cl">  {{- if lt $elem $needle }}
+</span></span><span class="line"><span class="cl">    {{- $lo = add $mid 1 }}
+</span></span><span class="line"><span class="cl">  {{- else if eq $elem $needle }}
+</span></span><span class="line"><span class="cl">    {{- print &#34;found at index &#34; $mid }}
+</span></span><span class="line"><span class="cl">    {{- $found = true }}
+</span></span><span class="line"><span class="cl">  {{- else }}
+</span></span><span class="line"><span class="cl">    {{- $hi = sub $mid 1 }}
+</span></span><span class="line"><span class="cl">  {{- end -}}
+</span></span><span class="line"><span class="cl">{{ end }}
+</span></span><span class="line"><span class="cl">{{ if not $found }} not found {{ end }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="with">With<a href="#with" class="anchor" aria-hidden="true">#</a> </h3>
+<p><code>with</code> lets you assign and carry pipeline value with its type as a dot (<code>.</code>) inside that control structure, it&rsquo;s like a
+shorthand. If the value of the pipeline is empty, dot is unaffected and when an <code>else</code> or <code>else if</code> action is used,
+execution moves on to those branches instead, similar to the <code>if</code> action. <br>
+<br>
+Affected dot inside <code>with</code> is important because methods mentioned above in this documentation:<code>.Server.ID</code>,
+<code>.Message.Content</code> etc are all already using the dot on the pipeline and if they are not carried over to the <code>with</code>
+control structure directly, these fields do not exists and template will error out. Getting those values inside <code>with</code>
+and also <code>range</code> action would need <code>$.User.ID</code> for example.</p>
+<p>Like <code>if</code> and <code>range</code> actions, <code>with</code> is concluded using <code>{{end}}</code> and variable scope extends to that point.</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{/* Shows the scope and how dot is affected by object&#39;s value in pipeline */}}
+</span></span><span class="line"><span class="cl">{{ $x := &#34;42&#34; }} {{ with and ($z:= seq 0 5) ($x := seq 0 10) }}
+</span></span><span class="line"><span class="cl">len $x: `{{ len $x }}`
+</span></span><span class="line"><span class="cl">{{/* &#34;and&#34; function uses $x as last value for dot */}}
+</span></span><span class="line"><span class="cl">same as len dot: `{{ len . }}`
+</span></span><span class="line"><span class="cl">but len $z is `{{ len $z }}` {{ end }}
+</span></span><span class="line"><span class="cl">Outer-scope $x len however: {{ len $x }}
+</span></span><span class="line"><span class="cl">{{/* when there&#39;s no value, dot is unaffected */}}
+</span></span><span class="line"><span class="cl">{{ with false }} dot is unaffected {{ else }} printing here {{ .CCID }} {{ end }}
+</span></span><span class="line"><span class="cl">{{/* using else-if chain is possible */}}
+</span></span><span class="line"><span class="cl">{{ with false }}
+</span></span><span class="line"><span class="cl">    not executed
+</span></span><span class="line"><span class="cl">{{ else if eq $x &#34;42&#34; }}
+</span></span><span class="line"><span class="cl">    x is 42, dot is unaffected {{ .User.Mention }}
+</span></span><span class="line"><span class="cl">{{ else if eq $x &#34;43&#34; }}
+</span></span><span class="line"><span class="cl">    x is not 43, so this is not executed
+</span></span><span class="line"><span class="cl">{{ else }}
+</span></span><span class="line"><span class="cl">    branch above already executed, so else branch is not
+</span></span><span class="line"><span class="cl">{{ end }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h2 id="associated-templates">Associated Templates<a href="#associated-templates" class="anchor" aria-hidden="true">#</a> </h2>
+<p>Templates (i.e., custom command programs) may also define additional helper templates that may be invoked from the main
+template. Technically speaking, these helper templates are referred to as <em>associated templates</em>. Associated templates
+can be used to create reusable procedures accepting parameters and outputting values, similar to functions in other
+programming languages.</p>
+<h3 id="definition">Definition<a href="#definition" class="anchor" aria-hidden="true">#</a> </h3>
+<p>To define an associated template, use the <code>define</code> action. It has the following syntax:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ define &#34;template_name&#34; }}
+</span></span><span class="line"><span class="cl">    {{/* associated template body */}}
+</span></span><span class="line"><span class="cl">{{ end }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="callout callout-danger d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/alert-octagon svg-inline callout-icon me-2 mb-3" id="svg-alert-octagon" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+  <path d="M12 8v4" />
+  <path d="M12 16h.01" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Danger: Associated Templates at Top Level</p>
+
+      </div>
+    <div class="callout-body">
+      <p><strong>Warning:</strong> Template definitions must be at the top level of the custom command program; in other words, they cannot be
+nested in other actions (for example, an if action.) That is, the following custom command is invalid:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ if $cond }}
+</span></span><span class="line"><span class="cl">    {{ define &#34;hi&#34; }} hi! {{ end }}
+</span></span><span class="line"><span class="cl">{{ end }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div>
+    </div>
+  </div>
+</div>
+
+<p>The template name can be any string constant; however, it cannot be a variable, even if said variable references a value
+of string type. As for the body of the associated template body, it can be anything that is a standalone, syntactically
+valid template program. Note that the first criterion precludes using variables defined outside of the associated
+template; that is, the following custom command is invalid, as the body of the associated template references a variable
+(<code>$name</code>) defined in an outer scope:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ $name := &#34;YAG&#34; }}
+</span></span><span class="line"><span class="cl">{{ define &#34;hello&#34; }}
+</span></span><span class="line"><span class="cl">    Hello, {{ $name }}!
+</span></span><span class="line"><span class="cl">{{ end }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>If accessing the value of <code>$name</code> is desired, then it needs to be passed as part of the context when executing the
+associated template.</p>
+<p>Within the body of an associated template, the variable <code>$</code> and the context dot (<code>.</code>) both initially refer to the data
+passed as context during execution. Consequently, any data on the original context that needs to be accessed must be
+explicitly provided as part of the context data. For example, if one wishes to access <code>.User.Username</code> in an associated
+template body, it is necessary to pass <code>.User.Username</code> as part of the context data when executing said template.</p>
+<p>To return a value from an associated template, use the <code>return</code> action. Encountering a <code>return</code> action will cause
+execution of the associated template to end immediately and control to be returned to the caller. For example, below is
+an associated template that always returns <code>1</code>:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ define &#34;getOne&#34; }} {{ return 1 }} {{ end }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>Note that it is not necessary for a value to be returned; <code>{{ return }}</code> by itself is completely valid.</p>
+<div class="callout callout-tip d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/rocket svg-inline callout-icon me-2 mb-3" id="svg-rocket" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3" />
+  <path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3" />
+  <path d="M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Tip: Clean up Your Code With <code>return</code></p>
+
+      </div>
+    <div class="callout-body">
+      <p>Since all custom commands are themselves templates, using a <code>return</code> action at the top level is perfectly valid, and
+will result in execution of the custom command being stopped at the point the <code>return</code> is encountered.</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ if not .CmdArgs }}
+</span></span><span class="line"><span class="cl">    no arguments passed
+</span></span><span class="line"><span class="cl">    {{ return }} {{/* anything beyond this point is not executed */}}
+</span></span><span class="line"><span class="cl">{{ end }}
+</span></span><span class="line"><span class="cl">{{ $firstArg := index .CmdArgs 0 }}
+</span></span><span class="line"><span class="cl">{{/* safe since .CmdArgs is guaranteed to be non-empty here */}}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div>
+    </div>
+  </div>
+</div>
+
+<h3 id="execution">Execution<a href="#execution" class="anchor" aria-hidden="true">#</a> </h3>
+<p>To execute a custom command, one of three methods may be used: <code>template</code>, <code>block</code>, or <code>execTemplate</code>.</p>
+<h4 id="template-action">Template action<a href="#template-action" class="anchor" aria-hidden="true">#</a> </h4>
+<p><code>template</code> is a function-like action that executes the associated template with the name provided, ignoring its return
+value. Note that the name of the template to execute must be a string constant; similar to <code>define</code> actions, a variable
+referencing a value of string type is invalid. Data to use as the context may optionally be provided following the name.</p>
+<div class="callout callout-note d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/info-circle svg-inline callout-icon me-2 mb-3" id="svg-info-circle" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+  <path d="M12 9h.01" />
+  <path d="M11 12h1v4h1" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Note: Consider Using <code>execTemplate</code></p>
+
+      </div>
+    <div class="callout-body">
+      <p>While <code>template</code> is function-like, it is not an actual function, leading to certain quirks; notably, it must be used
+alone, not part of another action (like a variable declaration), and the data argument need not be parenthesized. Due to
+this, it is recommended that <code>execTemplate</code>, which has much more intuitive behavior, be used instead of the <code>template</code>
+action if at possible.</p>
+
+    </div>
+  </div>
+</div>
+
+<p>Below is an example of the <code>template</code> action in action:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ define &#34;sayHi&#34; }}
+</span></span><span class="line"><span class="cl">    {{- if . -}}
+</span></span><span class="line"><span class="cl">        hi there, {{ . }}
+</span></span><span class="line"><span class="cl">    {{- else }}
+</span></span><span class="line"><span class="cl">        hi there!
+</span></span><span class="line"><span class="cl">    {{- end -}}
+</span></span><span class="line"><span class="cl">{{ end }}
+</span></span><span class="line"><span class="cl">{{ template &#34;sayHi&#34; }} {{/* hi there! */}}
+</span></span><span class="line"><span class="cl">{{ template &#34;sayHi&#34; &#34;YAG&#34; }} {{/* hi there, YAG */}}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>Trim markers: <code>{{- ... -}}</code>were used in above example because whitespace is considered as part of output for associated
+template definitions (and actions in general).</p>
+<h4 id="block-action">Block action<a href="#block-action" class="anchor" aria-hidden="true">#</a> </h4>
+<p><code>block</code> has a structure similar to that of a <code>define</code> action. It is equivalent to a <code>define</code> action followed by a
+<code>template</code> action:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ $name := &#34;YAG&#34; }}
+</span></span><span class="line"><span class="cl">{{ block &#34;sayHi&#34; $name }}
+</span></span><span class="line"><span class="cl">    hi there, {{ . }}
+</span></span><span class="line"><span class="cl">{{ end }}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">{{/* equivalent to above */}}
+</span></span><span class="line"><span class="cl">{{ define &#34;sayHi&#34; }}
+</span></span><span class="line"><span class="cl">    hi there, {{ . }}
+</span></span><span class="line"><span class="cl">{{ end }}
+</span></span><span class="line"><span class="cl">{{ template &#34;sayHi&#34; $name }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h4 id="exectemplate-function">execTemplate function<a href="#exectemplate-function" class="anchor" aria-hidden="true">#</a> </h4>
+<p><code>execTemplate</code> is essentially the same as the <code>template</code> action, but it provides access to the return value of the
+template and may be used as part of another action. Below is an example using <code>execTemplate</code>:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ define &#34;factorial&#34; }}
+</span></span><span class="line"><span class="cl">    {{- $n := 1 }}
+</span></span><span class="line"><span class="cl">    {{- range seq 2 (add . 1) }}
+</span></span><span class="line"><span class="cl">        {{- $n = mult $n . }}
+</span></span><span class="line"><span class="cl">    {{- end }}
+</span></span><span class="line"><span class="cl">    {{- return $n -}}
+</span></span><span class="line"><span class="cl">{{ end }}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">{{ $fac := execTemplate &#34;factorial&#34; 5 }}
+</span></span><span class="line"><span class="cl">2 * 5! = {{ mult $fac 2 }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h2 id="custom-types">Custom Types<a href="#custom-types" class="anchor" aria-hidden="true">#</a> </h2>
+<p>Go has built-in primitive data types (<em>int</em>, <em>string</em>, <em>bool</em>, <em>float64</em>, &hellip;) and built-in composite data types
+(<em>array</em>, <em>slice</em>, <em>map</em>, &hellip;) which also are used in custom commands.</p>
+<p>OBMAN.BOT&rsquo;s templating &ldquo;engine&rdquo; has currently two user-defined, custom data types - <em>templates.Slice</em> and
+<em>templates.SDict</em>. There are other custom data types used like <em>discordgo.Timestamp</em>, but these are outside of the main
+code of OBMAN.BOT, so not explained here further. Type <em>time.Time</em> is covered in its own <a href="/docs/reference/templates/syntax-and-data/#time">section</a>.</p>
+<p>Custom Types section discusses functions that initialize values carrying those <em>templates.Slice</em> (abridged to <em>cslice</em>),
+<em>templates.SDict</em> (abridged to <em>sdict</em>) types and their methods. Both types handle type <em>interface{}</em> element. It&rsquo;s
+called an empty interface which allows a value to be of any type. So any argument of any type given is handled. (In
+&ldquo;custom commands&rdquo;-wise mainly primitive data types, but <em>slices</em> as well.)</p>
+<div class="callout callout-danger d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/alert-octagon svg-inline callout-icon me-2 mb-3" id="svg-alert-octagon" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+  <path d="M12 8v4" />
+  <path d="M12 16h.01" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Danger: Reference Type-Like Behavior</p>
+
+      </div>
+    <div class="callout-body">
+      <p>Slices and dictionaries in CCs exhibit reference-type like behavior, which may be undesirable in certain situations.
+That is, if you have a variable <code>$x</code> that holds a slice/dictionary, writing <code>$y := $x</code> and then mutating <code>$y</code> via
+<code>Append</code>/<code>Set</code>/<code>Del</code>/etc. will modify <code>$x</code> as well. For example:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ $x := sdict &#34;k&#34; &#34;v&#34; }}
+</span></span><span class="line"><span class="cl">{{ $y := $x }}
+</span></span><span class="line"><span class="cl">{{ $y.Set &#34;k&#34; &#34;v2&#34; }} {{/* modify $y */}}
+</span></span><span class="line"><span class="cl">{{ $x }}
+</span></span><span class="line"><span class="cl">{{/* k has value v2 on $x as well -
+</span></span><span class="line"><span class="cl">that is, modifying $y changed $x too. */}}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>If this behavior is undesirable, copy the slice/dictionary via <code>cslice.AppendSlice</code> or a <code>range</code> + <code>Set</code> call.</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ $x := sdict &#34;k&#34; &#34;v&#34; }}
+</span></span><span class="line"><span class="cl">{{ $y := sdict }}
+</span></span><span class="line"><span class="cl">{{ range $k, $v := $x }} {{- $y.Set $k $v -}} {{ end }}
+</span></span><span class="line"><span class="cl">{{ $y.Set &#34;k&#34; &#34;v2&#34; }}
+</span></span><span class="line"><span class="cl">{{ $x }} {{/* $x is unmodified - k still has value v */}}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>Note that this performs a shallow copy, not a deep copy - if you want the latter you will need to perform the
+aforementioned operation recursively.</p>
+
+    </div>
+  </div>
+</div>
+
+<h3 id="templatesslice">templates.Slice<a href="#templatesslice" class="anchor" aria-hidden="true">#</a> </h3>
+<p><code>templates.Slice</code> - This is a custom composite data type defined using an underlying data type <em>[]interface{}</em>. It is
+of kind <em>slice</em> (similar to <em>array</em>) having <em>interface{}</em> type as its value and can be initialized using <code>cslice</code>
+function. Retrieving specific element inside <em>templates.Slice</em> is by indexing its position number.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Function</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=&lt;code&gt;cslice&#32;value1&#32;value2&#32;...&lt;/code&gt;>
+          <td><code>cslice value1 value2 ...</code></td>
+          <td>Function creates a slice of type <em>templates.Slice</em> that can be used elsewhere (as an argument for <code>cembed</code> and <code>sdict</code> for example).<br>Example: <code>cslice 1 &quot;2&quot; (dict &quot;three&quot; 3) 4.5</code> returns <code>[1 2 map[three:3] 4.5]</code>, having length of 4 and index positions from 0 to 3. Notice that thanks to type <em>interface{}</em> value, <em>templates.Slice</em> elements&rsquo; inherent type does not change.</td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th>Method</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=.Append&#32;arg>
+          <td>.Append arg</td>
+          <td>Creates a new <em>cslice</em> having given argument appended fully by its type to current value. Has max size of 10 000 length.</td>
+      </tr>
+    <tr id=.AppendSlice&#32;arg>
+          <td>.AppendSlice arg</td>
+          <td>Creates a new <em>cslice</em> from argument of type <em>slice</em> appended/joined with current value. Has max size of 10 000 length.</td>
+      </tr>
+    <tr id=.Set&#32;int&#32;value>
+          <td>.Set int value</td>
+          <td>Changes/sets given <em>int</em> argument as index position of current <em>cslice</em> to new value. Note that .Set can only set indexes which already exist in the slice.</td>
+      </tr>
+    <tr id=.StringSlice&#32;strict-flag>
+          <td>.StringSlice strict-flag</td>
+          <td>Compares <em>slice</em> contents - are they of type <em>string,</em> based on the strict-flag which is <em>bool</em> and is by default <code>false</code><em>.</em> Under these circumstances if the element is a <em>string</em> then those elements will be included as a part of the <em>[]string</em> slice and rest simply ignored. Also <em>time.Time</em> elements - their default <em>string</em> notation will be included. If none are <em>string</em> an empty <em>[]string</em> slice is returned.If strict-flag is set to <code>true</code> it will return <em>[]string</em> only if <strong>all</strong> elements are pure <em>string</em>, else <code>&amp;#x3C;no value&gt;</code> is returned.Example in this section&rsquo;s <a href="/docs/reference/templates/syntax-and-data/#this-sections-snippets">Snippets</a>.</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="this-sections-snippets">This section&rsquo;s snippets<a href="#this-sections-snippets" class="anchor" aria-hidden="true">#</a> </h4>
+<ul>
+<li>To demonstrate .StringSlice <code>{{(cslice currentTime.Month 42 &quot;OBMAN.BOT&quot;).StringSlice}}</code> will return a slice
+<code>[February OBMAN.BOT]</code>. If the flag would have been set to true - {{&hellip;).StringSlice true}}, all elements in that slice
+were not strings and <code>&lt;no value&gt;</code> is returned.</li>
+</ul>
+<p>General example:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">Creating</span> <span class="n">a</span> <span class="n">new</span> <span class="n">cslice</span><span class="p">:</span> <span class="p">{{</span> <span class="o">$</span><span class="n">x</span> <span class="p">:</span><span class="o">=</span> <span class="p">(</span><span class="n">cslice</span> <span class="s2">&#34;red&#34;</span> <span class="s2">&#34;red&#34;</span><span class="p">)</span> <span class="p">}}</span> <span class="o">**</span><span class="p">{{</span> <span class="o">$</span><span class="n">x</span> <span class="p">}}</span><span class="o">**</span>
+</span></span><span class="line"><span class="cl"><span class="n">Appending</span> <span class="n">to</span> <span class="n">current</span> <span class="n">cslice</span> <span class="n">data</span>
+</span></span><span class="line"><span class="cl"><span class="ow">and</span> <span class="n">assigning</span> <span class="n">newly</span> <span class="n">created</span> <span class="n">cslice</span> <span class="n">to</span> <span class="n">same</span> <span class="n">variable</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl"><span class="p">{{</span> <span class="o">$</span><span class="n">x</span> <span class="o">=</span> <span class="o">$</span><span class="n">x</span><span class="o">.</span><span class="n">Append</span> <span class="s2">&#34;green&#34;</span> <span class="p">}}</span> <span class="o">**</span><span class="p">{{</span> <span class="o">$</span><span class="n">x</span> <span class="p">}}</span><span class="o">**</span>
+</span></span><span class="line"><span class="cl"><span class="n">Setting</span> <span class="n">current</span> <span class="n">cslice</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">position</span> <span class="mi">1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl"><span class="p">{{</span> <span class="o">$</span><span class="n">x</span><span class="o">.</span><span class="n">Set</span> <span class="mi">1</span> <span class="s2">&#34;blue&#34;</span> <span class="p">}}</span> <span class="o">**</span><span class="p">{{</span> <span class="o">$</span><span class="n">x</span> <span class="p">}}</span><span class="o">**</span>
+</span></span><span class="line"><span class="cl"><span class="n">Indexing</span> <span class="n">that</span> <span class="n">position</span> <span class="mi">1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl"><span class="o">**</span><span class="p">{{</span> <span class="n">index</span> <span class="o">$</span><span class="n">x</span> <span class="mi">1</span> <span class="p">}}</span><span class="o">**</span>
+</span></span><span class="line"><span class="cl"><span class="n">Appending</span> <span class="n">a</span> <span class="n">slice</span> <span class="n">to</span> <span class="n">current</span> <span class="n">cslice</span> <span class="n">data</span>
+</span></span><span class="line"><span class="cl"><span class="n">but</span> <span class="ow">not</span> <span class="n">assigning</span> <span class="n">newly</span> <span class="n">created</span> <span class="n">cslice</span> <span class="n">to</span> <span class="n">same</span> <span class="n">variable</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl"><span class="o">**</span><span class="p">{{</span> <span class="o">$</span><span class="n">x</span><span class="o">.</span><span class="n">AppendSlice</span> <span class="p">(</span><span class="n">cslice</span> <span class="s2">&#34;yellow&#34;</span> <span class="s2">&#34;magenta&#34;</span><span class="p">)</span> <span class="p">}}</span><span class="o">**</span>
+</span></span><span class="line"><span class="cl"><span class="n">Variable</span> <span class="n">is</span> <span class="n">still</span><span class="p">:</span> <span class="o">**</span><span class="p">{{</span> <span class="o">$</span><span class="n">x</span> <span class="p">}}</span><span class="o">**</span>
+</span></span><span class="line"><span class="cl"><span class="n">Type</span> <span class="n">of</span> <span class="n">variable</span><span class="p">:</span> <span class="o">**</span><span class="p">{{</span> <span class="n">printf</span> <span class="s2">&#34;%T&#34;</span> <span class="o">$</span><span class="n">x</span> <span class="p">}}</span><span class="o">**</span></span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="templates-sdict">templates.SDict<a href="#templates-sdict" class="anchor" aria-hidden="true">#</a> </h3>
+<p><code>templates.SDict</code> - This is a custom composite data type defined on an underlying data type <em>map[string]interface{}.</em>
+This is of kind <em>map</em> having <em>string</em> type as its key and <em>interface{}</em> type as that key&rsquo;s value and can be initialized
+using <code>sdict</code> function. A map is key-value store. This means you store value and you access that value by a key. Map is
+an unordered list and the number of parameters to form key-value pairs must be even, difference to regular <em>map</em> is that
+<code>templates.SDict</code> is ordered by its key. Retrieving specific element inside <em>templates.Sdict</em> is by indexing its key.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Function</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=&lt;code&gt;sdict&#32;&amp;quot;key1&amp;quot;&#32;value1&#32;&amp;quot;key2&amp;quot;&#32;value2&#32;...&lt;/code&gt;>
+          <td><code>sdict &quot;key1&quot; value1 &quot;key2&quot; value2 ...</code></td>
+          <td>Like <code>dict</code> function, creating a <em>templates.SDict</em> type map, key must be of type <em>string</em>. Can be used for example in <code>cembed</code>. If only one argument is passed to <code>sdict</code> function having type <em>map[string]interface{};</em> for example .ExecData and data retrieved from database can be of such type if <code>sdict</code> was used, it is converted to a new <em>sdict</em>.Example: <code>sdict &quot;one&quot; 1 &quot;two&quot; 2 &quot;three&quot; (cslice 3 4) &quot;five&quot; 5.5</code> returns unordered <code>map[five:5.5 one:1 three:[3 4] two:2]</code>, having length of four and index positions are its keys. Notice that thanks to type <em>interface{}</em> value, <em>templates.SDict</em> elements&rsquo; inherent type does not change.</td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th>Method</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=.Del&#32;&amp;ldquo;key&amp;rdquo;>
+          <td>.Del &ldquo;key&rdquo;</td>
+          <td>Deletes given key from <em>sdict</em>.</td>
+      </tr>
+    <tr id=.Get&#32;&amp;ldquo;key&amp;rdquo;>
+          <td>.Get &ldquo;key&rdquo;</td>
+          <td>Retrieves given key from <em>sdict</em>.</td>
+      </tr>
+    <tr id=.HasKey&#32;&amp;ldquo;key&amp;rdquo;>
+          <td>.HasKey &ldquo;key&rdquo;</td>
+          <td>Returns <em>bool</em> true/false regarding whether the key is set or not e.g. <code>{{(sdict &quot;OBMAN.BOT&quot; &quot;is cool&quot;).HasKey &quot;OBMAN.BOT&quot;}}</code> would return <code>true</code>.</td>
+      </tr>
+    <tr id=.Set&#32;&amp;ldquo;key&amp;rdquo;&#32;value>
+          <td>.Set &ldquo;key&rdquo; value</td>
+          <td>Changes/sets given key to a new value or creates new one, if no such key exists in <em>sdict</em>.</td>
+      </tr>
+  </tbody>
+</table>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Creating sdict: {{ $x := sdict &#34;color1&#34; &#34;green&#34; &#34;color2&#34; &#34;red&#34; }} **{{ $x }}**
+</span></span><span class="line"><span class="cl">Retrieving key &#34;color2&#34;: **{{ $x.Get &#34;color2&#34; }}**
+</span></span><span class="line"><span class="cl">Changing &#34;color2&#34; to &#34;yellow&#34;: {{ $x.Set &#34;color2&#34; &#34;yellow&#34; }} **{{ $x }}**
+</span></span><span class="line"><span class="cl">Adding &#34;color3&#34; as &#34;blue&#34;: {{ $x.Set &#34;color3&#34; &#34;blue&#34; }} **{{ $x }}**
+</span></span><span class="line"><span class="cl">Deleting key &#34;color1&#34; {{ $x.Del &#34;color1&#34; }} and whole sdict: **{{ $x }}**</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="callout callout-tip d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/rocket svg-inline callout-icon me-2 mb-3" id="svg-rocket" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3" />
+  <path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3" />
+  <path d="M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Tip: Database Serialization</p>
+
+      </div>
+    <div class="callout-body">
+      <p>Previously, when saving cslices, sdicts, and dicts into database, they were serialized into their underlying native
+types - slices and maps. This meant that if you wanted to get the custom type back, you needed to convert manually, e.g.
+<code>{{cslice.AppendSlice $dbSlice}}</code> or <code>{{sdict $dbDict}}</code>. Recent changes to YAG have changed this: values with custom
+types are now serialized properly, making manual conversion unnecessary.</p>
+
+    </div>
+  </div>
+</div>
+
+<h2 id="database">Database<a href="#database" class="anchor" aria-hidden="true">#</a> </h2>
+<p>You have access to a basic set of Database functions having return of type <em>*customcommands.LightDBEntry</em> called here
+<a href="/docs/reference/templates/syntax-and-data/#dbentry">DBEntry</a>. This is almost a key value store ordered by the key and value combined.</p>
+<p>You can have max 50 * user_count (or 500 * user_count for premium) values in the database, if you go above this all
+new write functions will fail, this value is also cached, so it won&rsquo;t be detected immediately when you go above nor
+immediately when you&rsquo;re under again.</p>
+<p>Patterns are basic PostgreSQL patterns, not RegEx: An underscore <code>(_)</code> matches any single character; a percent sign
+<code>(%)</code> matches any sequence of zero or more characters.</p>
+<p>Keys can be max 256 bytes long and has to be strings or numbers. Values can be anything, but if their serialized
+representation exceeds 100kB a <code>short write</code> error gets raised.</p>
+<p>You can just pass a <code>userID</code>of 0 to make it global (or any other number, but 0 is safe).</p>
+<p>There can be 10 database interactions per CC, out of which dbTop/BottomEntries, dbCount, dbGetPattern, and dbDelMultiple
+may only be run twice. (50,10 for premium users).</p>
+<p>See also the <a href="/learn/intermediate/database/">chapter on the database</a> in the learning resources.</p>
+<p><a href="/docs/reference/templates/functions/#database">Database functions documentation</a>.</p>
+<p><a href="/docs/reference/custom-commands-examples/#database-example">Database example script</a>.</p>
+<h3 id="dbentry">DBEntry<a href="#dbentry" class="anchor" aria-hidden="true">#</a> </h3>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=.ID>
+          <td>.ID</td>
+          <td>ID of the entry of type <em>int64</em>.</td>
+      </tr>
+    <tr id=.GuildID>
+          <td>.GuildID</td>
+          <td>ID of the server of type <em>int64</em>.</td>
+      </tr>
+    <tr id=.UserID>
+          <td>.UserID</td>
+          <td>Value of type <em>int64</em> for <code>userID</code> argument or ID of the user if for example <code>.User.ID</code> was used for <code>dbSet</code>.</td>
+      </tr>
+    <tr id=.User>
+          <td>.User</td>
+          <td>User object of type <em>discordgo.User</em> having only <code>.ID</code> field, .Mention is still usable with correct userID field entry.</td>
+      </tr>
+    <tr id=.CreatedAt>
+          <td>.CreatedAt</td>
+          <td>When this entry was created, of type <em>time.Time</em>.</td>
+      </tr>
+    <tr id=.UpdatedAt>
+          <td>.UpdatedAt</td>
+          <td>When this entry was last updated, of type <em>time.Time</em>.</td>
+      </tr>
+    <tr id=.ExpiresAt>
+          <td>.ExpiresAt</td>
+          <td>When entry will expire, of type <em>time.Time</em>.</td>
+      </tr>
+    <tr id=.Key>
+          <td>.Key</td>
+          <td>The key of the entry, of type <em>string</em>.</td>
+      </tr>
+    <tr id=.Value>
+          <td>.Value</td>
+          <td>The value of the entry. All numbers will get returned as <em>float64</em> and other set values are of varying types.</td>
+      </tr>
+    <tr id=.ValueSize>
+          <td>.ValueSize</td>
+          <td>Returns the entryвЂ™s value size in bytes.</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="tickets">Tickets<a href="#tickets" class="anchor" aria-hidden="true">#</a> </h2>
+<p>See <a href="/docs/reference/templates/functions/#createticket"><code>createTicket</code></a> for creating a ticket.</p>
+<h3 id="template-ticket">Template Ticket<a href="#template-ticket" class="anchor" aria-hidden="true">#</a> </h3>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=.AuthorID>
+          <td>.AuthorID</td>
+          <td>Author ID of the ticket.</td>
+      </tr>
+    <tr id=.AuthorUsernameDiscrim>
+          <td>.AuthorUsernameDiscrim</td>
+          <td>The Discord tag of the author of the ticket, formatted like <code>username#discrim</code>.</td>
+      </tr>
+    <tr id=.ChannelID>
+          <td>.ChannelID</td>
+          <td>Channel ID of the ticket.</td>
+      </tr>
+    <tr id=.ClosedAt>
+          <td>.ClosedAt</td>
+          <td>Time that the ticket was closed, of type <em>null.Time.</em> This is, for the most part, useless in custom commands.</td>
+      </tr>
+    <tr id=.CreatedAt>
+          <td>.CreatedAt</td>
+          <td>Time that the ticket was created.</td>
+      </tr>
+    <tr id=.GuildID>
+          <td>.GuildID</td>
+          <td>Guild ID of the ticket.</td>
+      </tr>
+    <tr id=.LocalID>
+          <td>.LocalID</td>
+          <td>The ticket ID.</td>
+      </tr>
+    <tr id=.LogsID>
+          <td>.LogsID</td>
+          <td>Log ID of the ticket.</td>
+      </tr>
+    <tr id=.Title>
+          <td>.Title</td>
+          <td>Title of the ticket.</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="time">Time<a href="#time" class="anchor" aria-hidden="true">#</a> </h2>
+<p>Time and duration types use <a href="https://golang.org/pkg/time/#Time" rel="external">Go&rsquo;s time package</a>. Go by Example lists <a href="https://gobyexample.com/time" rel="external">some examples
+of using <em>time.Time</em></a> in Go code, which can be referenced for similar use in OBMAN.BOT&rsquo;s
+templates.</p>
+<p>Some time types in the data that Discord API functions return instead use the <em>discordgo.Timestamp</em> type. These can be
+converted to <em>time.Time</em> with the <code>.Parse</code> method. These cases are mentioned in the type documentation on this page.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=.DiscordEpoch>
+          <td>.DiscordEpoch</td>
+          <td>Gives you Discord Epoch time in <em>time.Time.</em> <code>{{.DiscordEpoch.Unix}}</code> would return in seconds &gt; 1420070400.</td>
+      </tr>
+    <tr id=.UnixEpoch>
+          <td>.UnixEpoch</td>
+          <td>Gives you Unix Epoch time in <em>time.Time.</em></td>
+      </tr>
+    <tr id=.TimeHour>
+          <td>.TimeHour</td>
+          <td>Variable of <em>time.Duration</em> type and returns 1 hour &gt; <code>1h0m0s</code>.</td>
+      </tr>
+    <tr id=.TimeMinute>
+          <td>.TimeMinute</td>
+          <td>Variable of <em>time.Duration</em> type and returns 1 minute &gt; <code>1m0s</code>.</td>
+      </tr>
+    <tr id=.TimeSecond>
+          <td>.TimeSecond</td>
+          <td>Variable of <em>time.Duration</em> type and returns 1 second &gt; <code>1s</code>.</td>
+      </tr>
+  </tbody>
+</table>
+<p><a href="/docs/reference/templates/functions/#time">Time functions documentation</a>.</p>
+
+			<div class="page-footer-meta d-flex flex-column flex-md-row justify-content-between">
+				
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="edit-page">
+  <a href="https://github.com/ArtObman/ArtObman/blob/master/content//docs/reference/templates/syntax-and-data.md">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2">
+      <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+    </svg>
+    Edit this page on GitHub
+  </a>
+</div>
+
+				</div>
+			<div class="page-nav d-flex flex-column flex-sm-row">
+	
+	<div class="card w-100">
+			<div class="card-body d-flex">
+				<div class="d-flex flex-column justify-content-center">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M5 12l14 0"></path>
+						<path d="M5 12l6 6"></path>
+						<path d="M5 12l6 -6"></path>
+				 	</svg>
+				</div>
+				<div class="d-flex flex-column">
+					<div class="text-body-secondary">Prev</div>
+					<a href="/docs/fun/soundboard/" class="stretched-link text-reset text-decoration-none">Soundboard</a>
+				</div>
+			</div>
+		</div>
+	<div class="m-2"></div>
+	<div class="card text-end w-100">
+			<div class="card-body d-flex justify-content-end">
+				<div class="d-flex flex-column">
+					<div class="text-body-secondary">Next</div>
+					<a href="/docs/reference/templates/functions/" class="stretched-link text-reset text-decoration-none">Functions</a>
+				</div>
+				<div class="d-flex flex-column justify-content-center">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M5 12l14 0"></path>
+						<path d="M13 18l6 -6"></path>
+						<path d="M13 6l6 6"></path>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+
+			
+		</main>
+		
+	</div>
+
+      
+      </div>
+    </div>
+    
+    
+    <footer class="footer text-muted">
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-lg-8 text-center text-lg-start">
+        <ul class="list-inline">
+          <li class="list-inline-item"><a class="text-muted" href="https://botlabs.gg/privacy-policy">Privacy Policy</a></li><li class="list-inline-item"><a class="text-muted" href="https://obman.com/terms-of-use">Terms of Use</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-8 text-center text-lg-end">
+        <ul class="list-inline">
+          <li class="list-inline-item">Built using <a class="text-muted" href="https://getdoks.org/">Doks</a> and <a class="text-muted" href="https://gohugo.io/">Hugo</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script async
+  src="/js/bootstrap.8674636a1059caed3a46af4b3dbc8d68a0aac4e0c51ab393c810f3ad10553638.js"
+  integrity="sha256-hnRjahBZyu06Rq9LPbyNaKCqxODFGrOTyBDzrRBVNjg=">
+</script>
+
+
+<script async
+  src="/js/app.ed63b5301e6ba65958f352a0840b7bbba0fcd82e492693df4e191290daaa4850.js"
+  integrity="sha256-7WO1MB5rpllY81KghAt7u6D82C5JJpPfThkSkNqqSFA=">
+</script>
+
+
+
+
+
+
+
+
+
+
+<script async
+  src="/js/docsearch.b4e4d5218e0dcf1c9f23699da64223159203b928fe4e1da0c2657079845ad1c2.js"
+  integrity="sha256-tOTVIY4NzxyfI2mdpkIjFZIDuSj&#43;Th2gwmVweYRa0cI=">
+</script>
+
+    
+  </body>
+</html>

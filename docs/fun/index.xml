@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fun on OBMAN.BOT Help Center</title>
+    <link>http://localhost:1313/docs/fun/</link>
+    <description>Recent content in Fun on OBMAN.BOT Help Center</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Copyright (c) 2020-2024 OBMAN.BOT documentation contributors</copyright>
+    <atom:link href="http://localhost:1313/docs/fun/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reputation</title>
+      <link>http://localhost:1313/docs/fun/reputation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/fun/reputation/</guid>
+      <description>&lt;p&gt;The reputation system tracks each user&amp;rsquo;s reputation score, and allows users to add or remove reputation points from&#xA;other users.&lt;/p&gt;&#xA;&lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;#h-rh-i-0a7999f6a5fcb1c9d6ff4e17cf05fb9e-lightbox&#34;&gt;&#xA;&lt;img alt=&#34;Overview of the Reputation System&#34; height=&#34;790&#34; id=&#34;h-rh-i-0a7999f6a5fcb1c9d6ff4e17cf05fb9e&#34; src=&#34;http://localhost:1313/docs/fun/overview_reputation.png&#34; width=&#34;1560&#34;&gt;&lt;/a&gt;&#xA;&lt;a href=&#34;javascript:history.back();&#34; class=&#34;lightbox&#34; id=&#34;h-rh-i-0a7999f6a5fcb1c9d6ff4e17cf05fb9e-lightbox&#34;&gt;&#xA;  &lt;img loading=&#34;lazy&#34; alt=&#34;Overview of the Reputation System&#34; height=&#34;790&#34; id=&#34;h-rh-i-0a7999f6a5fcb1c9d6ff4e17cf05fb9e&#34; src=&#34;http://localhost:1313/docs/fun/overview_reputation.png&#34; width=&#34;1560&#34;&gt;&#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;Reputation is not enabled by default. To enable it, please go to the &lt;a href=&#34;https://obman.com/manage&#34; rel=&#34;external&#34;&gt;control panel&lt;/a&gt; and&#xA;check &lt;em&gt;Reputation enabled.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;enable-giving-rep-when-someone-says-thanks-user&#34;&gt;Enable giving rep when someone says &amp;ldquo;thanks @user&amp;rdquo;?&lt;/h3&gt;&#xA;&lt;p&gt;This is an alternative way of &lt;code&gt;-giverep&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;h3 id=&#34;name-for-reputation-points&#34;&gt;Name for reputation points&lt;/h3&gt;&#xA;&lt;p&gt;This will be displayed in the &lt;code&gt;-rep&lt;/code&gt; command. By default, it is &lt;em&gt;Rep&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Soundboard</title>
+      <link>http://localhost:1313/docs/fun/soundboard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/fun/soundboard/</guid>
+      <description>&lt;p&gt;The soundboard system allows the bot to join a voice channel, and play sounds triggered by soundboard commands.&lt;/p&gt;&#xA;&lt;h2 id=&#34;uploading-new-sounds&#34;&gt;Uploading New Sounds&lt;/h2&gt;&#xA;&lt;p&gt;The settings listed below only apply to that specific sound, and not the entire soundboard. Use a &lt;a href=&#34;http://localhost:1313/docs/core/command-settings/&#34;&gt;command&#xA;override&lt;/a&gt; to restrict access to the soundboard system as a whole.&lt;/p&gt;&#xA;&lt;h3 id=&#34;name&#34;&gt;Name&lt;/h3&gt;&#xA;&lt;p&gt;Give the sound a name. This name will be shown in the list to play later on. Avoid giving duplicated names for easier&#xA;reference.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

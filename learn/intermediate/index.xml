@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Intermediate on OBMAN.BOT Help Center</title>
+    <link>http://localhost:1313/learn/intermediate/</link>
+    <description>Recent content in Intermediate on OBMAN.BOT Help Center</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Copyright (c) 2020-2024 OBMAN.BOT documentation contributors</copyright>
+    <atom:link href="http://localhost:1313/learn/intermediate/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Embeds and Messages</title>
+      <link>http://localhost:1313/learn/intermediate/embeds-and-messages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/intermediate/embeds-and-messages/</guid>
+      <description>&lt;p&gt;Until now, we have just used the &lt;a href=&#34;http://localhost:1313/learn/beginner/simple-responses/&#34;&gt;default response behavior&lt;/a&gt; to make our custom&#xA;commands respond with some text. This makes sense for quick mockups or relatively simple commands. However, this may be&#xA;inconvenient or Not What You Want in some cases. In this chapter, we will explore how to send messages to different&#xA;channels, edit existing messages, and send messages with embeds, vastly expanding your toolbox for creating complex&#xA;custom command systems.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Maps and Slices</title>
+      <link>http://localhost:1313/learn/intermediate/maps-and-slices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/intermediate/maps-and-slices/</guid>
+      <description>&lt;p&gt;When you first started this course, you learned about &lt;a href=&#34;http://localhost:1313/learn/beginner/variables-and-data-types/&#34;&gt;primitive data types&lt;/a&gt;.&#xA;In the previous chapter we name-dropped two more types: &amp;ldquo;slice&amp;rdquo;, and &amp;ldquo;sdict&amp;rdquo; (&amp;ldquo;map&amp;rdquo;), both without much elaboration.&#xA;In this chapter, we will explore these data types in more detail.&lt;/p&gt;&#xA;&lt;h2 id=&#34;slices&#34;&gt;Slices&lt;/h2&gt;&#xA;&lt;p&gt;A slice is an ordered list of items. In custom commands, we can &lt;strong&gt;c&lt;/strong&gt;reate a &lt;strong&gt;slice&lt;/strong&gt; by providing the items in order&#xA;to the &lt;code&gt;cslice&lt;/code&gt; function:&lt;/p&gt;&#xA;&lt;div class=&#34;expressive-code&#34;&gt;&#xA;      &lt;figure class=&#34;frame not-content&#34;&gt;&#xA;        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{ $fruits := cslice &amp;#34;banana&amp;#34; &amp;#34;orange&amp;#34; &amp;#34;apple&amp;#34; }}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;        &lt;/figure&gt;&#xA;      &lt;/figure&gt;&#xA;    &lt;/div&gt;&lt;p&gt;All the elements in the &lt;code&gt;$fruits&lt;/code&gt; slice happen to have the same type (&lt;em&gt;string&lt;/em&gt;), but this is not a requirement: it is&#xA;valid, though rare, for a slice to contain elements of different types.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Loops</title>
+      <link>http://localhost:1313/learn/intermediate/loops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/intermediate/loops/</guid>
+      <description>&lt;p&gt;In a previous chapter, we learned about &lt;a href=&#34;http://localhost:1313/learn/beginner/conditional-branching/&#34;&gt;conditional branching&lt;/a&gt;.&#xA;In this chapter, we will discuss more advanced control flow actions: namely, &lt;code&gt;range&lt;/code&gt;, &lt;code&gt;while&lt;/code&gt;, and &lt;code&gt;with&lt;/code&gt; actions.&lt;/p&gt;&#xA;&lt;h2 id=&#34;loop&#34;&gt;Loop&lt;/h2&gt;&#xA;&lt;p&gt;Fundamentally, loops provide a way to perform repeated actions. There are two loop actions available in custom commands:&#xA;&lt;code&gt;range&lt;/code&gt;, which repeats an action for each entry in a data structure, and &lt;code&gt;while&lt;/code&gt;, which repeats an action as long as a&#xA;condition holds.&lt;/p&gt;&#xA;&lt;h3 id=&#34;range&#34;&gt;Range&lt;/h3&gt;&#xA;&lt;p&gt;The &lt;code&gt;range&lt;/code&gt; action performs an action for each entry in a slice or map; we say that range &lt;em&gt;iterates&lt;/em&gt; over the slice or&#xA;map. If you have experience with other programming languages, &lt;code&gt;range&lt;/code&gt; is roughly equivalent to a for-each loop.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Database</title>
+      <link>http://localhost:1313/learn/intermediate/database/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/intermediate/database/</guid>
+      <description>&lt;p&gt;OBMAN.BOT provides a database for use in your CCs. Entries in this database are used to store persistent data that you want&#xA;to keep between custom command executions. You access and manipulate these entries with the &lt;a href=&#34;http://localhost:1313/docs/reference/templates/functions/#database&#34;&gt;database functions&lt;/a&gt;,&#xA;which we will elaborate on in this guide.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overall&#34;&gt;Overall&lt;/h2&gt;&#xA;&lt;p&gt;This section covers the structure of a database entry, the database&amp;rsquo;s size limits, as well as the entry&amp;rsquo;s size limit and&#xA;lastly the interaction limit per custom command execution.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Exercises</title>
+      <link>http://localhost:1313/learn/intermediate/exercises/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/intermediate/exercises/</guid>
+      <description>&lt;p&gt;Below are some exercises to help you practice and reinforce your understanding of the concepts discussed in the previous&#xA;sections. Remember to use the &lt;a href=&#34;http://localhost:1313/docs/reference/templates/&#34;&gt;template reference&lt;/a&gt; if you need help. Do them at your own pace&#xA;and whenever you feel like it.&lt;/p&gt;&#xA;&lt;h2 id=&#34;duplicates-in-a-list&#34;&gt;Duplicates in a List&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;You are given a list of numbers having some repeated digits. Write a CC which will eliminate duplicate entries and&#xA;return the cleaned list. The list is as follows: &lt;code&gt;42 1 2 81 3 5 42 19 2 42 19 81 46&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

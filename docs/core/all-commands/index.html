@@ -1,0 +1,2346 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+<script 
+  src="/js/color-mode.f14b3e296de1d0b69e75af684b62a4a912a2cadab04e36123407cd8388204f1d.js"
+  integrity="sha256-8Us&#43;KW3h0Laeda9oS2KkqRKiytqwTjYSNAfNg4ggTx0=">
+</script>
+
+
+<link rel="stylesheet" href="/main.36ca4900ac79c8b8df541138c0226a38e9bd2fbbd3cde3f0c397a7de57e6e3205e7bd138bf1f9da340a9cb91990a0593d180b720a58bcc44ef978ed4a4791dbe.css" integrity="sha512-NspJAKx5yLjfVBE4wCJqOOm9L7vTzePww5en3lfm4yBee9E4vx&#43;do0Cpy5GZCgWT0YC3IKWLzETvl47UpHkdvg==" crossorigin="anonymous">
+
+<noscript><style>img.lazyload { display: none; }</style></noscript><base href="http://localhost:1313/docs/core/all-commands/">
+
+  <link rel="canonical" href="http://localhost:1313/docs/core/all-commands/">
+
+
+<title>All Commands  |  OBMAN.BOT Help Center</title>
+<meta name="description" content="List of all available commands offered by OBMAN.BOT and their syntax.">
+
+    
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    
+    
+      <link
+        rel="apple-touch-icon"
+        href="/apple-touch-icon.png"
+        sizes="180x180"
+        type="image/png"
+      >
+      <link
+        rel="icon"
+        href="/favicon-192x192.png"
+        sizes="192x192"
+        type="image/png"
+      >
+      <link
+        rel="icon"
+        href="/favicon-512x512.png"
+        sizes="512x512"
+        type="image/png"
+      >
+<link rel="manifest" href="/manifest.webmanifest">
+
+<meta property="og:url" content="http://localhost:1313/docs/core/all-commands/">
+  <meta property="og:site_name" content="OBMAN.BOT Help Center">
+  <meta property="og:title" content="All Commands">
+  <meta property="og:description" content="List of all available commands offered by OBMAN.BOT and their syntax.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="All Commands">
+  <meta name="twitter:description" content="List of all available commands offered by OBMAN.BOT and their syntax.">
+
+    
+    
+    <script type="application/ld+json">
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/",
+       "name": "Obman. Bot Help Center",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/docs/",
+       "name": "Documentation",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/docs/core/",
+       "name": "Core",
+       "position": 3
+     },
+     {
+       "@type": "ListItem",
+       "name": "All Commands",
+       "position": 4
+     }
+   ]
+ }
+</script>
+
+
+
+
+
+
+<link rel="preconnect" href="https://ER865HD7LN-dsn.algolia.net" crossorigin />
+
+</head>
+
+  
+  <body class="single section docs" data-bs-spy="scroll" data-bs-target="#toc" data-bs-root-margin="0px 0px -60%" data-bs-smooth-scroll="true" tabindex="0">
+    <div class="sticky-top">
+<header class="navbar navbar-expand-lg">
+  <div class="container-lg">
+  
+    <a class="navbar-brand me-auto me-lg-3" href="/">OBMAN.BOT Help Center</a>
+
+    
+    
+    
+    <div id="docsearch" class="d-none" tabindex="-1" aria-disabled="true"></div>
+    <button type="button" id="searchToggleMobile" class="btn btn-link nav-link mx-2 d-lg-none" aria-label="Search website">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <circle cx="10" cy="10" r="7"></circle>
+        <line x1="21" y1="21" x2="15" y2="15"></line>
+      </svg>
+    </button>
+    
+    <button class="btn btn-link d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavSection" aria-controls="offcanvasNavSection" aria-label="Open section navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+        <path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+        <path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+      </svg>
+    </button>
+    <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasNavSection" aria-labelledby="offcanvasNavSectionLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavSectionLabel">Docs</h5>
+        <button type="button" class="btn btn-link nav-link p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <aside class="doks-sidebar mt-n3">
+          <nav id="doks-docs-nav" aria-label="Tertiary navigation">
+            
+  
+    
+<nav class="section-nav docs-links">
+  <ul class="list-unstyled">
+
+  <li>
+    <details open>
+      <summary>Welcome</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/welcome/introduction/">Introduction</a>
+  </li>
+
+  <li>
+      <a href="/docs/welcome/getting-started/">Getting Started</a>
+  </li>
+
+  <li>
+      <a href="/docs/welcome/premium/">Premium</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Core</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/core/control-panel-access/">Control Panel Access</a>
+  </li>
+
+  <li>
+      <a href="/docs/core/control-panel-logs/">Control Panel Logs</a>
+  </li>
+
+  <li>
+      <a href="/docs/core/command-settings/">Command Settings</a>
+  </li>
+
+  <li class="active" >
+      <a aria-current="page" href="/docs/core/all-commands/">All Commands</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Custom Commands</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/custom-commands/commands/">Commands</a>
+  </li>
+
+  <li>
+      <a href="/docs/custom-commands/database/">Database</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Moderation</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/moderation/moderation-tools/">Moderation Tools</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/basic-automoderator/">Basic Automoderator</a>
+  </li>
+
+  <li>
+    <details>
+      <summary>Advanced Automoderator</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/overview/">Overview</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/triggers/">Triggers</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/conditions/">Conditions</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/effects/">Effects</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/logging/">Logging</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/verification/">Verification</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Notifications and Feeds</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/notifications/general/">General</a>
+  </li>
+
+  <li>
+      <a href="/docs/notifications/reddit/">Reddit</a>
+  </li>
+
+  <li>
+      <a href="/docs/notifications/youtube/">YouTube</a>
+  </li>
+
+  <li>
+      <a href="/docs/notifications/streaming/">Streaming</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Roles</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/roles/autorole/">Autorole</a>
+  </li>
+
+  <li>
+      <a href="/docs/roles/self-assignable-roles/">Self Assignable Roles</a>
+  </li>
+
+  <li>
+      <a href="/docs/roles/bulk-role/">Bulk Role</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Tools and Utilities</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/tools-and-utilities/tickets/">Tickets</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Fun</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/fun/reputation/">Reputation</a>
+  </li>
+
+  <li>
+      <a href="/docs/fun/soundboard/">Soundboard</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Reference</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+    <details>
+      <summary>Templates</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/reference/templates/syntax-and-data/">Syntax and Data</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/templates/functions/">Functions</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+      <a href="/docs/reference/components-v2/">Components V2</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-commands-examples/">Custom Commands Examples</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-commands-limits/">Custom Commands Limits</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-embeds/">Custom Embeds</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-interactions/">Custom Interactions</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/how-to-get-ids/">How to Get IDs</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/using-regex/">Using RegEx</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+  </ul>
+</nav>
+
+  
+
+          </nav>
+        </aside>
+      </div>
+    </div>
+    
+    <button class="btn btn-link nav-link mx-2 order-3 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavMain" aria-controls="offcanvasNavMain" aria-label="Open main navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <line x1="4" y1="8" x2="20" y2="8"></line>
+        <line x1="4" y1="16" x2="20" y2="16"></line>
+      </svg>
+    </button>
+
+    
+    <div class="offcanvas offcanvas-end h-auto" tabindex="-1" id="offcanvasNavMain" aria-labelledby="offcanvasNavMainLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavMainLabel">OBMAN.BOT Help Center</h5>
+        <button type="button" class="btn btn-link nav-link p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+         </svg>
+        </button>
+      </div>
+      
+      <div class="offcanvas-body d-flex flex-column flex-lg-row justify-content-between">
+        <ul class="navbar-nav flex-grow-1"><li class="nav-item">
+                <a class="nav-link" href="http://localhost:1313/docs/welcome/introduction/">Documentation</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost:1313/learn/welcome/introduction/">Learning Resources</a>
+              </li>
+            </ul>
+
+        
+        
+        
+        <button type="button" id="searchToggleDesktop" class="btn btn-link nav-link mx-2 d-none d-lg-block" aria-label="Search website">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <circle cx="10" cy="10" r="7"></circle>
+            <line x1="21" y1="21" x2="15" y2="15"></line>
+          </svg>
+        </button>
+        
+        
+        
+        <button id="buttonColorMode" class="btn btn-link mx-auto nav-link p-0 ms-lg-2 me-lg-1" type="button" aria-label="Toggle theme">
+          <svg data-bs-theme-value="dark" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
+          </svg>
+          <svg data-bs-theme-value="light" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0m-5 0h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
+          </svg>
+        </button>
+        
+        <ul id="socialMenu" class="nav mx-auto flex-row order-lg-4">
+          <li class="nav-item">
+              <a class="nav-link social-link" href="https://discord.gg/4udtcA5"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-discord" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M8 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path><path d="M14 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path><path d="M8.5 17c0 1 -1.356 3 -1.832 3c-1.429 0 -2.698 -1.667 -3.333 -3c-.635 -1.667 -.476 -5.833 1.428 -11.5c1.388 -1.015 2.782 -1.34 4.237 -1.5l.975 1.923a11.913 11.913 0 0 1 4.053 0l.972 -1.923c1.5 .16 3.043 .485 4.5 1.5c2 5.667 2.167 9.833 1.5 11.5c-.667 1.333 -2 3 -3.5 3c-.5 0 -2 -2 -2 -3"></path><path d="M7 16.5c3.5 1 6.5 1 10 0"></path></svg><small class="ms-2 visually-hidden">Discord</small></a>
+            </li>
+          <li class="nav-item">
+              <a class="nav-link social-link" href="https://github.com/ArtObman/ArtObman"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg><small class="ms-2 visually-hidden">GitHub</small></a>
+            </li>
+          </ul>
+        
+        <button id="selfHosting" class="btn btn-link mx-auto nav-link p-0 ms-lg-2 me-lg-1" type="button" aria-label="Toggle self-hosting view">
+          <svg data-selfhost-value="yes" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-server-off" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 12h-6a3 3 0 0 1 -3 -3v-2c0 -1.083 .574 -2.033 1.435 -2.56m3.565 -.44h10a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-2" />
+            <path d="M16 12h2a3 3 0 0 1 3 3v2m-1.448 2.568a2.986 2.986 0 0 1 -1.552 .432h-12a3 3 0 0 1 -3 -3v-2a3 3 0 0 1 3 -3h6" />
+            <path d="M7 8v.01" />
+            <path d="M7 16v.01" />
+            <path d="M3 3l18 18" />
+          </svg>
+          <svg data-selfhost-value="no" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-server" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 4m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+            <path d="M3 12m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+            <path d="M7 8l0 .01" />
+            <path d="M7 16l0 .01" />
+          </svg>
+        </button>
+
+        
+        <div class="gtranslate-container order-lg-5 d-flex align-items-center ms-lg-2 mt-2 mt-lg-0">
+          <div class="gtranslate_wrapper"></div>
+        </div>
+      </div>
+    </div>
+
+        
+        </div>
+</header>
+</div>
+
+<script>
+  window.gtranslateSettings = {
+    "default_language": "en",
+    "native_language_names": true,
+    "detect_browser_language": true,
+    "wrapper_selector": ".gtranslate_wrapper",
+    "flag_size": 24
+  };
+</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/popup.js" defer></script>
+
+    <div class="wrap container-lg" role="document">
+      <div class="content">
+      
+        
+	<div class="row flex-xl-nowrap">
+		<div class="col-lg-5 col-xl-4 docs-sidebar d-none d-lg-block">
+			
+  
+    
+<nav class="section-nav docs-links">
+  <ul class="list-unstyled">
+
+  <li>
+    <details open>
+      <summary>Welcome</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/welcome/introduction/">Introduction</a>
+  </li>
+
+  <li>
+      <a href="/docs/welcome/getting-started/">Getting Started</a>
+  </li>
+
+  <li>
+      <a href="/docs/welcome/premium/">Premium</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Core</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/core/control-panel-access/">Control Panel Access</a>
+  </li>
+
+  <li>
+      <a href="/docs/core/control-panel-logs/">Control Panel Logs</a>
+  </li>
+
+  <li>
+      <a href="/docs/core/command-settings/">Command Settings</a>
+  </li>
+
+  <li class="active" >
+      <a aria-current="page" href="/docs/core/all-commands/">All Commands</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Custom Commands</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/custom-commands/commands/">Commands</a>
+  </li>
+
+  <li>
+      <a href="/docs/custom-commands/database/">Database</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Moderation</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/moderation/moderation-tools/">Moderation Tools</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/basic-automoderator/">Basic Automoderator</a>
+  </li>
+
+  <li>
+    <details>
+      <summary>Advanced Automoderator</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/overview/">Overview</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/triggers/">Triggers</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/conditions/">Conditions</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/effects/">Effects</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/logging/">Logging</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/verification/">Verification</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Notifications and Feeds</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/notifications/general/">General</a>
+  </li>
+
+  <li>
+      <a href="/docs/notifications/reddit/">Reddit</a>
+  </li>
+
+  <li>
+      <a href="/docs/notifications/youtube/">YouTube</a>
+  </li>
+
+  <li>
+      <a href="/docs/notifications/streaming/">Streaming</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Roles</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/roles/autorole/">Autorole</a>
+  </li>
+
+  <li>
+      <a href="/docs/roles/self-assignable-roles/">Self Assignable Roles</a>
+  </li>
+
+  <li>
+      <a href="/docs/roles/bulk-role/">Bulk Role</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Tools and Utilities</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/tools-and-utilities/tickets/">Tickets</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Fun</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/fun/reputation/">Reputation</a>
+  </li>
+
+  <li>
+      <a href="/docs/fun/soundboard/">Soundboard</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Reference</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+    <details>
+      <summary>Templates</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/reference/templates/syntax-and-data/">Syntax and Data</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/templates/functions/">Functions</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+      <a href="/docs/reference/components-v2/">Components V2</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-commands-examples/">Custom Commands Examples</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-commands-limits/">Custom Commands Limits</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-embeds/">Custom Embeds</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-interactions/">Custom Interactions</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/how-to-get-ids/">How to Get IDs</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/using-regex/">Using RegEx</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+  </ul>
+</nav>
+
+  
+
+		</div>
+		
+		<nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation">
+			<div class="page-links">
+  <h3>On this page</h3>
+    <nav id="toc">
+  <ul>
+    <li><a href="#legend">Legend</a></li>
+    <li><a href="#general-рівђћврїсрџ">General РІвЂћв„–РїС‘РЏ</a>
+      <ul>
+        <li><a href="#help">Help</a></li>
+        <li><a href="#info">Info</a></li>
+        <li><a href="#invite">Invite</a></li>
+      </ul>
+    </li>
+    <li><a href="#tools--utilities-сђсџвђќрѓ">Tools &amp; Utilities СЂСџвЂќРЃ</a>
+      <ul>
+        <li><a href="#prefix">Prefix</a></li>
+        <li><a href="#calc">Calc</a></li>
+        <li><a href="#customembed">CustomEmbed</a></li>
+        <li><a href="#simpleembed">SimpleEmbed</a></li>
+        <li><a href="#currenttime">CurrentTime</a></li>
+        <li><a href="#listroles">ListRoles</a></li>
+        <li><a href="#poll">Poll</a></li>
+        <li><a href="#undelete">Undelete</a></li>
+        <li><a href="#stats">Stats</a></li>
+        <li><a href="#customcommands">CustomCommands</a></li>
+        <li><a href="#evalcc">Evalcc</a></li>
+        <li><a href="#logs">Logs</a></li>
+        <li><a href="#whois">Whois</a></li>
+        <li><a href="#nicknames">Nicknames</a></li>
+        <li><a href="#usernames">Usernames</a></li>
+        <li><a href="#resetpastnames">ResetPastNames</a></li>
+        <li><a href="#remindme">Remindme</a></li>
+        <li><a href="#reminders">Reminders</a></li>
+        <li><a href="#creminders">CReminders</a></li>
+        <li><a href="#delreminder">DelReminder</a></li>
+        <li><a href="#role">Role</a></li>
+        <li><a href="#settimezone">settimezone</a></li>
+        <li><a href="#toggletimeconversion">ToggleTimeConversion</a></li>
+      </ul>
+    </li>
+    <li><a href="#fun-сђсџрвђ">Fun СЂСџР‹вЂ°</a>
+      <ul>
+        <li><a href="#define">Define</a></li>
+        <li><a href="#weather">Weather</a></li>
+        <li><a href="#topic">Topic</a></li>
+        <li><a href="#catfact">CatFact</a></li>
+        <li><a href="#dadjoke">DadJoke</a></li>
+        <li><a href="#dogfact">DogFact</a></li>
+        <li><a href="#advice">Advice</a></li>
+        <li><a href="#throw">Throw</a></li>
+        <li><a href="#roll">Roll</a></li>
+        <li><a href="#wouldyourather">WouldYouRather</a></li>
+        <li><a href="#xkcd">Xkcd</a></li>
+        <li><a href="#howlongtobeat">HowLongToBeat</a></li>
+        <li><a href="#inspire">Inspire</a></li>
+        <li><a href="#forex">Forex</a></li>
+        <li><a href="#roast">Roast</a></li>
+        <li><a href="#8ball">8ball</a></li>
+        <li><a href="#dictionary">dictionary</a></li>
+        <li><a href="#takerep">TakeRep</a></li>
+        <li><a href="#giverep">GiveRep</a></li>
+        <li><a href="#setrep">SetRep</a></li>
+        <li><a href="#delrep">DelRep</a></li>
+        <li><a href="#replog">RepLog</a></li>
+        <li><a href="#rep">Rep</a></li>
+        <li><a href="#toprep">TopRep</a></li>
+        <li><a href="#soundboard">Soundboard</a></li>
+        <li><a href="#soundboardreset">SoundboardReset</a></li>
+        <li><a href="#cah-create">cah Create</a></li>
+        <li><a href="#cah-end">cah End</a></li>
+        <li><a href="#cah-kick">cah Kick</a></li>
+        <li><a href="#cah-packs">cah Packs</a></li>
+        <li><a href="#trivia">Trivia</a></li>
+      </ul>
+    </li>
+    <li><a href="#debug--maintenance-сђсџвђтђ">Debug &amp; Maintenance СЂСџвЂ“Тђ</a>
+      <ul>
+        <li><a href="#ping">Ping</a></li>
+        <li><a href="#viewperms">ViewPerms</a></li>
+        <li><a href="#topservers">TopServers</a></li>
+        <li><a href="#currentshard">CurrentShard</a></li>
+        <li><a href="#isguildunavailable">IsGuildUnavailable</a></li>
+        <li><a href="#yagstatus">Yagstatus</a></li>
+        <li><a href="#roledbg">Roledbg</a></li>
+      </ul>
+    </li>
+    <li><a href="#moderation-сђсџвђв">Moderation СЂСџвЂВ®</a>
+      <ul>
+        <li><a href="#ban">Ban</a></li>
+        <li><a href="#unban">Unban</a></li>
+        <li><a href="#kick">Kick</a></li>
+        <li><a href="#mute">Mute</a></li>
+        <li><a href="#unmute">Unmute</a></li>
+        <li><a href="#timeout">Timeout</a></li>
+        <li><a href="#removetimeout">RemoveTimeout</a></li>
+        <li><a href="#report">Report</a></li>
+        <li><a href="#clean">Clean</a></li>
+        <li><a href="#reason">Reason</a></li>
+        <li><a href="#warn">Warn</a></li>
+        <li><a href="#warnings">Warnings</a></li>
+        <li><a href="#editwarning">EditWarning</a></li>
+        <li><a href="#delwarning">DelWarning</a></li>
+        <li><a href="#clearwarnings">ClearWarnings</a></li>
+        <li><a href="#topwarnings">TopWarnings</a></li>
+        <li><a href="#giverole">GiveRole</a></li>
+        <li><a href="#removerole">RemoveRole</a></li>
+        <li><a href="#automod-rulesets">automod Rulesets</a></li>
+        <li><a href="#automod-toggle">automod Toggle</a></li>
+        <li><a href="#automod-logs">automod Logs</a></li>
+        <li><a href="#automod-listviolations">automod ListViolations</a></li>
+        <li><a href="#automod-listviolationscount">automod ListViolationsCount</a></li>
+        <li><a href="#automod-deleteviolation">automod DeleteViolation</a></li>
+        <li><a href="#automod-clearviolations">automod ClearViolations</a></li>
+      </ul>
+    </li>
+    <li><a href="#rolemenu-сђсџвђќв">Rolemenu СЂСџвЂќВ</a>
+      <ul>
+        <li><a href="#rolemenu-create">RoleMenu Create</a></li>
+        <li><a href="#rolemenu-remove">RoleMenu Remove</a></li>
+        <li><a href="#rolemenu-update">RoleMenu Update</a></li>
+        <li><a href="#rolemenu-resetreactions">RoleMenu ResetReactions</a></li>
+        <li><a href="#rolemenu-editoption">RoleMenu EditOption</a></li>
+        <li><a href="#rolemenu-complete">RoleMenu Complete</a></li>
+        <li><a href="#rolemenu-listgroups">RoleMenu Listgroups</a></li>
+      </ul>
+    </li>
+    <li><a href="#tickets-сђсџрв">Tickets СЂСџР‹В«</a>
+      <ul>
+        <li><a href="#tickets-open">tickets Open</a></li>
+        <li><a href="#tickets-adduser">tickets AddUser</a></li>
+        <li><a href="#tickets-removeuser">tickets RemoveUser</a></li>
+        <li><a href="#tickets-rename">tickets Rename</a></li>
+        <li><a href="#tickets-close">tickets Close</a></li>
+        <li><a href="#tickets-adminsonly">tickets AdminsOnly</a></li>
+      </ul>
+    </li>
+    <li><a href="#events-сђсџрсџ">Events СЂСџР‹Сџ</a>
+      <ul>
+        <li><a href="#events-create">events Create</a></li>
+        <li><a href="#events-edit">events Edit</a></li>
+        <li><a href="#events-list">events List</a></li>
+        <li><a href="#events-delete">events Delete</a></li>
+        <li><a href="#events-stopsetup">events StopSetup</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+
+		</nav>
+		<main class="docs-content col-lg-11 col-xl-9 mx-xl-auto">
+		
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="/">Home</a></li>
+<li class="breadcrumb-item"><a href="/docs/">Docs</a></li>
+<li class="breadcrumb-item"><a href="/docs/core/">Core</a></li>
+<li class="breadcrumb-item active" aria-current="page">All Commands</li>
+					</ol>
+				</nav>
+			
+			<h1>All Commands</h1>
+			
+			<nav class="toc-mobile d-xl-none" aria-label="Quaternary navigation">
+				<details>
+    <summary>On this page</summary>
+    <div class="page-links">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#legend">Legend</a></li>
+    <li><a href="#general-рівђћврїсрџ">General РІвЂћв„–РїС‘РЏ</a>
+      <ul>
+        <li><a href="#help">Help</a></li>
+        <li><a href="#info">Info</a></li>
+        <li><a href="#invite">Invite</a></li>
+      </ul>
+    </li>
+    <li><a href="#tools--utilities-сђсџвђќрѓ">Tools &amp; Utilities СЂСџвЂќРЃ</a>
+      <ul>
+        <li><a href="#prefix">Prefix</a></li>
+        <li><a href="#calc">Calc</a></li>
+        <li><a href="#customembed">CustomEmbed</a></li>
+        <li><a href="#simpleembed">SimpleEmbed</a></li>
+        <li><a href="#currenttime">CurrentTime</a></li>
+        <li><a href="#listroles">ListRoles</a></li>
+        <li><a href="#poll">Poll</a></li>
+        <li><a href="#undelete">Undelete</a></li>
+        <li><a href="#stats">Stats</a></li>
+        <li><a href="#customcommands">CustomCommands</a></li>
+        <li><a href="#evalcc">Evalcc</a></li>
+        <li><a href="#logs">Logs</a></li>
+        <li><a href="#whois">Whois</a></li>
+        <li><a href="#nicknames">Nicknames</a></li>
+        <li><a href="#usernames">Usernames</a></li>
+        <li><a href="#resetpastnames">ResetPastNames</a></li>
+        <li><a href="#remindme">Remindme</a></li>
+        <li><a href="#reminders">Reminders</a></li>
+        <li><a href="#creminders">CReminders</a></li>
+        <li><a href="#delreminder">DelReminder</a></li>
+        <li><a href="#role">Role</a></li>
+        <li><a href="#settimezone">settimezone</a></li>
+        <li><a href="#toggletimeconversion">ToggleTimeConversion</a></li>
+      </ul>
+    </li>
+    <li><a href="#fun-сђсџрвђ">Fun СЂСџР‹вЂ°</a>
+      <ul>
+        <li><a href="#define">Define</a></li>
+        <li><a href="#weather">Weather</a></li>
+        <li><a href="#topic">Topic</a></li>
+        <li><a href="#catfact">CatFact</a></li>
+        <li><a href="#dadjoke">DadJoke</a></li>
+        <li><a href="#dogfact">DogFact</a></li>
+        <li><a href="#advice">Advice</a></li>
+        <li><a href="#throw">Throw</a></li>
+        <li><a href="#roll">Roll</a></li>
+        <li><a href="#wouldyourather">WouldYouRather</a></li>
+        <li><a href="#xkcd">Xkcd</a></li>
+        <li><a href="#howlongtobeat">HowLongToBeat</a></li>
+        <li><a href="#inspire">Inspire</a></li>
+        <li><a href="#forex">Forex</a></li>
+        <li><a href="#roast">Roast</a></li>
+        <li><a href="#8ball">8ball</a></li>
+        <li><a href="#dictionary">dictionary</a></li>
+        <li><a href="#takerep">TakeRep</a></li>
+        <li><a href="#giverep">GiveRep</a></li>
+        <li><a href="#setrep">SetRep</a></li>
+        <li><a href="#delrep">DelRep</a></li>
+        <li><a href="#replog">RepLog</a></li>
+        <li><a href="#rep">Rep</a></li>
+        <li><a href="#toprep">TopRep</a></li>
+        <li><a href="#soundboard">Soundboard</a></li>
+        <li><a href="#soundboardreset">SoundboardReset</a></li>
+        <li><a href="#cah-create">cah Create</a></li>
+        <li><a href="#cah-end">cah End</a></li>
+        <li><a href="#cah-kick">cah Kick</a></li>
+        <li><a href="#cah-packs">cah Packs</a></li>
+        <li><a href="#trivia">Trivia</a></li>
+      </ul>
+    </li>
+    <li><a href="#debug--maintenance-сђсџвђтђ">Debug &amp; Maintenance СЂСџвЂ“Тђ</a>
+      <ul>
+        <li><a href="#ping">Ping</a></li>
+        <li><a href="#viewperms">ViewPerms</a></li>
+        <li><a href="#topservers">TopServers</a></li>
+        <li><a href="#currentshard">CurrentShard</a></li>
+        <li><a href="#isguildunavailable">IsGuildUnavailable</a></li>
+        <li><a href="#yagstatus">Yagstatus</a></li>
+        <li><a href="#roledbg">Roledbg</a></li>
+      </ul>
+    </li>
+    <li><a href="#moderation-сђсџвђв">Moderation СЂСџвЂВ®</a>
+      <ul>
+        <li><a href="#ban">Ban</a></li>
+        <li><a href="#unban">Unban</a></li>
+        <li><a href="#kick">Kick</a></li>
+        <li><a href="#mute">Mute</a></li>
+        <li><a href="#unmute">Unmute</a></li>
+        <li><a href="#timeout">Timeout</a></li>
+        <li><a href="#removetimeout">RemoveTimeout</a></li>
+        <li><a href="#report">Report</a></li>
+        <li><a href="#clean">Clean</a></li>
+        <li><a href="#reason">Reason</a></li>
+        <li><a href="#warn">Warn</a></li>
+        <li><a href="#warnings">Warnings</a></li>
+        <li><a href="#editwarning">EditWarning</a></li>
+        <li><a href="#delwarning">DelWarning</a></li>
+        <li><a href="#clearwarnings">ClearWarnings</a></li>
+        <li><a href="#topwarnings">TopWarnings</a></li>
+        <li><a href="#giverole">GiveRole</a></li>
+        <li><a href="#removerole">RemoveRole</a></li>
+        <li><a href="#automod-rulesets">automod Rulesets</a></li>
+        <li><a href="#automod-toggle">automod Toggle</a></li>
+        <li><a href="#automod-logs">automod Logs</a></li>
+        <li><a href="#automod-listviolations">automod ListViolations</a></li>
+        <li><a href="#automod-listviolationscount">automod ListViolationsCount</a></li>
+        <li><a href="#automod-deleteviolation">automod DeleteViolation</a></li>
+        <li><a href="#automod-clearviolations">automod ClearViolations</a></li>
+      </ul>
+    </li>
+    <li><a href="#rolemenu-сђсџвђќв">Rolemenu СЂСџвЂќВ</a>
+      <ul>
+        <li><a href="#rolemenu-create">RoleMenu Create</a></li>
+        <li><a href="#rolemenu-remove">RoleMenu Remove</a></li>
+        <li><a href="#rolemenu-update">RoleMenu Update</a></li>
+        <li><a href="#rolemenu-resetreactions">RoleMenu ResetReactions</a></li>
+        <li><a href="#rolemenu-editoption">RoleMenu EditOption</a></li>
+        <li><a href="#rolemenu-complete">RoleMenu Complete</a></li>
+        <li><a href="#rolemenu-listgroups">RoleMenu Listgroups</a></li>
+      </ul>
+    </li>
+    <li><a href="#tickets-сђсџрв">Tickets СЂСџР‹В«</a>
+      <ul>
+        <li><a href="#tickets-open">tickets Open</a></li>
+        <li><a href="#tickets-adduser">tickets AddUser</a></li>
+        <li><a href="#tickets-removeuser">tickets RemoveUser</a></li>
+        <li><a href="#tickets-rename">tickets Rename</a></li>
+        <li><a href="#tickets-close">tickets Close</a></li>
+        <li><a href="#tickets-adminsonly">tickets AdminsOnly</a></li>
+      </ul>
+    </li>
+    <li><a href="#events-сђсџрсџ">Events СЂСџР‹Сџ</a>
+      <ul>
+        <li><a href="#events-create">events Create</a></li>
+        <li><a href="#events-edit">events Edit</a></li>
+        <li><a href="#events-list">events List</a></li>
+        <li><a href="#events-delete">events Delete</a></li>
+        <li><a href="#events-stopsetup">events StopSetup</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+  </details>
+
+			</nav>
+			<p>List of all available commands offered by OBMAN.BOT and their syntax.</p>
+<h2 id="legend">Legend<a href="#legend" class="anchor" aria-hidden="true">#</a> </h2>
+<p><code>&lt;required arg&gt;</code> <code>[optional arg]</code></p>
+<p>Text arguments containing multiple words needs be to put in quotes (&ldquo;arg here&rdquo;) or code ticks (<code>arg here</code>) if it&rsquo;s not the last argument and there&rsquo;s more than 1 text argument.</p>
+<p>For example with the poll command if you want the question to have multiple words: <code>-poll &quot;whats your favorite color&quot; red blue green2</code></p>
+<h2 id="general-рівђћврїсрџ">General РІвЂћв„–РїС‘РЏ<a href="#general-рівђћврїсрџ" class="anchor" aria-hidden="true">#</a> </h2>
+<h3 id="help">Help<a href="#help" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> commands/h/how/command</p>
+<p>Shows help about all or one specific command</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Help [command:Text]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="info">Info<a href="#info" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Responds with bot information</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Info</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="invite">Invite<a href="#invite" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Responds with bot invite link</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Invite</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h2 id="tools--utilities-сђсџвђќрѓ">Tools &amp; Utilities СЂСџвЂќРЃ<a href="#tools--utilities-сђсџвђќрѓ" class="anchor" aria-hidden="true">#</a> </h2>
+<h3 id="prefix">Prefix<a href="#prefix" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Shows command prefix of the current server, or the specified server</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Prefix [Server-ID:Whole number]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="calc">Calc<a href="#calc" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> c/calculate</p>
+<p>Calculator 2+2=5</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Calc &lt;Expression:Text&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="customembed">CustomEmbed<a href="#customembed" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> ce</p>
+<p>Creates an embed from what you give it in JSON form: https://help.obman.com/docs/refehttps://help.obman.com/docs/reference/custom-embeds/#the-customembed-command
+Example: <code>-ce {&quot;title&quot;: &quot;hello&quot;, &quot;description&quot;: &quot;wew&quot;}</code></p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">CustomEmbed &lt;Json:Text&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="simpleembed">SimpleEmbed<a href="#simpleembed" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> se</p>
+<p>A more simpler version of CustomEmbed, controlled completely using switches.
+You can edit existing messages by supplying the <code>-message</code> flag.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">SimpleEmbed</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[-channel channel:Channel - Optional channel to send in]
+</span></span><span class="line"><span class="cl">[-message message:Whole number - Optional message ID to edit]
+</span></span><span class="line"><span class="cl">[-content content:Text - Text content for the message]
+</span></span><span class="line"><span class="cl">[-title title:Text]
+</span></span><span class="line"><span class="cl">[-desc desc:Text - Text in the &#39;description&#39; field]
+</span></span><span class="line"><span class="cl">[-color color:Text - Either hex code or name]
+</span></span><span class="line"><span class="cl">[-url url:Text - Url of this embed]
+</span></span><span class="line"><span class="cl">[-thumbnail thumbnail:Text - Url to a thumbnail]
+</span></span><span class="line"><span class="cl">[-image image:Text - Url to an image]
+</span></span><span class="line"><span class="cl">[-author author:Text - The text in the &#39;author&#39; field]
+</span></span><span class="line"><span class="cl">[-authoricon authoricon:Text - Url to a icon for the &#39;author&#39; field]
+</span></span><span class="line"><span class="cl">[-authorurl authorurl:Text - Url of the &#39;author&#39; field]
+</span></span><span class="line"><span class="cl">[-footer footer:Text - Text content for the footer]
+</span></span><span class="line"><span class="cl">[-footericon footericon:Text - Url to a icon for the &#39;footer&#39; field]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="currenttime">CurrentTime<a href="#currenttime" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> ctime/gettime</p>
+<p>Shows current time in different timezones. <a href="https://pastebin.com/ZqSPUhc7" rel="external">Available timezones</a></p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">CurrentTime &lt;Offset:Whole number&gt;
+</span></span><span class="line"><span class="cl">CurrentTime &lt;Zone:Text&gt;
+</span></span><span class="line"><span class="cl">CurrentTime</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="listroles">ListRoles<a href="#listroles" class="anchor" aria-hidden="true">#</a> </h3>
+<p>List roles, their id&rsquo;s, color hex code, and &lsquo;mention everyone&rsquo; perms (useful if you wanna double check to make sure you didn&rsquo;t give anyone mention everyone perms that shouldn&rsquo;t have it)</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ListRoles</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[-nomanaged nomanaged:Switch - Don&#39;t list managed/bot roles]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="poll">Poll<a href="#poll" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Create very simple reaction poll. Example: <code>poll &quot;favorite color?&quot; blue red pink</code></p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Poll &lt;Topic:Text - Description of the poll&gt; &lt;Option1:Text&gt; &lt;Option2:Text&gt; [Option3:Text] [Option4:Text] [Option5:Text] [Option6:Text] [Option7:Text] [Option8:Text] [Option9:Text] [Option10:Text]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="undelete">Undelete<a href="#undelete" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> ud</p>
+<p>Views the first 10 recent deleted messages. By default, only the current user&rsquo;s deleted messages will show.
+You can use the <code>-a</code> flag to view all users delete messages, or <code>-u</code> to view a specified user&rsquo;s deleted messages.
+Both <code>-a</code> and <code>-u</code> require Manage Messages permission.
+Note: <code>-u</code> overrides <code>-a</code> meaning even though <code>-a</code> might&rsquo;ve been specified along with <code>-u</code> only messages from the user provided using <code>-u</code> will be shown.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Undelete</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[-a a:Switch - from all users]
+</span></span><span class="line"><span class="cl">[-u u:Mention/ID - from a specific user]
+</span></span><span class="line"><span class="cl">[-channel channel:Channel - Optional target channel]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="stats">Stats<a href="#stats" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Shows server stats (if public stats are enabled)</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Stats</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="customcommands">CustomCommands<a href="#customcommands" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> cc</p>
+<p>Shows a custom command specified by id, trigger, or name, or lists them all</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">CustomCommands &lt;ID:Whole number&gt;
+</span></span><span class="line"><span class="cl">CustomCommands &lt;Name-Or-Trigger:Text&gt;
+</span></span><span class="line"><span class="cl">CustomCommands</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[-file file:Switch - Send responses in file]
+</span></span><span class="line"><span class="cl">[-color color:Switch - Use syntax highlighting (Go)]
+</span></span><span class="line"><span class="cl">[-raw raw:Switch - Force raw output]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="evalcc">Evalcc<a href="#evalcc" class="anchor" aria-hidden="true">#</a> </h3>
+<p>executes custom command code (up to 1k characters)</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Evalcc &lt;code:Text&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="logs">Logs<a href="#logs" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> log</p>
+<p>Creates a log of the last messages in the current channel.
+This includes deleted messages within an hour (or 12 hours for premium servers)</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Logs [Count:Whole number]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[-channel channel:Channel - Optional channel to log instead]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="whois">Whois<a href="#whois" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> whoami</p>
+<p>Shows information about a user</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Whois [User:Member]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="nicknames">Nicknames<a href="#nicknames" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> nn</p>
+<p>Shows past nicknames of a user.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Nicknames [User:User]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="usernames">Usernames<a href="#usernames" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> unames/un</p>
+<p>Shows past usernames of a user.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Usernames [User:User]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="resetpastnames">ResetPastNames<a href="#resetpastnames" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Reset your past usernames/nicknames.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ResetPastNames</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="remindme">Remindme<a href="#remindme" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> remind/reminder</p>
+<p>Schedules a reminder, example: &lsquo;remindme 1h30min are you still alive?&rsquo;</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Remindme &lt;Time:Duration&gt; &lt;Message:Text&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[-channel channel:Channel]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="reminders">Reminders<a href="#reminders" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Lists your active reminders in the server, use in DM to see all your reminders</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Reminders</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="creminders">CReminders<a href="#creminders" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> channelreminders</p>
+<p>Lists reminders in channel, only users with &lsquo;manage channel&rsquo; permissions can use this.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">CReminders</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="delreminder">DelReminder<a href="#delreminder" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> rmreminder</p>
+<p>Deletes a reminder. You can delete reminders from other users provided you are running this command in the same guild the reminder was created in and have the Manage Channel permission in the channel the reminder was created in.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">DelReminder [ID:Whole number]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[-a a:Switch - All]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="role">Role<a href="#role" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Toggle a role on yourself or list all available roles, they have to be set up in the control panel first, under &lsquo;rolecommands&rsquo;</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Role [Role:Text]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="settimezone">settimezone<a href="#settimezone" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> setz/tzset</p>
+<p>Sets your timezone, used for various purposes such as auto conversion. Give it your country.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">settimezone [Timezone:Text]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[-u u:Switch - Display current]
+</span></span><span class="line"><span class="cl">[-d d:Switch - Delete TZ record]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="toggletimeconversion">ToggleTimeConversion<a href="#toggletimeconversion" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> toggletconv/ttc</p>
+<p>Toggles automatic time conversion for people with registered timezones (setz) in this channel, it&rsquo;s on by default, toggle all channels by giving it <code>all</code></p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ToggleTimeConversion [flags:Text]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h2 id="fun-сђсџрвђ">Fun СЂСџР‹вЂ°<a href="#fun-сђсџрвђ" class="anchor" aria-hidden="true">#</a> </h2>
+<h3 id="define">Define<a href="#define" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> df/define/urban/urbandictionary</p>
+<p>Look up an urban dictionary definition, default paginated view.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Define &lt;Topic:Text&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[-raw raw:Switch - Raw output]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="weather">Weather<a href="#weather" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> w</p>
+<p>Shows the weather somewhere</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Weather &lt;Where:Text&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="topic">Topic<a href="#topic" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Generates a conversation topic to help chat get moving.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Topic</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="catfact">CatFact<a href="#catfact" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> cf/cat/catfacts</p>
+<p>Cat Facts</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">CatFact</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="dadjoke">DadJoke<a href="#dadjoke" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Generates a dad joke using the API from icanhazdadjoke.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">DadJoke</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="dogfact">DogFact<a href="#dogfact" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> dog/dogfacts</p>
+<p>Dog Facts</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">DogFact</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="advice">Advice<a href="#advice" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Don&rsquo;t be afraid to ask for advice!</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Advice [What:Text]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="throw">Throw<a href="#throw" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Throwing things is cool.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Throw [Target:User]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="roll">Roll<a href="#roll" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Roll dices, specify nothing for 6 sides, specify a number for max sides, or rpg dice syntax.
+Example: <code>-roll 2d6</code></p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Roll &lt;Sides:Whole number&gt;
+</span></span><span class="line"><span class="cl">Roll &lt;RPG-Dice:Text&gt;
+</span></span><span class="line"><span class="cl">Roll</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="wouldyourather">WouldYouRather<a href="#wouldyourather" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> wyr</p>
+<p>Get presented with 2 options.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">WouldYouRather</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[-raw raw:Switch - Raw output]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="xkcd">Xkcd<a href="#xkcd" class="anchor" aria-hidden="true">#</a> </h3>
+<p>An xkcd comic, by default returns random comic strip</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Xkcd [Comic-number:Whole number]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[-l l:Switch - Latest comic]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="howlongtobeat">HowLongToBeat<a href="#howlongtobeat" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> hltb</p>
+<p>Game information based on query from howlongtobeat.com.
+Results are sorted by popularity, it&rsquo;s their default. Without -p returns the first result.
+Switch -p gives paginated output using the Jaro-Winkler similarity metric sorting max 20 results.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">HowLongToBeat &lt;Game-Title:Text&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[-c c:Switch - Compact output]
+</span></span><span class="line"><span class="cl">[-p p:Switch - Paginated output]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="inspire">Inspire<a href="#inspire" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> insp</p>
+<p>Shows &lsquo;inspirational&rsquo; quotes from inspirobot.me</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Inspire [Season:Text]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[-mindfulness mindfulness:Switch - Generates Mindful Quotes!]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="forex">Forex<a href="#forex" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> Money</p>
+<p>СЂСџвЂ™В± convert value from one currency to another.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Forex &lt;Amount:Decimal number&gt; &lt;From:Text&gt; &lt;To:Text&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="roast">Roast<a href="#roast" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> insult</p>
+<p>Sends a random roast</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Roast [Target:User]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="8ball">8ball<a href="#8ball" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Ask the magic 8ball a question</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">8ball [Question:Text]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="dictionary">dictionary<a href="#dictionary" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> owldict/owl/dict</p>
+<p>Get the definition of an English word using dictionaryapi.dev</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">dictionary &lt;Query:Text - Word to search for&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="takerep">TakeRep<a href="#takerep" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> -/tr/trep/-rep</p>
+<p>Takes away rep from someone</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">TakeRep &lt;User:User&gt; [Num:Whole number]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="giverep">GiveRep<a href="#giverep" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> +/gr/grep/+rep</p>
+<p>Gives rep to someone</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">GiveRep &lt;User:User&gt; [Num:Whole number]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="setrep">SetRep<a href="#setrep" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> SetRepID</p>
+<p>Sets someones rep, this is an admin command and bypasses cooldowns and other restrictions.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">SetRep &lt;User:Mention/ID&gt; &lt;Num:Whole number&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="delrep">DelRep<a href="#delrep" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Deletes someone from the reputation list completely, this cannot be undone.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">DelRep &lt;User:Mention/ID&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="replog">RepLog<a href="#replog" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> replogs</p>
+<p>Shows the rep log for the specified user.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">RepLog
+</span></span><span class="line"><span class="cl">RepLog &lt;User:Mention/ID&gt;
+</span></span><span class="line"><span class="cl">RepLog &lt;Page:Whole number&gt;
+</span></span><span class="line"><span class="cl">RepLog &lt;User:Mention/ID&gt; &lt;Page:Whole number&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="rep">Rep<a href="#rep" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Shows yours or the specified users current rep and rank</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Rep [User:User]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="toprep">TopRep<a href="#toprep" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Shows rep leaderboard on the server</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">TopRep [Page:Whole number]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[-user user:Mention/ID - User to search for in the leaderboard]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="soundboard">Soundboard<a href="#soundboard" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> sb</p>
+<p>Play, or list soundboard sounds</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Soundboard [Name:Text]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="soundboardreset">SoundboardReset<a href="#soundboardreset" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> sbclose/sbReset</p>
+<p>Reset Soundboard Player</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">SoundboardReset</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="cah-create">cah Create<a href="#cah-create" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> c</p>
+<p>Creates a Cards Against Humanity game in this channel, add packs after commands, or * for all packs. (-v for vote mode without a card czar).</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Create [packs:Text - Packs separated by space, or * for all of them.]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[-v v:Switch - Vote mode - players vote instead of having a card czar.]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="cah-end">cah End<a href="#cah-end" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Ends a Cards Against Humanity game that is ongoing in this channel.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">End</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="cah-kick">cah Kick<a href="#cah-kick" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Kicks a player from the ongoing Cards Against Humanity game in this channel.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Kick &lt;user:Mention/ID&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="cah-packs">cah Packs<a href="#cah-packs" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Lists all available packs.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Packs</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="trivia">Trivia<a href="#trivia" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Asks a random question, you have got 30 seconds to answer!</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Trivia</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h2 id="debug--maintenance-сђсџвђтђ">Debug &amp; Maintenance СЂСџвЂ“Тђ<a href="#debug--maintenance-сђсџвђтђ" class="anchor" aria-hidden="true">#</a> </h2>
+<h3 id="ping">Ping<a href="#ping" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Shows the latency from the bot to the discord servers.
+Note that high latencies can be the fault of ratelimits and the bot itself, it&rsquo;s not a absolute metric.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Ping</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="viewperms">ViewPerms<a href="#viewperms" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Shows you or the target&rsquo;s permissions in this channel</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ViewPerms [target:Mention/ID]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="topservers">TopServers<a href="#topservers" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Responds with the top 20 servers I&rsquo;m on. *Bot admin only.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">TopServers [Skip:Whole number - Entries to skip]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[-id id:Whole number]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="currentshard">CurrentShard<a href="#currentshard" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> cshard</p>
+<p>Shows the current shard this server is on (or the one specified)</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">CurrentShard [serverid:Whole number]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="isguildunavailable">IsGuildUnavailable<a href="#isguildunavailable" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Returns whether the specified guild is unavailable or not</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">IsGuildUnavailable &lt;guildid:Whole number&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="yagstatus">Yagstatus<a href="#yagstatus" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> status</p>
+<p>Shows yagpdb status, version, uptime, memory stats, and so on</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Yagstatus</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="roledbg">Roledbg<a href="#roledbg" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Returns count of autorole assignments currently being processed</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Roledbg</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h2 id="moderation-сђсџвђв">Moderation СЂСџвЂВ®<a href="#moderation-сђсџвђв" class="anchor" aria-hidden="true">#</a> </h2>
+<h3 id="ban">Ban<a href="#ban" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> banid</p>
+<p>Bans a member, specify number of days of messages to delete with -ddays (0 to 7)</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Ban &lt;User:Mention/ID&gt; &lt;Duration:Duration&gt; &lt;Reason:Text&gt;
+</span></span><span class="line"><span class="cl">Ban &lt;User:Mention/ID&gt; &lt;Reason:Text&gt; &lt;Duration:Duration&gt;
+</span></span><span class="line"><span class="cl">Ban &lt;User:Mention/ID&gt; &lt;Duration:Duration&gt;
+</span></span><span class="line"><span class="cl">Ban &lt;User:Mention/ID&gt; &lt;Reason:Text&gt;
+</span></span><span class="line"><span class="cl">Ban &lt;User:Mention/ID&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[-ddays ddays:Whole number - Number of days of messages to delete]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="unban">Unban<a href="#unban" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> unbanid</p>
+<p>Unbans a user. Reason requirement is same as ban command setting.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Unban &lt;User:Mention/ID&gt; [Reason:Text]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="kick">Kick<a href="#kick" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Kicks a member</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Kick &lt;User:Mention/ID&gt; [Reason:Text]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[-cl cl:Whole number - Messages to delete]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="mute">Mute<a href="#mute" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Mutes a member</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Mute &lt;User:Mention/ID&gt; &lt;Duration:Duration&gt; &lt;Reason:Text&gt;
+</span></span><span class="line"><span class="cl">Mute &lt;User:Mention/ID&gt; &lt;Reason:Text&gt; &lt;Duration:Duration&gt;
+</span></span><span class="line"><span class="cl">Mute &lt;User:Mention/ID&gt; &lt;Duration:Duration&gt;
+</span></span><span class="line"><span class="cl">Mute &lt;User:Mention/ID&gt; &lt;Reason:Text&gt;
+</span></span><span class="line"><span class="cl">Mute &lt;User:Mention/ID&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="unmute">Unmute<a href="#unmute" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Unmutes a member</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Unmute &lt;User:Mention/ID&gt; [Reason:Text]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="timeout">Timeout<a href="#timeout" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> to</p>
+<p>Timeout a member</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Timeout &lt;User:Mention/ID&gt; &lt;Duration:Duration&gt; &lt;Reason:Text&gt;
+</span></span><span class="line"><span class="cl">Timeout &lt;User:Mention/ID&gt; &lt;Reason:Text&gt; &lt;Duration:Duration&gt;
+</span></span><span class="line"><span class="cl">Timeout &lt;User:Mention/ID&gt; &lt;Duration:Duration&gt;
+</span></span><span class="line"><span class="cl">Timeout &lt;User:Mention/ID&gt; &lt;Reason:Text&gt;
+</span></span><span class="line"><span class="cl">Timeout &lt;User:Mention/ID&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="removetimeout">RemoveTimeout<a href="#removetimeout" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> untimeout/cleartimeout/deltimeout/rto</p>
+<p>Removes a member&rsquo;s timeout</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">RemoveTimeout &lt;User:Mention/ID&gt; [Reason:Text]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="report">Report<a href="#report" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Reports a member to the server&rsquo;s staff</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Report &lt;User:Mention/ID&gt; &lt;Reason:Text&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="clean">Clean<a href="#clean" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> clear/cl</p>
+<p>Delete the last number of messages from chat, optionally filtering by user, max age and regex or ignoring pinned messages.
+Specify a regex with &ldquo;-r regex_here&rdquo; and max age with &ldquo;-ma 1h10m&rdquo;
+You can invert the regex match (i.e. only clear messages that do not match the given regex) by supplying the <code>-im</code> flag
+Note: Will only look in the last 1k messages</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Clean &lt;Num:Whole number&gt;
+</span></span><span class="line"><span class="cl">Clean &lt;Num:Whole number&gt; &lt;User:Mention/ID&gt;
+</span></span><span class="line"><span class="cl">Clean &lt;User:Mention/ID&gt; &lt;Num:Whole number&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[-r r:Text - Regex]
+</span></span><span class="line"><span class="cl">[-im im:Switch - Invert regex match]
+</span></span><span class="line"><span class="cl">[-ma ma:Duration - Max age]
+</span></span><span class="line"><span class="cl">[-minage minage:Duration - Min age]
+</span></span><span class="line"><span class="cl">[-i i:Switch - Regex case insensitive]
+</span></span><span class="line"><span class="cl">[-nopin nopin:Switch - Ignore pinned messages]
+</span></span><span class="line"><span class="cl">[-a a:Switch - Only remove messages with attachments]
+</span></span><span class="line"><span class="cl">[-to to:Whole number - Stop at this msg ID]
+</span></span><span class="line"><span class="cl">[-from from:Whole number - Start at this msg ID]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="reason">Reason<a href="#reason" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Add/Edit a modlog reason</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Reason &lt;Message-ID:Whole number&gt; &lt;Reason:Text&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="warn">Warn<a href="#warn" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Warns a user, warnings are saved using the bot. Use -warnings to view them.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Warn &lt;User:Mention/ID&gt; &lt;Reason:Text&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="warnings">Warnings<a href="#warnings" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> Warns</p>
+<p>Lists warning of a user.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Warnings &lt;User:Mention/ID&gt; [Page:Whole number]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[-id id:Whole number - Warning ID]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="editwarning">EditWarning<a href="#editwarning" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Edit a warning, id is the first number of each warning from the warnings command</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">EditWarning &lt;Id:Whole number&gt; &lt;NewMessage:Text&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="delwarning">DelWarning<a href="#delwarning" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> dw/delwarn/deletewarning</p>
+<p>Deletes a warning, id is the first number of each warning from the warnings command</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">DelWarning &lt;Id:Whole number&gt; [Reason:Text]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="clearwarnings">ClearWarnings<a href="#clearwarnings" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> clw</p>
+<p>Clears the warnings of a user</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ClearWarnings &lt;User:Mention/ID&gt; [Reason:Text]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="topwarnings">TopWarnings<a href="#topwarnings" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> topwarns</p>
+<p>Shows ranked list of warnings on the server</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">TopWarnings [Page:Whole number]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[-id id:Switch - List userIDs]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="giverole">GiveRole<a href="#giverole" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> grole/arole/addrole</p>
+<p>Gives a role to the specified member, with optional expiry</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">GiveRole &lt;User:Mention/ID&gt; &lt;Role:Role&gt; [Duration:Duration]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="removerole">RemoveRole<a href="#removerole" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> rrole/takerole/trole</p>
+<p>Removes the specified role from the target</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">RemoveRole &lt;User:Mention/ID&gt; &lt;Role:Role&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="automod-rulesets">automod Rulesets<a href="#automod-rulesets" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> r/list/l</p>
+<p>Lists all rulesets and their status</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Rulesets</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="automod-toggle">automod Toggle<a href="#automod-toggle" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> t</p>
+<p>Toggles a ruleset on/off</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Toggle &lt;Ruleset-Name:Text&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="automod-logs">automod Logs<a href="#automod-logs" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> log</p>
+<p>Shows the log of the last triggered automod rules, optionally filtering by user</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Logs [Page:Whole number]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[-user user:Mention/ID]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="automod-listviolations">automod ListViolations<a href="#automod-listviolations" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> Violations/ViolationLogs/VLogs/VLog</p>
+<p>Lists Violations of specified user
+old flag posts oldest violations in first page ( from oldest to newest ).</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ListViolations &lt;User:Mention/ID&gt; [Page-Number:Whole number]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[-old old:Switch - Oldest First]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="automod-listviolationscount">automod ListViolationsCount<a href="#automod-listviolationscount" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> ViolationsCount/VCount</p>
+<p>Lists Violations summary in entire server or of specified user optionally filtered by max violation age.
+Specify number of violations to skip while fetching using -skip flag ; max entries fetched 500</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ListViolationsCount [User:Mention/ID]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[-ma ma:Duration - Max Violation Age]
+</span></span><span class="line"><span class="cl">[-skip skip:Whole number - Amount Skipped]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="automod-deleteviolation">automod DeleteViolation<a href="#automod-deleteviolation" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> DelViolation/DelV/DV</p>
+<p>Deletes a Violation with the specified ID. ID is the first number of each Violation in the ListViolations command.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">DeleteViolation &lt;ID:Whole number&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="automod-clearviolations">automod ClearViolations<a href="#automod-clearviolations" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> ClearV/ClrViolations/ClrV</p>
+<p>Clears Violations of specified user (or global if User ID = 0 or unspecified) optionally filtered by Name, Min/Max age and other conditions. By default, more recent violations are preferentially cleared. Maximum of 2000 can be cleared at a time.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ClearViolations &lt;User:Mention/ID&gt; &lt;Violation-Name:Text&gt;
+</span></span><span class="line"><span class="cl">ClearViolations &lt;User:Mention/ID&gt;
+</span></span><span class="line"><span class="cl">ClearViolations &lt;Violation-Name:Text&gt;
+</span></span><span class="line"><span class="cl">ClearViolations</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[-ma ma:Duration - Max Violation Age]
+</span></span><span class="line"><span class="cl">[-minage minage:Duration - Min Violation Age]
+</span></span><span class="line"><span class="cl">[-num num:Whole number - Max Violations Cleared]
+</span></span><span class="line"><span class="cl">[-old old:Switch - Preferentially Clear Older Violations]
+</span></span><span class="line"><span class="cl">[-skip skip:Whole number - Amount Skipped]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h2 id="rolemenu-сђсџвђќв">Rolemenu СЂСџвЂќВ<a href="#rolemenu-сђсџвђќв" class="anchor" aria-hidden="true">#</a> </h2>
+<h3 id="rolemenu-create">RoleMenu Create<a href="#rolemenu-create" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> c</p>
+<p>Set up a role menu.
+Specify a message with -m to use an existing message instead of having the bot make one</p>
+<p>To get the id of a message you have to turn on developer mode in Discord&rsquo;s appearances settings then right click the message and copy id.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Create &lt;Group:Text - The role command group&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[-m m:Whole number - Message ID]
+</span></span><span class="line"><span class="cl">[-nodm nodm:Switch - Disable DM]
+</span></span><span class="line"><span class="cl">[-rr rr:Switch - Remove role on reaction removed]
+</span></span><span class="line"><span class="cl">[-skip skip:Whole number - Number of roles to skip]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="rolemenu-remove">RoleMenu Remove<a href="#rolemenu-remove" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> rm</p>
+<p>Removes a rolemenu from a message.
+The message won&rsquo;t be deleted and the bot will not do anything with reactions on that message</p>
+<p>To get the id of a message you have to turn on developer mode in Discord&rsquo;s appearances settings then right click the message and copy id.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Remove &lt;Message-ID:Whole number&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="rolemenu-update">RoleMenu Update<a href="#rolemenu-update" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> u</p>
+<p>Updates a rolemenu, toggling the provided flags and adding missing options, aswell as updating the order.</p>
+<p>To get the id of a message you have to turn on developer mode in Discord&rsquo;s appearances settings then right click the message and copy id.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Update &lt;Message-ID:Whole number&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[-nodm nodm:Switch - Disable DM]
+</span></span><span class="line"><span class="cl">[-rr rr:Switch - Remove role on reaction removed]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="rolemenu-resetreactions">RoleMenu ResetReactions<a href="#rolemenu-resetreactions" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> reset</p>
+<p>Removes all reactions on the specified menu message and re-adds them.
+Can be used to fix the order after updating it.</p>
+<p>To get the id of a message you have to turn on developer mode in Discord&rsquo;s appearances settings then right click the message and copy id.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ResetReactions &lt;Message-ID:Whole number&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="rolemenu-editoption">RoleMenu EditOption<a href="#rolemenu-editoption" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> edit</p>
+<p>Allows you to reassign the emoji of an option, tip: use ResetReactions afterwards.</p>
+<p>To get the id of a message you have to turn on developer mode in Discord&rsquo;s appearances settings then right click the message and copy id.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">EditOption &lt;Message-ID:Whole number&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="rolemenu-complete">RoleMenu Complete<a href="#rolemenu-complete" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> finish</p>
+<p>Marks the menu as done.</p>
+<p>To get the id of a message you have to turn on developer mode in Discord&rsquo;s appearances settings then right click the message and copy id.</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Complete &lt;Message-ID:Whole number&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="rolemenu-listgroups">RoleMenu Listgroups<a href="#rolemenu-listgroups" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> list/groups</p>
+<p>Lists all role groups</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Listgroups</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h2 id="tickets-сђсџрв">Tickets СЂСџР‹В«<a href="#tickets-сђсџрв" class="anchor" aria-hidden="true">#</a> </h2>
+<h3 id="tickets-open">tickets Open<a href="#tickets-open" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> create/new/make</p>
+<p>Opens a new ticket</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Open &lt;subject:Text&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="tickets-adduser">tickets AddUser<a href="#tickets-adduser" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Adds a user to the ticket in this channel</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">AddUser &lt;target:Member&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="tickets-removeuser">tickets RemoveUser<a href="#tickets-removeuser" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Removes a user from the ticket</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">RemoveUser &lt;target:Member&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="tickets-rename">tickets Rename<a href="#tickets-rename" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Renames the ticket</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Rename &lt;new-name:Text&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="tickets-close">tickets Close<a href="#tickets-close" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> end/delete</p>
+<p>Closes the ticket</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Close [reason:Text]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="tickets-adminsonly">tickets AdminsOnly<a href="#tickets-adminsonly" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> adminonly/ao</p>
+<p>Toggle admins only mode for this ticket</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">AdminsOnly</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h2 id="events-сђсџрсџ">Events СЂСџР‹Сџ<a href="#events-сђсџрсџ" class="anchor" aria-hidden="true">#</a> </h2>
+<h3 id="events-create">events Create<a href="#events-create" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> new/make</p>
+<p>Creates an event, You will be led through an interactive setup</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Create</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="events-edit">events Edit<a href="#events-edit" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Edits an event</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Edit &lt;ID:Whole number&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[-title title:Text - Change the title of the event]
+</span></span><span class="line"><span class="cl">[-time time:Text - Change the start time of the event]
+</span></span><span class="line"><span class="cl">[-max max:Whole number - Change max participants]</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="events-list">events List<a href="#events-list" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> ls</p>
+<p>Lists all events in this server</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">List</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="events-delete">events Delete<a href="#events-delete" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> rm/del</p>
+<p>Deletes an event, specify the event ID of the event you wanna delete</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Delete &lt;ID:Whole number&gt;</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="events-stopsetup">events StopSetup<a href="#events-stopsetup" class="anchor" aria-hidden="true">#</a> </h3>
+<p><strong>Aliases:</strong> cancelsetup</p>
+<p>Force cancels the current setup session in this channel</p>
+<p><strong>Usage:</strong></p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">StopSetup</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div>
+			<div class="page-footer-meta d-flex flex-column flex-md-row justify-content-between">
+				
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="edit-page">
+  <a href="https://github.com/ArtObman/ArtObman/blob/master/content//docs/core/all-commands.md">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2">
+      <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+    </svg>
+    Edit this page on GitHub
+  </a>
+</div>
+
+				</div>
+			<div class="page-nav d-flex flex-column flex-sm-row">
+	
+	<div class="card w-100">
+			<div class="card-body d-flex">
+				<div class="d-flex flex-column justify-content-center">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M5 12l14 0"></path>
+						<path d="M5 12l6 6"></path>
+						<path d="M5 12l6 -6"></path>
+				 	</svg>
+				</div>
+				<div class="d-flex flex-column">
+					<div class="text-body-secondary">Prev</div>
+					<a href="/docs/core/command-settings/" class="stretched-link text-reset text-decoration-none">Command Settings</a>
+				</div>
+			</div>
+		</div>
+	<div class="m-2"></div>
+	<div class="card text-end w-100">
+			<div class="card-body d-flex justify-content-end">
+				<div class="d-flex flex-column">
+					<div class="text-body-secondary">Next</div>
+					<a href="/docs/custom-commands/commands/" class="stretched-link text-reset text-decoration-none">Commands</a>
+				</div>
+				<div class="d-flex flex-column justify-content-center">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M5 12l14 0"></path>
+						<path d="M13 18l6 -6"></path>
+						<path d="M13 6l6 6"></path>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+
+			
+		</main>
+		
+	</div>
+
+      
+      </div>
+    </div>
+    
+    
+    <footer class="footer text-muted">
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-lg-8 text-center text-lg-start">
+        <ul class="list-inline">
+          <li class="list-inline-item"><a class="text-muted" href="https://botlabs.gg/privacy-policy">Privacy Policy</a></li><li class="list-inline-item"><a class="text-muted" href="https://obman.com/terms-of-use">Terms of Use</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-8 text-center text-lg-end">
+        <ul class="list-inline">
+          <li class="list-inline-item">Built using <a class="text-muted" href="https://getdoks.org/">Doks</a> and <a class="text-muted" href="https://gohugo.io/">Hugo</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script async
+  src="/js/bootstrap.8674636a1059caed3a46af4b3dbc8d68a0aac4e0c51ab393c810f3ad10553638.js"
+  integrity="sha256-hnRjahBZyu06Rq9LPbyNaKCqxODFGrOTyBDzrRBVNjg=">
+</script>
+
+
+<script async
+  src="/js/app.ed63b5301e6ba65958f352a0840b7bbba0fcd82e492693df4e191290daaa4850.js"
+  integrity="sha256-7WO1MB5rpllY81KghAt7u6D82C5JJpPfThkSkNqqSFA=">
+</script>
+
+
+
+
+
+
+
+
+
+
+<script async
+  src="/js/docsearch.b4e4d5218e0dcf1c9f23699da64223159203b928fe4e1da0c2657079845ad1c2.js"
+  integrity="sha256-tOTVIY4NzxyfI2mdpkIjFZIDuSj&#43;Th2gwmVweYRa0cI=">
+</script>
+
+    
+  </body>
+</html>

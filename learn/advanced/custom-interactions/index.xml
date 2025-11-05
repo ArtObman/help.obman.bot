@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Custom Interactions on OBMAN.BOT Help Center</title>
+    <link>http://localhost:1313/learn/advanced/custom-interactions/</link>
+    <description>Recent content in Custom Interactions on OBMAN.BOT Help Center</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Copyright (c) 2020-2024 OBMAN.BOT documentation contributors</copyright>
+    <atom:link href="http://localhost:1313/learn/advanced/custom-interactions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction</title>
+      <link>http://localhost:1313/learn/advanced/custom-interactions/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/advanced/custom-interactions/introduction/</guid>
+      <description>&lt;div class=&#34;callout callout-danger d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3&#34;&gt;&#xD;&#xA;  &lt;svg&#xA;  xmlns=&#34;http://www.w3.org/2000/svg&#34;&#xA;  width=&#34;24&#34;&#xA;  height=&#34;24&#34;&#xA;  viewBox=&#34;0 0 24 24&#34;&#xA;  fill=&#34;none&#34;&#xA;  stroke=&#34;currentColor&#34;&#xA;  stroke-width=&#34;2&#34;&#xA;  stroke-linecap=&#34;round&#34;&#xA;  stroke-linejoin=&#34;round&#34;&#xA; &#xA; class=&#34;outline/alert-octagon svg-inline callout-icon me-2 mb-3&#34; id=&#34;svg-alert-octagon&#34; role=&#34;img&#34;&gt;&#xA;  &lt;path stroke=&#34;none&#34; d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;/&gt;&#xA;  &lt;path d=&#34;M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z&#34; /&gt;&#xA;  &lt;path d=&#34;M12 8v4&#34; /&gt;&#xA;  &lt;path d=&#34;M12 16h.01&#34; /&gt;&#xA;&lt;/svg&gt;&#xD;&#xA;  &lt;div class=&#34;callout-content&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;callout-title&#34;&gt;&#xD;&#xA;        &lt;p&gt;Danger: Advanced Topic&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Creating Interactive Elements</title>
+      <link>http://localhost:1313/learn/advanced/custom-interactions/creating-interactive-elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/advanced/custom-interactions/creating-interactive-elements/</guid>
+      <description>&lt;p&gt;Before you can start triggering custom commands with interactive elements&amp;mdash;such as buttons&amp;mdash;you&amp;rsquo;ll obviously need&#xA;to have elements to interact with. In this section, we&amp;rsquo;ll cover how to create these elements and explore their&#xA;differences.&lt;/p&gt;&#xA;&lt;h2 id=&#34;message-components&#34;&gt;Message Components&lt;/h2&gt;&#xA;&lt;h3 id=&#34;buttons&#34;&gt;Buttons&lt;/h3&gt;&#xA;&lt;p&gt;Buttons are probably the simplest interactive element to create, so we&amp;rsquo;ll start with them. To create a button, we use&#xA;the &lt;a href=&#34;http://localhost:1313/docs/reference/templates/functions/#cbutton&#34;&gt;&lt;code&gt;cbutton&lt;/code&gt;&lt;/a&gt; function. In and of itself, that is rather useless, so we&amp;rsquo;ll&#xA;also have to attach it to a message. We do that by calling the&#xA;&lt;a href=&#34;http://localhost:1313/docs/reference/templates/functions/#complexmessage&#34;&gt;&lt;code&gt;complexMessage&lt;/code&gt;&lt;/a&gt; builder and adding the result of &lt;code&gt;cbutton&lt;/code&gt; to it.&#xA;Finally, we send the message.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Parsing an Interaction</title>
+      <link>http://localhost:1313/learn/advanced/custom-interactions/parsing-an-interaction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/advanced/custom-interactions/parsing-an-interaction/</guid>
+      <description>&lt;p&gt;Custom Commands with the &lt;a href=&#34;http://localhost:1313/docs/custom-commands/commands/#component&#34;&gt;Message Component&lt;/a&gt; or &lt;a href=&#34;http://localhost:1313/docs/custom-commands/commands/#modal&#34;&gt;Modal&#xA;Submission&lt;/a&gt; trigger allow you to take action upon the press of a button, use of a&#xA;select menu, or completion of a modal form. Interaction triggers provide new context data for templating.&lt;/p&gt;&#xA;&lt;p&gt;In this section, we&amp;rsquo;ll cover the data available and how to make use of it.&lt;/p&gt;&#xA;&lt;h2 id=&#34;important-context-data&#34;&gt;Important Context Data&lt;/h2&gt;&#xA;&lt;p&gt;A short list of the more important context data available is provided below. For a full list, please see the&#xA;&lt;a href=&#34;http://localhost:1313/docs/reference/templates/syntax-and-data/#interaction&#34;&gt;documentation on the interaction object&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Responding to an Interaction</title>
+      <link>http://localhost:1313/learn/advanced/custom-interactions/responding-to-an-interaction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/advanced/custom-interactions/responding-to-an-interaction/</guid>
+      <description>&lt;p&gt;While technically not required, responding to an interaction with one of Discord&amp;rsquo;s allotted initial responses is crucial&#xA;if you don&amp;rsquo;t want your users to see an error after interacting, greatly improving user experience. An interaction may be&#xA;responded to only once.&lt;/p&gt;&#xA;&lt;p&gt;You can only respond to an interaction within the custom command triggered by said interaction, with the exception that&#xA;a CC executed with &lt;code&gt;execCC&lt;/code&gt; by the triggered CC will be able to send initial responses to the triggering interaction as&#xA;well.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Advanced Automoderator on OBMAN.BOT Help Center</title>
+    <link>http://localhost:1313/docs/moderation/advanced-automoderator/</link>
+    <description>Recent content in Advanced Automoderator on OBMAN.BOT Help Center</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Copyright (c) 2020-2024 OBMAN.BOT documentation contributors</copyright>
+    <atom:link href="http://localhost:1313/docs/moderation/advanced-automoderator/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Overview</title>
+      <link>http://localhost:1313/docs/moderation/advanced-automoderator/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/moderation/advanced-automoderator/overview/</guid>
+      <description>&lt;p&gt;A sophisticated automoderator system, allowing for more complex configurations than basic automoderator.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Triggers</title>
+      <link>http://localhost:1313/docs/moderation/advanced-automoderator/triggers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/moderation/advanced-automoderator/triggers/</guid>
+      <description>&lt;p&gt;Triggers define when a rule should be checked. This page will explain the available triggers and their configuration&#xA;options.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Conditions</title>
+      <link>http://localhost:1313/docs/moderation/advanced-automoderator/conditions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/moderation/advanced-automoderator/conditions/</guid>
+      <description>&lt;p&gt;Conditions impose more fine-grained control on Advanced Automoderator rules. This page will cover the different types&#xA;of conditions and how to use them.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Effects</title>
+      <link>http://localhost:1313/docs/moderation/advanced-automoderator/effects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/moderation/advanced-automoderator/effects/</guid>
+      <description>&lt;p&gt;Effects define what happens when a rule is triggered and all conditions are met. This page will cover the different&#xA;kinds of effects available to you in Advanced Automoderator.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

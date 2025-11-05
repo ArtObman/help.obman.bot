@@ -1,0 +1,1201 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+<script 
+  src="/js/color-mode.f14b3e296de1d0b69e75af684b62a4a912a2cadab04e36123407cd8388204f1d.js"
+  integrity="sha256-8Us&#43;KW3h0Laeda9oS2KkqRKiytqwTjYSNAfNg4ggTx0=">
+</script>
+
+
+<link rel="stylesheet" href="/main.36ca4900ac79c8b8df541138c0226a38e9bd2fbbd3cde3f0c397a7de57e6e3205e7bd138bf1f9da340a9cb91990a0593d180b720a58bcc44ef978ed4a4791dbe.css" integrity="sha512-NspJAKx5yLjfVBE4wCJqOOm9L7vTzePww5en3lfm4yBee9E4vx&#43;do0Cpy5GZCgWT0YC3IKWLzETvl47UpHkdvg==" crossorigin="anonymous">
+
+<noscript><style>img.lazyload { display: none; }</style></noscript><base href="http://localhost:1313/learn/intermediate/database/">
+
+  <link rel="canonical" href="http://localhost:1313/learn/intermediate/database/">
+
+
+<title>Database  |  OBMAN.BOT Help Center</title>
+<meta name="description" content="Learn how to store data across time and space with OBMAN.BOT.">
+
+    
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    
+    
+      <link
+        rel="apple-touch-icon"
+        href="/apple-touch-icon.png"
+        sizes="180x180"
+        type="image/png"
+      >
+      <link
+        rel="icon"
+        href="/favicon-192x192.png"
+        sizes="192x192"
+        type="image/png"
+      >
+      <link
+        rel="icon"
+        href="/favicon-512x512.png"
+        sizes="512x512"
+        type="image/png"
+      >
+<link rel="manifest" href="/manifest.webmanifest">
+
+<meta property="og:url" content="http://localhost:1313/learn/intermediate/database/">
+  <meta property="og:site_name" content="OBMAN.BOT Help Center">
+  <meta property="og:title" content="Database">
+  <meta property="og:description" content="Learn how to store data across time and space with OBMAN.BOT.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="learn">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Database">
+  <meta name="twitter:description" content="Learn how to store data across time and space with OBMAN.BOT.">
+
+    
+    
+    <script type="application/ld+json">
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/",
+       "name": "Obman. Bot Help Center",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/learn/",
+       "name": "Learning Resources",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/learn/intermediate/",
+       "name": "Intermediate",
+       "position": 3
+     },
+     {
+       "@type": "ListItem",
+       "name": "Database",
+       "position": 4
+     }
+   ]
+ }
+</script>
+
+
+
+
+
+
+<link rel="preconnect" href="https://ER865HD7LN-dsn.algolia.net" crossorigin />
+
+</head>
+
+  
+  <body class="single section learn" data-bs-spy="scroll" data-bs-target="#toc" data-bs-root-margin="0px 0px -60%" data-bs-smooth-scroll="true" tabindex="0">
+    <div class="sticky-top">
+<header class="navbar navbar-expand-lg">
+  <div class="container-lg">
+  
+    <a class="navbar-brand me-auto me-lg-3" href="/">OBMAN.BOT Help Center</a>
+
+    
+    
+    
+    <div id="docsearch" class="d-none" tabindex="-1" aria-disabled="true"></div>
+    <button type="button" id="searchToggleMobile" class="btn btn-link nav-link mx-2 d-lg-none" aria-label="Search website">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <circle cx="10" cy="10" r="7"></circle>
+        <line x1="21" y1="21" x2="15" y2="15"></line>
+      </svg>
+    </button>
+    
+    <button class="btn btn-link d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavSection" aria-controls="offcanvasNavSection" aria-label="Open section navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+        <path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+        <path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+      </svg>
+    </button>
+    <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasNavSection" aria-labelledby="offcanvasNavSectionLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavSectionLabel">Learn</h5>
+        <button type="button" class="btn btn-link nav-link p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <aside class="doks-sidebar mt-n3">
+          <nav id="doks-docs-nav" aria-label="Tertiary navigation">
+            
+  
+    
+<nav class="section-nav docs-links">
+  <ul class="list-unstyled">
+
+  <li>
+    <details open>
+      <summary>Welcome</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/learn/welcome/introduction/">Introduction</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Beginner</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/learn/beginner/simple-responses/">Simple Responses</a>
+  </li>
+
+  <li>
+      <a href="/learn/beginner/variables-and-data-types/">Variables and Data Types</a>
+  </li>
+
+  <li>
+      <a href="/learn/beginner/conditional-branching/">Conditional Branching</a>
+  </li>
+
+  <li>
+      <a href="/learn/beginner/command-arguments/">Command Arguments</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open open>
+      <summary>Intermediate</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/learn/intermediate/embeds-and-messages/">Embeds and Messages</a>
+  </li>
+
+  <li>
+      <a href="/learn/intermediate/maps-and-slices/">Maps and Slices</a>
+  </li>
+
+  <li>
+      <a href="/learn/intermediate/loops/">Loops</a>
+  </li>
+
+  <li class="active" >
+      <a aria-current="page" href="/learn/intermediate/database/">Database</a>
+  </li>
+
+  <li>
+      <a href="/learn/intermediate/exercises/">Exercises</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Advanced</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+    <details open>
+      <summary>Custom Interactions</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/learn/advanced/custom-interactions/introduction/">Introduction</a>
+  </li>
+
+  <li>
+      <a href="/learn/advanced/custom-interactions/creating-interactive-elements/">Creating Interactive Elements</a>
+  </li>
+
+  <li>
+      <a href="/learn/advanced/custom-interactions/parsing-an-interaction/">Parsing an Interaction</a>
+  </li>
+
+  <li>
+      <a href="/learn/advanced/custom-interactions/responding-to-an-interaction/">Responding to an Interaction</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+      </ul>
+    </details>
+  </li>
+  </ul>
+</nav>
+
+  
+
+          </nav>
+        </aside>
+      </div>
+    </div>
+    
+    <button class="btn btn-link nav-link mx-2 order-3 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavMain" aria-controls="offcanvasNavMain" aria-label="Open main navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <line x1="4" y1="8" x2="20" y2="8"></line>
+        <line x1="4" y1="16" x2="20" y2="16"></line>
+      </svg>
+    </button>
+
+    
+    <div class="offcanvas offcanvas-end h-auto" tabindex="-1" id="offcanvasNavMain" aria-labelledby="offcanvasNavMainLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavMainLabel">OBMAN.BOT Help Center</h5>
+        <button type="button" class="btn btn-link nav-link p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+         </svg>
+        </button>
+      </div>
+      
+      <div class="offcanvas-body d-flex flex-column flex-lg-row justify-content-between">
+        <ul class="navbar-nav flex-grow-1"><li class="nav-item">
+                <a class="nav-link" href="http://localhost:1313/docs/welcome/introduction/">Documentation</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost:1313/learn/welcome/introduction/">Learning Resources</a>
+              </li>
+            </ul>
+
+        
+        
+        
+        <button type="button" id="searchToggleDesktop" class="btn btn-link nav-link mx-2 d-none d-lg-block" aria-label="Search website">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <circle cx="10" cy="10" r="7"></circle>
+            <line x1="21" y1="21" x2="15" y2="15"></line>
+          </svg>
+        </button>
+        
+        
+        
+        <button id="buttonColorMode" class="btn btn-link mx-auto nav-link p-0 ms-lg-2 me-lg-1" type="button" aria-label="Toggle theme">
+          <svg data-bs-theme-value="dark" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
+          </svg>
+          <svg data-bs-theme-value="light" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0m-5 0h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
+          </svg>
+        </button>
+        
+        <ul id="socialMenu" class="nav mx-auto flex-row order-lg-4">
+          <li class="nav-item">
+              <a class="nav-link social-link" href="https://discord.gg/4udtcA5"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-discord" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M8 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path><path d="M14 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path><path d="M8.5 17c0 1 -1.356 3 -1.832 3c-1.429 0 -2.698 -1.667 -3.333 -3c-.635 -1.667 -.476 -5.833 1.428 -11.5c1.388 -1.015 2.782 -1.34 4.237 -1.5l.975 1.923a11.913 11.913 0 0 1 4.053 0l.972 -1.923c1.5 .16 3.043 .485 4.5 1.5c2 5.667 2.167 9.833 1.5 11.5c-.667 1.333 -2 3 -3.5 3c-.5 0 -2 -2 -2 -3"></path><path d="M7 16.5c3.5 1 6.5 1 10 0"></path></svg><small class="ms-2 visually-hidden">Discord</small></a>
+            </li>
+          <li class="nav-item">
+              <a class="nav-link social-link" href="https://github.com/ArtObman/ArtObman"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg><small class="ms-2 visually-hidden">GitHub</small></a>
+            </li>
+          </ul>
+        
+        <button id="selfHosting" class="btn btn-link mx-auto nav-link p-0 ms-lg-2 me-lg-1" type="button" aria-label="Toggle self-hosting view">
+          <svg data-selfhost-value="yes" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-server-off" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 12h-6a3 3 0 0 1 -3 -3v-2c0 -1.083 .574 -2.033 1.435 -2.56m3.565 -.44h10a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-2" />
+            <path d="M16 12h2a3 3 0 0 1 3 3v2m-1.448 2.568a2.986 2.986 0 0 1 -1.552 .432h-12a3 3 0 0 1 -3 -3v-2a3 3 0 0 1 3 -3h6" />
+            <path d="M7 8v.01" />
+            <path d="M7 16v.01" />
+            <path d="M3 3l18 18" />
+          </svg>
+          <svg data-selfhost-value="no" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-server" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 4m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+            <path d="M3 12m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+            <path d="M7 8l0 .01" />
+            <path d="M7 16l0 .01" />
+          </svg>
+        </button>
+
+        
+        <div class="gtranslate-container order-lg-5 d-flex align-items-center ms-lg-2 mt-2 mt-lg-0">
+          <div class="gtranslate_wrapper"></div>
+        </div>
+      </div>
+    </div>
+
+        
+        </div>
+</header>
+</div>
+
+<script>
+  window.gtranslateSettings = {
+    "default_language": "en",
+    "native_language_names": true,
+    "detect_browser_language": true,
+    "wrapper_selector": ".gtranslate_wrapper",
+    "flag_size": 24
+  };
+</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/popup.js" defer></script>
+
+    <div class="wrap container-lg" role="document">
+      <div class="content">
+      
+        
+	<div class="row flex-xl-nowrap">
+		<div class="col-lg-5 col-xl-4 docs-sidebar d-none d-lg-block">
+			
+  
+    
+<nav class="section-nav docs-links">
+  <ul class="list-unstyled">
+
+  <li>
+    <details open>
+      <summary>Welcome</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/learn/welcome/introduction/">Introduction</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Beginner</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/learn/beginner/simple-responses/">Simple Responses</a>
+  </li>
+
+  <li>
+      <a href="/learn/beginner/variables-and-data-types/">Variables and Data Types</a>
+  </li>
+
+  <li>
+      <a href="/learn/beginner/conditional-branching/">Conditional Branching</a>
+  </li>
+
+  <li>
+      <a href="/learn/beginner/command-arguments/">Command Arguments</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open open>
+      <summary>Intermediate</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/learn/intermediate/embeds-and-messages/">Embeds and Messages</a>
+  </li>
+
+  <li>
+      <a href="/learn/intermediate/maps-and-slices/">Maps and Slices</a>
+  </li>
+
+  <li>
+      <a href="/learn/intermediate/loops/">Loops</a>
+  </li>
+
+  <li class="active" >
+      <a aria-current="page" href="/learn/intermediate/database/">Database</a>
+  </li>
+
+  <li>
+      <a href="/learn/intermediate/exercises/">Exercises</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Advanced</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+    <details open>
+      <summary>Custom Interactions</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/learn/advanced/custom-interactions/introduction/">Introduction</a>
+  </li>
+
+  <li>
+      <a href="/learn/advanced/custom-interactions/creating-interactive-elements/">Creating Interactive Elements</a>
+  </li>
+
+  <li>
+      <a href="/learn/advanced/custom-interactions/parsing-an-interaction/">Parsing an Interaction</a>
+  </li>
+
+  <li>
+      <a href="/learn/advanced/custom-interactions/responding-to-an-interaction/">Responding to an Interaction</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+      </ul>
+    </details>
+  </li>
+  </ul>
+</nav>
+
+  
+
+		</div>
+		
+		<nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation">
+			<div class="page-links">
+  <h3>On this page</h3>
+    <nav id="toc">
+  <ul>
+    <li><a href="#overall">Overall</a>
+      <ul>
+        <li><a href="#structure-of-an-entry">Structure of an Entry</a></li>
+        <li><a href="#size-limitations">Size Limitations</a></li>
+        <li><a href="#interaction-limits">Interaction Limits</a></li>
+      </ul>
+    </li>
+    <li><a href="#basic-interactions">Basic Interactions</a>
+      <ul>
+        <li><a href="#dbset">dbSet</a></li>
+        <li><a href="#dbget">dbGet</a></li>
+        <li><a href="#dbdel">dbDel</a></li>
+      </ul>
+    </li>
+    <li><a href="#advanced-interactions">Advanced Interactions</a>
+      <ul>
+        <li><a href="#dbincr">dbIncr</a></li>
+        <li><a href="#dbsetexpire">dbSetExpire</a></li>
+      </ul>
+    </li>
+    <li><a href="#multiple-interactions">Multiple Interactions</a>
+      <ul>
+        <li><a href="#dbcount">dbCount</a></li>
+        <li><a href="#dbtopentries--dbbottomentries">dbTopEntries / dbBottomEntries</a></li>
+        <li><a href="#dbgetpattern--dbgetpatternreverse">dbGetPattern / dbGetPatternReverse</a></li>
+        <li><a href="#dbdelmultiple">dbDelMultiple</a></li>
+        <li><a href="#dbrank">dbRank</a></li>
+      </ul>
+    </li>
+    <li><a href="#appendix">Appendix</a>
+      <ul>
+        <li><a href="#patterns">Patterns</a></li>
+        <li><a href="#serialization">Serialization</a></li>
+        <li><a href="#storing-ids">Storing IDs</a></li>
+        <li><a href="#global-vs-user-entries">Global vs. User Entries</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+
+		</nav>
+		<main class="docs-content col-lg-11 col-xl-9 mx-xl-auto">
+		
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="/">Home</a></li>
+<li class="breadcrumb-item"><a href="/learn/">Learn</a></li>
+<li class="breadcrumb-item"><a href="/learn/intermediate/">Intermediate</a></li>
+<li class="breadcrumb-item active" aria-current="page">Database</li>
+					</ol>
+				</nav>
+			
+			<h1>Database</h1>
+			
+			<nav class="toc-mobile d-xl-none" aria-label="Quaternary navigation">
+				<details>
+    <summary>On this page</summary>
+    <div class="page-links">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#overall">Overall</a>
+      <ul>
+        <li><a href="#structure-of-an-entry">Structure of an Entry</a></li>
+        <li><a href="#size-limitations">Size Limitations</a></li>
+        <li><a href="#interaction-limits">Interaction Limits</a></li>
+      </ul>
+    </li>
+    <li><a href="#basic-interactions">Basic Interactions</a>
+      <ul>
+        <li><a href="#dbset">dbSet</a></li>
+        <li><a href="#dbget">dbGet</a></li>
+        <li><a href="#dbdel">dbDel</a></li>
+      </ul>
+    </li>
+    <li><a href="#advanced-interactions">Advanced Interactions</a>
+      <ul>
+        <li><a href="#dbincr">dbIncr</a></li>
+        <li><a href="#dbsetexpire">dbSetExpire</a></li>
+      </ul>
+    </li>
+    <li><a href="#multiple-interactions">Multiple Interactions</a>
+      <ul>
+        <li><a href="#dbcount">dbCount</a></li>
+        <li><a href="#dbtopentries--dbbottomentries">dbTopEntries / dbBottomEntries</a></li>
+        <li><a href="#dbgetpattern--dbgetpatternreverse">dbGetPattern / dbGetPatternReverse</a></li>
+        <li><a href="#dbdelmultiple">dbDelMultiple</a></li>
+        <li><a href="#dbrank">dbRank</a></li>
+      </ul>
+    </li>
+    <li><a href="#appendix">Appendix</a>
+      <ul>
+        <li><a href="#patterns">Patterns</a></li>
+        <li><a href="#serialization">Serialization</a></li>
+        <li><a href="#storing-ids">Storing IDs</a></li>
+        <li><a href="#global-vs-user-entries">Global vs. User Entries</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+  </details>
+
+			</nav>
+			<p>OBMAN.BOT provides a database for use in your CCs. Entries in this database are used to store persistent data that you want
+to keep between custom command executions. You access and manipulate these entries with the <a href="/docs/reference/templates/functions/#database">database functions</a>,
+which we will elaborate on in this guide.</p>
+<h2 id="overall">Overall<a href="#overall" class="anchor" aria-hidden="true">#</a> </h2>
+<p>This section covers the structure of a database entry, the database&rsquo;s size limits, as well as the entry&rsquo;s size limit and
+lastly the interaction limit per custom command execution.</p>
+<h3 id="structure-of-an-entry">Structure of an Entry<a href="#structure-of-an-entry" class="anchor" aria-hidden="true">#</a> </h3>
+<p>A database entry has the following structure:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=.ID>
+          <td>.ID</td>
+          <td>The ID of this entry. Not to be confused with the User ID.</td>
+      </tr>
+    <tr id=.GuildID>
+          <td>.GuildID</td>
+          <td>The server ID.</td>
+      </tr>
+    <tr id=.UserID>
+          <td>.UserID</td>
+          <td>ID of the associated user.</td>
+      </tr>
+    <tr id=.User>
+          <td>.User</td>
+          <td>The associated user object.</td>
+      </tr>
+    <tr id=.CreatedAt>
+          <td>.CreatedAt</td>
+          <td>When this entry was created.</td>
+      </tr>
+    <tr id=.UpdatedAt>
+          <td>.UpdatedAt</td>
+          <td>When this entry was last updated.</td>
+      </tr>
+    <tr id=.ExpiresAt>
+          <td>.ExpiresAt</td>
+          <td>When this entry will expire.</td>
+      </tr>
+    <tr id=.Key>
+          <td>.Key</td>
+          <td>The key of this entry.</td>
+      </tr>
+    <tr id=.Value>
+          <td>.Value</td>
+          <td>The value of this entry.</td>
+      </tr>
+    <tr id=.ValueSize>
+          <td>.ValueSize</td>
+          <td>The size of the value in bytes.</td>
+      </tr>
+  </tbody>
+</table>
+<p>The fields <code>.CreatedAt</code>, <code>.UpdatedAt</code>, and <code>.ExpiresAt</code> all evaluate to a <code>time.Time</code> object, so all
+<a href="/docs/reference/templates/functions/#time">methods on <code>time.Time</code></a> are applicable.</p>
+<div class="callout callout-note d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/info-circle svg-inline callout-icon me-2 mb-3" id="svg-info-circle" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+  <path d="M12 9h.01" />
+  <path d="M11 12h1v4h1" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Note: About That User ID</p>
+
+      </div>
+    <div class="callout-body">
+      <p>The user ID does not have to point to a valid Discord userвЂ”it can be any integer. For instance, it is conventional (but
+not required) to store server-global data under the user ID <code>0</code>, in which case the <code>UserID</code> field will be <code>0</code> and the
+<code>User</code> field will be invalid. See also <a href="/learn/intermediate/database/#global-vs-user-entries">Global vs. User Entries</a>.</p>
+
+    </div>
+  </div>
+</div>
+
+<h3 id="size-limitations">Size Limitations<a href="#size-limitations" class="anchor" aria-hidden="true">#</a> </h3>
+<p>All things computers and data have limitations, and the OBMAN.BOT database is no exception. However, we have tried to set
+these limits generously (within reason), and we expect most custom commands will never run afoul of them.</p>
+<p><strong>Limit on total entries.</strong> You can have up to <code>50 * member_count</code> entries in your server&rsquo;s database. If your server has
+premium activated, this limit increases to <code>500 * member_count</code>.</p>
+<p>For instance, if your server has 75 members and does not have premium, your database entry limit is</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">50 * member_count = 50 * 75 = 3750</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>and hence if you exceed 3750 database entries, all functions that create new entries will fail with the error <code>Above DB Limit</code>.</p>
+<p>Note that although the entry limit is a function of your server member count, there is no per-user limit. That is, a
+single user can have more than 50 entries under their ID as long as the total number of entries in the server remains
+under the limit.</p>
+<hr>
+<p><strong>Limits on individual entries.</strong> Database entry keys are limited to 256 bytes in length; <code>dbSet</code> and <code>dbSetExpire</code> will
+silently truncate your input key if its length exceeds this limit.</p>
+<p>The size of a database entry, as reported by the <code>ValueSize</code> field, is limited to 100 kB. (Internally, your data is
+serialized with <a href="https://msgpack.org/index.html" rel="external">msgpack</a> and the length of the serialized sequence of bytes is what
+matters.)</p>
+<h3 id="interaction-limits">Interaction Limits<a href="#interaction-limits" class="anchor" aria-hidden="true">#</a> </h3>
+<p>In addition to limiting the size of your server database, we also limit the number of times you interact with the
+database within a custom command execution. Specifically, you can only call database functions&mdash;those prefixed by <code>db</code>
+&mdash;up to 10 times within a custom command execution. The limit increases to 50 if you have premium active.</p>
+<p>Besides the main limit, database functions that act on multiple entries, namely <code>dbCount</code>, <code>dbGetPattern</code>,
+<code>dbGetPatternReverse</code>, <code>dbTopEntries</code>, and <code>dbBottomEntries</code>, also count toward a separate limit. Specifically, these
+&lsquo;multiple interaction&rsquo; database functions can only be used twice in a custom command execution (10 with premium.)</p>
+<p>That concludes the overview, now let&rsquo;s get into basic interactions!</p>
+<h2 id="basic-interactions">Basic Interactions<a href="#basic-interactions" class="anchor" aria-hidden="true">#</a> </h2>
+<h3 id="dbset">dbSet<a href="#dbset" class="anchor" aria-hidden="true">#</a> </h3>
+<p><code>dbSet</code> creates or overwrites an entry in the database.</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ dbSet user_id key value }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>where <code>user_id</code> is any integer, <code>key</code> is the name of the entry, and <code>value</code> is arbitrary.</p>
+<div class="callout callout-caution d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/alert-triangle svg-inline callout-icon me-2 mb-3" id="svg-alert-triangle" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M12 9v4" />
+  <path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0z" />
+  <path d="M12 16h.01" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Warning: Storing IDs</p>
+
+      </div>
+    <div class="callout-body">
+      <p>Numbers are stored as 64-bit floats internally, which can result in a loss of precision when storing IDs or similarly
+large integers. Instead, convert IDs to strings before storing them in database and convert back to integer on
+retrieval.</p>
+<p>See <a href="/learn/intermediate/database/#storing-ids">Storing IDs</a> for more information.</p>
+
+    </div>
+  </div>
+</div>
+
+<h3 id="dbget">dbGet<a href="#dbget" class="anchor" aria-hidden="true">#</a> </h3>
+<p>We know how to create database entries; now, how do we retrieve them?</p>
+<p>This is where <code>dbGet</code> comes in: as its name suggests, it fetches the database entry with the given user ID and key.
+If no such entry exists, it returns <code>nil</code>.</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ dbGet user_id key }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="callout callout-note d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/info-circle svg-inline callout-icon me-2 mb-3" id="svg-info-circle" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+  <path d="M12 9h.01" />
+  <path d="M11 12h1v4h1" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Note: Beware the Return Type</p>
+
+      </div>
+    <div class="callout-body">
+      <p><code>dbGet</code> returns the database entry object, not the value. To access the value, read the <code>Value</code> field:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ (dbGet user_id key).Value }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div>
+    </div>
+  </div>
+</div>
+
+<h3 id="dbdel">dbDel<a href="#dbdel" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Now we know how to create and fetch entries from the database. But a good program also frees unused storage, and custom
+commands are no exception. Use <code>dbDel</code> to delete a database entry:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ dbDel user_id key }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h2 id="advanced-interactions">Advanced Interactions<a href="#advanced-interactions" class="anchor" aria-hidden="true">#</a> </h2>
+<p>Now, you might want to become a little more special with your databaseвЂ”that&rsquo;s why we have a few more functions,
+<code>dbIncr</code> and <code>dbSetExpire</code>. With these functions, you are able to do more complex things with the database that would
+otherwise be quite hard to achieve, or at least not very efficient.</p>
+<h3 id="dbincr">dbIncr<a href="#dbincr" class="anchor" aria-hidden="true">#</a> </h3>
+<p><code>dbIncr</code> increases the value of the entry by the given number and returns the incremented value in the same action,
+allowing you to further use the value. Said increment can be any valid number, that is, integers and float. Do note,
+however, that the return type of <code>dbIncr</code> is always a float, even if you use an integer for the increment argument.</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{dbIncr &lt;UserID&gt; &lt;Key&gt; &lt;Increment&gt;}}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p><code>dbIncr</code> also conveniently initializes a database entry to the given increment should one with the given UserID and Key
+not already exist. Try thinking about how you would implement a custom command that increases a given entry by a set
+amount, gets the value, but also sets a new entry if it doesn&rsquo;t already exist.</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{$db := dbGet .User.ID &#34;someKey&#34;}}
+</span></span><span class="line"><span class="cl">{{$add := add (toFloat $db.Value) $x}}
+</span></span><span class="line"><span class="cl">{{dbSet .User.ID &#34;someKey&#34; (str $add)}}
+</span></span><span class="line"><span class="cl">{{$add}}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>As you see, using only basic functions essentially requires you to waste a database function call you can probably
+better use elsewhere. And as we discussed in the beginning, those are limited at 10 (50 with premium), so quite a
+precious resource that should not be wasted.</p>
+<h3 id="dbsetexpire">dbSetExpire<a href="#dbsetexpire" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Now you might want to set entries which get deleted after a while. To do so, you can use <code>dbSetExpire</code>.</p>
+<p>As we recall from the beginning, database entries have an <code>.ExpiresAt</code> field of type <code>time.Time</code>. The <code>dbSetExpire</code>
+function adds a timestamp to this field, telling the bot that we only want to use the DB entry until then.</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{dbSetExpire &lt;userID&gt; &lt;Key&gt; &lt;Value&gt; &lt;Expires in&gt;}}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>The <code>Expires in</code> is given in seconds.</p>
+<p>A common use case for this function is a cooldown: As long as the entry exists, the command is still on cooldown.</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ if $db := dbGet 2000 &#34;cooldown&#34; }}
+</span></span><span class="line"><span class="cl">    Command is  on cooldown :(
+</span></span><span class="line"><span class="cl">    Cooldown will be over at {{ $db.ExpiresAt.Format &#34;Mon 02 Jan 15:04:05&#34; }}
+</span></span><span class="line"><span class="cl">    {{ return }}
+</span></span><span class="line"><span class="cl">{{ end }}
+</span></span><span class="line"><span class="cl">{{ dbSetExpire 2000 &#34;cooldown&#34; &#34;true&#34; 60 }}
+</span></span><span class="line"><span class="cl">Command is not on cooldown :)</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div class="callout callout-note d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/info-circle svg-inline callout-icon me-2 mb-3" id="svg-info-circle" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+  <path d="M12 9h.01" />
+  <path d="M11 12h1v4h1" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Note: Backend Expiry Behavior</p>
+
+      </div>
+    <div class="callout-body">
+      <p>As a side effect, expired entries will be considered gone (i.e. deleted) by OBMAN.BOT, but still remain in the underlying
+database. You can observe this effect by visiting your <a href="/docs/custom-commands/database/">database view page</a>.</p>
+
+    </div>
+  </div>
+</div>
+
+<h2 id="multiple-interactions">Multiple Interactions<a href="#multiple-interactions" class="anchor" aria-hidden="true">#</a> </h2>
+<p>Lastly there are special functions which allow you to get multiple entries. We coincidentally call those multiple entry
+interactions. Every function except one returns a slice of entries. Depending on what function you use, this slice is
+sorted by certain criteria.</p>
+<h3 id="dbcount">dbCount<a href="#dbcount" class="anchor" aria-hidden="true">#</a> </h3>
+<p>This is the only function interacting with multiple entries that doesn&rsquo;t return a slice. Since this function is fairly
+easy to understand, we&rsquo;ll start with that. As usual, first the syntax:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{dbCount &lt;userID&gt;}}
+</span></span><span class="line"><span class="cl">{{/* or */}}
+</span></span><span class="line"><span class="cl">{{dbCount &lt;pattern&gt;}}
+</span></span><span class="line"><span class="cl">{{/* or as query */}}
+</span></span><span class="line"><span class="cl">{{dbCount (sdict &#34;userID&#34; &lt;userID&gt; &#34;pattern&#34; &lt;pattern&gt;)}}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>dbCount counts the entries either for the given database userID or the pattern for database keys. Alternatively, you can
+make it count entries that match both conditions by passing in an <code>sdict</code> with the keys <code>userID</code> for the ID and <code>pattern</code>
+for database keys that are to be counted. The function returns the number of entries that match the given criteria.</p>
+<p><code>pattern</code> is a basic PostgreSQL pattern, which we explain further down in the <a href="/learn/intermediate/database/#patterns">Patterns</a> section.</p>
+<h3 id="dbtopentries--dbbottomentries">dbTopEntries / dbBottomEntries<a href="#dbtopentries--dbbottomentries" class="anchor" aria-hidden="true">#</a> </h3>
+<p>These functions return a slice of DB entry objects ordered by the value. <code>dbTopEntries</code> orders by descending value, and
+<code>dbBottomEntries</code> by ascending value. Both of these are hard-limited to at most 100 entries (for premium as well), and
+this can be limited further with the <code>amount</code> argument.</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{dbTopEntries &lt;pattern&gt; &lt;amount&gt; &lt;nSkip&gt;}}
+</span></span><span class="line"><span class="cl">{{dbBottomEntries &lt;pattern&gt; &lt;amount&gt; &lt;nSkip&gt;}}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>Let&rsquo;s walk through these arguments one by one. For <code>pattern</code>, we use basic PostgreSQL patterns.
+The <code>amount</code> specifies how many entries we want to retrieve. Lastly, you tell OBMAN.BOT how many entries it should skip
+using the <code>nSkip</code> argument.</p>
+<p>Now, to retrieve the value of each entry, we range over the given slice and access the <code>.Value</code> field:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{$entries := dbTopEntries &#34;someKey&#34; 10 0}}
+</span></span><span class="line"><span class="cl">{{range $entries}}
+</span></span><span class="line"><span class="cl">    Current Entry Value: {{.Value}}
+</span></span><span class="line"><span class="cl">{{end}}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>In analogy to the above code example, you can access any other field as well.</p>
+<h3 id="dbgetpattern--dbgetpatternreverse">dbGetPattern / dbGetPatternReverse<a href="#dbgetpattern--dbgetpatternreverse" class="anchor" aria-hidden="true">#</a> </h3>
+<p>These two functions allow you to get multiple entries under one user ID with matching keys, again using patterns. They
+return a slice of entries sorted by value, just as the above functions. The only difference here is only the limitation
+to one <code>UserID</code> instead of all <code>UserID</code>s.</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{dbGetPattern &lt;userID&gt; &lt;pattern&gt; &lt;amount&gt; &lt;nSkip&gt;}}
+</span></span><span class="line"><span class="cl">{{/* or */}}
+</span></span><span class="line"><span class="cl">{{dbGetPatternReverse &lt;userID&gt; &lt;pattern&gt; &lt;amount&gt; &lt;nSkip&gt;}}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>Just as above, we range over the given slice to access fields of the entry object. For simplicity&rsquo;s sake however, no
+code example, as it should be pretty clear how to do this.</p>
+<h3 id="dbdelmultiple">dbDelMultiple<a href="#dbdelmultiple" class="anchor" aria-hidden="true">#</a> </h3>
+<p>This function allows you to delete multiple entries in one go, instead of one at a time with <code>dbDel</code>. Its syntax is a
+little more intricate than other functions:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{dbDelMultiple &lt;query&gt; &lt;amount&gt; &lt;skip&gt;}}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p><code>query</code> is a <code>sdict</code> with the following keys:</p>
+<ul>
+<li><code>userID</code>: delete entries under this user ID. If this key is not provided, it&rsquo;ll default to all IDs.</li>
+<li><code>pattern</code>: delete entries with keys matching this pattern.</li>
+<li><code>reverse</code>: if true, start deleting entries with the lowest value first. Defaults to <code>false</code>.</li>
+</ul>
+<p><code>amount</code> specifies how many entries should be deleted in one go, maxing out at 100. <code>skip</code> specifies how many of
+matching entries should be skipped. Note that this function also returns the amount of deleted entries, which is likely
+most useful assigned to a variable.</p>
+<p>With all that in mind, the following example code deletes up to 100 matching entries with <code>Key</code>s matching the pattern
+<code>test%</code> and <code>UserID</code> of the current user, finally outputting the number of entries deleted:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{$deleted := dbDelMultiple (sdict &#34;userID&#34; .User.ID &#34;pattern&#34; &#34;test%&#34;) 100 0}}
+</span></span><span class="line"><span class="cl">Deleted {{$deleted}} entries!</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="dbrank">dbRank<a href="#dbrank" class="anchor" aria-hidden="true">#</a> </h3>
+<p>This function returns the rank (that is, the position in an ordered list) of a specified entry in the set of entries
+matching criteria provided by <code>query</code>.</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{dbRank &lt;query&gt; &lt;userID&gt; &lt;key&gt;}}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p><code>query</code> is as above a <code>sdict</code> with the following options:</p>
+<ul>
+<li><code>userID</code>: search only through entries stored under this ID. Will default to all IDs, if not provided.</li>
+<li><code>pattern</code>: only count entries with matching keys; defaults to entries with any key.</li>
+<li><code>reverse</code>: if true, lower valued entries will have a higher (better) rank. Default is <code>false</code>.</li>
+</ul>
+<p>As an example, to find the rank of the entry with the key <code>test</code> for the current user in all of this user&rsquo;s entries, you
+may want to use the following code:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{$rank := dbRank (sdict &#34;userID&#34; .User.ID) .User.ID &#34;test&#34;}}
+</span></span><span class="line"><span class="cl">The specified entry&#39;s rank is {{$rank}}.</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h2 id="appendix">Appendix<a href="#appendix" class="anchor" aria-hidden="true">#</a> </h2>
+<h3 id="patterns">Patterns<a href="#patterns" class="anchor" aria-hidden="true">#</a> </h3>
+<p>As mentioned earlier, we use patterns for a set of functions. Obviously, you need to know what they are and how to use
+them. The patterns are based on SQL <code>LIKE</code> patterns, so if you&rsquo;re familiar with them, you&rsquo;re good to go. If not, don&rsquo;t
+worry, they&rsquo;re quite easy to understand.</p>
+<p>There&rsquo;s only two special characters you need to know: <code>%</code> and <code>_</code>. That&rsquo;s right, just those two!
+In case you need to use those literally in a pattern, escape them with a backslash (<code>\%</code> and <code>\_</code>). Their respective
+purpose is also quite simple:</p>
+<ul>
+<li>The percent sign <code>%</code> matches any sequence of zero or more characters</li>
+<li>The underscore <code>_</code> matches any single character</li>
+</ul>
+<p>Okay, with that in mind, let&rsquo;s take a look at an example. The following pattern will match anything that starts with
+the letter <code>l</code> and ends in <code>n</code>.</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">l%n</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>The following example showcases the usage of <code>_</code>.</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">hel_o</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>This pattern matches words such as <code>hello</code>, <code>helgo</code>, <code>heloo</code>.</p>
+<h3 id="serialization">Serialization<a href="#serialization" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Saving values with custom types to database may result in their values being <em>serialized</em> to a different type, meaning
+that you might have to convert it back to its original type when retrieving. For example, saving the result of a <code>cembed</code>
+to call to database will result in it becoming a <code>map[string] interface{}</code>. The following code will showcase this
+behavior:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{$embed := cembed &#34;description&#34; &#34;Serialization!&#34;}}
+</span></span><span class="line"><span class="cl">{{printf &#34;Type before storing: %T&#34; $embed}}
+</span></span><span class="line"><span class="cl">{{dbSet .User.ID &#34;serialization_example&#34; $embed}}
+</span></span><span class="line"><span class="cl">{{$embed_retrieved := (dbGet .User.ID &#34;serialization_example&#34;).Value}}
+</span></span><span class="line"><span class="cl">{{printf &#34;Type after retrieving, before converting: %T&#34; $embed_retrieved}}
+</span></span><span class="line"><span class="cl">{{printf &#34;Type afer retrieving, after converting: %T&#34; (cembed $embed_retrieved)}}
+</span></span><span class="line"><span class="cl">{{dbDel .User.ID &#34;serialization_example&#34;}}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>However, most commonly used types will be saved with their type information intact, meaning that there will be no need
+to convert them after retrieval. In particular, <code>sdict</code>, <code>dict</code>, and <code>cslice</code> may be saved directly to database and will
+retain their original types.</p>
+<h3 id="storing-ids">Storing IDs<a href="#storing-ids" class="anchor" aria-hidden="true">#</a> </h3>
+<p>You might have noticed that, whenever you&rsquo;re storing a user ID, channel ID, etc. into your database, it will come back
+as a weird value, such as <code>5.241379415938826e+17</code>. This is because they&rsquo;re saved as floats, hence the bot formatting it
+in scientific notation. Even converting back to an integer will not solve this, because of how floats are represented
+they will round ID numbers.
+To prevent this, simply convert them to a string before storing and converting back to <code>int</code> upon retrieving, like so:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ dbSet 2000 &#34;someKey&#34; (str .User.ID) }}
+</span></span><span class="line"><span class="cl">{{ $userID_received := toInt (dbGet 2000 &#34;someKey&#34;).Value }}
+</span></span><span class="line"><span class="cl">{{ eq .User.ID $userID_received }}
+</span></span><span class="line"><span class="cl">{{ dbDel 2000 &#34;someKey&#34; }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>Try removing <code>str</code>, and observe that the IDs no longer match.</p>
+<h3 id="global-vs-user-entries">Global vs. User Entries<a href="#global-vs-user-entries" class="anchor" aria-hidden="true">#</a> </h3>
+<p>When you&rsquo;ve been using the database for quite a while now, you surely have heard of so-called &ldquo;global&rdquo; and &ldquo;per-user&rdquo;
+entries.</p>
+<p>These terms are often used and help get the point across when explaining the <em>effect</em>, but when it comes to
+understanding the workings behind it, this is not the right way to think about it.</p>
+<p>When you do so, you exclude all possible variations and just think &ldquo;If I have a <code>0</code> as the user ID, it&rsquo;s a global db and
+if it&rsquo;s <code>.User.ID</code>, it becomes a per-user db&rdquo;. You block yourself from creating systems that are case-dependent,
+over-complicate things and confuse yourself.</p>
+<p>The way to go about this is to think of it in terms of the database entries themselves, and how they&rsquo;re used / going to
+be used in your system. As we talk about this further, we do so with the assumption that you have used at least a few
+database functions already.</p>
+<h4 id="understanding-a-database-entry-vaguely">Understanding a Database Entry Vaguely<a href="#understanding-a-database-entry-vaguely" class="anchor" aria-hidden="true">#</a> </h4>
+<p>In a map, you have key-value pairs, where each value corresponds to its key. Database entries work similarly, except
+each value corresponds to the combination of the <code>UserID</code> and key. Basically, two database entries are unique if either
+the <code>UserID</code> <strong>or</strong> <code>Key</code> differ.</p>
+<p>Each of the following line corresponds to and returns different database entries, since they don&rsquo;t share the same set of
+user ID and key.</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ dbGet 20 &#34;apple&#34; }}
+</span></span><span class="line"><span class="cl">{{ dbGet 20 &#34;banana&#34; }}
+</span></span><span class="line"><span class="cl">{{ dbGet 30 &#34;apple&#34; }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h4 id="what-do-these-terms-mean">What do These Terms Mean?<a href="#what-do-these-terms-mean" class="anchor" aria-hidden="true">#</a> </h4>
+<p>Having understood DB entries, we can now define these terms in a better way:</p>
+<ul>
+<li><strong>Global Entries</strong>: If everyone/everything refers to the same database entry, we conventionally call it a global entry.</li>
+<li><strong>User/Channel-specific entries</strong>: If different users/channels refer to different entries based on any set conditions,
+we call them per-user entries, or similar terms.</li>
+</ul>
+<p>Before you write your code, you need to decide how your command will use the CC database and then take action
+accordingly.</p>
+<p>Need a different database entry in each channel that is independent of the user? Use <code>dbSet channelID &quot;key&quot; value</code>.</p>
+<p>Need different database entries in separate channels that are dependent on the user?
+Use <code>dbSet .User.ID &quot;channelID&quot; value</code> or <code>dbSet channelID (str .User.ID) value</code> depending on what kind of data you&rsquo;re
+expecting to get from <code>dbTopEntries</code>, or just any other custom command.</p>
+<p>It&rsquo;s all about playing with the <code>userID</code> and <code>key</code> to get what you need. This should hopefully give you a little better
+idea and push you to think in the right direction.</p>
+
+			<div class="page-footer-meta d-flex flex-column flex-md-row justify-content-between">
+				
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="edit-page">
+  <a href="https://github.com/ArtObman/ArtObman/blob/master/content//learn/intermediate/database.md">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2">
+      <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+    </svg>
+    Edit this page on GitHub
+  </a>
+</div>
+
+				</div>
+			<div class="page-nav d-flex flex-column flex-sm-row">
+	
+	<div class="card w-100">
+			<div class="card-body d-flex">
+				<div class="d-flex flex-column justify-content-center">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M5 12l14 0"></path>
+						<path d="M5 12l6 6"></path>
+						<path d="M5 12l6 -6"></path>
+				 	</svg>
+				</div>
+				<div class="d-flex flex-column">
+					<div class="text-body-secondary">Prev</div>
+					<a href="/learn/intermediate/loops/" class="stretched-link text-reset text-decoration-none">Loops</a>
+				</div>
+			</div>
+		</div>
+	<div class="m-2"></div>
+	<div class="card text-end w-100">
+			<div class="card-body d-flex justify-content-end">
+				<div class="d-flex flex-column">
+					<div class="text-body-secondary">Next</div>
+					<a href="/learn/intermediate/exercises/" class="stretched-link text-reset text-decoration-none">Exercises</a>
+				</div>
+				<div class="d-flex flex-column justify-content-center">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M5 12l14 0"></path>
+						<path d="M13 18l6 -6"></path>
+						<path d="M13 6l6 6"></path>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+
+			
+		</main>
+		
+	</div>
+
+      
+      </div>
+    </div>
+    
+    
+    <footer class="footer text-muted">
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-lg-8 text-center text-lg-start">
+        <ul class="list-inline">
+          <li class="list-inline-item"><a class="text-muted" href="https://botlabs.gg/privacy-policy">Privacy Policy</a></li><li class="list-inline-item"><a class="text-muted" href="https://obman.com/terms-of-use">Terms of Use</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-8 text-center text-lg-end">
+        <ul class="list-inline">
+          <li class="list-inline-item">Built using <a class="text-muted" href="https://getdoks.org/">Doks</a> and <a class="text-muted" href="https://gohugo.io/">Hugo</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script async
+  src="/js/bootstrap.8674636a1059caed3a46af4b3dbc8d68a0aac4e0c51ab393c810f3ad10553638.js"
+  integrity="sha256-hnRjahBZyu06Rq9LPbyNaKCqxODFGrOTyBDzrRBVNjg=">
+</script>
+
+
+<script async
+  src="/js/app.ed63b5301e6ba65958f352a0840b7bbba0fcd82e492693df4e191290daaa4850.js"
+  integrity="sha256-7WO1MB5rpllY81KghAt7u6D82C5JJpPfThkSkNqqSFA=">
+</script>
+
+
+
+
+
+
+
+
+
+
+<script async
+  src="/js/docsearch.b4e4d5218e0dcf1c9f23699da64223159203b928fe4e1da0c2657079845ad1c2.js"
+  integrity="sha256-tOTVIY4NzxyfI2mdpkIjFZIDuSj&#43;Th2gwmVweYRa0cI=">
+</script>
+
+    
+  </body>
+</html>

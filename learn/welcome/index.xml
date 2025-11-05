@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Welcome on OBMAN.BOT Help Center</title>
+    <link>http://localhost:1313/learn/welcome/</link>
+    <description>Recent content in Welcome on OBMAN.BOT Help Center</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Copyright (c) 2020-2024 OBMAN.BOT documentation contributors</copyright>
+    <atom:link href="http://localhost:1313/learn/welcome/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction</title>
+      <link>http://localhost:1313/learn/welcome/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/welcome/introduction/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;The first thing you gotta discard, whenever you&amp;rsquo;re learning about something, is your ego. - Luke Smith&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;These are the learning resources for OBMAN.BOT&amp;rsquo;s powerful custom command system. This is your playground!&lt;/p&gt;&#xA;&lt;p&gt;We are going to teach you how to read code as well as how to write it. After all, how can you &lt;strong&gt;write&lt;/strong&gt; if you cannot&#xA;&lt;strong&gt;read&lt;/strong&gt;? Learn to read, learn to solve problems, and learn to enjoy the process. The community is there to help, as&#xA;long as you put in some effort yourself.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

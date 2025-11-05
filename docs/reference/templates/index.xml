@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Templates on OBMAN.BOT Help Center</title>
+    <link>http://localhost:1313/docs/reference/templates/</link>
+    <description>Recent content in Templates on OBMAN.BOT Help Center</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Copyright (c) 2020-2024 OBMAN.BOT documentation contributors</copyright>
+    <atom:link href="http://localhost:1313/docs/reference/templates/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Syntax and Data</title>
+      <link>http://localhost:1313/docs/reference/templates/syntax-and-data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/reference/templates/syntax-and-data/</guid>
+      <description>&lt;p&gt;Library of base data accessible within custom scripting.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;Go is all about type&amp;hellip; Type is life.&amp;rdquo; // William Kennedy&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;preface&#34;&gt;Preface&lt;/h2&gt;&#xA;&lt;p&gt;All available data that can be used in OBMAN.BOT&amp;rsquo;s templating &amp;ldquo;engine&amp;rdquo; which is slightly modified version of Go&amp;rsquo;s&#xA;stdlib text/template package; more in depth and info about actions, pipelines and global functions like &lt;code&gt;printf, index, len,&lt;/code&gt;etc &amp;gt; &lt;a href=&#34;https://golang.org/pkg/text/template/&#34; rel=&#34;external&#34;&gt;https://golang.org/pkg/text/template/&lt;/a&gt; . This section is meant to be&#xA;a concise and to the point reference document for all available templates/functions. &lt;strong&gt;Functions&lt;/strong&gt; are covered&#xA;in &lt;a href=&#34;http://localhost:1313/docs/reference/templates/functions/&#34;&gt;Function documentation&lt;/a&gt;. For detailed explanations and a syntax guide, please&#xA;refer to the &lt;a href=&#34;http://localhost:1313/learn/welcome/introduction/&#34;&gt;learning resource&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Functions</title>
+      <link>http://localhost:1313/docs/reference/templates/functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/reference/templates/functions/</guid>
+      <description>&lt;p&gt;Functions are used to take action within template scripts. Some functions accept arguments, and some functions return&#xA;values you can send in your response or use as arguments for other functions.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;channel&#34;&gt;Channel&lt;/h2&gt;&#xA;&lt;p&gt;These functions relate to channels and threads.&lt;/p&gt;&#xA;&lt;div class=&#34;callout callout-tip d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3&#34;&gt;&#xD;&#xA;  &lt;svg&#xA;  xmlns=&#34;http://www.w3.org/2000/svg&#34;&#xA;  width=&#34;24&#34;&#xA;  height=&#34;24&#34;&#xA;  viewBox=&#34;0 0 24 24&#34;&#xA;  fill=&#34;none&#34;&#xA;  stroke=&#34;currentColor&#34;&#xA;  stroke-width=&#34;2&#34;&#xA;  stroke-linecap=&#34;round&#34;&#xA;  stroke-linejoin=&#34;round&#34;&#xA; &#xA; class=&#34;outline/rocket svg-inline callout-icon me-2 mb-3&#34; id=&#34;svg-rocket&#34; role=&#34;img&#34;&gt;&#xA;  &lt;path stroke=&#34;none&#34; d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;/&gt;&#xA;  &lt;path d=&#34;M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3&#34; /&gt;&#xA;  &lt;path d=&#34;M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3&#34; /&gt;&#xA;  &lt;path d=&#34;M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0&#34; /&gt;&#xA;&lt;/svg&gt;&#xD;&#xA;  &lt;div class=&#34;callout-content&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;callout-title&#34;&gt;&#xD;&#xA;        &lt;p&gt;Tip: Current Channel or Thread&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

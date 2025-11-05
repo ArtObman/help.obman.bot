@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Moderation on OBMAN.BOT Help Center</title>
+    <link>http://localhost:1313/docs/moderation/</link>
+    <description>Recent content in Moderation on OBMAN.BOT Help Center</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Copyright (c) 2020-2024 OBMAN.BOT documentation contributors</copyright>
+    <atom:link href="http://localhost:1313/docs/moderation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Moderation Tools</title>
+      <link>http://localhost:1313/docs/moderation/moderation-tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/moderation/moderation-tools/</guid>
+      <description>&lt;p&gt;Everything in moderation, including moderation.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;#h-rh-i-501aa8721c8ee5c00782001d0d40d721-lightbox&#34;&gt;&#xA;&lt;img alt=&#34;Overview of the moderation page&#34; height=&#34;1363&#34; id=&#34;h-rh-i-501aa8721c8ee5c00782001d0d40d721&#34; src=&#34;http://localhost:1313/docs/moderation/overview_moderation.png&#34; width=&#34;1135&#34;&gt;&lt;/a&gt;&#xA;&lt;a href=&#34;javascript:history.back();&#34; class=&#34;lightbox&#34; id=&#34;h-rh-i-501aa8721c8ee5c00782001d0d40d721-lightbox&#34;&gt;&#xA;  &lt;img loading=&#34;lazy&#34; alt=&#34;Overview of the moderation page&#34; height=&#34;1363&#34; id=&#34;h-rh-i-501aa8721c8ee5c00782001d0d40d721&#34; src=&#34;http://localhost:1313/docs/moderation/overview_moderation.png&#34; width=&#34;1135&#34;&gt;&#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;center&gt;&#xA;&lt;p&gt;&lt;strong&gt;1&lt;/strong&gt; Mod Log Channel &lt;strong&gt;2&lt;/strong&gt; Report Channel &lt;strong&gt;3&lt;/strong&gt; Moderation DM Error Channel &lt;strong&gt;4&lt;/strong&gt; Clean Command &lt;strong&gt;5&lt;/strong&gt; Report&#xA;Command &lt;strong&gt;6&lt;/strong&gt; Unban Logging &lt;strong&gt;7&lt;/strong&gt; Giverole/Takerole commands &lt;strong&gt;8&lt;/strong&gt; Give/Takerole Permitted Roles &lt;strong&gt;9&lt;/strong&gt;&#xA;Give/Takerole Logging &lt;strong&gt;10&lt;/strong&gt; External Ban Logging &lt;strong&gt;11&lt;/strong&gt; External Kick Logging &lt;strong&gt;12&lt;/strong&gt; External Timeout Logging &lt;strong&gt;13&lt;/strong&gt;&#xA;Moderation Tabs &lt;strong&gt;14&lt;/strong&gt; Bot Permissions Notice&lt;/p&gt;&#xA;&lt;/center&gt;&#xA;&lt;h2 id=&#34;moderation-page&#34;&gt;Moderation Page&lt;/h2&gt;&#xA;&lt;p&gt;The moderation page allows configuration of common settings.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Basic Automoderator</title>
+      <link>http://localhost:1313/docs/moderation/basic-automoderator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/moderation/basic-automoderator/</guid>
+      <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;Basic Automoderator lets you quickly set up &lt;em&gt;basic&lt;/em&gt; automoderation, without much fuss. For that reason, its&#xA;overall customizability is quite limited. If you would like a more detailed configuration, please use the&#xA;&lt;a href=&#34;http://localhost:1313/docs/moderation/advanced-automoderator/overview/&#34;&gt;Advanced Automoderator&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;You configure violation thresholds and their expiry for predefined rules. These thresholds define when an offending user&#xA;will be muted, kicked, or banned; a warning and a subsequent deletion of the offending message are always issued.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Logging</title>
+      <link>http://localhost:1313/docs/moderation/logging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/moderation/logging/</guid>
+      <description>&lt;p&gt;Capture a moment in time with message logging of the last messages in a channel when the log is created, including a&#xA;limited number of deleted messages.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Verification</title>
+      <link>http://localhost:1313/docs/moderation/verification/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/moderation/verification/</guid>
+      <description>&lt;p&gt;Use Google reCAPTCHA v2 to verify your members before permitting them access to your server.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;#h-rh-i-246ff834678b639051f57582f109b0c5-lightbox&#34;&gt;&#xA;&lt;img alt=&#34;Default Verification Page&#34; height=&#34;358&#34; id=&#34;h-rh-i-246ff834678b639051f57582f109b0c5&#34; src=&#34;http://localhost:1313/docs/moderation/page_verification.png&#34; width=&#34;575&#34;&gt;&lt;/a&gt;&#xA;&lt;a href=&#34;javascript:history.back();&#34; class=&#34;lightbox&#34; id=&#34;h-rh-i-246ff834678b639051f57582f109b0c5-lightbox&#34;&gt;&#xA;  &lt;img loading=&#34;lazy&#34; alt=&#34;Default Verification Page&#34; height=&#34;358&#34; id=&#34;h-rh-i-246ff834678b639051f57582f109b0c5&#34; src=&#34;http://localhost:1313/docs/moderation/page_verification.png&#34; width=&#34;575&#34;&gt;&#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;The verification plugin assigns a specified role to new members after they successfully complete Google reCAPTCHA v2&#xA;verification. This allows you to further verify new members as humans rather than bots before granting them access to&#xA;your server.&lt;/p&gt;&#xA;&lt;p&gt;This is accomplished by sending new members a customizable DM (which employs &lt;a href=&#34;http://localhost:1313/docs/reference/templates/&#34;&gt;template scripting&lt;/a&gt;)&#xA;containing a unique link to verify, tied to their User ID. This link takes them to a customizable verification page with&#xA;a CAPTCHA challenge. Once completed, the User ID is assigned the verified role.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

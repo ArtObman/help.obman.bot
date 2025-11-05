@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notifications and Feeds on OBMAN.BOT Help Center</title>
+    <link>http://localhost:1313/docs/notifications/</link>
+    <description>Recent content in Notifications and Feeds on OBMAN.BOT Help Center</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Copyright (c) 2020-2024 OBMAN.BOT documentation contributors</copyright>
+    <atom:link href="http://localhost:1313/docs/notifications/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>General</title>
+      <link>http://localhost:1313/docs/notifications/general/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/notifications/general/</guid>
+      <description>&lt;p&gt;General notifications such as a welcoming direct message, a message in the server when users join or leave, as well as a&#xA;simple message announcing when a channel&amp;rsquo;s topic has changed.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;#h-rh-i-e09f7413b0e55b892dd0c6d9d6e5a272-lightbox&#34;&gt;&#xA;&lt;img alt=&#34;Overview of general feeds&#34; height=&#34;370&#34; id=&#34;h-rh-i-e09f7413b0e55b892dd0c6d9d6e5a272&#34; src=&#34;http://localhost:1313/docs/notifications/general_overview.png&#34; width=&#34;768&#34;&gt;&lt;/a&gt;&#xA;&lt;a href=&#34;javascript:history.back();&#34; class=&#34;lightbox&#34; id=&#34;h-rh-i-e09f7413b0e55b892dd0c6d9d6e5a272-lightbox&#34;&gt;&#xA;  &lt;img loading=&#34;lazy&#34; alt=&#34;Overview of general feeds&#34; height=&#34;370&#34; id=&#34;h-rh-i-e09f7413b0e55b892dd0c6d9d6e5a272&#34; src=&#34;http://localhost:1313/docs/notifications/general_overview.png&#34; width=&#34;768&#34;&gt;&#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;h3 id=&#34;join-message&#34;&gt;Join Message&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Channel:&lt;/strong&gt; Choose what channel you want the bot to announce the message in.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Message:&lt;/strong&gt; Write the message that you want the bot to say when someone joins.&lt;/p&gt;&#xA;&lt;h3 id=&#34;leave-message&#34;&gt;Leave Message&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Channel:&lt;/strong&gt; Choose what channel you want the bot to announce the message in.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Reddit</title>
+      <link>http://localhost:1313/docs/notifications/reddit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/notifications/reddit/</guid>
+      <description>&lt;p&gt;Get notifications from your favorite subreddits directly in your Discord server.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>YouTube</title>
+      <link>http://localhost:1313/docs/notifications/youtube/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/notifications/youtube/</guid>
+      <description>&lt;p&gt;Get notifications from your favorite YouTubers directly in your Discord server.&lt;/p&gt;&#xA;&lt;div class=&#34;callout callout-note d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3&#34;&gt;&#xD;&#xA;  &lt;svg&#xA;  xmlns=&#34;http://www.w3.org/2000/svg&#34;&#xA;  width=&#34;24&#34;&#xA;  height=&#34;24&#34;&#xA;  viewBox=&#34;0 0 24 24&#34;&#xA;  fill=&#34;none&#34;&#xA;  stroke=&#34;currentColor&#34;&#xA;  stroke-width=&#34;2&#34;&#xA;  stroke-linecap=&#34;round&#34;&#xA;  stroke-linejoin=&#34;round&#34;&#xA; &#xA; class=&#34;outline/info-circle svg-inline callout-icon me-2 mb-3&#34; id=&#34;svg-info-circle&#34; role=&#34;img&#34;&gt;&#xA;  &lt;path stroke=&#34;none&#34; d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;/&gt;&#xA;  &lt;path d=&#34;M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0&#34; /&gt;&#xA;  &lt;path d=&#34;M12 9h.01&#34; /&gt;&#xA;  &lt;path d=&#34;M11 12h1v4h1&#34; /&gt;&#xA;&lt;/svg&gt;&#xD;&#xA;  &lt;div class=&#34;callout-content&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;callout-title&#34;&gt;&#xD;&#xA;        &lt;p&gt;Note: Required Bot Permissions&lt;/p&gt;&#xA;&#xD;&#xA;      &lt;/div&gt;&#xD;&#xA;    &lt;div class=&#34;callout-body&#34;&gt;&#xD;&#xA;      &lt;p&gt;The bot requires at least the &amp;ldquo;Read Messages&amp;rdquo; and &amp;ldquo;Send Messages&amp;rdquo; permissions in the channel you want to post the feed&#xA;in.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Streaming</title>
+      <link>http://localhost:1313/docs/notifications/streaming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/notifications/streaming/</guid>
+      <description>&lt;p&gt;Let everyone know that someone is currently streaming.&lt;/p&gt;&#xA;&lt;h3 id=&#34;streaming-feed&#34;&gt;Streaming Feed&lt;/h3&gt;&#xA;&lt;div class=&#34;callout callout-note d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3&#34;&gt;&#xD;&#xA;  &lt;svg&#xA;  xmlns=&#34;http://www.w3.org/2000/svg&#34;&#xA;  width=&#34;24&#34;&#xA;  height=&#34;24&#34;&#xA;  viewBox=&#34;0 0 24 24&#34;&#xA;  fill=&#34;none&#34;&#xA;  stroke=&#34;currentColor&#34;&#xA;  stroke-width=&#34;2&#34;&#xA;  stroke-linecap=&#34;round&#34;&#xA;  stroke-linejoin=&#34;round&#34;&#xA; &#xA; class=&#34;outline/info-circle svg-inline callout-icon me-2 mb-3&#34; id=&#34;svg-info-circle&#34; role=&#34;img&#34;&gt;&#xA;  &lt;path stroke=&#34;none&#34; d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;/&gt;&#xA;  &lt;path d=&#34;M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0&#34; /&gt;&#xA;  &lt;path d=&#34;M12 9h.01&#34; /&gt;&#xA;  &lt;path d=&#34;M11 12h1v4h1&#34; /&gt;&#xA;&lt;/svg&gt;&#xD;&#xA;  &lt;div class=&#34;callout-content&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;callout-title&#34;&gt;&#xD;&#xA;        &lt;p&gt;Note: Announcements may not Post&lt;/p&gt;&#xA;&#xD;&#xA;      &lt;/div&gt;&#xD;&#xA;    &lt;div class=&#34;callout-body&#34;&gt;&#xD;&#xA;      &lt;p&gt;There are currently some issues with the streaming announcement, and it may not always give the announcement. It will&#xA;however, always assign the streamer role.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

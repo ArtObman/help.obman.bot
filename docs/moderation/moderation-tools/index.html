@@ -1,0 +1,1320 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+<script 
+  src="/js/color-mode.f14b3e296de1d0b69e75af684b62a4a912a2cadab04e36123407cd8388204f1d.js"
+  integrity="sha256-8Us&#43;KW3h0Laeda9oS2KkqRKiytqwTjYSNAfNg4ggTx0=">
+</script>
+
+
+<link rel="stylesheet" href="/main.36ca4900ac79c8b8df541138c0226a38e9bd2fbbd3cde3f0c397a7de57e6e3205e7bd138bf1f9da340a9cb91990a0593d180b720a58bcc44ef978ed4a4791dbe.css" integrity="sha512-NspJAKx5yLjfVBE4wCJqOOm9L7vTzePww5en3lfm4yBee9E4vx&#43;do0Cpy5GZCgWT0YC3IKWLzETvl47UpHkdvg==" crossorigin="anonymous">
+
+<noscript><style>img.lazyload { display: none; }</style></noscript><base href="http://localhost:1313/docs/moderation/moderation-tools/">
+
+  <link rel="canonical" href="http://localhost:1313/docs/moderation/moderation-tools/">
+
+
+<title>Moderation Tools  |  OBMAN.BOT Help Center</title>
+<meta name="description" content="Everything in moderation, including moderation.">
+
+    
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    
+    
+      <link
+        rel="apple-touch-icon"
+        href="/apple-touch-icon.png"
+        sizes="180x180"
+        type="image/png"
+      >
+      <link
+        rel="icon"
+        href="/favicon-192x192.png"
+        sizes="192x192"
+        type="image/png"
+      >
+      <link
+        rel="icon"
+        href="/favicon-512x512.png"
+        sizes="512x512"
+        type="image/png"
+      >
+<link rel="manifest" href="/manifest.webmanifest">
+
+<meta property="og:url" content="http://localhost:1313/docs/moderation/moderation-tools/">
+  <meta property="og:site_name" content="OBMAN.BOT Help Center">
+  <meta property="og:title" content="Moderation Tools">
+  <meta property="og:description" content="Everything in moderation, including moderation.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Moderation Tools">
+  <meta name="twitter:description" content="Everything in moderation, including moderation.">
+
+    
+    
+    <script type="application/ld+json">
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/",
+       "name": "Obman. Bot Help Center",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/docs/",
+       "name": "Documentation",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/docs/moderation/",
+       "name": "Moderation",
+       "position": 3
+     },
+     {
+       "@type": "ListItem",
+       "name": "Moderation Tools",
+       "position": 4
+     }
+   ]
+ }
+</script>
+
+
+
+
+
+
+<link rel="preconnect" href="https://ER865HD7LN-dsn.algolia.net" crossorigin />
+
+</head>
+
+  
+  <body class="single section docs" data-bs-spy="scroll" data-bs-target="#toc" data-bs-root-margin="0px 0px -60%" data-bs-smooth-scroll="true" tabindex="0">
+    <div class="sticky-top">
+<header class="navbar navbar-expand-lg">
+  <div class="container-lg">
+  
+    <a class="navbar-brand me-auto me-lg-3" href="/">OBMAN.BOT Help Center</a>
+
+    
+    
+    
+    <div id="docsearch" class="d-none" tabindex="-1" aria-disabled="true"></div>
+    <button type="button" id="searchToggleMobile" class="btn btn-link nav-link mx-2 d-lg-none" aria-label="Search website">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <circle cx="10" cy="10" r="7"></circle>
+        <line x1="21" y1="21" x2="15" y2="15"></line>
+      </svg>
+    </button>
+    
+    <button class="btn btn-link d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavSection" aria-controls="offcanvasNavSection" aria-label="Open section navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+        <path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+        <path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+      </svg>
+    </button>
+    <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasNavSection" aria-labelledby="offcanvasNavSectionLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavSectionLabel">Docs</h5>
+        <button type="button" class="btn btn-link nav-link p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <aside class="doks-sidebar mt-n3">
+          <nav id="doks-docs-nav" aria-label="Tertiary navigation">
+            
+  
+    
+<nav class="section-nav docs-links">
+  <ul class="list-unstyled">
+
+  <li>
+    <details open>
+      <summary>Welcome</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/welcome/introduction/">Introduction</a>
+  </li>
+
+  <li>
+      <a href="/docs/welcome/getting-started/">Getting Started</a>
+  </li>
+
+  <li>
+      <a href="/docs/welcome/premium/">Premium</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Core</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/core/control-panel-access/">Control Panel Access</a>
+  </li>
+
+  <li>
+      <a href="/docs/core/control-panel-logs/">Control Panel Logs</a>
+  </li>
+
+  <li>
+      <a href="/docs/core/command-settings/">Command Settings</a>
+  </li>
+
+  <li>
+      <a href="/docs/core/all-commands/">All Commands</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Custom Commands</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/custom-commands/commands/">Commands</a>
+  </li>
+
+  <li>
+      <a href="/docs/custom-commands/database/">Database</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open open>
+      <summary>Moderation</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li class="active" >
+      <a aria-current="page" href="/docs/moderation/moderation-tools/">Moderation Tools</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/basic-automoderator/">Basic Automoderator</a>
+  </li>
+
+  <li>
+    <details>
+      <summary>Advanced Automoderator</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/overview/">Overview</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/triggers/">Triggers</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/conditions/">Conditions</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/effects/">Effects</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/logging/">Logging</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/verification/">Verification</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Notifications and Feeds</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/notifications/general/">General</a>
+  </li>
+
+  <li>
+      <a href="/docs/notifications/reddit/">Reddit</a>
+  </li>
+
+  <li>
+      <a href="/docs/notifications/youtube/">YouTube</a>
+  </li>
+
+  <li>
+      <a href="/docs/notifications/streaming/">Streaming</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Roles</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/roles/autorole/">Autorole</a>
+  </li>
+
+  <li>
+      <a href="/docs/roles/self-assignable-roles/">Self Assignable Roles</a>
+  </li>
+
+  <li>
+      <a href="/docs/roles/bulk-role/">Bulk Role</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Tools and Utilities</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/tools-and-utilities/tickets/">Tickets</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Fun</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/fun/reputation/">Reputation</a>
+  </li>
+
+  <li>
+      <a href="/docs/fun/soundboard/">Soundboard</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Reference</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+    <details>
+      <summary>Templates</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/reference/templates/syntax-and-data/">Syntax and Data</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/templates/functions/">Functions</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+      <a href="/docs/reference/components-v2/">Components V2</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-commands-examples/">Custom Commands Examples</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-commands-limits/">Custom Commands Limits</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-embeds/">Custom Embeds</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-interactions/">Custom Interactions</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/how-to-get-ids/">How to Get IDs</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/using-regex/">Using RegEx</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+  </ul>
+</nav>
+
+  
+
+          </nav>
+        </aside>
+      </div>
+    </div>
+    
+    <button class="btn btn-link nav-link mx-2 order-3 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavMain" aria-controls="offcanvasNavMain" aria-label="Open main navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <line x1="4" y1="8" x2="20" y2="8"></line>
+        <line x1="4" y1="16" x2="20" y2="16"></line>
+      </svg>
+    </button>
+
+    
+    <div class="offcanvas offcanvas-end h-auto" tabindex="-1" id="offcanvasNavMain" aria-labelledby="offcanvasNavMainLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavMainLabel">OBMAN.BOT Help Center</h5>
+        <button type="button" class="btn btn-link nav-link p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+         </svg>
+        </button>
+      </div>
+      
+      <div class="offcanvas-body d-flex flex-column flex-lg-row justify-content-between">
+        <ul class="navbar-nav flex-grow-1"><li class="nav-item">
+                <a class="nav-link" href="http://localhost:1313/docs/welcome/introduction/">Documentation</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost:1313/learn/welcome/introduction/">Learning Resources</a>
+              </li>
+            </ul>
+
+        
+        
+        
+        <button type="button" id="searchToggleDesktop" class="btn btn-link nav-link mx-2 d-none d-lg-block" aria-label="Search website">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <circle cx="10" cy="10" r="7"></circle>
+            <line x1="21" y1="21" x2="15" y2="15"></line>
+          </svg>
+        </button>
+        
+        
+        
+        <button id="buttonColorMode" class="btn btn-link mx-auto nav-link p-0 ms-lg-2 me-lg-1" type="button" aria-label="Toggle theme">
+          <svg data-bs-theme-value="dark" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
+          </svg>
+          <svg data-bs-theme-value="light" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0m-5 0h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
+          </svg>
+        </button>
+        
+        <ul id="socialMenu" class="nav mx-auto flex-row order-lg-4">
+          <li class="nav-item">
+              <a class="nav-link social-link" href="https://discord.gg/4udtcA5"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-discord" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M8 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path><path d="M14 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path><path d="M8.5 17c0 1 -1.356 3 -1.832 3c-1.429 0 -2.698 -1.667 -3.333 -3c-.635 -1.667 -.476 -5.833 1.428 -11.5c1.388 -1.015 2.782 -1.34 4.237 -1.5l.975 1.923a11.913 11.913 0 0 1 4.053 0l.972 -1.923c1.5 .16 3.043 .485 4.5 1.5c2 5.667 2.167 9.833 1.5 11.5c-.667 1.333 -2 3 -3.5 3c-.5 0 -2 -2 -2 -3"></path><path d="M7 16.5c3.5 1 6.5 1 10 0"></path></svg><small class="ms-2 visually-hidden">Discord</small></a>
+            </li>
+          <li class="nav-item">
+              <a class="nav-link social-link" href="https://github.com/ArtObman/ArtObman"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg><small class="ms-2 visually-hidden">GitHub</small></a>
+            </li>
+          </ul>
+        
+        <button id="selfHosting" class="btn btn-link mx-auto nav-link p-0 ms-lg-2 me-lg-1" type="button" aria-label="Toggle self-hosting view">
+          <svg data-selfhost-value="yes" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-server-off" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 12h-6a3 3 0 0 1 -3 -3v-2c0 -1.083 .574 -2.033 1.435 -2.56m3.565 -.44h10a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-2" />
+            <path d="M16 12h2a3 3 0 0 1 3 3v2m-1.448 2.568a2.986 2.986 0 0 1 -1.552 .432h-12a3 3 0 0 1 -3 -3v-2a3 3 0 0 1 3 -3h6" />
+            <path d="M7 8v.01" />
+            <path d="M7 16v.01" />
+            <path d="M3 3l18 18" />
+          </svg>
+          <svg data-selfhost-value="no" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-server" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 4m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+            <path d="M3 12m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+            <path d="M7 8l0 .01" />
+            <path d="M7 16l0 .01" />
+          </svg>
+        </button>
+
+        
+        <div class="gtranslate-container order-lg-5 d-flex align-items-center ms-lg-2 mt-2 mt-lg-0">
+          <div class="gtranslate_wrapper"></div>
+        </div>
+      </div>
+    </div>
+
+        
+        </div>
+</header>
+</div>
+
+<script>
+  window.gtranslateSettings = {
+    "default_language": "en",
+    "native_language_names": true,
+    "detect_browser_language": true,
+    "wrapper_selector": ".gtranslate_wrapper",
+    "flag_size": 24
+  };
+</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/popup.js" defer></script>
+
+    <div class="wrap container-lg" role="document">
+      <div class="content">
+      
+        
+	<div class="row flex-xl-nowrap">
+		<div class="col-lg-5 col-xl-4 docs-sidebar d-none d-lg-block">
+			
+  
+    
+<nav class="section-nav docs-links">
+  <ul class="list-unstyled">
+
+  <li>
+    <details open>
+      <summary>Welcome</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/welcome/introduction/">Introduction</a>
+  </li>
+
+  <li>
+      <a href="/docs/welcome/getting-started/">Getting Started</a>
+  </li>
+
+  <li>
+      <a href="/docs/welcome/premium/">Premium</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Core</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/core/control-panel-access/">Control Panel Access</a>
+  </li>
+
+  <li>
+      <a href="/docs/core/control-panel-logs/">Control Panel Logs</a>
+  </li>
+
+  <li>
+      <a href="/docs/core/command-settings/">Command Settings</a>
+  </li>
+
+  <li>
+      <a href="/docs/core/all-commands/">All Commands</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Custom Commands</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/custom-commands/commands/">Commands</a>
+  </li>
+
+  <li>
+      <a href="/docs/custom-commands/database/">Database</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open open>
+      <summary>Moderation</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li class="active" >
+      <a aria-current="page" href="/docs/moderation/moderation-tools/">Moderation Tools</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/basic-automoderator/">Basic Automoderator</a>
+  </li>
+
+  <li>
+    <details>
+      <summary>Advanced Automoderator</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/overview/">Overview</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/triggers/">Triggers</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/conditions/">Conditions</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/effects/">Effects</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/logging/">Logging</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/verification/">Verification</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Notifications and Feeds</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/notifications/general/">General</a>
+  </li>
+
+  <li>
+      <a href="/docs/notifications/reddit/">Reddit</a>
+  </li>
+
+  <li>
+      <a href="/docs/notifications/youtube/">YouTube</a>
+  </li>
+
+  <li>
+      <a href="/docs/notifications/streaming/">Streaming</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Roles</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/roles/autorole/">Autorole</a>
+  </li>
+
+  <li>
+      <a href="/docs/roles/self-assignable-roles/">Self Assignable Roles</a>
+  </li>
+
+  <li>
+      <a href="/docs/roles/bulk-role/">Bulk Role</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Tools and Utilities</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/tools-and-utilities/tickets/">Tickets</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Fun</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/fun/reputation/">Reputation</a>
+  </li>
+
+  <li>
+      <a href="/docs/fun/soundboard/">Soundboard</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Reference</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+    <details>
+      <summary>Templates</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/reference/templates/syntax-and-data/">Syntax and Data</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/templates/functions/">Functions</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+      <a href="/docs/reference/components-v2/">Components V2</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-commands-examples/">Custom Commands Examples</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-commands-limits/">Custom Commands Limits</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-embeds/">Custom Embeds</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-interactions/">Custom Interactions</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/how-to-get-ids/">How to Get IDs</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/using-regex/">Using RegEx</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+  </ul>
+</nav>
+
+  
+
+		</div>
+		
+		<nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation">
+			<div class="page-links">
+  <h3>On this page</h3>
+    <nav id="toc">
+  <ul>
+    <li><a href="#moderation-page">Moderation Page</a>
+      <ul>
+        <li><a href="#mod-channels">Mod Channels</a></li>
+        <li><a href="#command-toggles">Command Toggles</a></li>
+        <li><a href="#unbanunmute-logging">Unban/Unmute Logging</a></li>
+        <li><a href="#external-logging">External Logging</a></li>
+      </ul>
+    </li>
+    <li><a href="#permissions-notice">Permissions Notice</a></li>
+    <li><a href="#moderation-tools">Moderation Tools</a>
+      <ul>
+        <li><a href="#common-settings">Common Settings</a></li>
+        <li><a href="#timeout">Timeout</a></li>
+        <li><a href="#mute">Mute</a></li>
+        <li><a href="#kick">Kick</a></li>
+        <li><a href="#ban">Ban</a></li>
+        <li><a href="#warnings">Warnings</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+
+		</nav>
+		<main class="docs-content col-lg-11 col-xl-9 mx-xl-auto">
+		
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="/">Home</a></li>
+<li class="breadcrumb-item"><a href="/docs/">Docs</a></li>
+<li class="breadcrumb-item"><a href="/docs/moderation/">Moderation</a></li>
+<li class="breadcrumb-item active" aria-current="page">Moderation Tools</li>
+					</ol>
+				</nav>
+			
+			<h1>Moderation Tools</h1>
+			
+			<nav class="toc-mobile d-xl-none" aria-label="Quaternary navigation">
+				<details>
+    <summary>On this page</summary>
+    <div class="page-links">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#moderation-page">Moderation Page</a>
+      <ul>
+        <li><a href="#mod-channels">Mod Channels</a></li>
+        <li><a href="#command-toggles">Command Toggles</a></li>
+        <li><a href="#unbanunmute-logging">Unban/Unmute Logging</a></li>
+        <li><a href="#external-logging">External Logging</a></li>
+      </ul>
+    </li>
+    <li><a href="#permissions-notice">Permissions Notice</a></li>
+    <li><a href="#moderation-tools">Moderation Tools</a>
+      <ul>
+        <li><a href="#common-settings">Common Settings</a></li>
+        <li><a href="#timeout">Timeout</a></li>
+        <li><a href="#mute">Mute</a></li>
+        <li><a href="#kick">Kick</a></li>
+        <li><a href="#ban">Ban</a></li>
+        <li><a href="#warnings">Warnings</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+  </details>
+
+			</nav>
+			<p>Everything in moderation, including moderation.</p>
+<p><a href="#h-rh-i-501aa8721c8ee5c00782001d0d40d721-lightbox">
+<img alt="Overview of the moderation page" height="1363" id="h-rh-i-501aa8721c8ee5c00782001d0d40d721" src="/docs/moderation/overview_moderation.png" width="1135"></a>
+<a href="javascript:history.back();" class="lightbox" id="h-rh-i-501aa8721c8ee5c00782001d0d40d721-lightbox">
+  <img loading="lazy" alt="Overview of the moderation page" height="1363" id="h-rh-i-501aa8721c8ee5c00782001d0d40d721" src="/docs/moderation/overview_moderation.png" width="1135">
+</a>
+</p>
+<center>
+<p><strong>1</strong> Mod Log Channel <strong>2</strong> Report Channel <strong>3</strong> Moderation DM Error Channel <strong>4</strong> Clean Command <strong>5</strong> Report
+Command <strong>6</strong> Unban Logging <strong>7</strong> Giverole/Takerole commands <strong>8</strong> Give/Takerole Permitted Roles <strong>9</strong>
+Give/Takerole Logging <strong>10</strong> External Ban Logging <strong>11</strong> External Kick Logging <strong>12</strong> External Timeout Logging <strong>13</strong>
+Moderation Tabs <strong>14</strong> Bot Permissions Notice</p>
+</center>
+<h2 id="moderation-page">Moderation Page<a href="#moderation-page" class="anchor" aria-hidden="true">#</a> </h2>
+<p>The moderation page allows configuration of common settings.</p>
+<h3 id="mod-channels">Mod Channels<a href="#mod-channels" class="anchor" aria-hidden="true">#</a> </h3>
+<ol>
+<li><strong>Mod Log</strong> - The mod log is the channel OBMAN.BOT will send log messages to when most moderation commands are used. Log
+entries include username and user ID of both the moderator, and the moderated user. They additionally include the
+reason for relevant commands (defaults to <code>&lt;no reason provided&gt;</code> when not provided), and a <a href="/docs/moderation/logging/">log</a>
+of the channel where the command was run.</li>
+<li><strong>Report</strong> - The channel for OBMAN.BOT to send report messages to when users use the report command. Similar to the mod
+log, report entries include username and user ID of the user reporting, and the user reported, as well as the reason
+and message log of the channel.</li>
+<li><strong>Moderation DM Error</strong> - The channel where OBMAN.BOT will send error messages from executing template script within
+<a href="/docs/moderation/moderation-tools/#moderation-dms">moderation DMs</a>.</li>
+</ol>
+<h3 id="command-toggles">Command Toggles<a href="#command-toggles" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Certain potentially destructive moderation commands are disabled by default. These commands are:</p>
+<ul>
+<li>The <strong>clean command</strong> (<strong>4</strong>) toggles the <a href="/docs/core/all-commands/#clean">clean command</a>.</li>
+<li>The <strong>report command</strong> (<strong>5</strong>) toggles the <a href="/docs/core/all-commands/#report">report command</a>.</li>
+<li><strong>Giverole/Takerole commands</strong> (<strong>7</strong>) toggle the <a href="/docs/core/all-commands/#giverole">giverole</a> and
+<a href="/docs/core/all-commands/#removerole">takerole</a> commands.</li>
+</ul>
+<h3 id="unbanunmute-logging">Unban/Unmute Logging<a href="#unbanunmute-logging" class="anchor" aria-hidden="true">#</a> </h3>
+<p>When the <code>unban</code>/<code>unmute</code> commands are used, OBMAN.BOT will log their usage to the <a href="/docs/moderation/moderation-tools/#mod-channels">mod log</a> similarly to
+the other moderation commands.</p>
+<p>When using the <code>ban</code> and <code>mute</code> commands with a duration, OBMAN.BOT will automatically undo the punishment after the
+specified duration. For instance, if you execute <code>ban @user 1d</code>, OBMAN.BOT will ban the user, and 1 day later OBMAN.BOT will
+execute the <code>unban</code> command with reason &ldquo;Timed ban expired.&rdquo; This action appears in the mod log as OBMAN.BOT being the
+moderator.</p>
+<p>Toggling Unban Logging (<strong>6</strong>) allows you to enable or disable the logging of Unmute events.</p>
+<p>Toggling Give/Takerole Logging (<strong>9</strong>) allows you to enable or disable the logging of Give/Takerole events.</p>
+<h3 id="external-logging">External Logging<a href="#external-logging" class="anchor" aria-hidden="true">#</a> </h3>
+<p>By default, only actions performed through OBMAN.BOT will be recorded in the mod-log. Hence, kicking a user using OBMAN.BOT&rsquo;s
+<code>kick</code> command will result in a log entry, whereas kicking the user directly through Discord&rsquo;s context menu will not be
+recorded. Enabling external logging for different moderation actions (<strong>10</strong>), (<strong>11</strong>), (<strong>12</strong>) allows the bot to use
+the server Audit Log to retrieve moderation actions taken by other bots or other users.</p>
+<p>OBMAN.BOT must have View Audit Log permissions to use this feature.</p>
+<h2 id="permissions-notice">Permissions Notice<a href="#permissions-notice" class="anchor" aria-hidden="true">#</a> </h2>
+<p>The moderation plugin requires additional permissions to function properly. The notice at the top of the screen (<strong>14</strong>)
+will inform you of the required permissions for the plugin and alert you if the bot is missing permissions.</p>
+<h2 id="moderation-tools">Moderation Tools<a href="#moderation-tools" class="anchor" aria-hidden="true">#</a> </h2>
+<p>Moderation tools are used to prevent members on your server from being abusive. They can be used via command or triggered
+by automoderator. Like all inbuilt commands, they may also be triggered within template script using
+<a href="/docs/reference/templates/functions/#miscellaneous">exec/execAdmin</a>.</p>
+<p>Most moderation tools allow you to specify a reason for the mod action. This is included when the action is logged in
+the <a href="/docs/moderation/moderation-tools/#mod-channels">mod log</a> and is also, by default, DM&rsquo;d to the offending user when using <a href="/docs/moderation/moderation-tools/#moderation-dms">certain
+commands</a>. This reason may be retroactively edited using the <a href="/docs/core/all-commands/#reason">Reason Command</a>.</p>
+<p>Each of the main moderation tools have individual configuration pages, accessible through the tabs (<strong>13</strong>).</p>
+<h3 id="common-settings">Common Settings<a href="#common-settings" class="anchor" aria-hidden="true">#</a> </h3>
+<p><a href="#h-rh-i-2a5a8cf15a22a5d7627cd56248abf4cc-lightbox">
+<img alt="Common Moderation Configuration" height="660" id="h-rh-i-2a5a8cf15a22a5d7627cd56248abf4cc" src="/docs/moderation/common_moderation_settings.png" width="1105"></a>
+<a href="javascript:history.back();" class="lightbox" id="h-rh-i-2a5a8cf15a22a5d7627cd56248abf4cc-lightbox">
+  <img loading="lazy" alt="Common Moderation Configuration" height="660" id="h-rh-i-2a5a8cf15a22a5d7627cd56248abf4cc" src="/docs/moderation/common_moderation_settings.png" width="1105">
+</a>
+</p>
+<center>
+<p><strong>1</strong> Permitted Roles <strong>2</strong> Reason Optional Toggle <strong>3</strong> Moderation DM</p>
+</center>
+<p>There are common configuration options worth mentioning.</p>
+<h4 id="permitted-roles">Permitted Roles<a href="#permitted-roles" class="anchor" aria-hidden="true">#</a> </h4>
+<p>By default, any user with the relevant Discord permission in your server (timeout members for the timeout command, kick
+members for the kick command, etc.) are able to run the corresponding moderation command. Selecting permitted roles
+(<strong>1</strong>) will allow said roles to run the moderation commands <strong>even if</strong> they do not have required Discord permissions.</p>
+<p>Give/Takerole Permitted Roles (<strong>8</strong>) operate in the same way.</p>
+<h4 id="reason-optional">Reason Optional<a href="#reason-optional" class="anchor" aria-hidden="true">#</a> </h4>
+<p>By default, Timeout, (Un)Mute, Kick, and Ban tools require the moderator to specify a reason. This forces your staff
+(and yourself, no exceptions!) to specify a reason for taking mod action for the mod logs, and also by default to be
+DM&rsquo;d to the offending user.</p>
+<p>To remove the requirement and make the reason optional, you may toggle this on (<strong>2</strong>).</p>
+<h4 id="moderation-dms">Moderation DMs<a href="#moderation-dms" class="anchor" aria-hidden="true">#</a> </h4>
+<p>Moderation DMs are template scripts (<strong>3</strong>) which are executed within the offending user&rsquo;s DM. Text output to the
+response will be directly sent to the offending user.</p>
+
+  <div class="card-nav d-flex flex-column flex-sm-row">
+  <div class="card text-end w-100">
+    <div class="card-body d-flex">
+      <div class="d-flex flex-column me-auto text-start">
+        <h5 class="card-title my-0"><a href="/docs/reference/templates/syntax-and-data" target="_blank" class="stretched-link text-reset text-decoration-none"></a></h5>
+        <p class="card-text mt-1">Templates Reference</p>
+      </div>
+      <div class="d-flex flex-column justify-content-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M5 12l14 0"></path>
+          <path d="M13 18l6 -6"></path>
+          <path d="M13 6l6 6"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+  </div>
+<p>Additional template dot context data is available for Moderation Actions:</p>
+<ul>
+<li><code>{{.Reason}}</code>: The reason specified in the timeout.</li>
+<li><code>{{.Author}}</code>: The author of the punishment, is a <a href="/docs/reference/templates/syntax-and-data/#user">user object</a>.</li>
+<li><code>{{.Duration}}</code>: The duration of the mod action as a <a href="/docs/reference/templates/syntax-and-data/#time">time.Duration format</a>.</li>
+<li><code>{{.HumanDuration}}</code>: The duration in a human friendly format (<code>1 hour and 3 minutes</code> for example).</li>
+<li><code>{{.WarningID}}</code>: The ID of the warning (when using the warn command).</li>
+</ul>
+<div class="callout callout-danger d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/alert-octagon svg-inline callout-icon me-2 mb-3" id="svg-alert-octagon" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+  <path d="M12 8v4" />
+  <path d="M12 16h.01" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Danger: Template Execution Errors</p>
+
+      </div>
+    <div class="callout-body">
+      <p>Any errors which occur in the template execution will not be logged by default. The offending user will only receive a
+DM from your server saying <strong>Failed executing template.</strong> Setting a <a href="/docs/moderation/moderation-tools/#mod-channels">Moderation DM Error channel</a> allows
+for the more detailed errors to be captured.</p>
+
+    </div>
+  </div>
+</div>
+
+<p>Moderation actions which send DMs are:</p>
+<ul>
+<li>Timeout</li>
+<li>Mute</li>
+<li>Kick</li>
+<li>Ban</li>
+<li>Warn</li>
+</ul>
+<h3 id="timeout">Timeout<a href="#timeout" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Timing a member out employs Discord&rsquo;s timeout feature to prevent users from interacting with your server, temporarily
+removing all permissions except to read messages. Owners and admin users with the <em>Administrator</em> permission are exempt.</p>
+<h4 id="timeout-default-duration">Timeout Default Duration<a href="#timeout-default-duration" class="anchor" aria-hidden="true">#</a> </h4>
+<p>Similarly to mute and ban, the timeout command has an optional duration. Unlike the mute and ban commands, the timeout
+tool requires a duration between 60 seconds and 4 weeks. This is a requirement by Discord. For this reason the timeout
+command has a default duration which is applied if the duration argument is omitted when running the command. By
+default, this default duration is set to 10 minutes, but can be changed via the timeout tab on the control panel.</p>
+<p><a href="/docs/core/all-commands/#timeout">Timeout Command Syntax</a></p>
+<h3 id="mute">Mute<a href="#mute" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Muting a member assigns them the designated &ldquo;Mute role&rdquo; as specified in the Mute tab on the control panel. This allows
+for you to remove permissions from this role in all or specific channels on your server, effectively removing the user&rsquo;s
+ability to send messages on your server when muted. You may optionally specify a duration for the mute, after which the
+user will be unmuted.</p>
+<h4 id="manage-mute-role">Manage Mute Role<a href="#manage-mute-role" class="anchor" aria-hidden="true">#</a> </h4>
+<p>By default, the mute command will only assign the mute role to the user when they are muted. This allows you to fully
+customize the permissions granted to or removed from your mute role. Alternatively, enable the &ldquo;Have the bot manage the
+mute role&rdquo; toggle to allow the bot to automatically alter the permissions of your channels to prevent the muted role
+from sending messages.</p>
+<p>You may also allow the bot to remove the muted role&rsquo;s &ldquo;Add Reactions&rdquo; permission automatically by toggling on &ldquo;Disallow
+Adding Reactions when muted&rdquo; in the mute tab on the control panel. The bot must be automatically managing the mute role
+for this to work.</p>
+<h4 id="remove-roles-whilst-muted">Remove Roles Whilst Muted<a href="#remove-roles-whilst-muted" class="anchor" aria-hidden="true">#</a> </h4>
+<p>You may specify roles for OBMAN.BOT to remove from a user whilst muted and give back after they are unmuted. This will let
+the bot log which of the selected roles the member has at the time of the mute, then return them to said member at the
+time of unmute.</p>
+<h4 id="mute-default-duration">Mute Default Duration<a href="#mute-default-duration" class="anchor" aria-hidden="true">#</a> </h4>
+<p>The mute command has an optional duration argument. By default, if no duration is provided, the mute is permanent (or
+until manually unmuted). To override this, you may set a default duration with the &ldquo;Default mute duration&rdquo; field in the
+mute tab on the control panel.</p>
+<p><a href="/docs/core/all-commands/#mute">Mute Command Syntax</a></p>
+<p><a href="/docs/core/all-commands/#unmute">Unmute Command Syntax</a></p>
+<div class="callout callout-danger d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/alert-octagon svg-inline callout-icon me-2 mb-3" id="svg-alert-octagon" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+  <path d="M12 8v4" />
+  <path d="M12 16h.01" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Danger: Discord Permission Precedence</p>
+
+      </div>
+    <div class="callout-body">
+      <p>Within a server channel&rsquo;s permission overrides, allowing a permission to a specific role or user supersedes disallowing
+a permission to a specific role. This means if you grant Role X the permission to send messages in a channel and
+disallow the Muted role the same permission, a user with both Role X <em>and</em> Muted role <strong>will</strong> be allowed to send
+messages in the channel.</p>
+<p>To solve this issue and allow the mute role to properly remove permissions, select the <code>/</code> instead of the checkmark
+when configuring other roles&rsquo; permission overrides.</p>
+<p><a href="#h-rh-i-0f74159c3b8b17b42fee63e36cb2589f-lightbox">
+<img alt="Neutral permission configuration" height="64" id="h-rh-i-0f74159c3b8b17b42fee63e36cb2589f" src="/docs/moderation/neutral_permissions_example.png" width="397"></a>
+<a href="javascript:history.back();" class="lightbox" id="h-rh-i-0f74159c3b8b17b42fee63e36cb2589f-lightbox">
+  <img loading="lazy" alt="Neutral permission configuration" height="64" id="h-rh-i-0f74159c3b8b17b42fee63e36cb2589f" src="/docs/moderation/neutral_permissions_example.png" width="397">
+</a>
+</p>
+
+    </div>
+  </div>
+</div>
+
+<div class="callout callout-note d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/info-circle svg-inline callout-icon me-2 mb-3" id="svg-info-circle" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+  <path d="M12 9h.01" />
+  <path d="M11 12h1v4h1" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Note: Unmute Author After Duration Expired</p>
+
+      </div>
+    <div class="callout-body">
+      <p>If you set a duration for the mute, the bot will unmute the user after the specified duration. When this occurs, it
+appears as an unmute action taken by OBMAN.BOT in your mod log, regardless of which moderator initially muted the user.</p>
+
+    </div>
+  </div>
+</div>
+
+<h3 id="kick">Kick<a href="#kick" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Kicking a user immediately removes them from your server. They may still join back if they use a valid invite link or
+code.</p>
+<h4 id="delete-users-last-messages-on-kick">Delete User&rsquo;s Last Messages on Kick<a href="#delete-users-last-messages-on-kick" class="anchor" aria-hidden="true">#</a> </h4>
+<p>OBMAN.BOT&rsquo;s kick tool optionally allows you to delete the X most recent messages sent by that user within the channel the
+kick action takes place in. This can be done by specifying a number of messages to delete with the <code>-cl</code> flag when
+running the kick command. There is also a &ldquo;Delete the user&rsquo;s last 100 messages&rdquo; toggle in the kick tab on the control
+panel which enables automatic deletion when the kick tool is used.</p>
+<p><a href="/docs/core/all-commands/#kick">Kick Command Syntax</a></p>
+<h3 id="ban">Ban<a href="#ban" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Banning a user uses Discord&rsquo;s native ban feature to remove a user from your server, and prevent that user from joining
+your server again with any invite code or link. You may optionally specify a duration for the ban, after which the
+user will be unbanned.</p>
+<h4 id="delete-users-last-messages-on-ban">Delete User&rsquo;s Last Messages on Ban<a href="#delete-users-last-messages-on-ban" class="anchor" aria-hidden="true">#</a> </h4>
+<p>Discord natively allows you to delete a set amount of the offending user&rsquo;s most recent messages upon banning them. This
+is measured by days&rsquo; worth of messages. This can be done by specifying a number of days&rsquo; worth of messages to delete
+with the <code>-ddays</code> flag when running the ban command. There is also a &ldquo;Default number of days of messages to delete&rdquo;
+field in the ban tab on the control panel which enables automatic deletion when the kick tool is used.</p>
+<p><a href="/docs/core/all-commands/#ban">Ban Command Syntax</a></p>
+<p><a href="/docs/core/all-commands/#unban">Unban Command Syntax</a></p>
+<div class="callout callout-note d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/info-circle svg-inline callout-icon me-2 mb-3" id="svg-info-circle" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+  <path d="M12 9h.01" />
+  <path d="M11 12h1v4h1" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Note: Unban Author After Duration Expired</p>
+
+      </div>
+    <div class="callout-body">
+      <p>If you set a duration for the ban, the bot will unban the user after the specified duration. When this occurs, it
+appears as an unban action taken by OBMAN.BOT in your mod log, regardless of which moderator initially banned the user.</p>
+
+    </div>
+  </div>
+</div>
+
+<h3 id="warnings">Warnings<a href="#warnings" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Warning a user adds an entry to the user&rsquo;s warning log on the server, and optionally appears in the mod log as well.
+This can be used to better inform future moderation actions based on the user&rsquo;s past behavior. Additionally, it sends a
+DM to the user with the warning reason, which can be used to dissuade a user from continuing harmful actions without
+needing to remove their access to your server.</p>
+<h4 id="message-logs">Message Logs<a href="#message-logs" class="anchor" aria-hidden="true">#</a> </h4>
+<p>You may optionally allow OBMAN.BOT to create a <a href="/docs/moderation/logging/">message log</a> of the last 100 messages from all users
+in the channel a warning was issued in. This can help provide context for past warnings and further inform future mod
+actions. This is enabled in the warnings tab on the control panel.</p>
+<h4 id="warning-mod-log">Warning Mod Log<a href="#warning-mod-log" class="anchor" aria-hidden="true">#</a> </h4>
+<p>You may optionally send warnings to the mod log, this is enabled in the warnings tab on the control panel.</p>
+<h4 id="managing-warnings">Managing Warnings<a href="#managing-warnings" class="anchor" aria-hidden="true">#</a> </h4>
+<p><a href="/docs/core/all-commands/#warn">Warn Command Syntax</a></p>
+<p><a href="/docs/core/all-commands/#warnings">Warnings Command Syntax</a> - Lists warnings of a user.</p>
+<p><a href="/docs/core/all-commands/#editwarning">EditWarning Command Syntax</a> - Retroactively edits a warning.</p>
+<p><a href="/docs/core/all-commands/#delwarning">DelWarning Command Syntax</a> - Deletes a warning.</p>
+<p><a href="/docs/core/all-commands/#clearwarnings">ClearWarnings Command Syntax</a> - Clears the warnings of a user.</p>
+<p><a href="/docs/core/all-commands/#topwarnings">TopWarnings Command Syntax</a> - Shows ranked list of warnings on the server,
+allowing you to turn misbehavior into a fun minigame for your server members.</p>
+<div class="callout callout-tip d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/rocket svg-inline callout-icon me-2 mb-3" id="svg-rocket" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3" />
+  <path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3" />
+  <path d="M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Tip: Taking Action on Warn Count</p>
+
+      </div>
+    <div class="callout-body">
+      <p>Some users prescribe an &ldquo;x warnings =&gt; mute/kick/ban&rdquo; rule for their servers. To have OBMAN.BOT automatically take action
+based on warning count, you can take advantage of the template scripting within the warning DM.</p>
+<p>Example:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{/* Number of warnings at which action is to be taken (eg: for action to take place at 4 warnings set threshold to 4) */}}
+</span></span><span class="line"><span class="cl">{{ $threshold := 4 }}
+</span></span><span class="line"><span class="cl">{{ define &#34;punish_check&#34; }}
+</span></span><span class="line"><span class="cl">  {{ $threshold := toInt .TemplateArgs }}
+</span></span><span class="line"><span class="cl">  {{ $warnCount := len (getWarnings .User) }}
+</span></span><span class="line"><span class="cl">  {{if ge $warns_count $count}}
+</span></span><span class="line"><span class="cl">    {{/* Add required code for action to be taken when warning count exceeds the threshold. */}}
+</span></span><span class="line"><span class="cl">    Add code here
+</span></span><span class="line"><span class="cl">    {{/* Reset warnings for the user. Delete if you do not wish to reset the warnings. */}}
+</span></span><span class="line"><span class="cl">    {{ $silent := execAdmin &#34;clearwarnings&#34; .User }}
+</span></span><span class="line"><span class="cl">  {{ end }}
+</span></span><span class="line"><span class="cl">{{ end }}
+</span></span><span class="line"><span class="cl">{{ if .Channel }}
+</span></span><span class="line"><span class="cl">     {{ $s := sendTemplate .Channel.ID &#34;punish_check&#34; $count }}
+</span></span><span class="line"><span class="cl">{{ else }}
+</span></span><span class="line"><span class="cl">  {{/* no context channel; use an arbitrary one */}}
+</span></span><span class="line"><span class="cl">     {{ $s := sendTemplate (index .Guild.Channels 0).ID &#34;punish_check&#34; $count }}
+</span></span><span class="line"><span class="cl">{{ end }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+			<div class="page-footer-meta d-flex flex-column flex-md-row justify-content-between">
+				
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="edit-page">
+  <a href="https://github.com/ArtObman/ArtObman/blob/master/content//docs/moderation/moderation-tools.md">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2">
+      <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+    </svg>
+    Edit this page on GitHub
+  </a>
+</div>
+
+				</div>
+			<div class="page-nav d-flex flex-column flex-sm-row">
+	
+	<div class="card w-100">
+			<div class="card-body d-flex">
+				<div class="d-flex flex-column justify-content-center">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M5 12l14 0"></path>
+						<path d="M5 12l6 6"></path>
+						<path d="M5 12l6 -6"></path>
+				 	</svg>
+				</div>
+				<div class="d-flex flex-column">
+					<div class="text-body-secondary">Prev</div>
+					<a href="/docs/custom-commands/database/" class="stretched-link text-reset text-decoration-none">Database</a>
+				</div>
+			</div>
+		</div>
+	<div class="m-2"></div>
+	<div class="card text-end w-100">
+			<div class="card-body d-flex justify-content-end">
+				<div class="d-flex flex-column">
+					<div class="text-body-secondary">Next</div>
+					<a href="/docs/moderation/basic-automoderator/" class="stretched-link text-reset text-decoration-none">Basic Automoderator</a>
+				</div>
+				<div class="d-flex flex-column justify-content-center">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M5 12l14 0"></path>
+						<path d="M13 18l6 -6"></path>
+						<path d="M13 6l6 6"></path>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+
+			
+		</main>
+		
+	</div>
+
+      
+      </div>
+    </div>
+    
+    
+    <footer class="footer text-muted">
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-lg-8 text-center text-lg-start">
+        <ul class="list-inline">
+          <li class="list-inline-item"><a class="text-muted" href="https://botlabs.gg/privacy-policy">Privacy Policy</a></li><li class="list-inline-item"><a class="text-muted" href="https://obman.com/terms-of-use">Terms of Use</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-8 text-center text-lg-end">
+        <ul class="list-inline">
+          <li class="list-inline-item">Built using <a class="text-muted" href="https://getdoks.org/">Doks</a> and <a class="text-muted" href="https://gohugo.io/">Hugo</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script async
+  src="/js/bootstrap.8674636a1059caed3a46af4b3dbc8d68a0aac4e0c51ab393c810f3ad10553638.js"
+  integrity="sha256-hnRjahBZyu06Rq9LPbyNaKCqxODFGrOTyBDzrRBVNjg=">
+</script>
+
+
+<script async
+  src="/js/app.ed63b5301e6ba65958f352a0840b7bbba0fcd82e492693df4e191290daaa4850.js"
+  integrity="sha256-7WO1MB5rpllY81KghAt7u6D82C5JJpPfThkSkNqqSFA=">
+</script>
+
+
+
+
+
+
+
+
+
+
+<script async
+  src="/js/docsearch.b4e4d5218e0dcf1c9f23699da64223159203b928fe4e1da0c2657079845ad1c2.js"
+  integrity="sha256-tOTVIY4NzxyfI2mdpkIjFZIDuSj&#43;Th2gwmVweYRa0cI=">
+</script>
+
+    
+  </body>
+</html>

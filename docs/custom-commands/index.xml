@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Custom Commands on OBMAN.BOT Help Center</title>
+    <link>http://localhost:1313/docs/custom-commands/</link>
+    <description>Recent content in Custom Commands on OBMAN.BOT Help Center</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Copyright (c) 2020-2024 OBMAN.BOT documentation contributors</copyright>
+    <atom:link href="http://localhost:1313/docs/custom-commands/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Commands</title>
+      <link>http://localhost:1313/docs/custom-commands/commands/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/custom-commands/commands/</guid>
+      <description>&lt;p&gt;The commands page displays all custom commands and allows you to add, delete, or edit custom commands and custom command&#xA;groups.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;#h-rh-i-3b37737e7de498448ecd1531f11852e3-lightbox&#34;&gt;&#xA;&lt;img alt=&#34;Overview of the Commands page.&#34; height=&#34;1258&#34; id=&#34;h-rh-i-3b37737e7de498448ecd1531f11852e3&#34; src=&#34;http://localhost:1313/docs/custom-commands/command_overview.png&#34; width=&#34;1007&#34;&gt;&lt;/a&gt;&#xA;&lt;a href=&#34;javascript:history.back();&#34; class=&#34;lightbox&#34; id=&#34;h-rh-i-3b37737e7de498448ecd1531f11852e3-lightbox&#34;&gt;&#xA;  &lt;img loading=&#34;lazy&#34; alt=&#34;Overview of the Commands page.&#34; height=&#34;1258&#34; id=&#34;h-rh-i-3b37737e7de498448ecd1531f11852e3&#34; src=&#34;http://localhost:1313/docs/custom-commands/command_overview.png&#34; width=&#34;1007&#34;&gt;&#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;center&gt;&#xA;&lt;p&gt;&lt;strong&gt;1&lt;/strong&gt; Create Custom Command &lt;strong&gt;2&lt;/strong&gt; List of Commands in Selected Group &lt;strong&gt;3&lt;/strong&gt; Edit this Custom Command &lt;strong&gt;4&lt;/strong&gt; Delete this&#xA;Custom Command &lt;strong&gt;5&lt;/strong&gt; Run this Command Now &lt;strong&gt;6&lt;/strong&gt; Selected Group &lt;strong&gt;7&lt;/strong&gt; Group Tabs &lt;strong&gt;8&lt;/strong&gt; Name of Selected Group &lt;strong&gt;9&lt;/strong&gt;&#xA;Delete Selected Group &lt;strong&gt;10&lt;/strong&gt; Channel and Role Restrictions &lt;strong&gt;11&lt;/strong&gt; Save group settings&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Database</title>
+      <link>http://localhost:1313/docs/custom-commands/database/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/custom-commands/database/</guid>
+      <description>&lt;p&gt;The Custom Command Database is used for persistent storage between custom command executions. The database page displays&#xA;all database entries created by custom commands, allowing you to view details on or delete individual entries.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;#h-rh-i-b9e1a5fbebb0d277df16b0e317ba0145-lightbox&#34;&gt;&#xA;&lt;img alt=&#34;Overview of the Database page.&#34; height=&#34;831&#34; id=&#34;h-rh-i-b9e1a5fbebb0d277df16b0e317ba0145&#34; src=&#34;http://localhost:1313/docs/custom-commands/overview_database.png&#34; width=&#34;1319&#34;&gt;&lt;/a&gt;&#xA;&lt;a href=&#34;javascript:history.back();&#34; class=&#34;lightbox&#34; id=&#34;h-rh-i-b9e1a5fbebb0d277df16b0e317ba0145-lightbox&#34;&gt;&#xA;  &lt;img loading=&#34;lazy&#34; alt=&#34;Overview of the Database page.&#34; height=&#34;831&#34; id=&#34;h-rh-i-b9e1a5fbebb0d277df16b0e317ba0145&#34; src=&#34;http://localhost:1313/docs/custom-commands/overview_database.png&#34; width=&#34;1319&#34;&gt;&#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;center&gt;&#xA;&lt;p&gt;&lt;strong&gt;1&lt;/strong&gt; Entry ID &lt;strong&gt;2&lt;/strong&gt; Created Timestamp &lt;strong&gt;3&lt;/strong&gt; Updated Timestamp &lt;strong&gt;4&lt;/strong&gt; Expiry Timestamp &lt;strong&gt;5&lt;/strong&gt; User ID &lt;strong&gt;6&lt;/strong&gt; Key &lt;strong&gt;7&lt;/strong&gt;&#xA;Value &lt;strong&gt;8&lt;/strong&gt; Size of Value &lt;strong&gt;9&lt;/strong&gt; Delete Entry &lt;strong&gt;10&lt;/strong&gt; Page Navigation &lt;strong&gt;11&lt;/strong&gt; Search Query &lt;strong&gt;12&lt;/strong&gt; Search Bar&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

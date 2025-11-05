@@ -1,0 +1,1530 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+<script 
+  src="/js/color-mode.f14b3e296de1d0b69e75af684b62a4a912a2cadab04e36123407cd8388204f1d.js"
+  integrity="sha256-8Us&#43;KW3h0Laeda9oS2KkqRKiytqwTjYSNAfNg4ggTx0=">
+</script>
+
+
+<link rel="stylesheet" href="/main.36ca4900ac79c8b8df541138c0226a38e9bd2fbbd3cde3f0c397a7de57e6e3205e7bd138bf1f9da340a9cb91990a0593d180b720a58bcc44ef978ed4a4791dbe.css" integrity="sha512-NspJAKx5yLjfVBE4wCJqOOm9L7vTzePww5en3lfm4yBee9E4vx&#43;do0Cpy5GZCgWT0YC3IKWLzETvl47UpHkdvg==" crossorigin="anonymous">
+
+<noscript><style>img.lazyload { display: none; }</style></noscript><base href="http://localhost:1313/docs/reference/custom-interactions/">
+
+  <link rel="canonical" href="http://localhost:1313/docs/reference/custom-interactions/">
+
+
+<title>Custom Interactions  |  OBMAN.BOT Help Center</title>
+<meta name="description" content="Even better than embeds!">
+
+    
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    
+    
+      <link
+        rel="apple-touch-icon"
+        href="/apple-touch-icon.png"
+        sizes="180x180"
+        type="image/png"
+      >
+      <link
+        rel="icon"
+        href="/favicon-192x192.png"
+        sizes="192x192"
+        type="image/png"
+      >
+      <link
+        rel="icon"
+        href="/favicon-512x512.png"
+        sizes="512x512"
+        type="image/png"
+      >
+<link rel="manifest" href="/manifest.webmanifest">
+
+<meta property="og:url" content="http://localhost:1313/docs/reference/custom-interactions/">
+  <meta property="og:site_name" content="OBMAN.BOT Help Center">
+  <meta property="og:title" content="Custom Interactions">
+  <meta property="og:description" content="Even better than embeds!">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Custom Interactions">
+  <meta name="twitter:description" content="Even better than embeds!">
+
+    
+    
+    <script type="application/ld+json">
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/",
+       "name": "Obman. Bot Help Center",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/docs/",
+       "name": "Documentation",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/docs/reference/",
+       "name": "Reference",
+       "position": 3
+     },
+     {
+       "@type": "ListItem",
+       "name": "Custom Interactions",
+       "position": 4
+     }
+   ]
+ }
+</script>
+
+
+
+
+
+
+<link rel="preconnect" href="https://ER865HD7LN-dsn.algolia.net" crossorigin />
+
+</head>
+
+  
+  <body class="single section docs" data-bs-spy="scroll" data-bs-target="#toc" data-bs-root-margin="0px 0px -60%" data-bs-smooth-scroll="true" tabindex="0">
+    <div class="sticky-top">
+<header class="navbar navbar-expand-lg">
+  <div class="container-lg">
+  
+    <a class="navbar-brand me-auto me-lg-3" href="/">OBMAN.BOT Help Center</a>
+
+    
+    
+    
+    <div id="docsearch" class="d-none" tabindex="-1" aria-disabled="true"></div>
+    <button type="button" id="searchToggleMobile" class="btn btn-link nav-link mx-2 d-lg-none" aria-label="Search website">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <circle cx="10" cy="10" r="7"></circle>
+        <line x1="21" y1="21" x2="15" y2="15"></line>
+      </svg>
+    </button>
+    
+    <button class="btn btn-link d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavSection" aria-controls="offcanvasNavSection" aria-label="Open section navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+        <path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+        <path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+      </svg>
+    </button>
+    <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasNavSection" aria-labelledby="offcanvasNavSectionLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavSectionLabel">Docs</h5>
+        <button type="button" class="btn btn-link nav-link p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <aside class="doks-sidebar mt-n3">
+          <nav id="doks-docs-nav" aria-label="Tertiary navigation">
+            
+  
+    
+<nav class="section-nav docs-links">
+  <ul class="list-unstyled">
+
+  <li>
+    <details open>
+      <summary>Welcome</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/welcome/introduction/">Introduction</a>
+  </li>
+
+  <li>
+      <a href="/docs/welcome/getting-started/">Getting Started</a>
+  </li>
+
+  <li>
+      <a href="/docs/welcome/premium/">Premium</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Core</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/core/control-panel-access/">Control Panel Access</a>
+  </li>
+
+  <li>
+      <a href="/docs/core/control-panel-logs/">Control Panel Logs</a>
+  </li>
+
+  <li>
+      <a href="/docs/core/command-settings/">Command Settings</a>
+  </li>
+
+  <li>
+      <a href="/docs/core/all-commands/">All Commands</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Custom Commands</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/custom-commands/commands/">Commands</a>
+  </li>
+
+  <li>
+      <a href="/docs/custom-commands/database/">Database</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Moderation</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/moderation/moderation-tools/">Moderation Tools</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/basic-automoderator/">Basic Automoderator</a>
+  </li>
+
+  <li>
+    <details>
+      <summary>Advanced Automoderator</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/overview/">Overview</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/triggers/">Triggers</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/conditions/">Conditions</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/effects/">Effects</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/logging/">Logging</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/verification/">Verification</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Notifications and Feeds</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/notifications/general/">General</a>
+  </li>
+
+  <li>
+      <a href="/docs/notifications/reddit/">Reddit</a>
+  </li>
+
+  <li>
+      <a href="/docs/notifications/youtube/">YouTube</a>
+  </li>
+
+  <li>
+      <a href="/docs/notifications/streaming/">Streaming</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Roles</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/roles/autorole/">Autorole</a>
+  </li>
+
+  <li>
+      <a href="/docs/roles/self-assignable-roles/">Self Assignable Roles</a>
+  </li>
+
+  <li>
+      <a href="/docs/roles/bulk-role/">Bulk Role</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Tools and Utilities</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/tools-and-utilities/tickets/">Tickets</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Fun</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/fun/reputation/">Reputation</a>
+  </li>
+
+  <li>
+      <a href="/docs/fun/soundboard/">Soundboard</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open open>
+      <summary>Reference</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+    <details>
+      <summary>Templates</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/reference/templates/syntax-and-data/">Syntax and Data</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/templates/functions/">Functions</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+      <a href="/docs/reference/components-v2/">Components V2</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-commands-examples/">Custom Commands Examples</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-commands-limits/">Custom Commands Limits</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-embeds/">Custom Embeds</a>
+  </li>
+
+  <li class="active" >
+      <a aria-current="page" href="/docs/reference/custom-interactions/">Custom Interactions</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/how-to-get-ids/">How to Get IDs</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/using-regex/">Using RegEx</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+  </ul>
+</nav>
+
+  
+
+          </nav>
+        </aside>
+      </div>
+    </div>
+    
+    <button class="btn btn-link nav-link mx-2 order-3 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavMain" aria-controls="offcanvasNavMain" aria-label="Open main navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <line x1="4" y1="8" x2="20" y2="8"></line>
+        <line x1="4" y1="16" x2="20" y2="16"></line>
+      </svg>
+    </button>
+
+    
+    <div class="offcanvas offcanvas-end h-auto" tabindex="-1" id="offcanvasNavMain" aria-labelledby="offcanvasNavMainLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavMainLabel">OBMAN.BOT Help Center</h5>
+        <button type="button" class="btn btn-link nav-link p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+         </svg>
+        </button>
+      </div>
+      
+      <div class="offcanvas-body d-flex flex-column flex-lg-row justify-content-between">
+        <ul class="navbar-nav flex-grow-1"><li class="nav-item">
+                <a class="nav-link" href="http://localhost:1313/docs/welcome/introduction/">Documentation</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost:1313/learn/welcome/introduction/">Learning Resources</a>
+              </li>
+            </ul>
+
+        
+        
+        
+        <button type="button" id="searchToggleDesktop" class="btn btn-link nav-link mx-2 d-none d-lg-block" aria-label="Search website">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <circle cx="10" cy="10" r="7"></circle>
+            <line x1="21" y1="21" x2="15" y2="15"></line>
+          </svg>
+        </button>
+        
+        
+        
+        <button id="buttonColorMode" class="btn btn-link mx-auto nav-link p-0 ms-lg-2 me-lg-1" type="button" aria-label="Toggle theme">
+          <svg data-bs-theme-value="dark" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
+          </svg>
+          <svg data-bs-theme-value="light" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0m-5 0h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
+          </svg>
+        </button>
+        
+        <ul id="socialMenu" class="nav mx-auto flex-row order-lg-4">
+          <li class="nav-item">
+              <a class="nav-link social-link" href="https://discord.gg/4udtcA5"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-discord" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M8 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path><path d="M14 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path><path d="M8.5 17c0 1 -1.356 3 -1.832 3c-1.429 0 -2.698 -1.667 -3.333 -3c-.635 -1.667 -.476 -5.833 1.428 -11.5c1.388 -1.015 2.782 -1.34 4.237 -1.5l.975 1.923a11.913 11.913 0 0 1 4.053 0l.972 -1.923c1.5 .16 3.043 .485 4.5 1.5c2 5.667 2.167 9.833 1.5 11.5c-.667 1.333 -2 3 -3.5 3c-.5 0 -2 -2 -2 -3"></path><path d="M7 16.5c3.5 1 6.5 1 10 0"></path></svg><small class="ms-2 visually-hidden">Discord</small></a>
+            </li>
+          <li class="nav-item">
+              <a class="nav-link social-link" href="https://github.com/ArtObman/ArtObman"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg><small class="ms-2 visually-hidden">GitHub</small></a>
+            </li>
+          </ul>
+        
+        <button id="selfHosting" class="btn btn-link mx-auto nav-link p-0 ms-lg-2 me-lg-1" type="button" aria-label="Toggle self-hosting view">
+          <svg data-selfhost-value="yes" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-server-off" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 12h-6a3 3 0 0 1 -3 -3v-2c0 -1.083 .574 -2.033 1.435 -2.56m3.565 -.44h10a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-2" />
+            <path d="M16 12h2a3 3 0 0 1 3 3v2m-1.448 2.568a2.986 2.986 0 0 1 -1.552 .432h-12a3 3 0 0 1 -3 -3v-2a3 3 0 0 1 3 -3h6" />
+            <path d="M7 8v.01" />
+            <path d="M7 16v.01" />
+            <path d="M3 3l18 18" />
+          </svg>
+          <svg data-selfhost-value="no" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-server" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 4m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+            <path d="M3 12m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+            <path d="M7 8l0 .01" />
+            <path d="M7 16l0 .01" />
+          </svg>
+        </button>
+
+        
+        <div class="gtranslate-container order-lg-5 d-flex align-items-center ms-lg-2 mt-2 mt-lg-0">
+          <div class="gtranslate_wrapper"></div>
+        </div>
+      </div>
+    </div>
+
+        
+        </div>
+</header>
+</div>
+
+<script>
+  window.gtranslateSettings = {
+    "default_language": "en",
+    "native_language_names": true,
+    "detect_browser_language": true,
+    "wrapper_selector": ".gtranslate_wrapper",
+    "flag_size": 24
+  };
+</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/popup.js" defer></script>
+
+    <div class="wrap container-lg" role="document">
+      <div class="content">
+      
+        
+	<div class="row flex-xl-nowrap">
+		<div class="col-lg-5 col-xl-4 docs-sidebar d-none d-lg-block">
+			
+  
+    
+<nav class="section-nav docs-links">
+  <ul class="list-unstyled">
+
+  <li>
+    <details open>
+      <summary>Welcome</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/welcome/introduction/">Introduction</a>
+  </li>
+
+  <li>
+      <a href="/docs/welcome/getting-started/">Getting Started</a>
+  </li>
+
+  <li>
+      <a href="/docs/welcome/premium/">Premium</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Core</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/core/control-panel-access/">Control Panel Access</a>
+  </li>
+
+  <li>
+      <a href="/docs/core/control-panel-logs/">Control Panel Logs</a>
+  </li>
+
+  <li>
+      <a href="/docs/core/command-settings/">Command Settings</a>
+  </li>
+
+  <li>
+      <a href="/docs/core/all-commands/">All Commands</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Custom Commands</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/custom-commands/commands/">Commands</a>
+  </li>
+
+  <li>
+      <a href="/docs/custom-commands/database/">Database</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Moderation</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/moderation/moderation-tools/">Moderation Tools</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/basic-automoderator/">Basic Automoderator</a>
+  </li>
+
+  <li>
+    <details>
+      <summary>Advanced Automoderator</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/overview/">Overview</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/triggers/">Triggers</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/conditions/">Conditions</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/effects/">Effects</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/logging/">Logging</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/verification/">Verification</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Notifications and Feeds</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/notifications/general/">General</a>
+  </li>
+
+  <li>
+      <a href="/docs/notifications/reddit/">Reddit</a>
+  </li>
+
+  <li>
+      <a href="/docs/notifications/youtube/">YouTube</a>
+  </li>
+
+  <li>
+      <a href="/docs/notifications/streaming/">Streaming</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Roles</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/roles/autorole/">Autorole</a>
+  </li>
+
+  <li>
+      <a href="/docs/roles/self-assignable-roles/">Self Assignable Roles</a>
+  </li>
+
+  <li>
+      <a href="/docs/roles/bulk-role/">Bulk Role</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Tools and Utilities</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/tools-and-utilities/tickets/">Tickets</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Fun</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/fun/reputation/">Reputation</a>
+  </li>
+
+  <li>
+      <a href="/docs/fun/soundboard/">Soundboard</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open open>
+      <summary>Reference</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+    <details>
+      <summary>Templates</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/reference/templates/syntax-and-data/">Syntax and Data</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/templates/functions/">Functions</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+      <a href="/docs/reference/components-v2/">Components V2</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-commands-examples/">Custom Commands Examples</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-commands-limits/">Custom Commands Limits</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-embeds/">Custom Embeds</a>
+  </li>
+
+  <li class="active" >
+      <a aria-current="page" href="/docs/reference/custom-interactions/">Custom Interactions</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/how-to-get-ids/">How to Get IDs</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/using-regex/">Using RegEx</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+  </ul>
+</nav>
+
+  
+
+		</div>
+		
+		<nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation">
+			<div class="page-links">
+  <h3>On this page</h3>
+    <nav id="toc">
+  <ul>
+    <li><a href="#the-basics">The Basics</a>
+      <ul>
+        <li><a href="#interaction-lifetime">Interaction Lifetime</a></li>
+      </ul>
+    </li>
+    <li><a href="#custom-ids">Custom IDs</a></li>
+    <li><a href="#components">Components</a>
+      <ul>
+        <li><a href="#buttons">Buttons</a></li>
+        <li><a href="#select-menus">Select Menus</a></li>
+      </ul>
+    </li>
+    <li><a href="#modals">Modals</a>
+      <ul>
+        <li><a href="#modal-input-fields">Modal Input Fields</a></li>
+      </ul>
+    </li>
+    <li><a href="#parsing-an-interaction">Parsing an Interaction</a></li>
+    <li><a href="#responding-to-an-interaction">Responding to an Interaction</a>
+      <ul>
+        <li><a href="#initial-response">Initial Response</a></li>
+        <li><a href="#following-up">Following Up</a></li>
+      </ul>
+    </li>
+    <li><a href="#action-rows">Action Rows</a></li>
+  </ul>
+</nav>
+</div>
+
+		</nav>
+		<main class="docs-content col-lg-11 col-xl-9 mx-xl-auto">
+		
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="/">Home</a></li>
+<li class="breadcrumb-item"><a href="/docs/">Docs</a></li>
+<li class="breadcrumb-item"><a href="/docs/reference/">Reference</a></li>
+<li class="breadcrumb-item active" aria-current="page">Custom Interactions</li>
+					</ol>
+				</nav>
+			
+			<h1>Custom Interactions</h1>
+			
+			<nav class="toc-mobile d-xl-none" aria-label="Quaternary navigation">
+				<details>
+    <summary>On this page</summary>
+    <div class="page-links">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-basics">The Basics</a>
+      <ul>
+        <li><a href="#interaction-lifetime">Interaction Lifetime</a></li>
+      </ul>
+    </li>
+    <li><a href="#custom-ids">Custom IDs</a></li>
+    <li><a href="#components">Components</a>
+      <ul>
+        <li><a href="#buttons">Buttons</a></li>
+        <li><a href="#select-menus">Select Menus</a></li>
+      </ul>
+    </li>
+    <li><a href="#modals">Modals</a>
+      <ul>
+        <li><a href="#modal-input-fields">Modal Input Fields</a></li>
+      </ul>
+    </li>
+    <li><a href="#parsing-an-interaction">Parsing an Interaction</a></li>
+    <li><a href="#responding-to-an-interaction">Responding to an Interaction</a>
+      <ul>
+        <li><a href="#initial-response">Initial Response</a></li>
+        <li><a href="#following-up">Following Up</a></li>
+      </ul>
+    </li>
+    <li><a href="#action-rows">Action Rows</a></li>
+  </ul>
+</nav>
+    </div>
+  </details>
+
+			</nav>
+			<div class="callout callout-note d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/info-circle svg-inline callout-icon me-2 mb-3" id="svg-info-circle" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+  <path d="M12 9h.01" />
+  <path d="M11 12h1v4h1" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Note</p>
+
+      </div>
+    <div class="callout-body">
+      <p>This page is just an overview about the most important core concepts of custom interactions. We have included some code
+samples for quick reference, but this is by no means a complete guide from the grounds up. For an in-depth guide,
+please refer to our <a href="/learn/advanced/custom-interactions/introduction/">learning resources</a>.</p>
+
+    </div>
+  </div>
+</div>
+
+<h2 id="the-basics">The Basics<a href="#the-basics" class="anchor" aria-hidden="true">#</a> </h2>
+<p>Interactions within Discord allow server members to use alternative, built-in features to trigger bots to take action
+other than messages or reactions. These features include builtin buttons, dropdown selection menus, or submitting a
+modal (basically a pop-up form). Within custom commands it is possible to not only create and customize these new
+interactive features, but respond to them as well, opening up new possibilities for ephemeral message responses, modals,
+and more.</p>
+<h3 id="interaction-lifetime">Interaction Lifetime<a href="#interaction-lifetime" class="anchor" aria-hidden="true">#</a> </h3>
+<p>An interaction&rsquo;s lifetime starts with the initial <em>interaction</em> with an <em>interactive element</em>.</p>
+<ol>
+<li>A server member clicks on a <em>button</em>, uses a <em>menu</em>, or submits a <em>modal</em> after filling it out.</li>
+<li>This interaction is sent to OBMAN.BOT, and becomes available to trigger any custom commands which match it.</li>
+<li>Within the triggered custom command(s), OBMAN.BOT should then <em>respond</em> once to the interaction, sending a message,
+updating the triggering message, or sending a modal. This may only be done within the CC which was triggered by the
+interaction.</li>
+<li>(optional) Continue to send followup responses for up to 15 minutes until the interaction token expires.</li>
+</ol>
+<pre class="mermaid">graph LR;
+A[Button pressed] --> B{CC Triggered}
+C[Menu used] --> B
+D[Modal submitted] --> B
+B --> E[Bot sends message response]
+B --> G[Bot sends modal response]
+B --> H[Bot updates message]
+E -.-> F(Bot sends followups)
+G -.-> F
+H -.-> F
+</pre>
+
+<h2 id="custom-ids">Custom IDs<a href="#custom-ids" class="anchor" aria-hidden="true">#</a> </h2>
+<p>Custom IDs are used to identify the respective element a user interacted with. You use them to trigger custom commands
+with the <code>message component</code> or <code>modal submission</code> trigger. Custom IDs must be unique for every component attached to
+the message.</p>
+<h2 id="components">Components<a href="#components" class="anchor" aria-hidden="true">#</a> </h2>
+<h3 id="buttons">Buttons<a href="#buttons" class="anchor" aria-hidden="true">#</a> </h3>
+<p>See also the <a href="https://discord.com/developers/docs/components/reference#button" rel="external">Discord API documentation</a> on button
+objects.</p>
+<p>Buttons can be created as either an <code>sdict</code> or via <a href="/docs/reference/templates/functions/#cbutton"><code>cbutton</code></a>. In custom commands they can have five different styles,
+listed in the table below. For your convenience, OBMAN.BOT also accepts the style as a string-alias, so you can use
+<code>&quot;primary&quot;</code> instead of <code>1</code>, <code>&quot;secondary&quot;</code> instead of <code>2</code>, and so on.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Style</th>
+          <th>Alias</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=1>
+          <td>1</td>
+          <td>primary</td>
+          <td>Primary button, the most important or recommended action.</td>
+      </tr>
+    <tr id=2>
+          <td>2</td>
+          <td>secondary</td>
+          <td>Secondary button, alternative or supporting actions.</td>
+      </tr>
+    <tr id=3>
+          <td>3</td>
+          <td>success</td>
+          <td>Success button, green color, used for positive actions.</td>
+      </tr>
+    <tr id=4>
+          <td>4</td>
+          <td>danger</td>
+          <td>Danger button, red color, used for negative actions.</td>
+      </tr>
+    <tr id=5>
+          <td>5</td>
+          <td>link</td>
+          <td>Link button, opens a URL when clicked.</td>
+      </tr>
+  </tbody>
+</table>
+<p>A button is structured according to the following table; <code>label</code>, <code>emoji</code> and <code>disabled</code> are optional fields.
+<code>style</code> will default to <code>1</code> (primary) if not specified. Link style buttons cannot have a custom ID and must have a URL
+specified.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=custom_id>
+          <td>custom_id</td>
+          <td>Identifier for the button, used to trigger a custom command when clicked.</td>
+      </tr>
+    <tr id=style>
+          <td>style</td>
+          <td>The button&rsquo;s style, defaults to primary.</td>
+      </tr>
+    <tr id=disabled?>
+          <td>disabled?</td>
+          <td>Whether the button is disabled. Defaults to <code>false</code>.</td>
+      </tr>
+    <tr id=emoji?>
+          <td>emoji?</td>
+          <td>A [partial emoji] to display on the button.</td>
+      </tr>
+    <tr id=label?>
+          <td>label?</td>
+          <td>The button&rsquo;s label, appears on the button itself.</td>
+      </tr>
+    <tr id=url?>
+          <td>url?</td>
+          <td>Only available for URL-style buttons. Opens the URL when clicked.</td>
+      </tr>
+  </tbody>
+</table>
+<p>The below code will send a message with multiple buttons attached to it.</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ $button1 := cbutton &#34;label&#34; &#34;Duck One&#34; &#34;custom_id&#34; &#34;buttons-duck-alpha&#34; &#34;style&#34; &#34;success&#34; }}
+</span></span><span class="line"><span class="cl">{{ $button2 := cbutton &#34;emoji&#34; (sdict &#34;name&#34; &#34;СЂСџВ¦вЂ &#34;) &#34;custom_id&#34; &#34;buttons-duck-beta&#34; &#34;style&#34; &#34;danger&#34; }}
+</span></span><span class="line"><span class="cl">{{ $button3 := cbutton &#34;label&#34; &#34;Duck Three&#34; &#34;emoji&#34; (sdict &#34;name&#34; &#34;СЂСџВ¦вЂ &#34;) &#34;url&#34; &#34;https://obman.com&#34; &#34;style&#34; &#34;link&#34; }}
+</span></span><span class="line"><span class="cl">{{ $message := complexMessage &#34;buttons&#34; (cslice $button1 $button2 $button3) }}
+</span></span><span class="line"><span class="cl">{{ sendMessage nil $message }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="select-menus">Select Menus<a href="#select-menus" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Select menus allow users to select one or more options from a dropdown list. They can be created as either an <code>sdict</code> or
+using the <a href="/docs/reference/templates/functions/#cmenu"><code>cmenu</code></a> function.</p>
+<h4 id="select-menu-types">Select Menu Types<a href="#select-menu-types" class="anchor" aria-hidden="true">#</a> </h4>
+<p>Select menus can have one of the types listed in the table below.  The <code>channel</code> type can be
+further customized to only show certain channel types using the <code>channel_types</code> field, which accepts a slice of integers
+representing allowed channel types.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Type</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=channel>
+          <td>channel</td>
+          <td>A list of channels in the server, automatically populated by Discord.</td>
+      </tr>
+    <tr id=mentionable>
+          <td>mentionable</td>
+          <td>A list of users and roles that can be mentioned, automatically populated by Discord.</td>
+      </tr>
+    <tr id=role>
+          <td>role</td>
+          <td>A list of roles of the server, automatically populated by Discord.</td>
+      </tr>
+    <tr id=text>
+          <td>text</td>
+          <td>A simple dropdown menu with custom text options.</td>
+      </tr>
+    <tr id=user>
+          <td>user</td>
+          <td>A list of users part of the server, automatically populated by Discord.</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="select-menu-option">Select Menu Option<a href="#select-menu-option" class="anchor" aria-hidden="true">#</a> </h4>
+<p>A select menu option for the <code>text</code> type has the structure as outlined in the table below. A text menu may not have more
+than 25 options.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=label>
+          <td>label</td>
+          <td>The text displayed in the dropdown menu.</td>
+      </tr>
+    <tr id=value>
+          <td>value</td>
+          <td>The value returned when the option is selected, used to trigger a custom command.</td>
+      </tr>
+    <tr id=default?>
+          <td>default?</td>
+          <td>Whether the option is selected by default. Defaults to <code>false</code>.</td>
+      </tr>
+    <tr id=description?>
+          <td>description?</td>
+          <td>An optional description of the option, displayed when opening the menu.</td>
+      </tr>
+    <tr id=emoji?>
+          <td>emoji?</td>
+          <td>An optional [partial emoji] to display next to the option.</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="default-value-structure">Default Value Structure<a href="#default-value-structure" class="anchor" aria-hidden="true">#</a> </h4>
+<p>The user, role, and channel type allow for a slice of <code>default_values</code> to be specified. Below is their structure.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=id>
+          <td>id</td>
+          <td>The ID of the user, role, or channel to be selected by default.</td>
+      </tr>
+    <tr id=type>
+          <td>type</td>
+          <td>The type of the default value, one of <code>user</code>, <code>role</code>, or <code>channel</code>.</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="select-menu-structure">Select Menu Structure<a href="#select-menu-structure" class="anchor" aria-hidden="true">#</a> </h4>
+<p>A select menu is structured according to the table below. The <code>custom_id</code> field is required for all select menus. Text
+type menus must have at least one option, while all other types cannot have any options.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=type>
+          <td>type</td>
+          <td>The type of the select menu, one of the types listed above.</td>
+      </tr>
+    <tr id=custom_id>
+          <td>custom_id</td>
+          <td>Identifier for the select menu, used to trigger a custom command when an option is selected.</td>
+      </tr>
+    <tr id=channel_types?>
+          <td>channel_types?</td>
+          <td>A slice of integers representing allowed channel types, only for <code>channel</code> type menus.</td>
+      </tr>
+    <tr id=default_values?>
+          <td>default_values?</td>
+          <td>A slice of values that should be selected by default, if applicable. Not for text type menus.</td>
+      </tr>
+    <tr id=disabled?>
+          <td>disabled?</td>
+          <td>Whether the select menu is disabled. Defaults to <code>false</code>.</td>
+      </tr>
+    <tr id=max_values?>
+          <td>max_values?</td>
+          <td>The maximum number of options that can be selected, default to the number of options available.</td>
+      </tr>
+    <tr id=min_values?>
+          <td>min_values?</td>
+          <td>The minimum number of options that can be selected, defaults to <code>1</code>.</td>
+      </tr>
+    <tr id=options?>
+          <td>options?</td>
+          <td>A slice of select menu options, as outlined above.</td>
+      </tr>
+    <tr id=placeholder?>
+          <td>placeholder?</td>
+          <td>An optional placeholder text displayed when no option is selected.</td>
+      </tr>
+  </tbody>
+</table>
+<p>Putting it all together, a text select menu with three options, one of which is selected by default, could look
+something like this.</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ $menu := cmenu
+</span></span><span class="line"><span class="cl">  &#34;type&#34; &#34;text&#34;
+</span></span><span class="line"><span class="cl">  &#34;placeholder&#34; &#34;Choose a terrible thing&#34;
+</span></span><span class="line"><span class="cl">  &#34;custom_id&#34; &#34;menus-duck&#34;
+</span></span><span class="line"><span class="cl">  &#34;options&#34; (cslice
+</span></span><span class="line"><span class="cl">    (sdict &#34;label&#34; &#34;Two Ducks&#34; &#34;value&#34; &#34;opt-1&#34; &#34;default&#34; true)
+</span></span><span class="line"><span class="cl">    (sdict &#34;label&#34; &#34;A Duck&#34; &#34;value&#34; &#34;duck-option&#34; &#34;emoji&#34; (sdict &#34;name&#34; &#34;СЂСџВ¦вЂ &#34;))
+</span></span><span class="line"><span class="cl">    (sdict &#34;label&#34; &#34;Half a Duck&#34; &#34;value&#34; &#34;third-option&#34; &#34;description&#34; &#34;Don&#39;t let the smaller amount fool you.&#34;))
+</span></span><span class="line"><span class="cl">}}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">{{ sendMessage nil (complexMessage &#34;menus&#34; $menu) }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>Similarly, a channel select menu that allows users to select at most two channels, and only allows forum and
+announcement channels could be created with the following code.</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ $issuesChannel := &#34;1210135699135926312&#34; }}
+</span></span><span class="line"><span class="cl">{{ $updatesChannel := &#34;1210135938722693151&#34; }}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">{{ $menu := cmenu
+</span></span><span class="line"><span class="cl">  &#34;type&#34; &#34;channel&#34;
+</span></span><span class="line"><span class="cl">  &#34;placeholder&#34; &#34;Choose channels which are secretly duck hideouts&#34;
+</span></span><span class="line"><span class="cl">  &#34;custom_id&#34; &#34;menus-duck-channels&#34;
+</span></span><span class="line"><span class="cl">  &#34;default_values&#34; (cslice
+</span></span><span class="line"><span class="cl">    (sdict &#34;type&#34; &#34;channel&#34; &#34;id&#34; $issuesChannel)
+</span></span><span class="line"><span class="cl">    (sdict &#34;type&#34; &#34;channel&#34; &#34;id&#34; $updatesChannel)
+</span></span><span class="line"><span class="cl">  )
+</span></span><span class="line"><span class="cl">  &#34;max_values&#34; 3
+</span></span><span class="line"><span class="cl">  &#34;channel_types&#34; (cslice 5 15) }}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">{{ sendMessage nil (complexMessage &#34;menus&#34; $menu) }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h2 id="modals">Modals<a href="#modals" class="anchor" aria-hidden="true">#</a> </h2>
+<p>Modals can be created as either an <code>sdict</code> or a <code>cmodal</code>. After being created they are subsequently sent with
+<code>sendModal</code>. Sending a modal is a <em>response</em> to an interaction, meaning it can only be sent once after a user clicks a
+button or uses a select menu. You cannot send a modal as a response to a user submitting a modal.</p>
+<h3 id="modal-input-fields">Modal Input Fields<a href="#modal-input-fields" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Modals can have multiple text input fields, which allow users to input text in a structured way.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=label>
+          <td>label</td>
+          <td>The label of the text input, appears above the input field.</td>
+      </tr>
+    <tr id=max_length?>
+          <td>max_length?</td>
+          <td>The maximum length of the input.</td>
+      </tr>
+    <tr id=min_length?>
+          <td>min_length?</td>
+          <td>The minimum length of the input, defaults to <code>0</code> (no minimum).</td>
+      </tr>
+    <tr id=placeholder?>
+          <td>placeholder?</td>
+          <td>An optional placeholder text displayed in the input field when it is empty.</td>
+      </tr>
+    <tr id=required?>
+          <td>required?</td>
+          <td>Whether the input field is required, defaults to <code>false</code>.</td>
+      </tr>
+    <tr id=style?>
+          <td>style?</td>
+          <td>The style of the text input, one of <code>1</code> (short, default), <code>2</code> (paragraph)</td>
+      </tr>
+    <tr id=value?>
+          <td>value?</td>
+          <td>The default value of the input field, appears in the input field when it is empty.</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="modal-structure">Modal Structure<a href="#modal-structure" class="anchor" aria-hidden="true">#</a> </h4>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=title>
+          <td>title</td>
+          <td>The modal&rsquo;s title, appears at the top of the modal while a user is filling it out.</td>
+      </tr>
+    <tr id=custom_id>
+          <td>custom_id</td>
+          <td>The custom ID of this modal.</td>
+      </tr>
+    <tr id=fields>
+          <td>fields</td>
+          <td>A slice of modal input fields as outlined above.</td>
+      </tr>
+  </tbody>
+</table>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ $modal := sdict
+</span></span><span class="line"><span class="cl">  &#34;title&#34; &#34;My Custom Modal&#34;
+</span></span><span class="line"><span class="cl">  &#34;custom_id&#34; &#34;modals-my_first_modal&#34;
+</span></span><span class="line"><span class="cl">  &#34;fields&#34; (cslice
+</span></span><span class="line"><span class="cl">    (sdict &#34;label&#34; &#34;Name&#34; &#34;placeholder&#34; &#34;Duck&#34; &#34;required&#34; true)
+</span></span><span class="line"><span class="cl">    (sdict &#34;label&#34; &#34;Do you like ducks?&#34; &#34;value&#34; &#34;Heck no&#34;)
+</span></span><span class="line"><span class="cl">    (sdict &#34;label&#34; &#34;Duck hate essay&#34; &#34;min_length&#34; 100 &#34;style&#34; 2)) }}
+</span></span><span class="line"><span class="cl">{{ sendModal $modal }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h2 id="parsing-an-interaction">Parsing an Interaction<a href="#parsing-an-interaction" class="anchor" aria-hidden="true">#</a> </h2>
+<p>Custom Commands with the <a href="/docs/custom-commands/commands/#component">Message Component</a> or <a href="/docs/custom-commands/commands/#modal">Modal
+Submission</a> trigger allow you to take action upon the press of a button, use of a
+select menu, or completion of a modal form. Interaction triggers provide new context data for templating.</p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Field</strong></th>
+          <th><strong>Description</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr id=.Interaction.Token>
+          <td>.Interaction.Token</td>
+          <td>The interaction&rsquo;s token. Is unique to each interaction. Required for sending <a href="/docs/reference/templates/functions/#interaction-followups">followup interactions</a>.</td>
+      </tr>
+    <tr id=.CustomID>
+          <td>.CustomID</td>
+          <td>The triggering component/modal&rsquo;s Custom ID. Note: This custom ID excludes the <code>templates-</code> prefix which is added to all components and modals under the hood.</td>
+      </tr>
+    <tr id=.StrippedID>
+          <td>.StrippedID</td>
+          <td>&ldquo;Strips&rdquo; or cuts off the triggering part of the custom ID and prints out everything else after that. Bear in mind, when using regex as trigger, for example <code>&quot;day&quot;</code> and input custom ID is <code>&quot;have-a-nice-day-my-dear-YAG&quot;</code> output will be <code>&quot;-my-dear-YAG&quot;</code> &mdash; rest is cut off.</td>
+      </tr>
+    <tr id=.Values>
+          <td>.Values</td>
+          <td>List of all options selected with a select menu, OR all values input into a modal in order.</td>
+      </tr>
+  </tbody>
+</table>
+<p><a href="/docs/reference/templates/syntax-and-data/#interaction">Interaction object and context data</a></p>
+<p><code>.Interaction.Token</code> must be provided to any <a href="/docs/reference/custom-interactions/#following-up">followup</a> functions you decide to use later. If you are
+using these in subsequent script executions, it&rsquo;s a good idea to save this to database when the interaction occurs.</p>
+<p><code>.CustomID</code> can be used to identify which component or modal triggered the command. <code>.StrippedID</code> can be used to quickly
+parse out arguments in your custom ID, and use them in your response.</p>
+<p><code>.Values</code> is used to capture values a user selected in a select menu or submitted to a modal. When creating a select
+menu and defining the options, the <code>&quot;value&quot;</code> field for each option defines which values will show up in this slice if
+chosen, in the order the user selected them. A modal&rsquo;s values are simply the values of each field in order.</p>
+<div class="callout callout-note d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/info-circle svg-inline callout-icon me-2 mb-3" id="svg-info-circle" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+  <path d="M12 9h.01" />
+  <path d="M11 12h1v4h1" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Note: Values Order</p>
+
+      </div>
+    <div class="callout-body">
+      <p>Because the <code>.Values</code> slice when interacting with select menus is ordered by the order the user selected the
+options, you generally cannot simply index into the slice; you&rsquo;ll have to search for the value you want to use.</p>
+
+    </div>
+  </div>
+</div>
+
+<h2 id="responding-to-an-interaction">Responding to an Interaction<a href="#responding-to-an-interaction" class="anchor" aria-hidden="true">#</a> </h2>
+<h3 id="initial-response">Initial Response<a href="#initial-response" class="anchor" aria-hidden="true">#</a> </h3>
+<p>While technically not required, responding to an interaction with one of Discord&rsquo;s allotted initial responses is crucial
+if you don&rsquo;t want your users to see an error after interacting. An interaction may be responded to only once.</p>
+<p>You can only respond to an interaction within the custom command triggered by said interaction, with the exception that
+a CC executed with <code>execCC</code> by the triggered CC will be able to send initial responses to the triggering interaction as
+well.</p>
+<p>Possible initial responses:</p>
+<ul>
+<li>Output text in your script response field. This text will be sent as an interaction response.
+<ul>
+<li>You can even use the <code>ephemeralResponse</code> function to turn it <em>ephemeral</em>.</li>
+</ul>
+</li>
+<li>Use the <code>sendResponse</code> function to send a response as soon as the function runs.
+<ul>
+<li>You can also use this to send <code>embeds</code> or <code>complexMessages</code>.</li>
+<li>You&rsquo;ll need to send a <code>complexMessage</code> and pass it <code>&quot;ephemeral&quot; true</code> as an argument to send <em>ephemeral</em> messages.</li>
+<li><code>sendResponse</code> comes in <code>NoEscape</code> and <code>RetID</code> variants too.</li>
+<li>When sending an initial response, <code>sendResponse</code> does not need an interaction token, <code>nil</code> can be used.</li>
+</ul>
+</li>
+<li>Use the <code>sendModal</code> function to show the user a modal. You cannot respond to a user submitting a modal by sending them
+another modal.</li>
+<li>Use the <code>updateMessage</code> function to edit the message the command triggered from. This works the same way as editing a
+message, however because it automatically targets the triggering message, the only argument required is the new
+message.</li>
+</ul>
+<p><a href="/docs/reference/templates/functions/#interactions">Interaction Function documentation</a></p>
+<h3 id="following-up">Following Up<a href="#following-up" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Followups allow you to continue responding to an interaction after the initial response has been made. You can followup
+for up to 15 minutes after the user interacts, and you can follow up as many times as you&rsquo;d like. Followups require the
+interaction token of the interaction they should be following up on.</p>
+<p>Possible followups:</p>
+<ul>
+<li>Output text in your script response field. This text will be sent as an interaction followup.
+<ul>
+<li>You can even use the <code>ephemeralResponse</code> function to turn it <em>ephemeral</em>.</li>
+</ul>
+</li>
+<li>Use the <code>sendResponse</code> function to send a followup as soon as the function runs. Note that this function morphs into
+sending followups if an initial response has already been made.
+<ul>
+<li>You can also use this to send <code>embeds</code> or <code>complexMessages</code>.</li>
+<li><code>sendResponse</code> comes in <code>NoEscape</code> and <code>RetID</code> variants too.</li>
+<li>It&rsquo;s important to capture the message ID of any
+followups you&rsquo;ll want to edit or retrieve later, especially if you follow up ephemerally. If you follow up
+ephemerally without saving the message ID, you&rsquo;ll never be able to interface with that message again.</li>
+</ul>
+</li>
+<li>Use the <code>editResponse</code> function to edit an initial response or a followup message.
+<ul>
+<li>When editing an initial response, the <code>messageID</code> argument should be <code>nil</code>.</li>
+<li>When editing a followup message, the <code>messageID</code> argument is required.</li>
+<li>You can still edit any initial responses or followups using the standard <code>editMessage</code> function as long as they
+aren&rsquo;t <em>ephemeral</em>.</li>
+</ul>
+</li>
+<li>Use the <code>getResponse</code> function to get an initial response or a followup message.
+<ul>
+<li>When getting an initial response, the <code>messageID</code> argument should be <code>nil</code>.</li>
+<li>When getting a followup message, the <code>messageID</code> argument is required.</li>
+<li>You can still get any initial responses or followups using the standard <code>getMessage</code> function as long as they
+aren&rsquo;t <em>ephemeral</em>.</li>
+</ul>
+</li>
+</ul>
+<p><a href="/docs/reference/templates/functions/#interactions">Interaction Function documentation</a></p>
+<h2 id="action-rows">Action Rows<a href="#action-rows" class="anchor" aria-hidden="true">#</a> </h2>
+<p>Action rows are a way to group multiple components together, such as buttons or select menus, into a single row. This
+allows for better organization and layout of interactive elements in a message. Action rows are not a separate type of
+interaction, but rather a structured approach to handling components.</p>
+<p>Action rows are simply a slice of components, which can be buttons or select menus. Consider the following example:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ $row1 := cslice (cbutton &#34;label&#34; &#34;Row 1 - Button 1&#34;) (cbutton &#34;label&#34; &#34;Row 1 - Button 2&#34;) (cbutton &#34;label&#34; &#34;Row 1 - Button 3&#34;) (cbutton &#34;label&#34; &#34;Row 1 - Button 4&#34;) }}
+</span></span><span class="line"><span class="cl">{{ $row2 := cslice (cbutton &#34;label&#34; &#34;Row 2 - Button 1&#34;) (cbutton &#34;label&#34; &#34;Row 2 - Button 1&#34;) }}
+</span></span><span class="line"><span class="cl">{{ $row3 := cslice (cmenu &#34;type&#34; &#34;mentionable&#34;) }}
+</span></span><span class="line"><span class="cl">{{ $row4 := cslice (cbutton &#34;label&#34; &#34;Row 3 - Button 1&#34;) (cbutton &#34;label&#34; &#34;Row 3 - Button 2&#34;) (cbutton &#34;label&#34; &#34;Row 3 - Button 3&#34;) }}
+</span></span><span class="line"><span class="cl">{{ $row5 := cslice (cmenu &#34;type&#34; &#34;channel&#34;) }}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">{{ $rows := cslice $row1 $row2 $row3 $row4 $row5 }}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">{{ $message := complexMessage &#34;components&#34; $rows }}
+</span></span><span class="line"><span class="cl">{{ sendMessage nil $message }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>This will nicely format our components, like shown in the screenshot below.</p>
+<p><a href="#h-rh-i-06ca6a84fca0889cee26bfb85f7340c3-lightbox">
+<img alt="Result of above custom command." height="220" id="h-rh-i-06ca6a84fca0889cee26bfb85f7340c3" src="/docs/reference/rows_example.png" width="611"></a>
+<a href="javascript:history.back();" class="lightbox" id="h-rh-i-06ca6a84fca0889cee26bfb85f7340c3-lightbox">
+  <img loading="lazy" alt="Result of above custom command." height="220" id="h-rh-i-06ca6a84fca0889cee26bfb85f7340c3" src="/docs/reference/rows_example.png" width="611">
+</a>
+</p>
+
+			<div class="page-footer-meta d-flex flex-column flex-md-row justify-content-between">
+				
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="edit-page">
+  <a href="https://github.com/ArtObman/ArtObman/blob/master/content//docs/reference/custom-interactions.md">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2">
+      <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+    </svg>
+    Edit this page on GitHub
+  </a>
+</div>
+
+				</div>
+			<div class="page-nav d-flex flex-column flex-sm-row">
+	
+	<div class="card w-100">
+			<div class="card-body d-flex">
+				<div class="d-flex flex-column justify-content-center">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M5 12l14 0"></path>
+						<path d="M5 12l6 6"></path>
+						<path d="M5 12l6 -6"></path>
+				 	</svg>
+				</div>
+				<div class="d-flex flex-column">
+					<div class="text-body-secondary">Prev</div>
+					<a href="/docs/reference/custom-embeds/" class="stretched-link text-reset text-decoration-none">Custom Embeds</a>
+				</div>
+			</div>
+		</div>
+	<div class="m-2"></div>
+	<div class="card text-end w-100">
+			<div class="card-body d-flex justify-content-end">
+				<div class="d-flex flex-column">
+					<div class="text-body-secondary">Next</div>
+					<a href="/docs/reference/how-to-get-ids/" class="stretched-link text-reset text-decoration-none">How to Get IDs</a>
+				</div>
+				<div class="d-flex flex-column justify-content-center">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M5 12l14 0"></path>
+						<path d="M13 18l6 -6"></path>
+						<path d="M13 6l6 6"></path>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+
+			
+		</main>
+		
+	</div>
+
+      
+      </div>
+    </div>
+    
+    
+    <footer class="footer text-muted">
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-lg-8 text-center text-lg-start">
+        <ul class="list-inline">
+          <li class="list-inline-item"><a class="text-muted" href="https://botlabs.gg/privacy-policy">Privacy Policy</a></li><li class="list-inline-item"><a class="text-muted" href="https://obman.com/terms-of-use">Terms of Use</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-8 text-center text-lg-end">
+        <ul class="list-inline">
+          <li class="list-inline-item">Built using <a class="text-muted" href="https://getdoks.org/">Doks</a> and <a class="text-muted" href="https://gohugo.io/">Hugo</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script async
+  src="/js/bootstrap.8674636a1059caed3a46af4b3dbc8d68a0aac4e0c51ab393c810f3ad10553638.js"
+  integrity="sha256-hnRjahBZyu06Rq9LPbyNaKCqxODFGrOTyBDzrRBVNjg=">
+</script>
+
+
+<script async
+  src="/js/app.ed63b5301e6ba65958f352a0840b7bbba0fcd82e492693df4e191290daaa4850.js"
+  integrity="sha256-7WO1MB5rpllY81KghAt7u6D82C5JJpPfThkSkNqqSFA=">
+</script>
+
+
+
+
+
+
+
+
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+
+
+
+<script async
+  src="/js/docsearch.b4e4d5218e0dcf1c9f23699da64223159203b928fe4e1da0c2657079845ad1c2.js"
+  integrity="sha256-tOTVIY4NzxyfI2mdpkIjFZIDuSj&#43;Th2gwmVweYRa0cI=">
+</script>
+
+    
+  </body>
+</html>

@@ -1,0 +1,925 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+<script 
+  src="/js/color-mode.f14b3e296de1d0b69e75af684b62a4a912a2cadab04e36123407cd8388204f1d.js"
+  integrity="sha256-8Us&#43;KW3h0Laeda9oS2KkqRKiytqwTjYSNAfNg4ggTx0=">
+</script>
+
+
+<link rel="stylesheet" href="/main.36ca4900ac79c8b8df541138c0226a38e9bd2fbbd3cde3f0c397a7de57e6e3205e7bd138bf1f9da340a9cb91990a0593d180b720a58bcc44ef978ed4a4791dbe.css" integrity="sha512-NspJAKx5yLjfVBE4wCJqOOm9L7vTzePww5en3lfm4yBee9E4vx&#43;do0Cpy5GZCgWT0YC3IKWLzETvl47UpHkdvg==" crossorigin="anonymous">
+
+<noscript><style>img.lazyload { display: none; }</style></noscript><base href="http://localhost:1313/learn/intermediate/embeds-and-messages/">
+
+  <link rel="canonical" href="http://localhost:1313/learn/intermediate/embeds-and-messages/">
+
+
+<title>Embeds and Messages  |  OBMAN.BOT Help Center</title>
+<meta name="description" content="Learn how to send messages to different channels, edit existing messages, and send messages with embeds.">
+
+    
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    
+    
+      <link
+        rel="apple-touch-icon"
+        href="/apple-touch-icon.png"
+        sizes="180x180"
+        type="image/png"
+      >
+      <link
+        rel="icon"
+        href="/favicon-192x192.png"
+        sizes="192x192"
+        type="image/png"
+      >
+      <link
+        rel="icon"
+        href="/favicon-512x512.png"
+        sizes="512x512"
+        type="image/png"
+      >
+<link rel="manifest" href="/manifest.webmanifest">
+
+<meta property="og:url" content="http://localhost:1313/learn/intermediate/embeds-and-messages/">
+  <meta property="og:site_name" content="OBMAN.BOT Help Center">
+  <meta property="og:title" content="Embeds and Messages">
+  <meta property="og:description" content="Learn how to send messages to different channels, edit existing messages, and send messages with embeds.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="learn">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Embeds and Messages">
+  <meta name="twitter:description" content="Learn how to send messages to different channels, edit existing messages, and send messages with embeds.">
+
+    
+    
+    <script type="application/ld+json">
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/",
+       "name": "Obman. Bot Help Center",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/learn/",
+       "name": "Learning Resources",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/learn/intermediate/",
+       "name": "Intermediate",
+       "position": 3
+     },
+     {
+       "@type": "ListItem",
+       "name": "Embeds and Messages",
+       "position": 4
+     }
+   ]
+ }
+</script>
+
+
+
+
+
+
+<link rel="preconnect" href="https://ER865HD7LN-dsn.algolia.net" crossorigin />
+
+</head>
+
+  
+  <body class="single section learn" data-bs-spy="scroll" data-bs-target="#toc" data-bs-root-margin="0px 0px -60%" data-bs-smooth-scroll="true" tabindex="0">
+    <div class="sticky-top">
+<header class="navbar navbar-expand-lg">
+  <div class="container-lg">
+  
+    <a class="navbar-brand me-auto me-lg-3" href="/">OBMAN.BOT Help Center</a>
+
+    
+    
+    
+    <div id="docsearch" class="d-none" tabindex="-1" aria-disabled="true"></div>
+    <button type="button" id="searchToggleMobile" class="btn btn-link nav-link mx-2 d-lg-none" aria-label="Search website">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <circle cx="10" cy="10" r="7"></circle>
+        <line x1="21" y1="21" x2="15" y2="15"></line>
+      </svg>
+    </button>
+    
+    <button class="btn btn-link d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavSection" aria-controls="offcanvasNavSection" aria-label="Open section navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+        <path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+        <path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+      </svg>
+    </button>
+    <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasNavSection" aria-labelledby="offcanvasNavSectionLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavSectionLabel">Learn</h5>
+        <button type="button" class="btn btn-link nav-link p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <aside class="doks-sidebar mt-n3">
+          <nav id="doks-docs-nav" aria-label="Tertiary navigation">
+            
+  
+    
+<nav class="section-nav docs-links">
+  <ul class="list-unstyled">
+
+  <li>
+    <details open>
+      <summary>Welcome</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/learn/welcome/introduction/">Introduction</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Beginner</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/learn/beginner/simple-responses/">Simple Responses</a>
+  </li>
+
+  <li>
+      <a href="/learn/beginner/variables-and-data-types/">Variables and Data Types</a>
+  </li>
+
+  <li>
+      <a href="/learn/beginner/conditional-branching/">Conditional Branching</a>
+  </li>
+
+  <li>
+      <a href="/learn/beginner/command-arguments/">Command Arguments</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open open>
+      <summary>Intermediate</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li class="active" >
+      <a aria-current="page" href="/learn/intermediate/embeds-and-messages/">Embeds and Messages</a>
+  </li>
+
+  <li>
+      <a href="/learn/intermediate/maps-and-slices/">Maps and Slices</a>
+  </li>
+
+  <li>
+      <a href="/learn/intermediate/loops/">Loops</a>
+  </li>
+
+  <li>
+      <a href="/learn/intermediate/database/">Database</a>
+  </li>
+
+  <li>
+      <a href="/learn/intermediate/exercises/">Exercises</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Advanced</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+    <details open>
+      <summary>Custom Interactions</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/learn/advanced/custom-interactions/introduction/">Introduction</a>
+  </li>
+
+  <li>
+      <a href="/learn/advanced/custom-interactions/creating-interactive-elements/">Creating Interactive Elements</a>
+  </li>
+
+  <li>
+      <a href="/learn/advanced/custom-interactions/parsing-an-interaction/">Parsing an Interaction</a>
+  </li>
+
+  <li>
+      <a href="/learn/advanced/custom-interactions/responding-to-an-interaction/">Responding to an Interaction</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+      </ul>
+    </details>
+  </li>
+  </ul>
+</nav>
+
+  
+
+          </nav>
+        </aside>
+      </div>
+    </div>
+    
+    <button class="btn btn-link nav-link mx-2 order-3 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavMain" aria-controls="offcanvasNavMain" aria-label="Open main navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <line x1="4" y1="8" x2="20" y2="8"></line>
+        <line x1="4" y1="16" x2="20" y2="16"></line>
+      </svg>
+    </button>
+
+    
+    <div class="offcanvas offcanvas-end h-auto" tabindex="-1" id="offcanvasNavMain" aria-labelledby="offcanvasNavMainLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavMainLabel">OBMAN.BOT Help Center</h5>
+        <button type="button" class="btn btn-link nav-link p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+         </svg>
+        </button>
+      </div>
+      
+      <div class="offcanvas-body d-flex flex-column flex-lg-row justify-content-between">
+        <ul class="navbar-nav flex-grow-1"><li class="nav-item">
+                <a class="nav-link" href="http://localhost:1313/docs/welcome/introduction/">Documentation</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost:1313/learn/welcome/introduction/">Learning Resources</a>
+              </li>
+            </ul>
+
+        
+        
+        
+        <button type="button" id="searchToggleDesktop" class="btn btn-link nav-link mx-2 d-none d-lg-block" aria-label="Search website">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <circle cx="10" cy="10" r="7"></circle>
+            <line x1="21" y1="21" x2="15" y2="15"></line>
+          </svg>
+        </button>
+        
+        
+        
+        <button id="buttonColorMode" class="btn btn-link mx-auto nav-link p-0 ms-lg-2 me-lg-1" type="button" aria-label="Toggle theme">
+          <svg data-bs-theme-value="dark" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
+          </svg>
+          <svg data-bs-theme-value="light" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0m-5 0h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
+          </svg>
+        </button>
+        
+        <ul id="socialMenu" class="nav mx-auto flex-row order-lg-4">
+          <li class="nav-item">
+              <a class="nav-link social-link" href="https://discord.gg/4udtcA5"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-discord" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M8 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path><path d="M14 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path><path d="M8.5 17c0 1 -1.356 3 -1.832 3c-1.429 0 -2.698 -1.667 -3.333 -3c-.635 -1.667 -.476 -5.833 1.428 -11.5c1.388 -1.015 2.782 -1.34 4.237 -1.5l.975 1.923a11.913 11.913 0 0 1 4.053 0l.972 -1.923c1.5 .16 3.043 .485 4.5 1.5c2 5.667 2.167 9.833 1.5 11.5c-.667 1.333 -2 3 -3.5 3c-.5 0 -2 -2 -2 -3"></path><path d="M7 16.5c3.5 1 6.5 1 10 0"></path></svg><small class="ms-2 visually-hidden">Discord</small></a>
+            </li>
+          <li class="nav-item">
+              <a class="nav-link social-link" href="https://github.com/ArtObman/ArtObman"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg><small class="ms-2 visually-hidden">GitHub</small></a>
+            </li>
+          </ul>
+        
+        <button id="selfHosting" class="btn btn-link mx-auto nav-link p-0 ms-lg-2 me-lg-1" type="button" aria-label="Toggle self-hosting view">
+          <svg data-selfhost-value="yes" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-server-off" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 12h-6a3 3 0 0 1 -3 -3v-2c0 -1.083 .574 -2.033 1.435 -2.56m3.565 -.44h10a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-2" />
+            <path d="M16 12h2a3 3 0 0 1 3 3v2m-1.448 2.568a2.986 2.986 0 0 1 -1.552 .432h-12a3 3 0 0 1 -3 -3v-2a3 3 0 0 1 3 -3h6" />
+            <path d="M7 8v.01" />
+            <path d="M7 16v.01" />
+            <path d="M3 3l18 18" />
+          </svg>
+          <svg data-selfhost-value="no" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-server" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 4m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+            <path d="M3 12m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+            <path d="M7 8l0 .01" />
+            <path d="M7 16l0 .01" />
+          </svg>
+        </button>
+
+        
+        <div class="gtranslate-container order-lg-5 d-flex align-items-center ms-lg-2 mt-2 mt-lg-0">
+          <div class="gtranslate_wrapper"></div>
+        </div>
+      </div>
+    </div>
+
+        
+        </div>
+</header>
+</div>
+
+<script>
+  window.gtranslateSettings = {
+    "default_language": "en",
+    "native_language_names": true,
+    "detect_browser_language": true,
+    "wrapper_selector": ".gtranslate_wrapper",
+    "flag_size": 24
+  };
+</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/popup.js" defer></script>
+
+    <div class="wrap container-lg" role="document">
+      <div class="content">
+      
+        
+	<div class="row flex-xl-nowrap">
+		<div class="col-lg-5 col-xl-4 docs-sidebar d-none d-lg-block">
+			
+  
+    
+<nav class="section-nav docs-links">
+  <ul class="list-unstyled">
+
+  <li>
+    <details open>
+      <summary>Welcome</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/learn/welcome/introduction/">Introduction</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Beginner</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/learn/beginner/simple-responses/">Simple Responses</a>
+  </li>
+
+  <li>
+      <a href="/learn/beginner/variables-and-data-types/">Variables and Data Types</a>
+  </li>
+
+  <li>
+      <a href="/learn/beginner/conditional-branching/">Conditional Branching</a>
+  </li>
+
+  <li>
+      <a href="/learn/beginner/command-arguments/">Command Arguments</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open open>
+      <summary>Intermediate</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li class="active" >
+      <a aria-current="page" href="/learn/intermediate/embeds-and-messages/">Embeds and Messages</a>
+  </li>
+
+  <li>
+      <a href="/learn/intermediate/maps-and-slices/">Maps and Slices</a>
+  </li>
+
+  <li>
+      <a href="/learn/intermediate/loops/">Loops</a>
+  </li>
+
+  <li>
+      <a href="/learn/intermediate/database/">Database</a>
+  </li>
+
+  <li>
+      <a href="/learn/intermediate/exercises/">Exercises</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Advanced</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+    <details open>
+      <summary>Custom Interactions</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/learn/advanced/custom-interactions/introduction/">Introduction</a>
+  </li>
+
+  <li>
+      <a href="/learn/advanced/custom-interactions/creating-interactive-elements/">Creating Interactive Elements</a>
+  </li>
+
+  <li>
+      <a href="/learn/advanced/custom-interactions/parsing-an-interaction/">Parsing an Interaction</a>
+  </li>
+
+  <li>
+      <a href="/learn/advanced/custom-interactions/responding-to-an-interaction/">Responding to an Interaction</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+      </ul>
+    </details>
+  </li>
+  </ul>
+</nav>
+
+  
+
+		</div>
+		
+		<nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation">
+			<div class="page-links">
+  <h3>On this page</h3>
+    <nav id="toc">
+  <ul>
+    <li><a href="#sending-messages">Sending Messages</a>
+      <ul>
+        <li><a href="#special-mentions">Special Mentions</a></li>
+        <li><a href="#returning-the-message-id">Returning the Message ID</a></li>
+      </ul>
+    </li>
+    <li><a href="#building-embeds">Building Embeds</a></li>
+    <li><a href="#editing-messages">Editing Messages</a>
+      <ul>
+        <li><a href="#editing-embeds">Editing Embeds</a></li>
+      </ul>
+    </li>
+    <li><a href="#complex-message-builder">Complex Message Builder</a></li>
+  </ul>
+</nav>
+</div>
+
+		</nav>
+		<main class="docs-content col-lg-11 col-xl-9 mx-xl-auto">
+		
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="/">Home</a></li>
+<li class="breadcrumb-item"><a href="/learn/">Learn</a></li>
+<li class="breadcrumb-item"><a href="/learn/intermediate/">Intermediate</a></li>
+<li class="breadcrumb-item active" aria-current="page">Embeds and Messages</li>
+					</ol>
+				</nav>
+			
+			<h1>Embeds and Messages</h1>
+			
+			<nav class="toc-mobile d-xl-none" aria-label="Quaternary navigation">
+				<details>
+    <summary>On this page</summary>
+    <div class="page-links">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#sending-messages">Sending Messages</a>
+      <ul>
+        <li><a href="#special-mentions">Special Mentions</a></li>
+        <li><a href="#returning-the-message-id">Returning the Message ID</a></li>
+      </ul>
+    </li>
+    <li><a href="#building-embeds">Building Embeds</a></li>
+    <li><a href="#editing-messages">Editing Messages</a>
+      <ul>
+        <li><a href="#editing-embeds">Editing Embeds</a></li>
+      </ul>
+    </li>
+    <li><a href="#complex-message-builder">Complex Message Builder</a></li>
+  </ul>
+</nav>
+    </div>
+  </details>
+
+			</nav>
+			<p>Until now, we have just used the <a href="/learn/beginner/simple-responses/">default response behavior</a> to make our custom
+commands respond with some text. This makes sense for quick mockups or relatively simple commands. However, this may be
+inconvenient or Not What You Want in some cases. In this chapter, we will explore how to send messages to different
+channels, edit existing messages, and send messages with embeds, vastly expanding your toolbox for creating complex
+custom command systems.</p>
+<h2 id="sending-messages">Sending Messages<a href="#sending-messages" class="anchor" aria-hidden="true">#</a> </h2>
+<p>We provide several <code>sendMessage*</code> functions that all do the same thing: send a message to a channel. The difference
+between them is how they handle special mentions like <code>@everyone</code> and <code>@here</code>, and whether to return the ID of the
+message after sending it. We will cover these functions in detail in the following sections, and when to best use them.</p>
+<p>Let&rsquo;s get started with the simplest of them all, <code>sendMessage</code>. Its syntax is the following:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ sendMessage channel_id message_to_be_sent }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>The <code>channel_id</code> is the ID of the channel to send the message to. If you want to send the message in the same channel as
+the one in which the custom command was triggered, simply set <code>channel_id</code> to <code>nil</code>.</p>
+<p>Intuitively, <code>message_to_be_sent</code> denotes the output that is to be sent as a message. For now, we will just use a string
+with the content you want to send. We will cover sending embeds in a later section on this page.</p>
+<h3 id="special-mentions">Special Mentions<a href="#special-mentions" class="anchor" aria-hidden="true">#</a> </h3>
+<p>By default, the bot will escape special mentions like <code>@everyone</code>, <code>@here</code>, and role mentions (note that user mentions
+are not escaped by default). If you want to send a message with these mentions, you&rsquo;ll need to tell the bot to not
+escape them. You can do this by using the <code>sendMessageNoEscape</code> function instead of <code>sendMessage</code>.</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ sendMessageNoEscape channel_id message_to_be_sent }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><h3 id="returning-the-message-id">Returning the Message ID<a href="#returning-the-message-id" class="anchor" aria-hidden="true">#</a> </h3>
+<p>If you want to store the ID of the message you just sent, for example to later edit it, use the <code>sendMessageRetID</code>
+function and assign the result to a variable.</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ $messageID := sendMessageRetID channel_id message_to_be_sent }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>Naturally, we provide a variant of the <code>sendMessageRetID</code> function that does not escape mentions:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ $messageID := sendMessageNoEscapeRetID channel_id message_to_be_sent }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>It is quite the mouthful to write, but just roll with it.</p>
+<h2 id="building-embeds">Building Embeds<a href="#building-embeds" class="anchor" aria-hidden="true">#</a> </h2>
+<p>Embeds are a powerful way to display information in a structured and visually appealing way. They can contain a title,
+description, fields, images, and more. We provide a function to build embeds in a way that closely resembles the
+structure as defined by the Discord API.</p>
+<p>We will illustrate this with a simple example. For a full breakdown of all available fields, please refer to our
+<a href="/docs/reference/custom-embeds/">custom embeds documentation</a>.</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ $embed := cembed
+</span></span><span class="line"><span class="cl">    &#34;title&#34; &#34;This is a title&#34;
+</span></span><span class="line"><span class="cl">    &#34;description&#34; &#34;This is a description.&#34;
+</span></span><span class="line"><span class="cl">    &#34;color&#34; 0xff0000
+</span></span><span class="line"><span class="cl">    &#34;fields&#34; (cslice
+</span></span><span class="line"><span class="cl">        (sdict &#34;name&#34; &#34;Field 1&#34; &#34;value&#34; &#34;Value 1&#34; &#34;inline&#34; true)
+</span></span><span class="line"><span class="cl">        (sdict &#34;name&#34; &#34;Field 2&#34; &#34;value&#34; &#34;Value 2&#34; &#34;inline&#34; true)
+</span></span><span class="line"><span class="cl">    )
+</span></span><span class="line"><span class="cl">    &#34;author&#34; (sdict
+</span></span><span class="line"><span class="cl">      &#34;name&#34; .User.Username
+</span></span><span class="line"><span class="cl">      &#34;icon_url&#34; (.User.AvatarURL &#34;256&#34;)
+</span></span><span class="line"><span class="cl">    )
+</span></span><span class="line"><span class="cl">}}
+</span></span><span class="line"><span class="cl">{{ sendMessage nil $embed }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><div style="float: right; margin-left: 7px; margin-bottom: 10px;">
+<p><a href="#h-rh-i-ab96e71208e20d1ef5834d747a659c2b-lightbox">
+<img alt="Embed Example" height="155" id="h-rh-i-ab96e71208e20d1ef5834d747a659c2b" src="/learn/intermediate/embed-example.png" width="165"></a>
+<a href="javascript:history.back();" class="lightbox" id="h-rh-i-ab96e71208e20d1ef5834d747a659c2b-lightbox">
+  <img loading="lazy" alt="Embed Example" height="155" id="h-rh-i-ab96e71208e20d1ef5834d747a659c2b" src="/learn/intermediate/embed-example.png" width="165">
+</a>
+</p>
+</div>
+<p>The above code will generate an embed as shown on the left. Let us dissect it a bit. First, we simply define a variable
+<code>$embed</code> and assign it the result of the <code>cembed</code> function. This function takes a series of key-value pairs, where the
+key is the embed field you want to set, and the value is the value you want to set for that field. The <code>cembed</code> function
+will return a structured object that can be sent as a message, as demonstrated in the last line of the code.</p>
+<p>The <code>&quot;title&quot;</code> and <code>&quot;description&quot;</code> fields are self-explanatory&mdash;we can use Discord Markdown in the latter. The <code>&quot;color&quot;</code>
+field takes an integer color value, for which we can conveniently use hexadecimal formatting as mentioned in
+<a href="/learn/beginner/variables-and-data-types/#integers">Variables and Data Types</a>, but it can also take a
+<a href="https://www.binaryhexconverter.com/hex-to-decimal-converter" rel="external">decimal value</a>.</p>
+<p>The <code>&quot;fields&quot;</code> field is a list (more precisely a <em>slice</em>) of dictionaries, where each dictionary represents a field in
+the embed. Each field dictionary must contain a <code>&quot;name&quot;</code> and a <code>&quot;value&quot;</code> field, and can optionally contain an <code>&quot;inline&quot;</code>
+field. This field is a boolean that determines whether the field should be displayed inline with the previous field.</p>
+<p>The <code>&quot;author&quot;</code> field is a dictionary that contains the name and icon URL of the author of the embed. In this case, we
+use the username of the user who triggered the custom command as the name, and the user&rsquo;s avatar URL as the icon URL.</p>
+<div class="callout callout-tip d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/rocket svg-inline callout-icon me-2 mb-3" id="svg-rocket" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3" />
+  <path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3" />
+  <path d="M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Tip: Custom Commands Embed Generator</p>
+
+      </div>
+    <div class="callout-body">
+      <p>There is a <a href="https://yagpdbembeds.netlify.app/" rel="external">community-made embed visualizer</a> that can help you create custom command embeds more easily.
+However, it is still a good idea to not wholly rely on the GUI and understand the structure of the embeds yourself.</p>
+<p>For your convenience, we have <a href="https://yagpdbembeds.netlify.app/?data=JTdCJTIyZW1iZWQlMjIlM0ElN0IlMjJ0aXRsZSUyMiUzQSUyMlRoaXMlMjBpcyUyMGElMjB0aXRsZSUyMiUyQyUyMmRlc2NyaXB0aW9uJTIyJTNBJTIyVGhpcyUyMGlzJTIwYSUyMGRlc2NyaXB0aW9uLiUyMiUyQyUyMmNvbG9yJTIyJTNBMTY3MTE2ODAlMkMlMjJmaWVsZHMlMjIlM0ElNUIlN0IlMjJuYW1lJTIyJTNBJTIyRmllbGQlMjAxJTIyJTJDJTIydmFsdWUlMjIlM0ElMjJWYWx1ZSUyMDElMjIlMkMlMjJpbmxpbmUlMjIlM0F0cnVlJTdEJTJDJTdCJTIybmFtZSUyMiUzQSUyMkZpZWxkJTIwMiUyMiUyQyUyMnZhbHVlJTIyJTNBJTIyVmFsdWUlMjAyJTIyJTJDJTIyaW5saW5lJTIyJTNBdHJ1ZSU3RCU1RCUyQyUyMmF1dGhvciUyMiUzQSU3QiUyMm5hbWUlMjIlM0ElMjJsem9kZCUyMiUyQyUyMmljb25fdXJsJTIyJTNBJTIyaHR0cHMlM0ElMkYlMkZjZG4uZGlzY29yZGFwcC5jb20lMkZhdmF0YXJzJTJGNjY1MjQzNDQ5NDA1OTk3MDY2JTJGZDYzMTM3MWJiY2NhMDI3NDgxYTcxMjk1NGUyODQyYmMucG5nJTNGc2l6ZSUzRDI1NiUyMiU3RCU3RCU3RA==" rel="external">prefilled the above example</a> in the visualizer.</p>
+
+    </div>
+  </div>
+</div>
+
+<h2 id="editing-messages">Editing Messages<a href="#editing-messages" class="anchor" aria-hidden="true">#</a> </h2>
+<p>Sending a message is nice and all, but for the sake of keeping things clean, you might want to edit a message instead of
+creating a new one each time something changes. We provide the <code>editMessage</code> function for this purpose.</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ editMessage channel_id message_id new_message_content }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>The <code>channel_id</code> is the ID of the channel containing the message. The <code>message_id</code> is the ID of the message you want to
+edit. The <code>new_message_content</code> is the new content of the message, which will completely overwrite the existing content.
+See <a href="/learn/intermediate/embeds-and-messages/#editing-embeds">Editing Embeds</a> if you only want to change certain fields of an existing embed while leaving
+others intact. You should note that OBMAN.BOT can only edit messages from itself, just like you cannot edit someone else&rsquo;s
+messages.</p>
+<p>For a quick demonstration, consider the following code:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ $messageID := sendMessageRetID nil &#34;Hello, World!&#34; }}
+</span></span><span class="line"><span class="cl">{{ sleep 5 }}
+</span></span><span class="line"><span class="cl">{{ editMessage nil $messageID &#34;Goodbye, World!&#34; }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>This code sends a message saying &ldquo;Hello, World!&rdquo; and then, after 5 seconds, edits the message to say &ldquo;Goodbye, World!&rdquo;,
+all in the same channel where the custom command was triggered.</p>
+<h3 id="editing-embeds">Editing Embeds<a href="#editing-embeds" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Editing embeds is a little more involved than editing regular messages. Since the data provided to <code>editMessage</code>
+completely overwrites the existing content, it is necessary to retrieve the existing embed object, modify the desired
+fields, and provide the whole embed to <code>editMessage</code>.</p>
+<p>An elaborate example all within the same custom command looks like the following:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ $embed := cembed
+</span></span><span class="line"><span class="cl">    &#34;title&#34; &#34;This is a title&#34;
+</span></span><span class="line"><span class="cl">    &#34;description&#34; &#34;This is a description.&#34;
+</span></span><span class="line"><span class="cl">    &#34;color&#34; 0xff0000
+</span></span><span class="line"><span class="cl">    &#34;fields&#34; (cslice
+</span></span><span class="line"><span class="cl">        (sdict &#34;name&#34; &#34;Field 1&#34; &#34;value&#34; &#34;Value 1&#34; &#34;inline&#34; true)
+</span></span><span class="line"><span class="cl">        (sdict &#34;name&#34; &#34;Field 2&#34; &#34;value&#34; &#34;Value 2&#34; &#34;inline&#34; true)
+</span></span><span class="line"><span class="cl">    )
+</span></span><span class="line"><span class="cl">    &#34;author&#34; (sdict
+</span></span><span class="line"><span class="cl">      &#34;name&#34; .User.Username
+</span></span><span class="line"><span class="cl">      &#34;icon_url&#34; (.User.AvatarURL &#34;256&#34;)
+</span></span><span class="line"><span class="cl">    )
+</span></span><span class="line"><span class="cl">}}
+</span></span><span class="line"><span class="cl">{{ $messageID := sendMessageRetID nil $embed }}
+</span></span><span class="line"><span class="cl">{{ sleep 5 }}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">{{ $newEmbed := structToSdict $embed }}
+</span></span><span class="line"><span class="cl">{{ $newEmbed.Set &#34;title&#34; &#34;This is a new title&#34; }}
+</span></span><span class="line"><span class="cl">{{ $newEmbed.Set &#34;description&#34; &#34;This is a new description.&#34; }}
+</span></span><span class="line"><span class="cl">{{ $newEmbed.Set &#34;fields&#34; (cslice) }}
+</span></span><span class="line"><span class="cl">{{ editMessage nil $messageID (cembed $newEmbed) }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>In the second part, after <code>{{ sleep 5 }}</code>, we first convert the original embed object to a dictionary using the
+<code>structToSdict</code> function. We then modify the fields we want to change using the <code>Set</code> method. In this case, we change
+the title and description of the embed, and remove all fields. Finally, we send the modified embed object back to the
+<code>editMessage</code> function.</p>
+<p>As mentioned previously, this example is contrived: in practice, we&rsquo;re more likely to use <code>.Message.Embeds</code> to get the
+original embed object, convert and modify it as shown above, then send it back to the <code>editMessage</code> function.</p>
+<div class="callout callout-note d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/info-circle svg-inline callout-icon me-2 mb-3" id="svg-info-circle" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+  <path d="M12 9h.01" />
+  <path d="M11 12h1v4h1" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Note: Full Conversion</p>
+
+      </div>
+    <div class="callout-body">
+      <p><code>structToSdict</code> does not perform deep conversion. For a full conversion of an embed to a dictionary, you can use the
+following code snippet:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="p">{{</span> <span class="k">if</span> <span class="ow">not</span> <span class="o">.</span><span class="n">Message</span><span class="o">.</span><span class="n">Embeds</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{{</span><span class="o">/*</span> <span class="n">no</span> <span class="n">point</span> <span class="n">converting</span> <span class="n">non</span><span class="o">-</span><span class="n">existent</span> <span class="n">embed</span> <span class="o">*/</span><span class="p">}}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{{</span> <span class="k">return</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl"><span class="p">{{</span> <span class="n">end</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">{{</span> <span class="o">$</span><span class="n">embed</span> <span class="p">:</span><span class="o">=</span> <span class="n">structToSdict</span> <span class="p">(</span><span class="n">index</span> <span class="o">.</span><span class="n">Message</span><span class="o">.</span><span class="n">Embeds</span> <span class="mi">0</span><span class="p">)</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl"><span class="p">{{</span> <span class="nb">range</span> <span class="o">$</span><span class="n">k</span><span class="p">,</span> <span class="o">$</span><span class="n">v</span> <span class="p">:</span><span class="o">=</span> <span class="o">$</span><span class="n">embed</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{{</span><span class="o">-</span> <span class="k">if</span> <span class="n">eq</span> <span class="p">(</span><span class="n">kindOf</span> <span class="o">$</span><span class="n">v</span> <span class="bp">true</span><span class="p">)</span> <span class="s2">&#34;struct&#34;</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{{</span><span class="o">-</span> <span class="o">/*</span> <span class="nb">convert</span> <span class="n">nested</span> <span class="n">struct</span> <span class="o">*/</span><span class="p">}}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{{</span><span class="o">-</span> <span class="o">$</span><span class="n">embed</span><span class="o">.</span><span class="n">Set</span> <span class="o">$</span><span class="n">k</span> <span class="p">(</span><span class="n">structToSdict</span> <span class="o">$</span><span class="n">v</span><span class="p">)</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{{</span><span class="o">-</span> <span class="n">end</span> <span class="o">-</span><span class="p">}}</span>
+</span></span><span class="line"><span class="cl"><span class="p">{{</span> <span class="n">end</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">{{</span><span class="o">/*</span> <span class="n">also</span> <span class="n">add</span> <span class="n">old</span> <span class="n">fields</span> <span class="o">*/</span><span class="p">}}</span>
+</span></span><span class="line"><span class="cl"><span class="p">{{</span> <span class="o">$</span><span class="n">embed</span><span class="o">.</span><span class="n">Set</span> <span class="s2">&#34;Fields&#34;</span> <span class="p">(</span><span class="n">cslice</span><span class="o">.</span><span class="n">AppendSlice</span> <span class="o">$</span><span class="n">embed</span><span class="o">.</span><span class="n">Fields</span><span class="p">)</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl"><span class="p">{{</span> <span class="nb">range</span> <span class="o">$</span><span class="n">i</span><span class="p">,</span> <span class="o">$</span><span class="n">field</span> <span class="p">:</span><span class="o">=</span> <span class="o">$</span><span class="n">embed</span><span class="o">.</span><span class="n">Fields</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{{</span><span class="o">-</span> <span class="o">$</span><span class="n">embed</span><span class="o">.</span><span class="n">Fields</span><span class="o">.</span><span class="n">Set</span> <span class="o">$</span><span class="n">i</span> <span class="p">(</span><span class="n">structToSdict</span> <span class="o">$</span><span class="n">field</span><span class="p">)</span> <span class="o">-</span><span class="p">}}</span>
+</span></span><span class="line"><span class="cl"><span class="p">{{</span> <span class="n">end</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">{{</span><span class="o">/*</span> <span class="n">ensure</span> <span class="n">all</span> <span class="n">parts</span> <span class="n">of</span> <span class="n">the</span> <span class="n">embed</span> <span class="n">are</span> <span class="n">reconstructed</span> <span class="o">*/</span><span class="p">}}</span>
+</span></span><span class="line"><span class="cl"><span class="p">{{</span> <span class="k">if</span> <span class="o">$</span><span class="n">embed</span><span class="o">.</span><span class="n">Author</span> <span class="p">}}</span> <span class="p">{{</span> <span class="o">$</span><span class="n">embed</span><span class="o">.</span><span class="n">Author</span><span class="o">.</span><span class="n">Set</span> <span class="s2">&#34;Icon_URL&#34;</span> <span class="o">$</span><span class="n">embed</span><span class="o">.</span><span class="n">Author</span><span class="o">.</span><span class="n">IconURL</span> <span class="p">}}</span> <span class="p">{{</span> <span class="n">end</span> <span class="p">}}</span>
+</span></span><span class="line"><span class="cl"><span class="p">{{</span> <span class="k">if</span> <span class="o">$</span><span class="n">embed</span><span class="o">.</span><span class="n">Footer</span> <span class="p">}}</span> <span class="p">{{</span> <span class="o">$</span><span class="n">embed</span><span class="o">.</span><span class="n">Footer</span><span class="o">.</span><span class="n">Set</span> <span class="s2">&#34;Icon_URL&#34;</span> <span class="o">$</span><span class="n">embed</span><span class="o">.</span><span class="n">Footer</span><span class="o">.</span><span class="n">IconURL</span> <span class="p">}}</span> <span class="p">{{</span> <span class="n">end</span> <span class="p">}}</span></span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div>
+    </div>
+  </div>
+</div>
+
+<h2 id="complex-message-builder">Complex Message Builder<a href="#complex-message-builder" class="anchor" aria-hidden="true">#</a> </h2>
+<p>We learned how to send messages and embeds individually&mdash;we can also combine them in a single message. This is where we
+have to use the <code>complexMessage</code> builder function. In this case, we will use the <code>&quot;content&quot;</code> and <code>&quot;embed&quot;</code> key to set
+the respective parts of our message:</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ $embed := cembed
+</span></span><span class="line"><span class="cl">    &#34;title&#34; &#34;This is a title&#34;
+</span></span><span class="line"><span class="cl">    &#34;description&#34; &#34;This is a description.&#34;
+</span></span><span class="line"><span class="cl">    &#34;color&#34; 0xff0000
+</span></span><span class="line"><span class="cl">    &#34;fields&#34; (cslice
+</span></span><span class="line"><span class="cl">        (sdict &#34;name&#34; &#34;Field 1&#34; &#34;value&#34; &#34;Value 1&#34; &#34;inline&#34; true)
+</span></span><span class="line"><span class="cl">        (sdict &#34;name&#34; &#34;Field 2&#34; &#34;value&#34; &#34;Value 2&#34; &#34;inline&#34; true)
+</span></span><span class="line"><span class="cl">    )
+</span></span><span class="line"><span class="cl">    &#34;author&#34; (sdict
+</span></span><span class="line"><span class="cl">      &#34;name&#34; .User.Username
+</span></span><span class="line"><span class="cl">      &#34;icon_url&#34; (.User.AvatarURL &#34;256&#34;)
+</span></span><span class="line"><span class="cl">    )
+</span></span><span class="line"><span class="cl">}}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">{{ $message := complexMessage
+</span></span><span class="line"><span class="cl">    &#34;content&#34; &#34;This is some content, appearing above the embed below.&#34;
+</span></span><span class="line"><span class="cl">    &#34;embed&#34; $embed
+</span></span><span class="line"><span class="cl">}}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">{{ sendMessage nil $message }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>Similarly, we provide a <code>complexMessageEdit</code> function to edit messages with both content and embeds. The syntax is the
+same as <code>complexMessage</code>, minus a few keys that cannot be edited. Please refer to the documentation below.</p>
+<p>The <code>complexMessage</code> builder takes a lot more keys that give you fine-grained control over the message you want to send.
+Refer to the <a href="/docs/reference/templates/functions/#message">message functions documentation</a> for a complete description.
+You&rsquo;re already quite far into the course, so you should be able to understand this documentation without much trouble.</p>
+
+			<div class="page-footer-meta d-flex flex-column flex-md-row justify-content-between">
+				
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="edit-page">
+  <a href="https://github.com/ArtObman/ArtObman/blob/master/content//learn/intermediate/embeds-and-messages.md">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2">
+      <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+    </svg>
+    Edit this page on GitHub
+  </a>
+</div>
+
+				</div>
+			<div class="page-nav d-flex flex-column flex-sm-row">
+	
+	<div class="card w-100">
+			<div class="card-body d-flex">
+				<div class="d-flex flex-column justify-content-center">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M5 12l14 0"></path>
+						<path d="M5 12l6 6"></path>
+						<path d="M5 12l6 -6"></path>
+				 	</svg>
+				</div>
+				<div class="d-flex flex-column">
+					<div class="text-body-secondary">Prev</div>
+					<a href="/learn/beginner/command-arguments/" class="stretched-link text-reset text-decoration-none">Command Arguments</a>
+				</div>
+			</div>
+		</div>
+	<div class="m-2"></div>
+	<div class="card text-end w-100">
+			<div class="card-body d-flex justify-content-end">
+				<div class="d-flex flex-column">
+					<div class="text-body-secondary">Next</div>
+					<a href="/learn/intermediate/maps-and-slices/" class="stretched-link text-reset text-decoration-none">Maps and Slices</a>
+				</div>
+				<div class="d-flex flex-column justify-content-center">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M5 12l14 0"></path>
+						<path d="M13 18l6 -6"></path>
+						<path d="M13 6l6 6"></path>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+
+			
+		</main>
+		
+	</div>
+
+      
+      </div>
+    </div>
+    
+    
+    <footer class="footer text-muted">
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-lg-8 text-center text-lg-start">
+        <ul class="list-inline">
+          <li class="list-inline-item"><a class="text-muted" href="https://botlabs.gg/privacy-policy">Privacy Policy</a></li><li class="list-inline-item"><a class="text-muted" href="https://obman.com/terms-of-use">Terms of Use</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-8 text-center text-lg-end">
+        <ul class="list-inline">
+          <li class="list-inline-item">Built using <a class="text-muted" href="https://getdoks.org/">Doks</a> and <a class="text-muted" href="https://gohugo.io/">Hugo</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script async
+  src="/js/bootstrap.8674636a1059caed3a46af4b3dbc8d68a0aac4e0c51ab393c810f3ad10553638.js"
+  integrity="sha256-hnRjahBZyu06Rq9LPbyNaKCqxODFGrOTyBDzrRBVNjg=">
+</script>
+
+
+<script async
+  src="/js/app.ed63b5301e6ba65958f352a0840b7bbba0fcd82e492693df4e191290daaa4850.js"
+  integrity="sha256-7WO1MB5rpllY81KghAt7u6D82C5JJpPfThkSkNqqSFA=">
+</script>
+
+
+
+
+
+
+
+
+
+
+<script async
+  src="/js/docsearch.b4e4d5218e0dcf1c9f23699da64223159203b928fe4e1da0c2657079845ad1c2.js"
+  integrity="sha256-tOTVIY4NzxyfI2mdpkIjFZIDuSj&#43;Th2gwmVweYRa0cI=">
+</script>
+
+    
+  </body>
+</html>

@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OBMAN.BOT Help Center</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on OBMAN.BOT Help Center</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Copyright (c) 2020-2024 OBMAN.BOT documentation contributors</copyright>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction</title>
+      <link>http://localhost:1313/docs/welcome/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/welcome/introduction/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Documentation is for users. - Rob Pike&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;This is the documentation for &lt;a href=&#34;https://obman.com&#34; rel=&#34;external&#34;&gt;OBMAN.BOT&lt;/a&gt;; this document in its current form is a work in progress, as&#xA;it is an attempt to move away from the current documentation hosted via GitBook.&lt;/p&gt;&#xA;&lt;p&gt;This page is built with &lt;a href=&#34;https://gohugo.io/&#34; rel=&#34;external&#34;&gt;Hugo&lt;/a&gt; in conjunction with the &lt;a href=&#34;https://getdoks.org&#34; rel=&#34;external&#34;&gt;Doks theme&lt;/a&gt; as an&#xA;experiment to see if it is a viable alternative.&lt;/p&gt;&#xA;&lt;h2 id=&#34;other-resources&#34;&gt;Other Resources&lt;/h2&gt;&#xA;&lt;h3 id=&#34;support-server&#34;&gt;Support Server&lt;/h3&gt;&#xA;&lt;p&gt;If you need help with OBMAN.BOT, please join the &lt;a href=&#34;https://discord.gg/4udtcA5&#34; rel=&#34;external&#34;&gt;support server&lt;/a&gt; and ask in the appropriate&#xA;channel. Any other online forum is not official and should be generally treated as inaccurate.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Introduction</title>
+      <link>http://localhost:1313/learn/welcome/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/welcome/introduction/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;The first thing you gotta discard, whenever you&amp;rsquo;re learning about something, is your ego. - Luke Smith&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;These are the learning resources for OBMAN.BOT&amp;rsquo;s powerful custom command system. This is your playground!&lt;/p&gt;&#xA;&lt;p&gt;We are going to teach you how to read code as well as how to write it. After all, how can you &lt;strong&gt;write&lt;/strong&gt; if you cannot&#xA;&lt;strong&gt;read&lt;/strong&gt;? Learn to read, learn to solve problems, and learn to enjoy the process. The community is there to help, as&#xA;long as you put in some effort yourself.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Getting Started</title>
+      <link>http://localhost:1313/docs/welcome/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/welcome/getting-started/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;The hardest thing about getting started, is getting started. - Guy Kawasaki&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;adding-the-bot&#34;&gt;Adding The Bot&lt;/h2&gt;&#xA;&lt;div class=&#34;callout callout-note d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3&#34;&gt;&#xD;&#xA;  &lt;svg&#xA;  xmlns=&#34;http://www.w3.org/2000/svg&#34;&#xA;  width=&#34;24&#34;&#xA;  height=&#34;24&#34;&#xA;  viewBox=&#34;0 0 24 24&#34;&#xA;  fill=&#34;none&#34;&#xA;  stroke=&#34;currentColor&#34;&#xA;  stroke-width=&#34;2&#34;&#xA;  stroke-linecap=&#34;round&#34;&#xA;  stroke-linejoin=&#34;round&#34;&#xA; &#xA; class=&#34;outline/info-circle svg-inline callout-icon me-2 mb-3&#34; id=&#34;svg-info-circle&#34; role=&#34;img&#34;&gt;&#xA;  &lt;path stroke=&#34;none&#34; d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;/&gt;&#xA;  &lt;path d=&#34;M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0&#34; /&gt;&#xA;  &lt;path d=&#34;M12 9h.01&#34; /&gt;&#xA;  &lt;path d=&#34;M11 12h1v4h1&#34; /&gt;&#xA;&lt;/svg&gt;&#xD;&#xA;  &lt;div class=&#34;callout-content&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;callout-title&#34;&gt;&#xD;&#xA;        &lt;p&gt;Note: Required User Permission&lt;/p&gt;&#xA;&#xD;&#xA;      &lt;/div&gt;&#xD;&#xA;    &lt;div class=&#34;callout-body&#34;&gt;&#xD;&#xA;      &lt;p&gt;You need to have the &lt;strong&gt;Manage Server&lt;/strong&gt; permission to add the bot to your server.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Premium</title>
+      <link>http://localhost:1313/docs/welcome/premium/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/welcome/premium/</guid>
+      <description>&lt;p&gt;OBMAN.BOT provides added functionality to servers which are assigned a premium slot by a user. On the official instance of&#xA;OBMAN.BOT, these premium slots can be acquired as a perk of being a &lt;a href=&#34;https://www.patreon.com/yagpdb&#34; rel=&#34;external&#34;&gt;Patron&lt;/a&gt; to Botlabs&#39;&#xA;OBMAN.BOT.&lt;/p&gt;&#xA;&lt;h2 id=&#34;benefits&#34;&gt;Benefits&lt;/h2&gt;&#xA;&lt;p&gt;A premium server unlocks the following benefits:&lt;/p&gt;&#xA;&lt;h3 id=&#34;automoderator&#34;&gt;Automoderator&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Increase maximum message triggers per rule from 20 to 100 (&lt;code&gt;MaxMessageTriggersPremium&lt;/code&gt;).&lt;/li&gt;&#xA;&lt;li&gt;Increase maximum violation triggers per rule from 20 to 100 (&lt;code&gt;MaxViolationTriggersPremium&lt;/code&gt;).&lt;/li&gt;&#xA;&lt;li&gt;Increase maximum total rules across all rulesets from 25 to 150 (&lt;code&gt;MaxTotalRulesPremium&lt;/code&gt;).&lt;/li&gt;&#xA;&lt;li&gt;Increase maximum lists from 5 to 25 (&lt;code&gt;MaxListsPremium&lt;/code&gt;).&lt;/li&gt;&#xA;&lt;li&gt;Increase maximum rulesets from 10 to 25 (&lt;code&gt;MaxRulesetsPremium&lt;/code&gt;).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;autorole&#34;&gt;Autorole&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Enables retroactively applying a role to all members of a server.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;bulk-role&#34;&gt;Bulk Role&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The &lt;a href=&#34;http://localhost:1313/docs/roles/bulk-role/&#34;&gt;bulk role&lt;/a&gt; feature becomes available, allowing you to assign or remove a role in bulk.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;common-template-scripting&#34;&gt;Common Template Scripting&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Increase max operation count from 1 million to 2.5 million (&lt;code&gt;MaxOpsPremium&lt;/code&gt;).&lt;/li&gt;&#xA;&lt;li&gt;Increase max operation count with &lt;code&gt;evalcc&lt;/code&gt; command from 200,000 to 500,000 (&lt;code&gt;MaxOpsPremium&lt;/code&gt;).&lt;/li&gt;&#xA;&lt;li&gt;Increase max &lt;code&gt;getChannelPins&lt;/code&gt; uses in one script execution from 2 to 4 (&lt;code&gt;channel_pins&lt;/code&gt;).&lt;/li&gt;&#xA;&lt;li&gt;Increase max &lt;code&gt;sort&lt;/code&gt; uses in one script execution from 1 to 3 (&lt;code&gt;sort&lt;/code&gt;).&lt;/li&gt;&#xA;&lt;li&gt;Increase max &lt;code&gt;execCC&lt;/code&gt; and &lt;code&gt;scheduleUniqueCC&lt;/code&gt; uses in one script execution from 1 to 10 (&lt;code&gt;runcc&lt;/code&gt;).&lt;/li&gt;&#xA;&lt;li&gt;Increase max &lt;code&gt;getWarnings&lt;/code&gt; uses in one script execution from 5 to 10 (&lt;code&gt;cc_moderation&lt;/code&gt;).&lt;/li&gt;&#xA;&lt;li&gt;Increase max database interactions in one script execution from 10 to 50 (&lt;code&gt;db_interactions&lt;/code&gt;).&lt;/li&gt;&#xA;&lt;li&gt;Increase max high-quantity database interactions (&lt;code&gt;dbCount&lt;/code&gt;, &lt;code&gt;dbGetPattern&lt;/code&gt;, etc.) in one script execution from 2 to&#xA;10 (&lt;code&gt;db_multiple&lt;/code&gt;).&lt;/li&gt;&#xA;&lt;li&gt;Increase max database entries from &lt;code&gt;(guild member count)*50&lt;/code&gt; to &lt;code&gt;(guild member count)*500&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;custom-commands&#34;&gt;Custom Commands&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Enable triggering on edited messages instead of only new messages.&lt;/li&gt;&#xA;&lt;li&gt;Increase max commands which can trigger from a single interaction from 3 to 5 (&lt;code&gt;CCMessageExecLimitPremium&lt;/code&gt;).&lt;/li&gt;&#xA;&lt;li&gt;Increase max commands from 100 to 250 (&lt;code&gt;MaxCommandsPremium&lt;/code&gt;).&lt;/li&gt;&#xA;&lt;li&gt;Increase max combined response length per cc from 10,000 to 20,000 (&lt;code&gt;MaxCCResponsesLength&lt;/code&gt;).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;logging-messages&#34;&gt;Logging Messages&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Increase length of deleted message history by &lt;code&gt;logs&lt;/code&gt; command from 1 hour to 12 hours.&lt;/li&gt;&#xA;&lt;li&gt;Increase length of deleted message history for logs saved by moderation actions from 1 hour to 12 hours.&lt;/li&gt;&#xA;&lt;li&gt;Increase length of deleted message history by &lt;code&gt;undelete&lt;/code&gt; command from 1 hour to 12 hours.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;personalizer&#34;&gt;Personalizer&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Enables you to change the bot&amp;rsquo;s avatar and banner on your server.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;#h-rh-i-fc479668d5cff121079e9f35fdac953a-lightbox&#34;&gt;&#xA;&lt;img alt=&#34;personalizer settings page&#34; height=&#34;726&#34; id=&#34;h-rh-i-fc479668d5cff121079e9f35fdac953a&#34; src=&#34;http://localhost:1313/docs/welcome/personalizer.png&#34; width=&#34;1456&#34;&gt;&lt;/a&gt;&#xA;&lt;a href=&#34;javascript:history.back();&#34; class=&#34;lightbox&#34; id=&#34;h-rh-i-fc479668d5cff121079e9f35fdac953a-lightbox&#34;&gt;&#xA;  &lt;img loading=&#34;lazy&#34; alt=&#34;personalizer settings page&#34; height=&#34;726&#34; id=&#34;h-rh-i-fc479668d5cff121079e9f35fdac953a&#34; src=&#34;http://localhost:1313/docs/welcome/personalizer.png&#34; width=&#34;1456&#34;&gt;&#xA;&lt;/a&gt;&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control Panel Access</title>
+      <link>http://localhost:1313/docs/core/control-panel-access/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/core/control-panel-access/</guid>
+      <description>&lt;p&gt;This page is relatively simple, yet very powerful. An overview of the settings follows.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;#h-rh-i-7b40cb00a665026846d80b2d1a2df399-lightbox&#34;&gt;&#xA;&lt;img alt=&#34;Overview of the control panel access configuration page.&#34; height=&#34;996&#34; id=&#34;h-rh-i-7b40cb00a665026846d80b2d1a2df399&#34; src=&#34;http://localhost:1313/docs/core/control_panel_access.png&#34; width=&#34;1688&#34;&gt;&lt;/a&gt;&#xA;&lt;a href=&#34;javascript:history.back();&#34; class=&#34;lightbox&#34; id=&#34;h-rh-i-7b40cb00a665026846d80b2d1a2df399-lightbox&#34;&gt;&#xA;  &lt;img loading=&#34;lazy&#34; alt=&#34;Overview of the control panel access configuration page.&#34; height=&#34;996&#34; id=&#34;h-rh-i-7b40cb00a665026846d80b2d1a2df399&#34; src=&#34;http://localhost:1313/docs/core/control_panel_access.png&#34; width=&#34;1688&#34;&gt;&#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;h3 id=&#34;read-access&#34;&gt;Read Access&lt;/h3&gt;&#xA;&lt;h4 id=&#34;allow-people-with-the-following-roles&#34;&gt;Allow people with the following roles&lt;/h4&gt;&#xA;&lt;p&gt;The very top option is to allow people with certain roles read access to the control panel. Simply open the drop-down&#xA;select menu and select the roles you wish to grant read access.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Simple Responses</title>
+      <link>http://localhost:1313/learn/beginner/simple-responses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/beginner/simple-responses/</guid>
+      <description>&lt;p&gt;In this chapter, we will go over two ways to output text from a custom command: using the &lt;em&gt;response&lt;/em&gt;, and later on using&#xA;&lt;em&gt;template actions&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;response&#34;&gt;Response&lt;/h2&gt;&#xA;&lt;p&gt;If you paste text into the response field of a custom command, the bot will respond with the same text when the command&#xA;is triggered.&lt;/p&gt;&#xA;&lt;p&gt;For instance, create a new custom command with the following response:&lt;/p&gt;&#xA;&lt;div class=&#34;expressive-code&#34;&gt;&#xA;      &lt;figure class=&#34;frame not-content&#34;&gt;&#xA;        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Hello World.&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;        &lt;/figure&gt;&#xA;      &lt;/figure&gt;&#xA;    &lt;/div&gt;&lt;p&gt;This will make the bot respond &amp;ldquo;Hello World.&amp;rdquo; in a new message when the command is triggered, as shown below.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control Panel Logs</title>
+      <link>http://localhost:1313/docs/core/control-panel-logs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/core/control-panel-logs/</guid>
+      <description>&lt;p&gt;This page is the analogue of the audit log built in to Discord for OBMAN.BOT settings and summarizes recent edits on the&#xA;control panel, listing the time, action, and responsible user for each. It is useful to audit who may be responsible if&#xA;things go haywire, but other than that this page is unlikely to be of use.&lt;/p&gt;&#xA;&lt;p&gt;Please do not be confused if you see changes from the user &lt;code&gt;destroy_0001&lt;/code&gt; (ID &lt;code&gt;598900258579283976&lt;/code&gt;), as that is the bot&#xA;developer and he may at times need to change certain settings to ensure proper operation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Variables and Data Types</title>
+      <link>http://localhost:1313/learn/beginner/variables-and-data-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/beginner/variables-and-data-types/</guid>
+      <description>&lt;p&gt;In this chapter, we will overview how to store data in variables and the basic data types available, which include&#xA;&lt;a href=&#34;http://localhost:1313/learn/beginner/variables-and-data-types/#strings&#34;&gt;strings&lt;/a&gt;, &lt;a href=&#34;http://localhost:1313/learn/beginner/variables-and-data-types/#numbers&#34;&gt;numbers&lt;/a&gt;, and &lt;a href=&#34;http://localhost:1313/learn/beginner/variables-and-data-types/#booleans&#34;&gt;booleans&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;variables&#34;&gt;Variables&lt;/h2&gt;&#xA;&lt;p&gt;Before we go over data types, we will cover how to store data and refer to it later. We can do this by using variables.&#xA;A variable is a way to store a value and give it a name, to which you can refer back to later.&lt;/p&gt;&#xA;&lt;p&gt;In Custom Commands, you define a variable by starting with a &lt;code&gt;$&lt;/code&gt;, its name, and the assignment operator &lt;code&gt;:=&lt;/code&gt;. To&#xA;illustrate this, consider the following example:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Command Settings</title>
+      <link>http://localhost:1313/docs/core/command-settings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/core/command-settings/</guid>
+      <description>&lt;p&gt;Fine-grained control over all of OBMAN.BOT&amp;rsquo;s inbuild commands.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Command overrides allow you to restrict access to OBMAN.BOT&amp;rsquo;s inbuilt commands and optionally configure intervals after&#xA;which the command trigger and response will be autodeleted. The key features of the page are as follows:&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;#h-rh-i-101a249938de168386ec3e5983bc2da8-lightbox&#34;&gt;&#xA;&lt;img alt=&#34;Overview of the Command Settings page.&#34; height=&#34;996&#34; id=&#34;h-rh-i-101a249938de168386ec3e5983bc2da8&#34; src=&#34;http://localhost:1313/docs/core/command_settings_overview.png&#34; width=&#34;1688&#34;&gt;&lt;/a&gt;&#xA;&lt;a href=&#34;javascript:history.back();&#34; class=&#34;lightbox&#34; id=&#34;h-rh-i-101a249938de168386ec3e5983bc2da8-lightbox&#34;&gt;&#xA;  &lt;img loading=&#34;lazy&#34; alt=&#34;Overview of the Command Settings page.&#34; height=&#34;996&#34; id=&#34;h-rh-i-101a249938de168386ec3e5983bc2da8&#34; src=&#34;http://localhost:1313/docs/core/command_settings_overview.png&#34; width=&#34;1688&#34;&gt;&#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;center&gt;&#xA;&lt;p&gt;&lt;strong&gt;1&lt;/strong&gt; Command prefix, default &lt;code&gt;-&lt;/code&gt; &lt;strong&gt;2&lt;/strong&gt; &lt;em&gt;All commands enabled&lt;/em&gt; setting &lt;strong&gt;3&lt;/strong&gt; Required roles &lt;strong&gt;4&lt;/strong&gt; Ignored roles&#xA;&lt;strong&gt;5&lt;/strong&gt; Autodelete trigger interval &lt;strong&gt;6&lt;/strong&gt; Autodelete response interval &lt;strong&gt;7&lt;/strong&gt; Command overrides &lt;strong&gt;8&lt;/strong&gt; Channel overrides tabs&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Conditional Branching</title>
+      <link>http://localhost:1313/learn/beginner/conditional-branching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/beginner/conditional-branching/</guid>
+      <description>&lt;p&gt;Until now, we have just written some linear code that executes from top to bottom. However, in real-world applications,&#xA;we often need to execute different code depending on certain states of our program. This is where &lt;em&gt;control flow&lt;/em&gt; comes&#xA;into play.&lt;/p&gt;&#xA;&lt;p&gt;You already have an intuitive understanding of control flow. For instance, when you cross the street, you look left and&#xA;right to see if any cars are coming. If there are no cars, you cross the street. Otherwise (&amp;ldquo;else&amp;rdquo;), you wait until the&#xA;incoming cars have passed, then check again. This is a simple example of a decision-making process.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>All Commands</title>
+      <link>http://localhost:1313/docs/core/all-commands/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/core/all-commands/</guid>
+      <description>&lt;p&gt;List of all available commands offered by OBMAN.BOT and their syntax.&lt;/p&gt;&#xA;&lt;h2 id=&#34;legend&#34;&gt;Legend&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;&amp;lt;required arg&amp;gt;&lt;/code&gt; &lt;code&gt;[optional arg]&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Text arguments containing multiple words needs be to put in quotes (&amp;ldquo;arg here&amp;rdquo;) or code ticks (&lt;code&gt;arg here&lt;/code&gt;) if it&amp;rsquo;s not the last argument and there&amp;rsquo;s more than 1 text argument.&lt;/p&gt;&#xA;&lt;p&gt;For example with the poll command if you want the question to have multiple words: &lt;code&gt;-poll &amp;quot;whats your favorite color&amp;quot; red blue green2&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Command Arguments</title>
+      <link>http://localhost:1313/learn/beginner/command-arguments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/beginner/command-arguments/</guid>
+      <description>&lt;p&gt;When we were starting to write Custom Commands, we stuck to a somewhat static custom command&amp;mdash;one that doesn&amp;rsquo;t take&#xA;any arguments and has a fixed output. This is a good starting point, but it&amp;rsquo;s not very useful in practice. In this&#xA;chapter, we&amp;rsquo;ll learn how to create custom commands that take inputs.&lt;/p&gt;&#xA;&lt;h2 id=&#34;parsing-arguments&#34;&gt;Parsing Arguments&lt;/h2&gt;&#xA;&lt;p&gt;Because parsing arguments is no easy task, we provide a convenience function, &lt;code&gt;parseArgs&lt;/code&gt;, to parse the arguments passed&#xA;to a custom command. For simple commands, this is the recommended way to handle user input. In a later chapter, we will&#xA;explore a more hands-on approach to parsing arguments.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Commands</title>
+      <link>http://localhost:1313/docs/custom-commands/commands/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/custom-commands/commands/</guid>
+      <description>&lt;p&gt;The commands page displays all custom commands and allows you to add, delete, or edit custom commands and custom command&#xA;groups.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;#h-rh-i-3b37737e7de498448ecd1531f11852e3-lightbox&#34;&gt;&#xA;&lt;img alt=&#34;Overview of the Commands page.&#34; height=&#34;1258&#34; id=&#34;h-rh-i-3b37737e7de498448ecd1531f11852e3&#34; src=&#34;http://localhost:1313/docs/custom-commands/command_overview.png&#34; width=&#34;1007&#34;&gt;&lt;/a&gt;&#xA;&lt;a href=&#34;javascript:history.back();&#34; class=&#34;lightbox&#34; id=&#34;h-rh-i-3b37737e7de498448ecd1531f11852e3-lightbox&#34;&gt;&#xA;  &lt;img loading=&#34;lazy&#34; alt=&#34;Overview of the Commands page.&#34; height=&#34;1258&#34; id=&#34;h-rh-i-3b37737e7de498448ecd1531f11852e3&#34; src=&#34;http://localhost:1313/docs/custom-commands/command_overview.png&#34; width=&#34;1007&#34;&gt;&#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;center&gt;&#xA;&lt;p&gt;&lt;strong&gt;1&lt;/strong&gt; Create Custom Command &lt;strong&gt;2&lt;/strong&gt; List of Commands in Selected Group &lt;strong&gt;3&lt;/strong&gt; Edit this Custom Command &lt;strong&gt;4&lt;/strong&gt; Delete this&#xA;Custom Command &lt;strong&gt;5&lt;/strong&gt; Run this Command Now &lt;strong&gt;6&lt;/strong&gt; Selected Group &lt;strong&gt;7&lt;/strong&gt; Group Tabs &lt;strong&gt;8&lt;/strong&gt; Name of Selected Group &lt;strong&gt;9&lt;/strong&gt;&#xA;Delete Selected Group &lt;strong&gt;10&lt;/strong&gt; Channel and Role Restrictions &lt;strong&gt;11&lt;/strong&gt; Save group settings&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Embeds and Messages</title>
+      <link>http://localhost:1313/learn/intermediate/embeds-and-messages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/intermediate/embeds-and-messages/</guid>
+      <description>&lt;p&gt;Until now, we have just used the &lt;a href=&#34;http://localhost:1313/learn/beginner/simple-responses/&#34;&gt;default response behavior&lt;/a&gt; to make our custom&#xA;commands respond with some text. This makes sense for quick mockups or relatively simple commands. However, this may be&#xA;inconvenient or Not What You Want in some cases. In this chapter, we will explore how to send messages to different&#xA;channels, edit existing messages, and send messages with embeds, vastly expanding your toolbox for creating complex&#xA;custom command systems.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Database</title>
+      <link>http://localhost:1313/docs/custom-commands/database/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/custom-commands/database/</guid>
+      <description>&lt;p&gt;The Custom Command Database is used for persistent storage between custom command executions. The database page displays&#xA;all database entries created by custom commands, allowing you to view details on or delete individual entries.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;#h-rh-i-b9e1a5fbebb0d277df16b0e317ba0145-lightbox&#34;&gt;&#xA;&lt;img alt=&#34;Overview of the Database page.&#34; height=&#34;831&#34; id=&#34;h-rh-i-b9e1a5fbebb0d277df16b0e317ba0145&#34; src=&#34;http://localhost:1313/docs/custom-commands/overview_database.png&#34; width=&#34;1319&#34;&gt;&lt;/a&gt;&#xA;&lt;a href=&#34;javascript:history.back();&#34; class=&#34;lightbox&#34; id=&#34;h-rh-i-b9e1a5fbebb0d277df16b0e317ba0145-lightbox&#34;&gt;&#xA;  &lt;img loading=&#34;lazy&#34; alt=&#34;Overview of the Database page.&#34; height=&#34;831&#34; id=&#34;h-rh-i-b9e1a5fbebb0d277df16b0e317ba0145&#34; src=&#34;http://localhost:1313/docs/custom-commands/overview_database.png&#34; width=&#34;1319&#34;&gt;&#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;center&gt;&#xA;&lt;p&gt;&lt;strong&gt;1&lt;/strong&gt; Entry ID &lt;strong&gt;2&lt;/strong&gt; Created Timestamp &lt;strong&gt;3&lt;/strong&gt; Updated Timestamp &lt;strong&gt;4&lt;/strong&gt; Expiry Timestamp &lt;strong&gt;5&lt;/strong&gt; User ID &lt;strong&gt;6&lt;/strong&gt; Key &lt;strong&gt;7&lt;/strong&gt;&#xA;Value &lt;strong&gt;8&lt;/strong&gt; Size of Value &lt;strong&gt;9&lt;/strong&gt; Delete Entry &lt;strong&gt;10&lt;/strong&gt; Page Navigation &lt;strong&gt;11&lt;/strong&gt; Search Query &lt;strong&gt;12&lt;/strong&gt; Search Bar&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Maps and Slices</title>
+      <link>http://localhost:1313/learn/intermediate/maps-and-slices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/intermediate/maps-and-slices/</guid>
+      <description>&lt;p&gt;When you first started this course, you learned about &lt;a href=&#34;http://localhost:1313/learn/beginner/variables-and-data-types/&#34;&gt;primitive data types&lt;/a&gt;.&#xA;In the previous chapter we name-dropped two more types: &amp;ldquo;slice&amp;rdquo;, and &amp;ldquo;sdict&amp;rdquo; (&amp;ldquo;map&amp;rdquo;), both without much elaboration.&#xA;In this chapter, we will explore these data types in more detail.&lt;/p&gt;&#xA;&lt;h2 id=&#34;slices&#34;&gt;Slices&lt;/h2&gt;&#xA;&lt;p&gt;A slice is an ordered list of items. In custom commands, we can &lt;strong&gt;c&lt;/strong&gt;reate a &lt;strong&gt;slice&lt;/strong&gt; by providing the items in order&#xA;to the &lt;code&gt;cslice&lt;/code&gt; function:&lt;/p&gt;&#xA;&lt;div class=&#34;expressive-code&#34;&gt;&#xA;      &lt;figure class=&#34;frame not-content&#34;&gt;&#xA;        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{ $fruits := cslice &amp;#34;banana&amp;#34; &amp;#34;orange&amp;#34; &amp;#34;apple&amp;#34; }}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;        &lt;/figure&gt;&#xA;      &lt;/figure&gt;&#xA;    &lt;/div&gt;&lt;p&gt;All the elements in the &lt;code&gt;$fruits&lt;/code&gt; slice happen to have the same type (&lt;em&gt;string&lt;/em&gt;), but this is not a requirement: it is&#xA;valid, though rare, for a slice to contain elements of different types.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Loops</title>
+      <link>http://localhost:1313/learn/intermediate/loops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/intermediate/loops/</guid>
+      <description>&lt;p&gt;In a previous chapter, we learned about &lt;a href=&#34;http://localhost:1313/learn/beginner/conditional-branching/&#34;&gt;conditional branching&lt;/a&gt;.&#xA;In this chapter, we will discuss more advanced control flow actions: namely, &lt;code&gt;range&lt;/code&gt;, &lt;code&gt;while&lt;/code&gt;, and &lt;code&gt;with&lt;/code&gt; actions.&lt;/p&gt;&#xA;&lt;h2 id=&#34;loop&#34;&gt;Loop&lt;/h2&gt;&#xA;&lt;p&gt;Fundamentally, loops provide a way to perform repeated actions. There are two loop actions available in custom commands:&#xA;&lt;code&gt;range&lt;/code&gt;, which repeats an action for each entry in a data structure, and &lt;code&gt;while&lt;/code&gt;, which repeats an action as long as a&#xA;condition holds.&lt;/p&gt;&#xA;&lt;h3 id=&#34;range&#34;&gt;Range&lt;/h3&gt;&#xA;&lt;p&gt;The &lt;code&gt;range&lt;/code&gt; action performs an action for each entry in a slice or map; we say that range &lt;em&gt;iterates&lt;/em&gt; over the slice or&#xA;map. If you have experience with other programming languages, &lt;code&gt;range&lt;/code&gt; is roughly equivalent to a for-each loop.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Database</title>
+      <link>http://localhost:1313/learn/intermediate/database/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/intermediate/database/</guid>
+      <description>&lt;p&gt;OBMAN.BOT provides a database for use in your CCs. Entries in this database are used to store persistent data that you want&#xA;to keep between custom command executions. You access and manipulate these entries with the &lt;a href=&#34;http://localhost:1313/docs/reference/templates/functions/#database&#34;&gt;database functions&lt;/a&gt;,&#xA;which we will elaborate on in this guide.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overall&#34;&gt;Overall&lt;/h2&gt;&#xA;&lt;p&gt;This section covers the structure of a database entry, the database&amp;rsquo;s size limits, as well as the entry&amp;rsquo;s size limit and&#xA;lastly the interaction limit per custom command execution.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Exercises</title>
+      <link>http://localhost:1313/learn/intermediate/exercises/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/intermediate/exercises/</guid>
+      <description>&lt;p&gt;Below are some exercises to help you practice and reinforce your understanding of the concepts discussed in the previous&#xA;sections. Remember to use the &lt;a href=&#34;http://localhost:1313/docs/reference/templates/&#34;&gt;template reference&lt;/a&gt; if you need help. Do them at your own pace&#xA;and whenever you feel like it.&lt;/p&gt;&#xA;&lt;h2 id=&#34;duplicates-in-a-list&#34;&gt;Duplicates in a List&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;You are given a list of numbers having some repeated digits. Write a CC which will eliminate duplicate entries and&#xA;return the cleaned list. The list is as follows: &lt;code&gt;42 1 2 81 3 5 42 19 2 42 19 81 46&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Moderation Tools</title>
+      <link>http://localhost:1313/docs/moderation/moderation-tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/moderation/moderation-tools/</guid>
+      <description>&lt;p&gt;Everything in moderation, including moderation.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;#h-rh-i-501aa8721c8ee5c00782001d0d40d721-lightbox&#34;&gt;&#xA;&lt;img alt=&#34;Overview of the moderation page&#34; height=&#34;1363&#34; id=&#34;h-rh-i-501aa8721c8ee5c00782001d0d40d721&#34; src=&#34;http://localhost:1313/docs/moderation/overview_moderation.png&#34; width=&#34;1135&#34;&gt;&lt;/a&gt;&#xA;&lt;a href=&#34;javascript:history.back();&#34; class=&#34;lightbox&#34; id=&#34;h-rh-i-501aa8721c8ee5c00782001d0d40d721-lightbox&#34;&gt;&#xA;  &lt;img loading=&#34;lazy&#34; alt=&#34;Overview of the moderation page&#34; height=&#34;1363&#34; id=&#34;h-rh-i-501aa8721c8ee5c00782001d0d40d721&#34; src=&#34;http://localhost:1313/docs/moderation/overview_moderation.png&#34; width=&#34;1135&#34;&gt;&#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;center&gt;&#xA;&lt;p&gt;&lt;strong&gt;1&lt;/strong&gt; Mod Log Channel &lt;strong&gt;2&lt;/strong&gt; Report Channel &lt;strong&gt;3&lt;/strong&gt; Moderation DM Error Channel &lt;strong&gt;4&lt;/strong&gt; Clean Command &lt;strong&gt;5&lt;/strong&gt; Report&#xA;Command &lt;strong&gt;6&lt;/strong&gt; Unban Logging &lt;strong&gt;7&lt;/strong&gt; Giverole/Takerole commands &lt;strong&gt;8&lt;/strong&gt; Give/Takerole Permitted Roles &lt;strong&gt;9&lt;/strong&gt;&#xA;Give/Takerole Logging &lt;strong&gt;10&lt;/strong&gt; External Ban Logging &lt;strong&gt;11&lt;/strong&gt; External Kick Logging &lt;strong&gt;12&lt;/strong&gt; External Timeout Logging &lt;strong&gt;13&lt;/strong&gt;&#xA;Moderation Tabs &lt;strong&gt;14&lt;/strong&gt; Bot Permissions Notice&lt;/p&gt;&#xA;&lt;/center&gt;&#xA;&lt;h2 id=&#34;moderation-page&#34;&gt;Moderation Page&lt;/h2&gt;&#xA;&lt;p&gt;The moderation page allows configuration of common settings.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Introduction</title>
+      <link>http://localhost:1313/learn/advanced/custom-interactions/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/advanced/custom-interactions/introduction/</guid>
+      <description>&lt;div class=&#34;callout callout-danger d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3&#34;&gt;&#xD;&#xA;  &lt;svg&#xA;  xmlns=&#34;http://www.w3.org/2000/svg&#34;&#xA;  width=&#34;24&#34;&#xA;  height=&#34;24&#34;&#xA;  viewBox=&#34;0 0 24 24&#34;&#xA;  fill=&#34;none&#34;&#xA;  stroke=&#34;currentColor&#34;&#xA;  stroke-width=&#34;2&#34;&#xA;  stroke-linecap=&#34;round&#34;&#xA;  stroke-linejoin=&#34;round&#34;&#xA; &#xA; class=&#34;outline/alert-octagon svg-inline callout-icon me-2 mb-3&#34; id=&#34;svg-alert-octagon&#34; role=&#34;img&#34;&gt;&#xA;  &lt;path stroke=&#34;none&#34; d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;/&gt;&#xA;  &lt;path d=&#34;M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z&#34; /&gt;&#xA;  &lt;path d=&#34;M12 8v4&#34; /&gt;&#xA;  &lt;path d=&#34;M12 16h.01&#34; /&gt;&#xA;&lt;/svg&gt;&#xD;&#xA;  &lt;div class=&#34;callout-content&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;callout-title&#34;&gt;&#xD;&#xA;        &lt;p&gt;Danger: Advanced Topic&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Creating Interactive Elements</title>
+      <link>http://localhost:1313/learn/advanced/custom-interactions/creating-interactive-elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/advanced/custom-interactions/creating-interactive-elements/</guid>
+      <description>&lt;p&gt;Before you can start triggering custom commands with interactive elements&amp;mdash;such as buttons&amp;mdash;you&amp;rsquo;ll obviously need&#xA;to have elements to interact with. In this section, we&amp;rsquo;ll cover how to create these elements and explore their&#xA;differences.&lt;/p&gt;&#xA;&lt;h2 id=&#34;message-components&#34;&gt;Message Components&lt;/h2&gt;&#xA;&lt;h3 id=&#34;buttons&#34;&gt;Buttons&lt;/h3&gt;&#xA;&lt;p&gt;Buttons are probably the simplest interactive element to create, so we&amp;rsquo;ll start with them. To create a button, we use&#xA;the &lt;a href=&#34;http://localhost:1313/docs/reference/templates/functions/#cbutton&#34;&gt;&lt;code&gt;cbutton&lt;/code&gt;&lt;/a&gt; function. In and of itself, that is rather useless, so we&amp;rsquo;ll&#xA;also have to attach it to a message. We do that by calling the&#xA;&lt;a href=&#34;http://localhost:1313/docs/reference/templates/functions/#complexmessage&#34;&gt;&lt;code&gt;complexMessage&lt;/code&gt;&lt;/a&gt; builder and adding the result of &lt;code&gt;cbutton&lt;/code&gt; to it.&#xA;Finally, we send the message.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Parsing an Interaction</title>
+      <link>http://localhost:1313/learn/advanced/custom-interactions/parsing-an-interaction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/advanced/custom-interactions/parsing-an-interaction/</guid>
+      <description>&lt;p&gt;Custom Commands with the &lt;a href=&#34;http://localhost:1313/docs/custom-commands/commands/#component&#34;&gt;Message Component&lt;/a&gt; or &lt;a href=&#34;http://localhost:1313/docs/custom-commands/commands/#modal&#34;&gt;Modal&#xA;Submission&lt;/a&gt; trigger allow you to take action upon the press of a button, use of a&#xA;select menu, or completion of a modal form. Interaction triggers provide new context data for templating.&lt;/p&gt;&#xA;&lt;p&gt;In this section, we&amp;rsquo;ll cover the data available and how to make use of it.&lt;/p&gt;&#xA;&lt;h2 id=&#34;important-context-data&#34;&gt;Important Context Data&lt;/h2&gt;&#xA;&lt;p&gt;A short list of the more important context data available is provided below. For a full list, please see the&#xA;&lt;a href=&#34;http://localhost:1313/docs/reference/templates/syntax-and-data/#interaction&#34;&gt;documentation on the interaction object&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Responding to an Interaction</title>
+      <link>http://localhost:1313/learn/advanced/custom-interactions/responding-to-an-interaction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/advanced/custom-interactions/responding-to-an-interaction/</guid>
+      <description>&lt;p&gt;While technically not required, responding to an interaction with one of Discord&amp;rsquo;s allotted initial responses is crucial&#xA;if you don&amp;rsquo;t want your users to see an error after interacting, greatly improving user experience. An interaction may be&#xA;responded to only once.&lt;/p&gt;&#xA;&lt;p&gt;You can only respond to an interaction within the custom command triggered by said interaction, with the exception that&#xA;a CC executed with &lt;code&gt;execCC&lt;/code&gt; by the triggered CC will be able to send initial responses to the triggering interaction as&#xA;well.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Basic Automoderator</title>
+      <link>http://localhost:1313/docs/moderation/basic-automoderator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/moderation/basic-automoderator/</guid>
+      <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;Basic Automoderator lets you quickly set up &lt;em&gt;basic&lt;/em&gt; automoderation, without much fuss. For that reason, its&#xA;overall customizability is quite limited. If you would like a more detailed configuration, please use the&#xA;&lt;a href=&#34;http://localhost:1313/docs/moderation/advanced-automoderator/overview/&#34;&gt;Advanced Automoderator&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;You configure violation thresholds and their expiry for predefined rules. These thresholds define when an offending user&#xA;will be muted, kicked, or banned; a warning and a subsequent deletion of the offending message are always issued.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Overview</title>
+      <link>http://localhost:1313/docs/moderation/advanced-automoderator/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/moderation/advanced-automoderator/overview/</guid>
+      <description>&lt;p&gt;A sophisticated automoderator system, allowing for more complex configurations than basic automoderator.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Triggers</title>
+      <link>http://localhost:1313/docs/moderation/advanced-automoderator/triggers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/moderation/advanced-automoderator/triggers/</guid>
+      <description>&lt;p&gt;Triggers define when a rule should be checked. This page will explain the available triggers and their configuration&#xA;options.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Conditions</title>
+      <link>http://localhost:1313/docs/moderation/advanced-automoderator/conditions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/moderation/advanced-automoderator/conditions/</guid>
+      <description>&lt;p&gt;Conditions impose more fine-grained control on Advanced Automoderator rules. This page will cover the different types&#xA;of conditions and how to use them.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Effects</title>
+      <link>http://localhost:1313/docs/moderation/advanced-automoderator/effects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/moderation/advanced-automoderator/effects/</guid>
+      <description>&lt;p&gt;Effects define what happens when a rule is triggered and all conditions are met. This page will cover the different&#xA;kinds of effects available to you in Advanced Automoderator.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Logging</title>
+      <link>http://localhost:1313/docs/moderation/logging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/moderation/logging/</guid>
+      <description>&lt;p&gt;Capture a moment in time with message logging of the last messages in a channel when the log is created, including a&#xA;limited number of deleted messages.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Verification</title>
+      <link>http://localhost:1313/docs/moderation/verification/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/moderation/verification/</guid>
+      <description>&lt;p&gt;Use Google reCAPTCHA v2 to verify your members before permitting them access to your server.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;#h-rh-i-246ff834678b639051f57582f109b0c5-lightbox&#34;&gt;&#xA;&lt;img alt=&#34;Default Verification Page&#34; height=&#34;358&#34; id=&#34;h-rh-i-246ff834678b639051f57582f109b0c5&#34; src=&#34;http://localhost:1313/docs/moderation/page_verification.png&#34; width=&#34;575&#34;&gt;&lt;/a&gt;&#xA;&lt;a href=&#34;javascript:history.back();&#34; class=&#34;lightbox&#34; id=&#34;h-rh-i-246ff834678b639051f57582f109b0c5-lightbox&#34;&gt;&#xA;  &lt;img loading=&#34;lazy&#34; alt=&#34;Default Verification Page&#34; height=&#34;358&#34; id=&#34;h-rh-i-246ff834678b639051f57582f109b0c5&#34; src=&#34;http://localhost:1313/docs/moderation/page_verification.png&#34; width=&#34;575&#34;&gt;&#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;The verification plugin assigns a specified role to new members after they successfully complete Google reCAPTCHA v2&#xA;verification. This allows you to further verify new members as humans rather than bots before granting them access to&#xA;your server.&lt;/p&gt;&#xA;&lt;p&gt;This is accomplished by sending new members a customizable DM (which employs &lt;a href=&#34;http://localhost:1313/docs/reference/templates/&#34;&gt;template scripting&lt;/a&gt;)&#xA;containing a unique link to verify, tied to their User ID. This link takes them to a customizable verification page with&#xA;a CAPTCHA challenge. Once completed, the User ID is assigned the verified role.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>General</title>
+      <link>http://localhost:1313/docs/notifications/general/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/notifications/general/</guid>
+      <description>&lt;p&gt;General notifications such as a welcoming direct message, a message in the server when users join or leave, as well as a&#xA;simple message announcing when a channel&amp;rsquo;s topic has changed.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;#h-rh-i-e09f7413b0e55b892dd0c6d9d6e5a272-lightbox&#34;&gt;&#xA;&lt;img alt=&#34;Overview of general feeds&#34; height=&#34;370&#34; id=&#34;h-rh-i-e09f7413b0e55b892dd0c6d9d6e5a272&#34; src=&#34;http://localhost:1313/docs/notifications/general_overview.png&#34; width=&#34;768&#34;&gt;&lt;/a&gt;&#xA;&lt;a href=&#34;javascript:history.back();&#34; class=&#34;lightbox&#34; id=&#34;h-rh-i-e09f7413b0e55b892dd0c6d9d6e5a272-lightbox&#34;&gt;&#xA;  &lt;img loading=&#34;lazy&#34; alt=&#34;Overview of general feeds&#34; height=&#34;370&#34; id=&#34;h-rh-i-e09f7413b0e55b892dd0c6d9d6e5a272&#34; src=&#34;http://localhost:1313/docs/notifications/general_overview.png&#34; width=&#34;768&#34;&gt;&#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;h3 id=&#34;join-message&#34;&gt;Join Message&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Channel:&lt;/strong&gt; Choose what channel you want the bot to announce the message in.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Message:&lt;/strong&gt; Write the message that you want the bot to say when someone joins.&lt;/p&gt;&#xA;&lt;h3 id=&#34;leave-message&#34;&gt;Leave Message&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Channel:&lt;/strong&gt; Choose what channel you want the bot to announce the message in.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Reddit</title>
+      <link>http://localhost:1313/docs/notifications/reddit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/notifications/reddit/</guid>
+      <description>&lt;p&gt;Get notifications from your favorite subreddits directly in your Discord server.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>YouTube</title>
+      <link>http://localhost:1313/docs/notifications/youtube/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/notifications/youtube/</guid>
+      <description>&lt;p&gt;Get notifications from your favorite YouTubers directly in your Discord server.&lt;/p&gt;&#xA;&lt;div class=&#34;callout callout-note d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3&#34;&gt;&#xD;&#xA;  &lt;svg&#xA;  xmlns=&#34;http://www.w3.org/2000/svg&#34;&#xA;  width=&#34;24&#34;&#xA;  height=&#34;24&#34;&#xA;  viewBox=&#34;0 0 24 24&#34;&#xA;  fill=&#34;none&#34;&#xA;  stroke=&#34;currentColor&#34;&#xA;  stroke-width=&#34;2&#34;&#xA;  stroke-linecap=&#34;round&#34;&#xA;  stroke-linejoin=&#34;round&#34;&#xA; &#xA; class=&#34;outline/info-circle svg-inline callout-icon me-2 mb-3&#34; id=&#34;svg-info-circle&#34; role=&#34;img&#34;&gt;&#xA;  &lt;path stroke=&#34;none&#34; d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;/&gt;&#xA;  &lt;path d=&#34;M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0&#34; /&gt;&#xA;  &lt;path d=&#34;M12 9h.01&#34; /&gt;&#xA;  &lt;path d=&#34;M11 12h1v4h1&#34; /&gt;&#xA;&lt;/svg&gt;&#xD;&#xA;  &lt;div class=&#34;callout-content&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;callout-title&#34;&gt;&#xD;&#xA;        &lt;p&gt;Note: Required Bot Permissions&lt;/p&gt;&#xA;&#xD;&#xA;      &lt;/div&gt;&#xD;&#xA;    &lt;div class=&#34;callout-body&#34;&gt;&#xD;&#xA;      &lt;p&gt;The bot requires at least the &amp;ldquo;Read Messages&amp;rdquo; and &amp;ldquo;Send Messages&amp;rdquo; permissions in the channel you want to post the feed&#xA;in.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Streaming</title>
+      <link>http://localhost:1313/docs/notifications/streaming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/notifications/streaming/</guid>
+      <description>&lt;p&gt;Let everyone know that someone is currently streaming.&lt;/p&gt;&#xA;&lt;h3 id=&#34;streaming-feed&#34;&gt;Streaming Feed&lt;/h3&gt;&#xA;&lt;div class=&#34;callout callout-note d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3&#34;&gt;&#xD;&#xA;  &lt;svg&#xA;  xmlns=&#34;http://www.w3.org/2000/svg&#34;&#xA;  width=&#34;24&#34;&#xA;  height=&#34;24&#34;&#xA;  viewBox=&#34;0 0 24 24&#34;&#xA;  fill=&#34;none&#34;&#xA;  stroke=&#34;currentColor&#34;&#xA;  stroke-width=&#34;2&#34;&#xA;  stroke-linecap=&#34;round&#34;&#xA;  stroke-linejoin=&#34;round&#34;&#xA; &#xA; class=&#34;outline/info-circle svg-inline callout-icon me-2 mb-3&#34; id=&#34;svg-info-circle&#34; role=&#34;img&#34;&gt;&#xA;  &lt;path stroke=&#34;none&#34; d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;/&gt;&#xA;  &lt;path d=&#34;M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0&#34; /&gt;&#xA;  &lt;path d=&#34;M12 9h.01&#34; /&gt;&#xA;  &lt;path d=&#34;M11 12h1v4h1&#34; /&gt;&#xA;&lt;/svg&gt;&#xD;&#xA;  &lt;div class=&#34;callout-content&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;callout-title&#34;&gt;&#xD;&#xA;        &lt;p&gt;Note: Announcements may not Post&lt;/p&gt;&#xA;&#xD;&#xA;      &lt;/div&gt;&#xD;&#xA;    &lt;div class=&#34;callout-body&#34;&gt;&#xD;&#xA;      &lt;p&gt;There are currently some issues with the streaming announcement, and it may not always give the announcement. It will&#xA;however, always assign the streamer role.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Autorole</title>
+      <link>http://localhost:1313/docs/roles/autorole/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/roles/autorole/</guid>
+      <description>&lt;div class=&#34;callout callout-note d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3&#34;&gt;&#xD;&#xA;  &lt;svg&#xA;  xmlns=&#34;http://www.w3.org/2000/svg&#34;&#xA;  width=&#34;24&#34;&#xA;  height=&#34;24&#34;&#xA;  viewBox=&#34;0 0 24 24&#34;&#xA;  fill=&#34;none&#34;&#xA;  stroke=&#34;currentColor&#34;&#xA;  stroke-width=&#34;2&#34;&#xA;  stroke-linecap=&#34;round&#34;&#xA;  stroke-linejoin=&#34;round&#34;&#xA; &#xA; class=&#34;outline/info-circle svg-inline callout-icon me-2 mb-3&#34; id=&#34;svg-info-circle&#34; role=&#34;img&#34;&gt;&#xA;  &lt;path stroke=&#34;none&#34; d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;/&gt;&#xA;  &lt;path d=&#34;M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0&#34; /&gt;&#xA;  &lt;path d=&#34;M12 9h.01&#34; /&gt;&#xA;  &lt;path d=&#34;M11 12h1v4h1&#34; /&gt;&#xA;&lt;/svg&gt;&#xD;&#xA;  &lt;div class=&#34;callout-content&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;callout-title&#34;&gt;&#xD;&#xA;        &lt;p&gt;Note: Required Permissions&lt;/p&gt;&#xA;&#xD;&#xA;      &lt;/div&gt;&#xD;&#xA;    &lt;div class=&#34;callout-body&#34;&gt;&#xD;&#xA;      &lt;p&gt;Make sure that the bot has permission to manage roles &lt;strong&gt;and&lt;/strong&gt; that the role the bot is assigning is below the highest&#xA;role the bot has.&lt;/p&gt;&#xA;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&#xA;&lt;div class=&#34;callout callout-caution d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3&#34;&gt;&#xD;&#xA;  &lt;svg&#xA;  xmlns=&#34;http://www.w3.org/2000/svg&#34;&#xA;  width=&#34;24&#34;&#xA;  height=&#34;24&#34;&#xA;  viewBox=&#34;0 0 24 24&#34;&#xA;  fill=&#34;none&#34;&#xA;  stroke=&#34;currentColor&#34;&#xA;  stroke-width=&#34;2&#34;&#xA;  stroke-linecap=&#34;round&#34;&#xA;  stroke-linejoin=&#34;round&#34;&#xA; &#xA; class=&#34;outline/alert-triangle svg-inline callout-icon me-2 mb-3&#34; id=&#34;svg-alert-triangle&#34; role=&#34;img&#34;&gt;&#xA;  &lt;path stroke=&#34;none&#34; d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;/&gt;&#xA;  &lt;path d=&#34;M12 9v4&#34; /&gt;&#xA;  &lt;path d=&#34;M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0z&#34; /&gt;&#xA;  &lt;path d=&#34;M12 16h.01&#34; /&gt;&#xA;&lt;/svg&gt;&#xD;&#xA;  &lt;div class=&#34;callout-content&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;callout-title&#34;&gt;&#xD;&#xA;        &lt;p&gt;Warning: Discord Verification Levels&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Self Assignable Roles</title>
+      <link>http://localhost:1313/docs/roles/self-assignable-roles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/roles/self-assignable-roles/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bulk Role</title>
+      <link>http://localhost:1313/docs/roles/bulk-role/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/roles/bulk-role/</guid>
+      <description>&lt;div class=&#34;callout callout-caution d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3&#34;&gt;&#xD;&#xA;  &lt;svg&#xA;  xmlns=&#34;http://www.w3.org/2000/svg&#34;&#xA;  width=&#34;24&#34;&#xA;  height=&#34;24&#34;&#xA;  viewBox=&#34;0 0 24 24&#34;&#xA;  fill=&#34;none&#34;&#xA;  stroke=&#34;currentColor&#34;&#xA;  stroke-width=&#34;2&#34;&#xA;  stroke-linecap=&#34;round&#34;&#xA;  stroke-linejoin=&#34;round&#34;&#xA; &#xA; class=&#34;outline/alert-triangle svg-inline callout-icon me-2 mb-3&#34; id=&#34;svg-alert-triangle&#34; role=&#34;img&#34;&gt;&#xA;  &lt;path stroke=&#34;none&#34; d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;/&gt;&#xA;  &lt;path d=&#34;M12 9v4&#34; /&gt;&#xA;  &lt;path d=&#34;M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0z&#34; /&gt;&#xA;  &lt;path d=&#34;M12 16h.01&#34; /&gt;&#xA;&lt;/svg&gt;&#xD;&#xA;  &lt;div class=&#34;callout-content&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;callout-title&#34;&gt;&#xD;&#xA;        &lt;p&gt;Warning: Required Bot Permissions&lt;/p&gt;&#xA;&#xD;&#xA;      &lt;/div&gt;&#xD;&#xA;    &lt;div class=&#34;callout-body&#34;&gt;&#xD;&#xA;      &lt;p&gt;Make sure that the bot has permission to manage roles &lt;strong&gt;and&lt;/strong&gt; that the role the bot is assigning is below the highest&#xA;role the bot has.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tickets</title>
+      <link>http://localhost:1313/docs/tools-and-utilities/tickets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/tools-and-utilities/tickets/</guid>
+      <description>&lt;p&gt;Tickets let your members interact with your server staff in a private and more organized way. The bot will create a&#xA;dedicated channel that can only be seen by the staff and the member who created the ticket, with the option to add more&#xA;users as-needed.&lt;/p&gt;&#xA;&lt;div class=&#34;callout callout-note d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3&#34;&gt;&#xD;&#xA;  &lt;svg&#xA;  xmlns=&#34;http://www.w3.org/2000/svg&#34;&#xA;  width=&#34;24&#34;&#xA;  height=&#34;24&#34;&#xA;  viewBox=&#34;0 0 24 24&#34;&#xA;  fill=&#34;none&#34;&#xA;  stroke=&#34;currentColor&#34;&#xA;  stroke-width=&#34;2&#34;&#xA;  stroke-linecap=&#34;round&#34;&#xA;  stroke-linejoin=&#34;round&#34;&#xA; &#xA; class=&#34;outline/info-circle svg-inline callout-icon me-2 mb-3&#34; id=&#34;svg-info-circle&#34; role=&#34;img&#34;&gt;&#xA;  &lt;path stroke=&#34;none&#34; d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;/&gt;&#xA;  &lt;path d=&#34;M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0&#34; /&gt;&#xA;  &lt;path d=&#34;M12 9h.01&#34; /&gt;&#xA;  &lt;path d=&#34;M11 12h1v4h1&#34; /&gt;&#xA;&lt;/svg&gt;&#xD;&#xA;  &lt;div class=&#34;callout-content&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;callout-title&#34;&gt;&#xD;&#xA;        &lt;p&gt;Note: Required Bot Permissions&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Reputation</title>
+      <link>http://localhost:1313/docs/fun/reputation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/fun/reputation/</guid>
+      <description>&lt;p&gt;The reputation system tracks each user&amp;rsquo;s reputation score, and allows users to add or remove reputation points from&#xA;other users.&lt;/p&gt;&#xA;&lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;#h-rh-i-0a7999f6a5fcb1c9d6ff4e17cf05fb9e-lightbox&#34;&gt;&#xA;&lt;img alt=&#34;Overview of the Reputation System&#34; height=&#34;790&#34; id=&#34;h-rh-i-0a7999f6a5fcb1c9d6ff4e17cf05fb9e&#34; src=&#34;http://localhost:1313/docs/fun/overview_reputation.png&#34; width=&#34;1560&#34;&gt;&lt;/a&gt;&#xA;&lt;a href=&#34;javascript:history.back();&#34; class=&#34;lightbox&#34; id=&#34;h-rh-i-0a7999f6a5fcb1c9d6ff4e17cf05fb9e-lightbox&#34;&gt;&#xA;  &lt;img loading=&#34;lazy&#34; alt=&#34;Overview of the Reputation System&#34; height=&#34;790&#34; id=&#34;h-rh-i-0a7999f6a5fcb1c9d6ff4e17cf05fb9e&#34; src=&#34;http://localhost:1313/docs/fun/overview_reputation.png&#34; width=&#34;1560&#34;&gt;&#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;Reputation is not enabled by default. To enable it, please go to the &lt;a href=&#34;https://obman.com/manage&#34; rel=&#34;external&#34;&gt;control panel&lt;/a&gt; and&#xA;check &lt;em&gt;Reputation enabled.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;enable-giving-rep-when-someone-says-thanks-user&#34;&gt;Enable giving rep when someone says &amp;ldquo;thanks @user&amp;rdquo;?&lt;/h3&gt;&#xA;&lt;p&gt;This is an alternative way of &lt;code&gt;-giverep&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;h3 id=&#34;name-for-reputation-points&#34;&gt;Name for reputation points&lt;/h3&gt;&#xA;&lt;p&gt;This will be displayed in the &lt;code&gt;-rep&lt;/code&gt; command. By default, it is &lt;em&gt;Rep&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Soundboard</title>
+      <link>http://localhost:1313/docs/fun/soundboard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/fun/soundboard/</guid>
+      <description>&lt;p&gt;The soundboard system allows the bot to join a voice channel, and play sounds triggered by soundboard commands.&lt;/p&gt;&#xA;&lt;h2 id=&#34;uploading-new-sounds&#34;&gt;Uploading New Sounds&lt;/h2&gt;&#xA;&lt;p&gt;The settings listed below only apply to that specific sound, and not the entire soundboard. Use a &lt;a href=&#34;http://localhost:1313/docs/core/command-settings/&#34;&gt;command&#xA;override&lt;/a&gt; to restrict access to the soundboard system as a whole.&lt;/p&gt;&#xA;&lt;h3 id=&#34;name&#34;&gt;Name&lt;/h3&gt;&#xA;&lt;p&gt;Give the sound a name. This name will be shown in the list to play later on. Avoid giving duplicated names for easier&#xA;reference.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Syntax and Data</title>
+      <link>http://localhost:1313/docs/reference/templates/syntax-and-data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/reference/templates/syntax-and-data/</guid>
+      <description>&lt;p&gt;Library of base data accessible within custom scripting.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;Go is all about type&amp;hellip; Type is life.&amp;rdquo; // William Kennedy&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;preface&#34;&gt;Preface&lt;/h2&gt;&#xA;&lt;p&gt;All available data that can be used in OBMAN.BOT&amp;rsquo;s templating &amp;ldquo;engine&amp;rdquo; which is slightly modified version of Go&amp;rsquo;s&#xA;stdlib text/template package; more in depth and info about actions, pipelines and global functions like &lt;code&gt;printf, index, len,&lt;/code&gt;etc &amp;gt; &lt;a href=&#34;https://golang.org/pkg/text/template/&#34; rel=&#34;external&#34;&gt;https://golang.org/pkg/text/template/&lt;/a&gt; . This section is meant to be&#xA;a concise and to the point reference document for all available templates/functions. &lt;strong&gt;Functions&lt;/strong&gt; are covered&#xA;in &lt;a href=&#34;http://localhost:1313/docs/reference/templates/functions/&#34;&gt;Function documentation&lt;/a&gt;. For detailed explanations and a syntax guide, please&#xA;refer to the &lt;a href=&#34;http://localhost:1313/learn/welcome/introduction/&#34;&gt;learning resource&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Functions</title>
+      <link>http://localhost:1313/docs/reference/templates/functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/reference/templates/functions/</guid>
+      <description>&lt;p&gt;Functions are used to take action within template scripts. Some functions accept arguments, and some functions return&#xA;values you can send in your response or use as arguments for other functions.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;channel&#34;&gt;Channel&lt;/h2&gt;&#xA;&lt;p&gt;These functions relate to channels and threads.&lt;/p&gt;&#xA;&lt;div class=&#34;callout callout-tip d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3&#34;&gt;&#xD;&#xA;  &lt;svg&#xA;  xmlns=&#34;http://www.w3.org/2000/svg&#34;&#xA;  width=&#34;24&#34;&#xA;  height=&#34;24&#34;&#xA;  viewBox=&#34;0 0 24 24&#34;&#xA;  fill=&#34;none&#34;&#xA;  stroke=&#34;currentColor&#34;&#xA;  stroke-width=&#34;2&#34;&#xA;  stroke-linecap=&#34;round&#34;&#xA;  stroke-linejoin=&#34;round&#34;&#xA; &#xA; class=&#34;outline/rocket svg-inline callout-icon me-2 mb-3&#34; id=&#34;svg-rocket&#34; role=&#34;img&#34;&gt;&#xA;  &lt;path stroke=&#34;none&#34; d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;/&gt;&#xA;  &lt;path d=&#34;M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3&#34; /&gt;&#xA;  &lt;path d=&#34;M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3&#34; /&gt;&#xA;  &lt;path d=&#34;M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0&#34; /&gt;&#xA;&lt;/svg&gt;&#xD;&#xA;  &lt;div class=&#34;callout-content&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;callout-title&#34;&gt;&#xD;&#xA;        &lt;p&gt;Tip: Current Channel or Thread&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Components V2</title>
+      <link>http://localhost:1313/docs/reference/components-v2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/reference/components-v2/</guid>
+      <description>&lt;h2 id=&#34;componentbuilder&#34;&gt;componentBuilder&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;componentBuilder&lt;/code&gt; is a helper for building Discord’s new Components V2 (sections, buttons, menus, galleries).&#xA;It provides a simple template-based way to assemble complex message layouts without needing to write raw JSON.&#xA;You describe components with key–value pairs and &lt;code&gt;componentBuilder&lt;/code&gt; handles conversion and validation for you.&lt;/p&gt;&#xA;&lt;p&gt;This makes it easier to:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Create rich messages with text, images, and files.&lt;/li&gt;&#xA;&lt;li&gt;Add interactive components like buttons and select menus.&lt;/li&gt;&#xA;&lt;li&gt;Group and style components with containers.&lt;/li&gt;&#xA;&lt;li&gt;Control delivery with meta options like ephemeral replies.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;text&#34;&gt;Text&lt;/h3&gt;&#xA;&lt;p&gt;Displays plain text content, supporting markdown. Can be a string or a slice of strings.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Custom Commands Examples</title>
+      <link>http://localhost:1313/docs/reference/custom-commands-examples/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/reference/custom-commands-examples/</guid>
+      <description>&lt;p&gt;Prebuilt custom commands for use as a learning reference.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Custom Commands Limits</title>
+      <link>http://localhost:1313/docs/reference/custom-commands-limits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/reference/custom-commands-limits/</guid>
+      <description>&lt;p&gt;Various limits in OBMAN.BOT custom commands (CC) for smooth functioning of the bot and misuse prevention.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overall&#34;&gt;Overall&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Max amount of CCs:&lt;/strong&gt; 100/250 (free/prem)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Max CCs that can be triggered by a single action:&lt;/strong&gt; 3/5 (free/prem)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Character limit:&lt;/strong&gt; 10k (5k for join/leave msg, warn dm, etc&amp;hellip;)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Limit writer:&lt;/strong&gt; 25kB&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Max operations:&lt;/strong&gt; 1M/2.5M (free/prem)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Response Character Limit:&lt;/strong&gt; 2k&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Generic API based Action call limit:&lt;/strong&gt; 100 per CC&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;State Lock based Actions:&lt;/strong&gt; 500 per CC (mentionRoleName/ID ; hasRoleName ; targetHasRoleName/ID)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;calling-a-custom-command&#34;&gt;Calling a Custom Command&lt;/h2&gt;&#xA;&lt;h3 id=&#34;execcc&#34;&gt;execCC&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Calls per CC:&lt;/strong&gt; 1/10 (free/prem) -&amp;gt; counter key &amp;ldquo;runcc&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;StackDepth limit:&lt;/strong&gt; 2 (executing with 0 delay)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Delay limit:&lt;/strong&gt; int64 limit (292 years)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Channel limit:&lt;/strong&gt; 10 executions per channel, per minute&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;scheduleuniquecc&#34;&gt;scheduleUniqueCC&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Calls per CC:&lt;/strong&gt; 1/10 (free/prem) -&amp;gt; counter key &amp;ldquo;runcc&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Delay limit:&lt;/strong&gt; int64 limit (292 years)&lt;/li&gt;&#xA;&lt;li&gt;There can only be 1 per server per key&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;cancelscheduleduniquecc&#34;&gt;cancelScheduledUniqueCC&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Calls per CC:&lt;/strong&gt; 10/10 (free/prem) -&amp;gt; counter key &amp;ldquo;cancelcc&amp;rdquo;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;context&#34;&gt;Context&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Max file size (complexMessage):&lt;/strong&gt; 100kB&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;joinStr max string length:&lt;/strong&gt; 1000kB&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;sendDM:&lt;/strong&gt; 1 call per CC -&amp;gt; counter key &amp;ldquo;send_dm&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;sendTemplate/sendTemplateDM:&lt;/strong&gt; 3 calls per CC -&amp;gt; counter key &amp;ldquo;exec_child&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;addReactions:&lt;/strong&gt; 20 calls per CC -&amp;gt; counter key &amp;ldquo;add_reaction_trigger&amp;rdquo;. Each reaction added counts towards the&#xA;limit.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;addResponseReactions:&lt;/strong&gt; 20 calls per CC -&amp;gt; counter key &amp;ldquo;add_reaction_response&amp;rdquo;. Each reaction added counts towards&#xA;the limit.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;addMessageReactions:&lt;/strong&gt; 20 calls per CC -&amp;gt; counter key &amp;ldquo;add_reaction_message&amp;rdquo;. Each reaction added counts towards&#xA;the limit.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;deleteMessageReaction:&lt;/strong&gt; 10 calls per CC -&amp;gt; counter key &amp;ldquo;del_reaction_message&amp;rdquo;. Each reaction removed counts towards&#xA;the limit.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;editChannelName/Topic:&lt;/strong&gt; 10 calls per CC -&amp;gt; counter key &amp;ldquo;edit_channel&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;regex cache limit:&lt;/strong&gt; 10 (this means you cant have more than 10 different regexes on a CC)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;onlineCount:&lt;/strong&gt; 1 call per cc -&amp;gt; counter key &amp;ldquo;online_users&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;onlineCountBots:&lt;/strong&gt; 1 call per cc -&amp;gt; counter key &amp;ldquo;online_bots&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;editNickname:&lt;/strong&gt; 2 calls per cc -&amp;gt; counter key &amp;ldquo;edit_nick&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Append/AppendSlice limit:&lt;/strong&gt; 10k size limit of resulting slice&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;exec/execAdmin:&lt;/strong&gt; 5 calls per cc -&amp;gt; no key&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;deleteResponse/deleteMessage/deleteTrigger max delay:&lt;/strong&gt; 86400s&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;take/removeRoleID/Name max delay:&lt;/strong&gt; int64 limit (292 years)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;sleep:&lt;/strong&gt; 60 seconds&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;database&#34;&gt;DATABASE&lt;/h2&gt;&#xA;&lt;h3 id=&#34;overall-limits&#34;&gt;Overall Limits&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Max amount of DBs:&lt;/strong&gt; Membercount *50*1/10(free/prem)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Key length limit:&lt;/strong&gt; 256&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Expire limit:&lt;/strong&gt; int64 limit (292 years)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Value size limit:&lt;/strong&gt; 100kB&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;database-interactions&#34;&gt;Database Interactions&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Calls per CC:&lt;/strong&gt; 10/50 (free/prem) -&amp;gt; counter key &amp;ldquo;db_interactions&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;Valid for all database commands -&amp;gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;dbDel/dbDelByID&lt;/li&gt;&#xA;&lt;li&gt;dbGet&lt;/li&gt;&#xA;&lt;li&gt;dbIncr&lt;/li&gt;&#xA;&lt;li&gt;dbSet/dbSetExpire&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;database-multiple-entry-interactions&#34;&gt;Database Multiple Entry Interactions&lt;/h3&gt;&#xA;&lt;p&gt;Multiple entries all count to general &amp;ldquo;db_interactions&amp;rdquo; limit as well.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Custom Embeds</title>
+      <link>http://localhost:1313/docs/reference/custom-embeds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/reference/custom-embeds/</guid>
+      <description>&lt;p&gt;A guide to creating custom embeds in various contexts across OBMAN.BOT.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Custom Interactions</title>
+      <link>http://localhost:1313/docs/reference/custom-interactions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/reference/custom-interactions/</guid>
+      <description>&lt;div class=&#34;callout callout-note d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3&#34;&gt;&#xD;&#xA;  &lt;svg&#xA;  xmlns=&#34;http://www.w3.org/2000/svg&#34;&#xA;  width=&#34;24&#34;&#xA;  height=&#34;24&#34;&#xA;  viewBox=&#34;0 0 24 24&#34;&#xA;  fill=&#34;none&#34;&#xA;  stroke=&#34;currentColor&#34;&#xA;  stroke-width=&#34;2&#34;&#xA;  stroke-linecap=&#34;round&#34;&#xA;  stroke-linejoin=&#34;round&#34;&#xA; &#xA; class=&#34;outline/info-circle svg-inline callout-icon me-2 mb-3&#34; id=&#34;svg-info-circle&#34; role=&#34;img&#34;&gt;&#xA;  &lt;path stroke=&#34;none&#34; d=&#34;M0 0h24v24H0z&#34; fill=&#34;none&#34;/&gt;&#xA;  &lt;path d=&#34;M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0&#34; /&gt;&#xA;  &lt;path d=&#34;M12 9h.01&#34; /&gt;&#xA;  &lt;path d=&#34;M11 12h1v4h1&#34; /&gt;&#xA;&lt;/svg&gt;&#xD;&#xA;  &lt;div class=&#34;callout-content&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;callout-title&#34;&gt;&#xD;&#xA;        &lt;p&gt;Note&lt;/p&gt;&#xA;&#xD;&#xA;      &lt;/div&gt;&#xD;&#xA;    &lt;div class=&#34;callout-body&#34;&gt;&#xD;&#xA;      &lt;p&gt;This page is just an overview about the most important core concepts of custom interactions. We have included some code&#xA;samples for quick reference, but this is by no means a complete guide from the grounds up. For an in-depth guide,&#xA;please refer to our &lt;a href=&#34;http://localhost:1313/learn/advanced/custom-interactions/introduction/&#34;&gt;learning resources&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to Get IDs</title>
+      <link>http://localhost:1313/docs/reference/how-to-get-ids/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/reference/how-to-get-ids/</guid>
+      <description>&lt;p&gt;Details on obtaining IDs for users, channels, roles, etc. for use within OBMAN.BOT.&lt;/p&gt;&#xA;&lt;h3 id=&#34;user-ids&#34;&gt;User IDs&lt;/h3&gt;&#xA;&lt;p&gt;Can be found by mentioning the user then adding a \ such as &lt;code&gt;\@OBMAN.BOT.xyz#8760&lt;/code&gt;. Alternatively if you have&#xA;developer mode on, you can right-click and select Copy ID. &lt;a href=&#34;https://support.discordapp.com/hc/en-us/articles/206346498&#34; rel=&#34;external&#34;&gt;How to enable developer mode in Discord&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;channel-ids&#34;&gt;Channel IDs&lt;/h3&gt;&#xA;&lt;p&gt;Can be found by mentioning the channel then adding a \ such as &lt;code&gt;\#announcements&lt;/code&gt;. Alternatively if you&#xA;have developer mode on, you can right-click on the channel and select Copy ID.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Using RegEx</title>
+      <link>http://localhost:1313/docs/reference/using-regex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/reference/using-regex/</guid>
+      <description>&lt;p&gt;A quick overview of golang flavored RegEx for your convenience.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Discord</title>
+      <link>http://localhost:1313/discord/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/discord/</guid>
+      <description>&lt;!--&#xA;This file intentionally left blank.&#xA;We use YAML front matter here instead of the usual TOML just so markdownlint can properly lint for blank URLs in other&#xA;files without firing on this one.&#xA;--&gt;</description>
+    </item>
+  </channel>
+</rss>

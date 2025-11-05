@@ -1,0 +1,1072 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+<script 
+  src="/js/color-mode.f14b3e296de1d0b69e75af684b62a4a912a2cadab04e36123407cd8388204f1d.js"
+  integrity="sha256-8Us&#43;KW3h0Laeda9oS2KkqRKiytqwTjYSNAfNg4ggTx0=">
+</script>
+
+
+<link rel="stylesheet" href="/main.36ca4900ac79c8b8df541138c0226a38e9bd2fbbd3cde3f0c397a7de57e6e3205e7bd138bf1f9da340a9cb91990a0593d180b720a58bcc44ef978ed4a4791dbe.css" integrity="sha512-NspJAKx5yLjfVBE4wCJqOOm9L7vTzePww5en3lfm4yBee9E4vx&#43;do0Cpy5GZCgWT0YC3IKWLzETvl47UpHkdvg==" crossorigin="anonymous">
+
+<noscript><style>img.lazyload { display: none; }</style></noscript><base href="http://localhost:1313/docs/moderation/logging/">
+
+  <link rel="canonical" href="http://localhost:1313/docs/moderation/logging/">
+
+
+<title>Logging  |  OBMAN.BOT Help Center</title>
+<meta name="description" content="On-demand message logging.">
+
+    
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    
+    
+      <link
+        rel="apple-touch-icon"
+        href="/apple-touch-icon.png"
+        sizes="180x180"
+        type="image/png"
+      >
+      <link
+        rel="icon"
+        href="/favicon-192x192.png"
+        sizes="192x192"
+        type="image/png"
+      >
+      <link
+        rel="icon"
+        href="/favicon-512x512.png"
+        sizes="512x512"
+        type="image/png"
+      >
+<link rel="manifest" href="/manifest.webmanifest">
+
+<meta property="og:url" content="http://localhost:1313/docs/moderation/logging/">
+  <meta property="og:site_name" content="OBMAN.BOT Help Center">
+  <meta property="og:title" content="Logging">
+  <meta property="og:description" content="On-demand message logging.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Logging">
+  <meta name="twitter:description" content="On-demand message logging.">
+
+    
+    
+    <script type="application/ld+json">
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/",
+       "name": "Obman. Bot Help Center",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/docs/",
+       "name": "Documentation",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/docs/moderation/",
+       "name": "Moderation",
+       "position": 3
+     },
+     {
+       "@type": "ListItem",
+       "name": "Logging",
+       "position": 4
+     }
+   ]
+ }
+</script>
+
+
+
+
+
+
+<link rel="preconnect" href="https://ER865HD7LN-dsn.algolia.net" crossorigin />
+
+</head>
+
+  
+  <body class="single section docs" data-bs-spy="scroll" data-bs-target="#toc" data-bs-root-margin="0px 0px -60%" data-bs-smooth-scroll="true" tabindex="0">
+    <div class="sticky-top">
+<header class="navbar navbar-expand-lg">
+  <div class="container-lg">
+  
+    <a class="navbar-brand me-auto me-lg-3" href="/">OBMAN.BOT Help Center</a>
+
+    
+    
+    
+    <div id="docsearch" class="d-none" tabindex="-1" aria-disabled="true"></div>
+    <button type="button" id="searchToggleMobile" class="btn btn-link nav-link mx-2 d-lg-none" aria-label="Search website">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <circle cx="10" cy="10" r="7"></circle>
+        <line x1="21" y1="21" x2="15" y2="15"></line>
+      </svg>
+    </button>
+    
+    <button class="btn btn-link d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavSection" aria-controls="offcanvasNavSection" aria-label="Open section navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+        <path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+        <path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+      </svg>
+    </button>
+    <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasNavSection" aria-labelledby="offcanvasNavSectionLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavSectionLabel">Docs</h5>
+        <button type="button" class="btn btn-link nav-link p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <aside class="doks-sidebar mt-n3">
+          <nav id="doks-docs-nav" aria-label="Tertiary navigation">
+            
+  
+    
+<nav class="section-nav docs-links">
+  <ul class="list-unstyled">
+
+  <li>
+    <details open>
+      <summary>Welcome</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/welcome/introduction/">Introduction</a>
+  </li>
+
+  <li>
+      <a href="/docs/welcome/getting-started/">Getting Started</a>
+  </li>
+
+  <li>
+      <a href="/docs/welcome/premium/">Premium</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Core</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/core/control-panel-access/">Control Panel Access</a>
+  </li>
+
+  <li>
+      <a href="/docs/core/control-panel-logs/">Control Panel Logs</a>
+  </li>
+
+  <li>
+      <a href="/docs/core/command-settings/">Command Settings</a>
+  </li>
+
+  <li>
+      <a href="/docs/core/all-commands/">All Commands</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Custom Commands</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/custom-commands/commands/">Commands</a>
+  </li>
+
+  <li>
+      <a href="/docs/custom-commands/database/">Database</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open open>
+      <summary>Moderation</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/moderation/moderation-tools/">Moderation Tools</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/basic-automoderator/">Basic Automoderator</a>
+  </li>
+
+  <li>
+    <details>
+      <summary>Advanced Automoderator</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/overview/">Overview</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/triggers/">Triggers</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/conditions/">Conditions</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/effects/">Effects</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li class="active" >
+      <a aria-current="page" href="/docs/moderation/logging/">Logging</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/verification/">Verification</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Notifications and Feeds</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/notifications/general/">General</a>
+  </li>
+
+  <li>
+      <a href="/docs/notifications/reddit/">Reddit</a>
+  </li>
+
+  <li>
+      <a href="/docs/notifications/youtube/">YouTube</a>
+  </li>
+
+  <li>
+      <a href="/docs/notifications/streaming/">Streaming</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Roles</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/roles/autorole/">Autorole</a>
+  </li>
+
+  <li>
+      <a href="/docs/roles/self-assignable-roles/">Self Assignable Roles</a>
+  </li>
+
+  <li>
+      <a href="/docs/roles/bulk-role/">Bulk Role</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Tools and Utilities</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/tools-and-utilities/tickets/">Tickets</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Fun</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/fun/reputation/">Reputation</a>
+  </li>
+
+  <li>
+      <a href="/docs/fun/soundboard/">Soundboard</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Reference</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+    <details>
+      <summary>Templates</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/reference/templates/syntax-and-data/">Syntax and Data</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/templates/functions/">Functions</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+      <a href="/docs/reference/components-v2/">Components V2</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-commands-examples/">Custom Commands Examples</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-commands-limits/">Custom Commands Limits</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-embeds/">Custom Embeds</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-interactions/">Custom Interactions</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/how-to-get-ids/">How to Get IDs</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/using-regex/">Using RegEx</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+  </ul>
+</nav>
+
+  
+
+          </nav>
+        </aside>
+      </div>
+    </div>
+    
+    <button class="btn btn-link nav-link mx-2 order-3 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavMain" aria-controls="offcanvasNavMain" aria-label="Open main navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <line x1="4" y1="8" x2="20" y2="8"></line>
+        <line x1="4" y1="16" x2="20" y2="16"></line>
+      </svg>
+    </button>
+
+    
+    <div class="offcanvas offcanvas-end h-auto" tabindex="-1" id="offcanvasNavMain" aria-labelledby="offcanvasNavMainLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavMainLabel">OBMAN.BOT Help Center</h5>
+        <button type="button" class="btn btn-link nav-link p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+         </svg>
+        </button>
+      </div>
+      
+      <div class="offcanvas-body d-flex flex-column flex-lg-row justify-content-between">
+        <ul class="navbar-nav flex-grow-1"><li class="nav-item">
+                <a class="nav-link" href="http://localhost:1313/docs/welcome/introduction/">Documentation</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost:1313/learn/welcome/introduction/">Learning Resources</a>
+              </li>
+            </ul>
+
+        
+        
+        
+        <button type="button" id="searchToggleDesktop" class="btn btn-link nav-link mx-2 d-none d-lg-block" aria-label="Search website">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <circle cx="10" cy="10" r="7"></circle>
+            <line x1="21" y1="21" x2="15" y2="15"></line>
+          </svg>
+        </button>
+        
+        
+        
+        <button id="buttonColorMode" class="btn btn-link mx-auto nav-link p-0 ms-lg-2 me-lg-1" type="button" aria-label="Toggle theme">
+          <svg data-bs-theme-value="dark" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
+          </svg>
+          <svg data-bs-theme-value="light" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0m-5 0h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
+          </svg>
+        </button>
+        
+        <ul id="socialMenu" class="nav mx-auto flex-row order-lg-4">
+          <li class="nav-item">
+              <a class="nav-link social-link" href="https://discord.gg/4udtcA5"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-discord" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M8 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path><path d="M14 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path><path d="M8.5 17c0 1 -1.356 3 -1.832 3c-1.429 0 -2.698 -1.667 -3.333 -3c-.635 -1.667 -.476 -5.833 1.428 -11.5c1.388 -1.015 2.782 -1.34 4.237 -1.5l.975 1.923a11.913 11.913 0 0 1 4.053 0l.972 -1.923c1.5 .16 3.043 .485 4.5 1.5c2 5.667 2.167 9.833 1.5 11.5c-.667 1.333 -2 3 -3.5 3c-.5 0 -2 -2 -2 -3"></path><path d="M7 16.5c3.5 1 6.5 1 10 0"></path></svg><small class="ms-2 visually-hidden">Discord</small></a>
+            </li>
+          <li class="nav-item">
+              <a class="nav-link social-link" href="https://github.com/ArtObman/ArtObman"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg><small class="ms-2 visually-hidden">GitHub</small></a>
+            </li>
+          </ul>
+        
+        <button id="selfHosting" class="btn btn-link mx-auto nav-link p-0 ms-lg-2 me-lg-1" type="button" aria-label="Toggle self-hosting view">
+          <svg data-selfhost-value="yes" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-server-off" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 12h-6a3 3 0 0 1 -3 -3v-2c0 -1.083 .574 -2.033 1.435 -2.56m3.565 -.44h10a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-2" />
+            <path d="M16 12h2a3 3 0 0 1 3 3v2m-1.448 2.568a2.986 2.986 0 0 1 -1.552 .432h-12a3 3 0 0 1 -3 -3v-2a3 3 0 0 1 3 -3h6" />
+            <path d="M7 8v.01" />
+            <path d="M7 16v.01" />
+            <path d="M3 3l18 18" />
+          </svg>
+          <svg data-selfhost-value="no" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-server" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 4m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+            <path d="M3 12m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+            <path d="M7 8l0 .01" />
+            <path d="M7 16l0 .01" />
+          </svg>
+        </button>
+
+        
+        <div class="gtranslate-container order-lg-5 d-flex align-items-center ms-lg-2 mt-2 mt-lg-0">
+          <div class="gtranslate_wrapper"></div>
+        </div>
+      </div>
+    </div>
+
+        
+        </div>
+</header>
+</div>
+
+<script>
+  window.gtranslateSettings = {
+    "default_language": "en",
+    "native_language_names": true,
+    "detect_browser_language": true,
+    "wrapper_selector": ".gtranslate_wrapper",
+    "flag_size": 24
+  };
+</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/popup.js" defer></script>
+
+    <div class="wrap container-lg" role="document">
+      <div class="content">
+      
+        
+	<div class="row flex-xl-nowrap">
+		<div class="col-lg-5 col-xl-4 docs-sidebar d-none d-lg-block">
+			
+  
+    
+<nav class="section-nav docs-links">
+  <ul class="list-unstyled">
+
+  <li>
+    <details open>
+      <summary>Welcome</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/welcome/introduction/">Introduction</a>
+  </li>
+
+  <li>
+      <a href="/docs/welcome/getting-started/">Getting Started</a>
+  </li>
+
+  <li>
+      <a href="/docs/welcome/premium/">Premium</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Core</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/core/control-panel-access/">Control Panel Access</a>
+  </li>
+
+  <li>
+      <a href="/docs/core/control-panel-logs/">Control Panel Logs</a>
+  </li>
+
+  <li>
+      <a href="/docs/core/command-settings/">Command Settings</a>
+  </li>
+
+  <li>
+      <a href="/docs/core/all-commands/">All Commands</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Custom Commands</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/custom-commands/commands/">Commands</a>
+  </li>
+
+  <li>
+      <a href="/docs/custom-commands/database/">Database</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open open>
+      <summary>Moderation</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/moderation/moderation-tools/">Moderation Tools</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/basic-automoderator/">Basic Automoderator</a>
+  </li>
+
+  <li>
+    <details>
+      <summary>Advanced Automoderator</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/overview/">Overview</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/triggers/">Triggers</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/conditions/">Conditions</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/advanced-automoderator/effects/">Effects</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li class="active" >
+      <a aria-current="page" href="/docs/moderation/logging/">Logging</a>
+  </li>
+
+  <li>
+      <a href="/docs/moderation/verification/">Verification</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Notifications and Feeds</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/notifications/general/">General</a>
+  </li>
+
+  <li>
+      <a href="/docs/notifications/reddit/">Reddit</a>
+  </li>
+
+  <li>
+      <a href="/docs/notifications/youtube/">YouTube</a>
+  </li>
+
+  <li>
+      <a href="/docs/notifications/streaming/">Streaming</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Roles</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/roles/autorole/">Autorole</a>
+  </li>
+
+  <li>
+      <a href="/docs/roles/self-assignable-roles/">Self Assignable Roles</a>
+  </li>
+
+  <li>
+      <a href="/docs/roles/bulk-role/">Bulk Role</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Tools and Utilities</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/tools-and-utilities/tickets/">Tickets</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>Fun</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/fun/reputation/">Reputation</a>
+  </li>
+
+  <li>
+      <a href="/docs/fun/soundboard/">Soundboard</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Reference</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+    <details>
+      <summary>Templates</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/reference/templates/syntax-and-data/">Syntax and Data</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/templates/functions/">Functions</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+      <a href="/docs/reference/components-v2/">Components V2</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-commands-examples/">Custom Commands Examples</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-commands-limits/">Custom Commands Limits</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-embeds/">Custom Embeds</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/custom-interactions/">Custom Interactions</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/how-to-get-ids/">How to Get IDs</a>
+  </li>
+
+  <li>
+      <a href="/docs/reference/using-regex/">Using RegEx</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+  </ul>
+</nav>
+
+  
+
+		</div>
+		
+		<nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation">
+			<div class="page-links">
+  <h3>On this page</h3>
+    <nav id="toc">
+  <ul>
+    <li><a href="#creating-logs">Creating Logs</a>
+      <ul>
+        <li><a href="#logs-command">Logs Command</a></li>
+        <li><a href="#moderation-actions">Moderation Actions</a></li>
+      </ul>
+    </li>
+    <li><a href="#viewing-logs">Viewing Logs</a></li>
+    <li><a href="#access-control">Access Control</a>
+      <ul>
+        <li><a href="#members-can-view-message-logs">Members can view message logs</a></li>
+        <li><a href="#everyone-can-view-message-logs">Everyone can view message logs</a></li>
+      </ul>
+    </li>
+    <li><a href="#deleted-messages">Deleted Messages</a></li>
+    <li><a href="#disallowed-channels">Disallowed Channels</a></li>
+    <li><a href="#deleting-logs">Deleting Logs</a></li>
+  </ul>
+</nav>
+</div>
+
+		</nav>
+		<main class="docs-content col-lg-11 col-xl-9 mx-xl-auto">
+		
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="/">Home</a></li>
+<li class="breadcrumb-item"><a href="/docs/">Docs</a></li>
+<li class="breadcrumb-item"><a href="/docs/moderation/">Moderation</a></li>
+<li class="breadcrumb-item active" aria-current="page">Logging</li>
+					</ol>
+				</nav>
+			
+			<h1>Logging</h1>
+			
+			<nav class="toc-mobile d-xl-none" aria-label="Quaternary navigation">
+				<details>
+    <summary>On this page</summary>
+    <div class="page-links">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#creating-logs">Creating Logs</a>
+      <ul>
+        <li><a href="#logs-command">Logs Command</a></li>
+        <li><a href="#moderation-actions">Moderation Actions</a></li>
+      </ul>
+    </li>
+    <li><a href="#viewing-logs">Viewing Logs</a></li>
+    <li><a href="#access-control">Access Control</a>
+      <ul>
+        <li><a href="#members-can-view-message-logs">Members can view message logs</a></li>
+        <li><a href="#everyone-can-view-message-logs">Everyone can view message logs</a></li>
+      </ul>
+    </li>
+    <li><a href="#deleted-messages">Deleted Messages</a></li>
+    <li><a href="#disallowed-channels">Disallowed Channels</a></li>
+    <li><a href="#deleting-logs">Deleting Logs</a></li>
+  </ul>
+</nav>
+    </div>
+  </details>
+
+			</nav>
+			<p>Capture a moment in time with message logging of the last messages in a channel when the log is created, including a
+limited number of deleted messages.</p>
+<div class="callout callout-note d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/info-circle svg-inline callout-icon me-2 mb-3" id="svg-info-circle" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+  <path d="M12 9h.01" />
+  <path d="M11 12h1v4h1" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Note: Not a Logging Bot</p>
+
+      </div>
+    <div class="callout-body">
+      <p>OBMAN.BOT IS NOT A LOGGING BOT.</p>
+
+    </div>
+  </div>
+</div>
+
+<p><a href="#h-rh-i-5f1aafa6fc49038858dc6b4f9e04f458-lightbox">
+<img alt="A message log from the OBMAN.BOT support server" height="663" id="h-rh-i-5f1aafa6fc49038858dc6b4f9e04f458" src="/docs/moderation/message_log_example.png" width="1018"></a>
+<a href="javascript:history.back();" class="lightbox" id="h-rh-i-5f1aafa6fc49038858dc6b4f9e04f458-lightbox">
+  <img loading="lazy" alt="A message log from the OBMAN.BOT support server" height="663" id="h-rh-i-5f1aafa6fc49038858dc6b4f9e04f458" src="/docs/moderation/message_log_example.png" width="1018">
+</a>
+</p>
+<p>Message logs capture X amount of messages from a channel, including any deleted messages cached by OBMAN.BOT (the last
+1 hour of deleted messages, or last 12 hours with <a href="/docs/welcome/premium/">premium</a>, are recorded by OBMAN.BOT).</p>
+<p>The log is accessible on OBMAN.BOT&rsquo;s website for later viewing. It saves message timestamps, message author&rsquo;s Username and
+User ID, and the message itself. If a message contains an attachment, the attachment URL is logged. If a message
+contains an embed, it is serialized and saved in JSON format.</p>
+<div class="callout callout-danger d-flex flex-row mt-4 mb-4 pt-4 pe-4 pb-2 ps-3">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+ 
+ class="outline/alert-octagon svg-inline callout-icon me-2 mb-3" id="svg-alert-octagon" role="img">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+  <path d="M12 8v4" />
+  <path d="M12 16h.01" />
+</svg>
+  <div class="callout-content">
+    <div class="callout-title">
+        <p>Danger: Maximum Log Retention</p>
+
+      </div>
+    <div class="callout-body">
+      <p>Message logs on the official OBMAN.BOT instance will be automatically deleted after 30 days of their creation.</p>
+<p>If you&rsquo;re self-hosting, see <a href="/docs/moderation/logging/#message-log-purge">Message Log Purge</a> for more information.</p>
+
+    </div>
+  </div>
+</div>
+
+<h2 id="creating-logs">Creating Logs<a href="#creating-logs" class="anchor" aria-hidden="true">#</a> </h2>
+<h3 id="logs-command">Logs Command<a href="#logs-command" class="anchor" aria-hidden="true">#</a> </h3>
+<p>By default, any member can run the logs command for any channel in which they have permission to Read Messages, Send
+Messages, and Read Message History. Members will be permitted to create logs regardless of their permission to view
+them.</p>
+<p><a href="/docs/core/all-commands/#logs">Logs Command Syntax</a></p>
+<h3 id="moderation-actions">Moderation Actions<a href="#moderation-actions" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Select moderation actions will generate message logs when used, and other actions allow you to enable logging if
+desired. A link for these logs is included in the mod log if mod log is enabled.</p>
+<h4 id="actions-generating-logs">Actions Generating Logs<a href="#actions-generating-logs" class="anchor" aria-hidden="true">#</a> </h4>
+<p>These actions immediately create a log of the last 100 messages in the channel.</p>
+<ul>
+<li>Report</li>
+<li>Timeout</li>
+<li>Mute</li>
+<li>Kick</li>
+<li>Ban</li>
+</ul>
+<h4 id="actions-log-generation-optional">Actions Log Generation Optional<a href="#actions-log-generation-optional" class="anchor" aria-hidden="true">#</a> </h4>
+<p>These actions require logging to be enabled on their control panel.</p>
+<ul>
+<li>Warn</li>
+</ul>
+<h2 id="viewing-logs">Viewing Logs<a href="#viewing-logs" class="anchor" aria-hidden="true">#</a> </h2>
+<p>To view a message log after it has been created, you&rsquo;ll need to visit its link in a browser. OBMAN.BOT cannot send message
+logs to a Discord channel; they are only accessible online.</p>
+<ul>
+<li>When a log is created, the link to view it follows the pattern <code>/public/&lt;server ID&gt;/log/&lt;log count&gt;</code>. Note that this
+makes it easy to scrape through all the logs created on a server. Assume any member that can view a specific log can
+also view every other log on your server.</li>
+<li>You can view a list of all message logs created on your server on the Logging page of the control panel.</li>
+<li>When the <code>logs</code> command is executed, a link to the message log is sent as the response.</li>
+<li>When a moderation action creates a log, a link is included in the mod log entry if enabled.</li>
+</ul>
+<p>When viewing a log, OBMAN.BOT colors the usernames of each message author based on their roles at the time of log
+<em>viewing</em>, similarly to how they would appear on your server.</p>
+<h2 id="access-control">Access Control<a href="#access-control" class="anchor" aria-hidden="true">#</a> </h2>
+<h3 id="members-can-view-message-logs">Members can view message logs<a href="#members-can-view-message-logs" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Selecting this mode on the control panel allows all members of your server to view any message logs created. Users will
+need to log in with their Discord account to view the message logs.</p>
+<h4 id="roles">Roles<a href="#roles" class="anchor" aria-hidden="true">#</a> </h4>
+<p>You may additionally choose to require roles for members to have in order to view message logs. Members with <em>one or
+more</em> of these roles will be permitted to view message logs.</p>
+<h3 id="everyone-can-view-message-logs">Everyone can view message logs<a href="#everyone-can-view-message-logs" class="anchor" aria-hidden="true">#</a> </h3>
+<p>Selecting this mode on the control panel allows anyone with a link to a log to view all the logs on your server without
+needing to log in.</p>
+<h2 id="deleted-messages">Deleted Messages<a href="#deleted-messages" class="anchor" aria-hidden="true">#</a> </h2>
+<p>A log contains any messages cached at the time of log creation. Deleted messages are cached for <code>1</code> hour before being
+removed. On <a href="/docs/welcome/premium/">premium</a> servers, they are cached for <code>12</code> hours.</p>
+<p>In a message log, deleted messages are shown to users permitted to view them. If a user is not permitted to view deleted
+messages, they will not be able to see deleted messages, or that a message was deleted at all.</p>
+<h2 id="disallowed-channels">Disallowed Channels<a href="#disallowed-channels" class="anchor" aria-hidden="true">#</a> </h2>
+<p>Under the Logging page on the control panel you may exclude certain channels from log creation. Using the logs command
+in a disallowed channel will return an error message. Moderation actions will also not generate or attach logs in such
+channels.</p>
+<h2 id="deleting-logs">Deleting Logs<a href="#deleting-logs" class="anchor" aria-hidden="true">#</a> </h2>
+<p>Users with write access to the control panel may delete individual logs or delete all logs on the server using the
+control panel.</p>
+
+<div class="selfhosting">
+  <h2 id="message-log-purge">Message Log Purge<a href="#message-log-purge" class="anchor" aria-hidden="true">#</a> </h2>
+<p>If you are self-hosting your own instance of OBMAN.BOT, you can set <code>enable_message_log_purge=true</code> to automatically purge
+message logs older than 30 days. This option is enabled on the official instance of OBMAN.BOT hosted by Botlabs but is
+disabled by default on a fresh self-host.</p>
+</div>
+			<div class="page-footer-meta d-flex flex-column flex-md-row justify-content-between">
+				
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="edit-page">
+  <a href="https://github.com/ArtObman/ArtObman/blob/master/content//docs/moderation/logging.md">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2">
+      <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+    </svg>
+    Edit this page on GitHub
+  </a>
+</div>
+
+				</div>
+			<div class="page-nav d-flex flex-column flex-sm-row">
+	
+	<div class="card w-100">
+			<div class="card-body d-flex">
+				<div class="d-flex flex-column justify-content-center">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M5 12l14 0"></path>
+						<path d="M5 12l6 6"></path>
+						<path d="M5 12l6 -6"></path>
+				 	</svg>
+				</div>
+				<div class="d-flex flex-column">
+					<div class="text-body-secondary">Prev</div>
+					<a href="/docs/moderation/advanced-automoderator/effects/" class="stretched-link text-reset text-decoration-none">Effects</a>
+				</div>
+			</div>
+		</div>
+	<div class="m-2"></div>
+	<div class="card text-end w-100">
+			<div class="card-body d-flex justify-content-end">
+				<div class="d-flex flex-column">
+					<div class="text-body-secondary">Next</div>
+					<a href="/docs/moderation/verification/" class="stretched-link text-reset text-decoration-none">Verification</a>
+				</div>
+				<div class="d-flex flex-column justify-content-center">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M5 12l14 0"></path>
+						<path d="M13 18l6 -6"></path>
+						<path d="M13 6l6 6"></path>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+
+			
+		</main>
+		
+	</div>
+
+      
+      </div>
+    </div>
+    
+    
+    <footer class="footer text-muted">
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-lg-8 text-center text-lg-start">
+        <ul class="list-inline">
+          <li class="list-inline-item"><a class="text-muted" href="https://botlabs.gg/privacy-policy">Privacy Policy</a></li><li class="list-inline-item"><a class="text-muted" href="https://obman.com/terms-of-use">Terms of Use</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-8 text-center text-lg-end">
+        <ul class="list-inline">
+          <li class="list-inline-item">Built using <a class="text-muted" href="https://getdoks.org/">Doks</a> and <a class="text-muted" href="https://gohugo.io/">Hugo</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script async
+  src="/js/bootstrap.8674636a1059caed3a46af4b3dbc8d68a0aac4e0c51ab393c810f3ad10553638.js"
+  integrity="sha256-hnRjahBZyu06Rq9LPbyNaKCqxODFGrOTyBDzrRBVNjg=">
+</script>
+
+
+<script async
+  src="/js/app.ed63b5301e6ba65958f352a0840b7bbba0fcd82e492693df4e191290daaa4850.js"
+  integrity="sha256-7WO1MB5rpllY81KghAt7u6D82C5JJpPfThkSkNqqSFA=">
+</script>
+
+
+
+
+
+
+
+
+
+
+<script async
+  src="/js/docsearch.b4e4d5218e0dcf1c9f23699da64223159203b928fe4e1da0c2657079845ad1c2.js"
+  integrity="sha256-tOTVIY4NzxyfI2mdpkIjFZIDuSj&#43;Th2gwmVweYRa0cI=">
+</script>
+
+    
+  </body>
+</html>

@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+<script 
+  src="/js/color-mode.f14b3e296de1d0b69e75af684b62a4a912a2cadab04e36123407cd8388204f1d.js"
+  integrity="sha256-8Us&#43;KW3h0Laeda9oS2KkqRKiytqwTjYSNAfNg4ggTx0=">
+</script>
+
+
+<link rel="stylesheet" href="/main.36ca4900ac79c8b8df541138c0226a38e9bd2fbbd3cde3f0c397a7de57e6e3205e7bd138bf1f9da340a9cb91990a0593d180b720a58bcc44ef978ed4a4791dbe.css" integrity="sha512-NspJAKx5yLjfVBE4wCJqOOm9L7vTzePww5en3lfm4yBee9E4vx&#43;do0Cpy5GZCgWT0YC3IKWLzETvl47UpHkdvg==" crossorigin="anonymous">
+
+<noscript><style>img.lazyload { display: none; }</style></noscript><base href="http://localhost:1313/learn/advanced/custom-interactions/responding-to-an-interaction/">
+
+  <link rel="canonical" href="http://localhost:1313/learn/advanced/custom-interactions/responding-to-an-interaction/">
+
+
+<title>Responding to an Interaction  |  OBMAN.BOT Help Center</title>
+<meta name="description" content="OBMAN.BOT documentation and learning resources.">
+
+    
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    
+    
+      <link
+        rel="apple-touch-icon"
+        href="/apple-touch-icon.png"
+        sizes="180x180"
+        type="image/png"
+      >
+      <link
+        rel="icon"
+        href="/favicon-192x192.png"
+        sizes="192x192"
+        type="image/png"
+      >
+      <link
+        rel="icon"
+        href="/favicon-512x512.png"
+        sizes="512x512"
+        type="image/png"
+      >
+<link rel="manifest" href="/manifest.webmanifest">
+
+<meta property="og:url" content="http://localhost:1313/learn/advanced/custom-interactions/responding-to-an-interaction/">
+  <meta property="og:site_name" content="OBMAN.BOT Help Center">
+  <meta property="og:title" content="Responding to an Interaction">
+  <meta property="og:description" content="While technically not required, responding to an interaction with one of Discord’s allotted initial responses is crucial if you don’t want your users to see an error after interacting, greatly improving user experience. An interaction may be responded to only once.
+You can only respond to an interaction within the custom command triggered by said interaction, with the exception that a CC executed with execCC by the triggered CC will be able to send initial responses to the triggering interaction as well.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="learn">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Responding to an Interaction">
+  <meta name="twitter:description" content="While technically not required, responding to an interaction with one of Discord’s allotted initial responses is crucial if you don’t want your users to see an error after interacting, greatly improving user experience. An interaction may be responded to only once.
+You can only respond to an interaction within the custom command triggered by said interaction, with the exception that a CC executed with execCC by the triggered CC will be able to send initial responses to the triggering interaction as well.">
+
+    
+    
+    
+    <script type="application/ld+json">
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/",
+       "name": "Obman. Bot Help Center",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/learn/",
+       "name": "Learning Resources",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/learn/advanced/",
+       "name": "Advanced",
+       "position": 3
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/learn/advanced/custom-interactions/",
+       "name": "Custom Interactions",
+       "position": 4
+     },
+     {
+       "@type": "ListItem",
+       "name": "Responding to an Interaction",
+       "position": 5
+     }
+   ]
+ }
+</script>
+
+
+
+
+
+
+<link rel="preconnect" href="https://ER865HD7LN-dsn.algolia.net" crossorigin />
+
+</head>
+
+  
+  <body class="single section learn" data-bs-spy="scroll" data-bs-target="#toc" data-bs-root-margin="0px 0px -60%" data-bs-smooth-scroll="true" tabindex="0">
+    <div class="sticky-top">
+<header class="navbar navbar-expand-lg">
+  <div class="container-lg">
+  
+    <a class="navbar-brand me-auto me-lg-3" href="/">OBMAN.BOT Help Center</a>
+
+    
+    
+    
+    <div id="docsearch" class="d-none" tabindex="-1" aria-disabled="true"></div>
+    <button type="button" id="searchToggleMobile" class="btn btn-link nav-link mx-2 d-lg-none" aria-label="Search website">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <circle cx="10" cy="10" r="7"></circle>
+        <line x1="21" y1="21" x2="15" y2="15"></line>
+      </svg>
+    </button>
+    
+    <button class="btn btn-link d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavSection" aria-controls="offcanvasNavSection" aria-label="Open section navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+        <path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+        <path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+      </svg>
+    </button>
+    <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasNavSection" aria-labelledby="offcanvasNavSectionLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavSectionLabel">Learn</h5>
+        <button type="button" class="btn btn-link nav-link p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <aside class="doks-sidebar mt-n3">
+          <nav id="doks-docs-nav" aria-label="Tertiary navigation">
+            
+  
+    
+<nav class="section-nav docs-links">
+  <ul class="list-unstyled">
+
+  <li>
+    <details open>
+      <summary>Welcome</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/learn/welcome/introduction/">Introduction</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Beginner</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/learn/beginner/simple-responses/">Simple Responses</a>
+  </li>
+
+  <li>
+      <a href="/learn/beginner/variables-and-data-types/">Variables and Data Types</a>
+  </li>
+
+  <li>
+      <a href="/learn/beginner/conditional-branching/">Conditional Branching</a>
+  </li>
+
+  <li>
+      <a href="/learn/beginner/command-arguments/">Command Arguments</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Intermediate</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/learn/intermediate/embeds-and-messages/">Embeds and Messages</a>
+  </li>
+
+  <li>
+      <a href="/learn/intermediate/maps-and-slices/">Maps and Slices</a>
+  </li>
+
+  <li>
+      <a href="/learn/intermediate/loops/">Loops</a>
+  </li>
+
+  <li>
+      <a href="/learn/intermediate/database/">Database</a>
+  </li>
+
+  <li>
+      <a href="/learn/intermediate/exercises/">Exercises</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open open>
+      <summary>Advanced</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+    <details open open>
+      <summary>Custom Interactions</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/learn/advanced/custom-interactions/introduction/">Introduction</a>
+  </li>
+
+  <li>
+      <a href="/learn/advanced/custom-interactions/creating-interactive-elements/">Creating Interactive Elements</a>
+  </li>
+
+  <li>
+      <a href="/learn/advanced/custom-interactions/parsing-an-interaction/">Parsing an Interaction</a>
+  </li>
+
+  <li class="active" >
+      <a aria-current="page" href="/learn/advanced/custom-interactions/responding-to-an-interaction/">Responding to an Interaction</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+      </ul>
+    </details>
+  </li>
+  </ul>
+</nav>
+
+  
+
+          </nav>
+        </aside>
+      </div>
+    </div>
+    
+    <button class="btn btn-link nav-link mx-2 order-3 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavMain" aria-controls="offcanvasNavMain" aria-label="Open main navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <line x1="4" y1="8" x2="20" y2="8"></line>
+        <line x1="4" y1="16" x2="20" y2="16"></line>
+      </svg>
+    </button>
+
+    
+    <div class="offcanvas offcanvas-end h-auto" tabindex="-1" id="offcanvasNavMain" aria-labelledby="offcanvasNavMainLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavMainLabel">OBMAN.BOT Help Center</h5>
+        <button type="button" class="btn btn-link nav-link p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+         </svg>
+        </button>
+      </div>
+      
+      <div class="offcanvas-body d-flex flex-column flex-lg-row justify-content-between">
+        <ul class="navbar-nav flex-grow-1"><li class="nav-item">
+                <a class="nav-link" href="http://localhost:1313/docs/welcome/introduction/">Documentation</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost:1313/learn/welcome/introduction/">Learning Resources</a>
+              </li>
+            </ul>
+
+        
+        
+        
+        <button type="button" id="searchToggleDesktop" class="btn btn-link nav-link mx-2 d-none d-lg-block" aria-label="Search website">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <circle cx="10" cy="10" r="7"></circle>
+            <line x1="21" y1="21" x2="15" y2="15"></line>
+          </svg>
+        </button>
+        
+        
+        
+        <button id="buttonColorMode" class="btn btn-link mx-auto nav-link p-0 ms-lg-2 me-lg-1" type="button" aria-label="Toggle theme">
+          <svg data-bs-theme-value="dark" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
+          </svg>
+          <svg data-bs-theme-value="light" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0m-5 0h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
+          </svg>
+        </button>
+        
+        <ul id="socialMenu" class="nav mx-auto flex-row order-lg-4">
+          <li class="nav-item">
+              <a class="nav-link social-link" href="https://discord.gg/4udtcA5"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-discord" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M8 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path><path d="M14 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path><path d="M8.5 17c0 1 -1.356 3 -1.832 3c-1.429 0 -2.698 -1.667 -3.333 -3c-.635 -1.667 -.476 -5.833 1.428 -11.5c1.388 -1.015 2.782 -1.34 4.237 -1.5l.975 1.923a11.913 11.913 0 0 1 4.053 0l.972 -1.923c1.5 .16 3.043 .485 4.5 1.5c2 5.667 2.167 9.833 1.5 11.5c-.667 1.333 -2 3 -3.5 3c-.5 0 -2 -2 -2 -3"></path><path d="M7 16.5c3.5 1 6.5 1 10 0"></path></svg><small class="ms-2 visually-hidden">Discord</small></a>
+            </li>
+          <li class="nav-item">
+              <a class="nav-link social-link" href="https://github.com/ArtObman/ArtObman"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg><small class="ms-2 visually-hidden">GitHub</small></a>
+            </li>
+          </ul>
+        
+        <button id="selfHosting" class="btn btn-link mx-auto nav-link p-0 ms-lg-2 me-lg-1" type="button" aria-label="Toggle self-hosting view">
+          <svg data-selfhost-value="yes" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-server-off" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 12h-6a3 3 0 0 1 -3 -3v-2c0 -1.083 .574 -2.033 1.435 -2.56m3.565 -.44h10a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-2" />
+            <path d="M16 12h2a3 3 0 0 1 3 3v2m-1.448 2.568a2.986 2.986 0 0 1 -1.552 .432h-12a3 3 0 0 1 -3 -3v-2a3 3 0 0 1 3 -3h6" />
+            <path d="M7 8v.01" />
+            <path d="M7 16v.01" />
+            <path d="M3 3l18 18" />
+          </svg>
+          <svg data-selfhost-value="no" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-server" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 4m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+            <path d="M3 12m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+            <path d="M7 8l0 .01" />
+            <path d="M7 16l0 .01" />
+          </svg>
+        </button>
+
+        
+        <div class="gtranslate-container order-lg-5 d-flex align-items-center ms-lg-2 mt-2 mt-lg-0">
+          <div class="gtranslate_wrapper"></div>
+        </div>
+      </div>
+    </div>
+
+        
+        </div>
+</header>
+</div>
+
+<script>
+  window.gtranslateSettings = {
+    "default_language": "en",
+    "native_language_names": true,
+    "detect_browser_language": true,
+    "wrapper_selector": ".gtranslate_wrapper",
+    "flag_size": 24
+  };
+</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/popup.js" defer></script>
+
+    <div class="wrap container-lg" role="document">
+      <div class="content">
+      
+        
+	<div class="row flex-xl-nowrap">
+		<div class="col-lg-5 col-xl-4 docs-sidebar d-none d-lg-block">
+			
+  
+    
+<nav class="section-nav docs-links">
+  <ul class="list-unstyled">
+
+  <li>
+    <details open>
+      <summary>Welcome</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/learn/welcome/introduction/">Introduction</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Beginner</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/learn/beginner/simple-responses/">Simple Responses</a>
+  </li>
+
+  <li>
+      <a href="/learn/beginner/variables-and-data-types/">Variables and Data Types</a>
+  </li>
+
+  <li>
+      <a href="/learn/beginner/conditional-branching/">Conditional Branching</a>
+  </li>
+
+  <li>
+      <a href="/learn/beginner/command-arguments/">Command Arguments</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Intermediate</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/learn/intermediate/embeds-and-messages/">Embeds and Messages</a>
+  </li>
+
+  <li>
+      <a href="/learn/intermediate/maps-and-slices/">Maps and Slices</a>
+  </li>
+
+  <li>
+      <a href="/learn/intermediate/loops/">Loops</a>
+  </li>
+
+  <li>
+      <a href="/learn/intermediate/database/">Database</a>
+  </li>
+
+  <li>
+      <a href="/learn/intermediate/exercises/">Exercises</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open open>
+      <summary>Advanced</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+    <details open open>
+      <summary>Custom Interactions</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/learn/advanced/custom-interactions/introduction/">Introduction</a>
+  </li>
+
+  <li>
+      <a href="/learn/advanced/custom-interactions/creating-interactive-elements/">Creating Interactive Elements</a>
+  </li>
+
+  <li>
+      <a href="/learn/advanced/custom-interactions/parsing-an-interaction/">Parsing an Interaction</a>
+  </li>
+
+  <li class="active" >
+      <a aria-current="page" href="/learn/advanced/custom-interactions/responding-to-an-interaction/">Responding to an Interaction</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+      </ul>
+    </details>
+  </li>
+  </ul>
+</nav>
+
+  
+
+		</div>
+		
+		<nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation">
+			<div class="page-links">
+  <h3>On this page</h3>
+    <nav id="toc">
+  <ul>
+    <li><a href="#initial-response">Initial Response</a></li>
+    <li><a href="#following-up">Following Up</a></li>
+    <li><a href="#snippet">Snippet</a></li>
+  </ul>
+</nav>
+</div>
+
+		</nav>
+		<main class="docs-content col-lg-11 col-xl-9 mx-xl-auto">
+		
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="/">Home</a></li>
+<li class="breadcrumb-item"><a href="/learn/">Learn</a></li>
+<li class="breadcrumb-item"><a href="/learn/advanced/">Advanced</a></li>
+<li class="breadcrumb-item"><a href="/learn/advanced/custom-interactions/">Custom Interactions</a></li>
+<li class="breadcrumb-item active" aria-current="page">Responding to an Interaction</li>
+					</ol>
+				</nav>
+			
+			<h1>Responding to an Interaction</h1>
+			
+			<nav class="toc-mobile d-xl-none" aria-label="Quaternary navigation">
+				<details>
+    <summary>On this page</summary>
+    <div class="page-links">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#initial-response">Initial Response</a></li>
+    <li><a href="#following-up">Following Up</a></li>
+    <li><a href="#snippet">Snippet</a></li>
+  </ul>
+</nav>
+    </div>
+  </details>
+
+			</nav>
+			<p>While technically not required, responding to an interaction with one of Discord&rsquo;s allotted initial responses is crucial
+if you don&rsquo;t want your users to see an error after interacting, greatly improving user experience. An interaction may be
+responded to only once.</p>
+<p>You can only respond to an interaction within the custom command triggered by said interaction, with the exception that
+a CC executed with <code>execCC</code> by the triggered CC will be able to send initial responses to the triggering interaction as
+well.</p>
+<h2 id="initial-response">Initial Response<a href="#initial-response" class="anchor" aria-hidden="true">#</a> </h2>
+<p>An initial response is the first response sent to an interaction. This response <strong>must</strong> be sent within 3 seconds of the
+interaction being received, or the user will see a &ldquo;This application did not respond&rdquo; error.</p>
+<p>Possible initial responses:</p>
+<ul>
+<li>Output text in your script response field. This text will be sent as an interaction response.
+<ul>
+<li>You can even use the <code>ephemeralResponse</code> function to make it <em>ephemeral</em>.</li>
+</ul>
+</li>
+<li>Use the <code>sendResponse</code> function to send a response as soon as the function runs.
+<ul>
+<li>You can also use this to send <code>embeds</code> or <code>complexMessages</code>.</li>
+<li>You&rsquo;ll need to send a <code>complexMessage</code> and pass it <code>&quot;ephemeral&quot; true</code> as an argument to send <em>ephemeral</em> messages.</li>
+<li><code>sendResponse</code> comes in <code>NoEscape</code> and <code>RetID</code> variants too.</li>
+<li>When sending an initial response, <code>sendResponse</code> does not need an interaction token, <code>nil</code> can be used.</li>
+</ul>
+</li>
+<li>Use the <code>sendModal</code> function to show the user a modal. You cannot respond to a user submitting a modal by sending them
+another modal.</li>
+<li>Use the <code>updateMessage</code> function to edit the message the command triggered from. This works the same way as editing a
+message, however because it automatically targets the triggering message, the only argument required is the new
+message.</li>
+</ul>
+<p><a href="/docs/reference/templates/functions/#interactions">Interaction Function documentation</a></p>
+<h2 id="following-up">Following Up<a href="#following-up" class="anchor" aria-hidden="true">#</a> </h2>
+<p>Followups allow you to continue responding to an interaction after the initial response has been made. You can followup
+for up to 15 minutes after the user interacts, and you can follow up as many times as you&rsquo;d like. Followups require the
+interaction token of the interaction they should be following up on.</p>
+<p>Possible followups:</p>
+<ul>
+<li>Output text in your script response field. This text will be sent as an interaction followup.
+<ul>
+<li>You can even use the <code>ephemeralResponse</code> function to make it <em>ephemeral</em>.</li>
+</ul>
+</li>
+<li>Use the <code>sendResponse</code> function to send a followup as soon as the function runs. Note that this function morphs into
+sending followups if an initial response has already been made.
+<ul>
+<li>You can also use this to send <code>embeds</code> or <code>complexMessages</code>.</li>
+<li><code>sendResponse</code> comes in <code>NoEscape</code> and <code>RetID</code> variants too.</li>
+<li>It&rsquo;s important to capture the message ID of any
+followups you&rsquo;ll want to edit or retrieve later, especially if you follow up ephemerally. If you follow up
+ephemerally without saving the message ID, you&rsquo;ll never be able to interface with that message again.</li>
+</ul>
+</li>
+<li>Use the <code>editResponse</code> function to edit an initial response or a followup message.
+<ul>
+<li>When editing an initial response, the <code>messageID</code> argument should be <code>nil</code>.</li>
+<li>When editing a followup message, the <code>messageID</code> argument is required.</li>
+<li>You can still edit any initial responses or followups using the standard <code>editMessage</code> function as long as they
+aren&rsquo;t <em>ephemeral</em>.</li>
+</ul>
+</li>
+<li>Use the <code>getResponse</code> function to get an initial response or a followup message.
+<ul>
+<li>When getting an initial response, the <code>messageID</code> argument should be <code>nil</code>.</li>
+<li>When getting a followup message, the <code>messageID</code> argument is required.</li>
+<li>You can still get any initial responses or followups using the standard <code>getMessage</code> function as long as they
+aren&rsquo;t <em>ephemeral</em>.</li>
+</ul>
+</li>
+</ul>
+<p><a href="/docs/reference/templates/functions/#interactions">Interaction Function documentation</a></p>
+<h2 id="snippet">Snippet<a href="#snippet" class="anchor" aria-hidden="true">#</a> </h2>
+<p>Here is a basic scenario where you need to use <code>editResponse</code> and <code>getResponse</code> to work with an <em>ephemeral</em> followup
+message. You cannot use the standard <code>editMessage</code> or <code>getMessage</code> for this because it is an ephemeral message.</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ $interactionToken := .Interaction.Token }}
+</span></span><span class="line"><span class="cl">{{ sendResponse nil &#34;Here&#39;s the first message!&#34; }}
+</span></span><span class="line"><span class="cl">{{ $followupID := sendResponseRetID $interactionToken (complexMessage &#34;content&#34; &#34;Here&#39;s a sneaky one!&#34; &#34;ephemeral&#34; true) }}
+</span></span><span class="line"><span class="cl">{{ sleep 2 }}
+</span></span><span class="line"><span class="cl">{{ editResponse $interactionToken $followupID (print &#34;I&#39;ve edited this message to say &#34; noun) }}
+</span></span><span class="line"><span class="cl">{{ $editedResponse := getResponse $interactionToken $followupID }}
+</span></span><span class="line"><span class="cl">{{ editResponse $interactionToken nil $editedResponse.Content }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div><p>Here&rsquo;s a scenario where you would want to update a message.</p>
+<div class="expressive-code">
+      <figure class="frame not-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{{ $button := cbutton &#34;label&#34; &#34;I won!&#34; &#34;custom_id&#34; &#34;i_won&#34; }}
+</span></span><span class="line"><span class="cl">{{ $content := printf &#34;Press this button when you win! The last person who won was %s! They wanted to say they are a %s %s.&#34; .User.Mention adjective noun }}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">{{ $message := complexMessageEdit &#34;content&#34; $content &#34;buttons&#34; $button }}
+</span></span><span class="line"><span class="cl">{{ updateMessage $message }}</span></span></code></pre></div>
+        </figure>
+      </figure>
+    </div>
+			<div class="page-footer-meta d-flex flex-column flex-md-row justify-content-between">
+				
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="edit-page">
+  <a href="https://github.com/ArtObman/ArtObman/blob/master/content//learn/advanced/custom-interactions/responding-to-an-interaction.md">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2">
+      <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+    </svg>
+    Edit this page on GitHub
+  </a>
+</div>
+
+				</div>
+			<div class="page-nav d-flex flex-column flex-sm-row">
+	
+	<div class="card w-100">
+			<div class="card-body d-flex">
+				<div class="d-flex flex-column justify-content-center">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M5 12l14 0"></path>
+						<path d="M5 12l6 6"></path>
+						<path d="M5 12l6 -6"></path>
+				 	</svg>
+				</div>
+				<div class="d-flex flex-column">
+					<div class="text-body-secondary">Prev</div>
+					<a href="/learn/advanced/custom-interactions/parsing-an-interaction/" class="stretched-link text-reset text-decoration-none">Parsing an Interaction</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+			
+		</main>
+		
+	</div>
+
+      
+      </div>
+    </div>
+    
+    
+    <footer class="footer text-muted">
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-lg-8 text-center text-lg-start">
+        <ul class="list-inline">
+          <li class="list-inline-item"><a class="text-muted" href="https://botlabs.gg/privacy-policy">Privacy Policy</a></li><li class="list-inline-item"><a class="text-muted" href="https://obman.com/terms-of-use">Terms of Use</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-8 text-center text-lg-end">
+        <ul class="list-inline">
+          <li class="list-inline-item">Built using <a class="text-muted" href="https://getdoks.org/">Doks</a> and <a class="text-muted" href="https://gohugo.io/">Hugo</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script async
+  src="/js/bootstrap.8674636a1059caed3a46af4b3dbc8d68a0aac4e0c51ab393c810f3ad10553638.js"
+  integrity="sha256-hnRjahBZyu06Rq9LPbyNaKCqxODFGrOTyBDzrRBVNjg=">
+</script>
+
+
+<script async
+  src="/js/app.ed63b5301e6ba65958f352a0840b7bbba0fcd82e492693df4e191290daaa4850.js"
+  integrity="sha256-7WO1MB5rpllY81KghAt7u6D82C5JJpPfThkSkNqqSFA=">
+</script>
+
+
+
+
+
+
+
+
+
+
+<script async
+  src="/js/docsearch.b4e4d5218e0dcf1c9f23699da64223159203b928fe4e1da0c2657079845ad1c2.js"
+  integrity="sha256-tOTVIY4NzxyfI2mdpkIjFZIDuSj&#43;Th2gwmVweYRa0cI=">
+</script>
+
+    
+  </body>
+</html>

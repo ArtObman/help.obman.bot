@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Beginner on OBMAN.BOT Help Center</title>
+    <link>http://localhost:1313/learn/beginner/</link>
+    <description>Recent content in Beginner on OBMAN.BOT Help Center</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Copyright (c) 2020-2024 OBMAN.BOT documentation contributors</copyright>
+    <atom:link href="http://localhost:1313/learn/beginner/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Simple Responses</title>
+      <link>http://localhost:1313/learn/beginner/simple-responses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/beginner/simple-responses/</guid>
+      <description>&lt;p&gt;In this chapter, we will go over two ways to output text from a custom command: using the &lt;em&gt;response&lt;/em&gt;, and later on using&#xA;&lt;em&gt;template actions&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;response&#34;&gt;Response&lt;/h2&gt;&#xA;&lt;p&gt;If you paste text into the response field of a custom command, the bot will respond with the same text when the command&#xA;is triggered.&lt;/p&gt;&#xA;&lt;p&gt;For instance, create a new custom command with the following response:&lt;/p&gt;&#xA;&lt;div class=&#34;expressive-code&#34;&gt;&#xA;      &lt;figure class=&#34;frame not-content&#34;&gt;&#xA;        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Hello World.&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;        &lt;/figure&gt;&#xA;      &lt;/figure&gt;&#xA;    &lt;/div&gt;&lt;p&gt;This will make the bot respond &amp;ldquo;Hello World.&amp;rdquo; in a new message when the command is triggered, as shown below.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Variables and Data Types</title>
+      <link>http://localhost:1313/learn/beginner/variables-and-data-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/beginner/variables-and-data-types/</guid>
+      <description>&lt;p&gt;In this chapter, we will overview how to store data in variables and the basic data types available, which include&#xA;&lt;a href=&#34;http://localhost:1313/learn/beginner/variables-and-data-types/#strings&#34;&gt;strings&lt;/a&gt;, &lt;a href=&#34;http://localhost:1313/learn/beginner/variables-and-data-types/#numbers&#34;&gt;numbers&lt;/a&gt;, and &lt;a href=&#34;http://localhost:1313/learn/beginner/variables-and-data-types/#booleans&#34;&gt;booleans&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;variables&#34;&gt;Variables&lt;/h2&gt;&#xA;&lt;p&gt;Before we go over data types, we will cover how to store data and refer to it later. We can do this by using variables.&#xA;A variable is a way to store a value and give it a name, to which you can refer back to later.&lt;/p&gt;&#xA;&lt;p&gt;In Custom Commands, you define a variable by starting with a &lt;code&gt;$&lt;/code&gt;, its name, and the assignment operator &lt;code&gt;:=&lt;/code&gt;. To&#xA;illustrate this, consider the following example:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Conditional Branching</title>
+      <link>http://localhost:1313/learn/beginner/conditional-branching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/beginner/conditional-branching/</guid>
+      <description>&lt;p&gt;Until now, we have just written some linear code that executes from top to bottom. However, in real-world applications,&#xA;we often need to execute different code depending on certain states of our program. This is where &lt;em&gt;control flow&lt;/em&gt; comes&#xA;into play.&lt;/p&gt;&#xA;&lt;p&gt;You already have an intuitive understanding of control flow. For instance, when you cross the street, you look left and&#xA;right to see if any cars are coming. If there are no cars, you cross the street. Otherwise (&amp;ldquo;else&amp;rdquo;), you wait until the&#xA;incoming cars have passed, then check again. This is a simple example of a decision-making process.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Command Arguments</title>
+      <link>http://localhost:1313/learn/beginner/command-arguments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/beginner/command-arguments/</guid>
+      <description>&lt;p&gt;When we were starting to write Custom Commands, we stuck to a somewhat static custom command&amp;mdash;one that doesn&amp;rsquo;t take&#xA;any arguments and has a fixed output. This is a good starting point, but it&amp;rsquo;s not very useful in practice. In this&#xA;chapter, we&amp;rsquo;ll learn how to create custom commands that take inputs.&lt;/p&gt;&#xA;&lt;h2 id=&#34;parsing-arguments&#34;&gt;Parsing Arguments&lt;/h2&gt;&#xA;&lt;p&gt;Because parsing arguments is no easy task, we provide a convenience function, &lt;code&gt;parseArgs&lt;/code&gt;, to parse the arguments passed&#xA;to a custom command. For simple commands, this is the recommended way to handle user input. In a later chapter, we will&#xA;explore a more hands-on approach to parsing arguments.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

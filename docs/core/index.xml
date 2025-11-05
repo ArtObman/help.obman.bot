@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Core on OBMAN.BOT Help Center</title>
+    <link>http://localhost:1313/docs/core/</link>
+    <description>Recent content in Core on OBMAN.BOT Help Center</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Copyright (c) 2020-2024 OBMAN.BOT documentation contributors</copyright>
+    <atom:link href="http://localhost:1313/docs/core/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Control Panel Access</title>
+      <link>http://localhost:1313/docs/core/control-panel-access/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/core/control-panel-access/</guid>
+      <description>&lt;p&gt;This page is relatively simple, yet very powerful. An overview of the settings follows.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;#h-rh-i-7b40cb00a665026846d80b2d1a2df399-lightbox&#34;&gt;&#xA;&lt;img alt=&#34;Overview of the control panel access configuration page.&#34; height=&#34;996&#34; id=&#34;h-rh-i-7b40cb00a665026846d80b2d1a2df399&#34; src=&#34;http://localhost:1313/docs/core/control_panel_access.png&#34; width=&#34;1688&#34;&gt;&lt;/a&gt;&#xA;&lt;a href=&#34;javascript:history.back();&#34; class=&#34;lightbox&#34; id=&#34;h-rh-i-7b40cb00a665026846d80b2d1a2df399-lightbox&#34;&gt;&#xA;  &lt;img loading=&#34;lazy&#34; alt=&#34;Overview of the control panel access configuration page.&#34; height=&#34;996&#34; id=&#34;h-rh-i-7b40cb00a665026846d80b2d1a2df399&#34; src=&#34;http://localhost:1313/docs/core/control_panel_access.png&#34; width=&#34;1688&#34;&gt;&#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;h3 id=&#34;read-access&#34;&gt;Read Access&lt;/h3&gt;&#xA;&lt;h4 id=&#34;allow-people-with-the-following-roles&#34;&gt;Allow people with the following roles&lt;/h4&gt;&#xA;&lt;p&gt;The very top option is to allow people with certain roles read access to the control panel. Simply open the drop-down&#xA;select menu and select the roles you wish to grant read access.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control Panel Logs</title>
+      <link>http://localhost:1313/docs/core/control-panel-logs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/core/control-panel-logs/</guid>
+      <description>&lt;p&gt;This page is the analogue of the audit log built in to Discord for OBMAN.BOT settings and summarizes recent edits on the&#xA;control panel, listing the time, action, and responsible user for each. It is useful to audit who may be responsible if&#xA;things go haywire, but other than that this page is unlikely to be of use.&lt;/p&gt;&#xA;&lt;p&gt;Please do not be confused if you see changes from the user &lt;code&gt;destroy_0001&lt;/code&gt; (ID &lt;code&gt;598900258579283976&lt;/code&gt;), as that is the bot&#xA;developer and he may at times need to change certain settings to ensure proper operation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Command Settings</title>
+      <link>http://localhost:1313/docs/core/command-settings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/core/command-settings/</guid>
+      <description>&lt;p&gt;Fine-grained control over all of OBMAN.BOT&amp;rsquo;s inbuild commands.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Command overrides allow you to restrict access to OBMAN.BOT&amp;rsquo;s inbuilt commands and optionally configure intervals after&#xA;which the command trigger and response will be autodeleted. The key features of the page are as follows:&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;#h-rh-i-101a249938de168386ec3e5983bc2da8-lightbox&#34;&gt;&#xA;&lt;img alt=&#34;Overview of the Command Settings page.&#34; height=&#34;996&#34; id=&#34;h-rh-i-101a249938de168386ec3e5983bc2da8&#34; src=&#34;http://localhost:1313/docs/core/command_settings_overview.png&#34; width=&#34;1688&#34;&gt;&lt;/a&gt;&#xA;&lt;a href=&#34;javascript:history.back();&#34; class=&#34;lightbox&#34; id=&#34;h-rh-i-101a249938de168386ec3e5983bc2da8-lightbox&#34;&gt;&#xA;  &lt;img loading=&#34;lazy&#34; alt=&#34;Overview of the Command Settings page.&#34; height=&#34;996&#34; id=&#34;h-rh-i-101a249938de168386ec3e5983bc2da8&#34; src=&#34;http://localhost:1313/docs/core/command_settings_overview.png&#34; width=&#34;1688&#34;&gt;&#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;center&gt;&#xA;&lt;p&gt;&lt;strong&gt;1&lt;/strong&gt; Command prefix, default &lt;code&gt;-&lt;/code&gt; &lt;strong&gt;2&lt;/strong&gt; &lt;em&gt;All commands enabled&lt;/em&gt; setting &lt;strong&gt;3&lt;/strong&gt; Required roles &lt;strong&gt;4&lt;/strong&gt; Ignored roles&#xA;&lt;strong&gt;5&lt;/strong&gt; Autodelete trigger interval &lt;strong&gt;6&lt;/strong&gt; Autodelete response interval &lt;strong&gt;7&lt;/strong&gt; Command overrides &lt;strong&gt;8&lt;/strong&gt; Channel overrides tabs&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>All Commands</title>
+      <link>http://localhost:1313/docs/core/all-commands/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/core/all-commands/</guid>
+      <description>&lt;p&gt;List of all available commands offered by OBMAN.BOT and their syntax.&lt;/p&gt;&#xA;&lt;h2 id=&#34;legend&#34;&gt;Legend&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;&amp;lt;required arg&amp;gt;&lt;/code&gt; &lt;code&gt;[optional arg]&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Text arguments containing multiple words needs be to put in quotes (&amp;ldquo;arg here&amp;rdquo;) or code ticks (&lt;code&gt;arg here&lt;/code&gt;) if it&amp;rsquo;s not the last argument and there&amp;rsquo;s more than 1 text argument.&lt;/p&gt;&#xA;&lt;p&gt;For example with the poll command if you want the question to have multiple words: &lt;code&gt;-poll &amp;quot;whats your favorite color&amp;quot; red blue green2&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
